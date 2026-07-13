@@ -1,0 +1,44 @@
+[project]
+id = "aptlantis.studio"
+title = "Aptlantis Studio"
+class = "website"
+status = "draft"
+mission = "Project portfolio and evidence-led teaching surface for the Aptlantis ecosystem."
+
+[governance]
+proposal_standard = "PPS"
+delivery_standard = "WDS"
+workspace_standard = "WGS"
+
+[criteria]
+success = [
+  "Home page is driven by normalized project analyzer output.",
+  "Project pages teach overview, installation, and evidence without distro-era mirror language.",
+  "CloneCratesio has curated media and a schema-driven command builder.",
+]
+failure = [
+  "Primary routes still expose distro, torrent, ISO, or rsync concepts.",
+  "Portfolio data must be manually duplicated from analyzer JSON.",
+  "Command builder cannot generate, validate, copy, or download commands.",
+]
+
+[constraints]
+technical = [
+  "React + Vite + Tailwind",
+  "Static JSON data for first pass",
+  "Client-side CommandWizard MVP",
+]
+scope = [
+  "Portfolio home",
+  "Project detail pages",
+  "CloneCratesio curated evidence",
+  "Generated project data from .refs",
+]
+
+[agent]
+read_first = [
+  "docs/Project-Proposal.md",
+  "aptlantis.studio.manifest.toml",
+  "scripts/generate-portfolio-data.mjs",
+]
+notes = "This site is not a GitHub clone and should not preserve Linux distro mirror behavior unless a specific project requires it."

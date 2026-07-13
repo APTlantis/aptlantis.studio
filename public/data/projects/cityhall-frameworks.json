@@ -1,0 +1,490 @@
+{
+  "generatedFrom": [
+    "D:\\.library\\aptlantis_core\\WGS\\WGS.manifest.toml",
+    "D:\\.library\\aptlantis_core\\AAMHS\\AAMHS.manifest.toml",
+    "D:\\.library\\aptlantis_core\\CTS\\CTS.manifest.toml",
+    "D:\\.library\\aptlantis_core\\DRS\\DRS.manifest.toml",
+    "D:\\.library\\aptlantis_core\\NeonInk\\NeonInk.manifest.toml",
+    "D:\\.library\\aptlantis_core\\PPS\\PPS.manifest.toml",
+    "D:\\.library\\aptlantis_core\\SESM\\SESM.manifest.toml",
+    "D:\\.library\\aptlantis_core\\WDS\\WDS.manifest.toml"
+  ],
+  "resourceKits": [
+    {
+      "id": "blanks",
+      "title": "Blanks",
+      "sourcePath": "D:\\.library\\aptlantis_core\\Blanks",
+      "templates": [
+        "DatasetName.manifest.toml",
+        "DirectoryName.manifest.toml",
+        "ProjectName.manifest.toml",
+        "README-TEMPLATE.md",
+        "StandardName.manifest.toml"
+      ],
+      "description": "Starter manifest and README blanks used when a project, directory, dataset, or standard needs a clean governance shape."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "wgs",
+      "title": "Workspace Governance Standard",
+      "abbreviation": "WGS",
+      "status": "active",
+      "maturity": "candidate",
+      "version": "0.2.7",
+      "description": "Governs the Aptlantis workspace structure, manifests, project registration, lifecycle visibility, services, standards hierarchy, responsibility boundaries, agent orientation, and workspace health.",
+      "scope": "Workspace roots, manifests, standards relationships, project classes, lifecycle states, shared services, metadata records, agent startup, and workspace health.",
+      "sourcePath": "D:\\.library\\aptlantis_core\\WGS",
+      "specification": "Workspace Governance Standard.md",
+      "schema": "STANDARD.manifest.schema.toml",
+      "templates": [
+        "templates/Development.manifest.toml",
+        "templates/DirectoryName.manifest.toml",
+        "templates/ProjectName.manifest.toml",
+        "templates/StandardName.manifest.toml",
+        "templates/AGENTS.root.md",
+        "templates/AGENTS.directory.md",
+        "templates/AGENTS.project.md",
+        "templates/Project-README.md",
+        "templates/Workspace-Health-Record.md"
+      ],
+      "examples": [
+        "examples/WGS-Suite-Map.md",
+        "examples/City-Hall-Health-Record.md",
+        "examples/City-Hall-Audit-2026-06-11.md",
+        "examples/Workspace-Governance-Audit-2026-07-07.md",
+        "examples/Workspace-Governance-Audit-2026-07-08.md"
+      ],
+      "validators": [
+        "tools/city_hall_audit.py",
+        "tools/workspace_inventory.py",
+        "tools/governance_scaffold.py",
+        "tools/normalize_entity_manifests.py",
+        "tools/snapshot_root_governance.py"
+      ],
+      "adopterArtifacts": [
+        "STANDARD.manifest.schema.toml",
+        "templates/Development.manifest.toml",
+        "templates/DirectoryName.manifest.toml",
+        "templates/ProjectName.manifest.toml",
+        "templates/StandardName.manifest.toml",
+        "templates/AGENTS.root.md",
+        "templates/AGENTS.directory.md",
+        "templates/AGENTS.project.md",
+        "templates/Project-README.md",
+        "templates/Workspace-Health-Record.md"
+      ],
+      "readFirst": [
+        "README.md",
+        "Workspace Governance Standard.md",
+        "Manifest-Conventions.md",
+        "Agent-Startup-Procedure.md"
+      ],
+      "layer": "governance spine",
+      "color": "#41b6c3"
+    },
+    {
+      "id": "aamhs",
+      "title": "Aptlantis Archive Multi-Hash Standard",
+      "abbreviation": "AAMHS",
+      "status": "active",
+      "maturity": "candidate",
+      "version": "1.0.3",
+      "description": "Governs archive verification, preservation hash suites, manifest formats, detached signatures, validation procedures, and integrity records.",
+      "scope": "Archival integrity, preservation hash manifests, detached signature policy, validation procedures, and archive integrity records.",
+      "sourcePath": "D:\\.library\\aptlantis_core\\AAMHS",
+      "specification": "Aptlantis Archive Multi-Hash Standard.md",
+      "schema": "HashManifest.schema.toml",
+      "templates": [
+        "templates/Hash-Manifest.toml",
+        "templates/Archive-Integrity-Record.md"
+      ],
+      "examples": [
+        "examples/AAMHS-Suite-Map.md",
+        "examples/Example-Archive-Integrity-Record.md"
+      ],
+      "validators": [],
+      "adopterArtifacts": [
+        "HashManifest.schema.toml",
+        "templates/Hash-Manifest.toml",
+        "templates/Archive-Integrity-Record.md"
+      ],
+      "readFirst": [
+        "README.md",
+        "Aptlantis Archive Multi-Hash Standard.md",
+        "AAMHS.manifest.toml"
+      ],
+      "layer": "release and integrity layer",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "cts",
+      "title": "Command Tool Standard",
+      "abbreviation": "CTS",
+      "status": "active",
+      "maturity": "candidate",
+      "version": "0.2.1",
+      "description": "Governs CLI tools, command contracts, output schemas, exit codes, automation compatibility, and release verification.",
+      "scope": "Command-line tools, automation utilities, command contracts, output streams, exit codes, and destructive command safety.",
+      "sourcePath": "D:\\.library\\aptlantis_core\\CTS",
+      "specification": "Command Tool Standard.md",
+      "schema": "CommandOutput.schema.json",
+      "templates": [
+        "templates/Command-Contract.md",
+        "templates/CLI-Release-Checklist.md"
+      ],
+      "examples": [
+        "examples/CTS-Suite-Map.md",
+        "examples/Manifest-Audit-Command-Contract.md"
+      ],
+      "validators": [],
+      "adopterArtifacts": [
+        "CommandOutput.schema.json",
+        "templates/Command-Contract.md",
+        "templates/CLI-Release-Checklist.md"
+      ],
+      "readFirst": [
+        "README.md",
+        "Command Tool Standard.md",
+        "CTS.manifest.toml"
+      ],
+      "layer": "delivery standard",
+      "color": "#22c55e"
+    },
+    {
+      "id": "drs",
+      "title": "Desktop Application Release Standard",
+      "abbreviation": "DRS",
+      "status": "active",
+      "maturity": "reference",
+      "version": "1.0.2",
+      "description": "Governs desktop application release notes, manifests, artifacts, hashes, verification, and release evidence.",
+      "scope": "Desktop application release readiness and evidence.",
+      "sourcePath": "D:\\.library\\aptlantis_core\\DRS",
+      "specification": "Desktop Application Release Standard.md",
+      "schema": "DesktopApplicationRelease.manifest.schema.toml",
+      "templates": [
+        "templates/ProjectName.manifest.toml",
+        "templates/Release-Note.md",
+        "templates/Release-Checklist.md",
+        "templates/Trust-Security-Model.md",
+        "templates/Dependency-Provenance.md",
+        "templates/Build-Reproducibility-Guide.md",
+        "templates/Threat-Model.md",
+        "templates/Integrity-Validation-Matrix.md",
+        "templates/Data-Migration-Contract.md",
+        "templates/Withdrawn-Release.md"
+      ],
+      "examples": ["examples/MiniVault"],
+      "validators": ["drs.ps1"],
+      "adopterArtifacts": [
+        "DesktopApplicationRelease.manifest.schema.toml",
+        "templates/ProjectName.manifest.toml",
+        "templates/Release-Note.md",
+        "templates/Release-Checklist.md",
+        "templates/Trust-Security-Model.md",
+        "templates/Dependency-Provenance.md",
+        "templates/Build-Reproducibility-Guide.md",
+        "templates/Threat-Model.md",
+        "templates/Integrity-Validation-Matrix.md",
+        "templates/Data-Migration-Contract.md",
+        "templates/Withdrawn-Release.md"
+      ],
+      "readFirst": [
+        "README.md",
+        "Desktop Application Release Standard.md",
+        "DRS.manifest.toml",
+        "SFDS-Adoption-Note.md"
+      ],
+      "layer": "release and integrity layer",
+      "color": "#e879f9"
+    },
+    {
+      "id": "neonink",
+      "title": "NeonInk",
+      "abbreviation": "NeonInk",
+      "status": "active",
+      "maturity": "candidate",
+      "version": "0.1.6",
+      "description": "Semantic design language for Aptlantis color systems, theme behavior, visual intent, UI language, app surfaces, web surfaces, and generated assets.",
+      "scope": "Semantic color systems, visual language, theme contracts, component patterns, desktop app surfaces, web surfaces, and design consistency.",
+      "sourcePath": "D:\\.library\\aptlantis_core\\NeonInk",
+      "specification": "Docs/NeonInk-v0.1.1.md",
+      "schema": "schema.jsonld",
+      "templates": ["templates/NeonInk-Adoption-Record.md"],
+      "examples": ["examples/NeonInk-Suite-Map.md"],
+      "validators": [],
+      "adopterArtifacts": [
+        "schema.jsonld",
+        "templates/NeonInk-Adoption-Record.md"
+      ],
+      "readFirst": [
+        "Governance-Index.md",
+        "README.md",
+        "Docs/NeonInk-v0.1.1.md"
+      ],
+      "layer": "visual and semantic layer",
+      "color": "#fb7185"
+    },
+    {
+      "id": "pps",
+      "title": "Project Proposal Standard",
+      "abbreviation": "PPS",
+      "status": "active",
+      "maturity": "candidate",
+      "version": "0.2.2",
+      "description": "Governs project proposals, design boundaries, success criteria, failure criteria, constraints, risks, roadmaps, and project creation records.",
+      "scope": "Project creation, revival, pre-build clarity, proposal readiness, and intent preservation.",
+      "sourcePath": "D:\\.library\\aptlantis_core\\PPS",
+      "specification": "Project Proposal Standard.md",
+      "schema": "ProjectProposal.manifest.schema.toml",
+      "templates": [
+        "templates/PROJECT.manifest.toml",
+        "templates/Project-Proposal.md"
+      ],
+      "examples": [
+        "examples/PPS-Suite-Map.md",
+        "examples/Example-CLI-Project-Proposal.md",
+        "examples/Example-Desktop-Project-Proposal.md",
+        "examples/Example-Website-Project-Proposal.md",
+        "examples/Example-Dataset-Project-Proposal.md",
+        "examples/Example-Standard-Project-Proposal.md"
+      ],
+      "validators": [],
+      "adopterArtifacts": [
+        "ProjectProposal.manifest.schema.toml",
+        "templates/PROJECT.manifest.toml",
+        "templates/Project-Proposal.md"
+      ],
+      "readFirst": ["README.md", "Project Proposal Standard.md", "PPS.md"],
+      "layer": "intake and intent",
+      "color": "#a78bfa"
+    },
+    {
+      "id": "sesm",
+      "title": "SVG Embedded Semantic Metadata",
+      "abbreviation": "SESM",
+      "status": "active",
+      "maturity": "candidate",
+      "version": "0.3.0",
+      "description": "Governs semantic metadata embedded in SVG assets, safe-profile review, privacy/conformance framing, fixtures, and supporting validation/conversion tooling.",
+      "scope": "SVG metadata structure, semantic asset records, safe-profile rules, privacy and conformance requirements, validator rules, fixture corpus, conversion support, and agent-readable visual context.",
+      "sourcePath": "D:\\.library\\aptlantis_core\\SESM",
+      "specification": "SESM-v0.2.md",
+      "schema": "svg_asset.schema.json",
+      "templates": ["templates/SESM-Metadata-Example.json"],
+      "examples": [
+        "examples/SESM-Suite-Map.md",
+        "templates/SESM-Metadata-Example.json",
+        "fixtures/valid/basic-safe.svg",
+        "fixtures/valid/full-metadata.svg",
+        "fixtures/invalid/script.svg",
+        "fixtures/invalid/event-handler.svg",
+        "fixtures/invalid/javascript-url.svg",
+        "fixtures/invalid/duplicate-metadata.svg",
+        "fixtures/invalid/bad-json.svg",
+        "fixtures/warning/remote-reference.svg"
+      ],
+      "validators": [
+        "tests/run_tests.py",
+        "Embed-SESM.py",
+        "Validate-SESM-Safe.py"
+      ],
+      "adopterArtifacts": [
+        "svg_asset.schema.json",
+        "templates/SESM-Metadata-Example.json"
+      ],
+      "readFirst": [
+        "README.md",
+        "EXPLAINER.md",
+        "SAFE-PROFILE.md",
+        "THREAT-MODEL.md",
+        "PRIVACY.md",
+        "CONFORMANCE.md",
+        "VALIDATOR-RULES.md",
+        "SESM-v0.2.md",
+        "SESM.manifest.toml"
+      ],
+      "layer": "visual and semantic layer",
+      "color": "#38bdf8"
+    },
+    {
+      "id": "wds",
+      "title": "Website Development Standard",
+      "abbreviation": "WDS",
+      "status": "active",
+      "maturity": "candidate",
+      "version": "0.2.1",
+      "description": "Governs websites and web applications as documented, deployable, accessible, metadata-rich, monitorable projects.",
+      "scope": "Websites, web applications, deployment records, accessibility, metadata, route checks, rollback expectations, and monitoring.",
+      "sourcePath": "D:\\.library\\aptlantis_core\\WDS",
+      "specification": "Website Development Standard.md",
+      "schema": "SiteManifest.schema.toml",
+      "templates": [
+        "templates/Site-Manifest.toml",
+        "templates/Deployment-Record.md"
+      ],
+      "examples": [
+        "examples/WDS-Suite-Map.md",
+        "examples/Example-Deployment-Record.md",
+        "examples/Example-Accessibility-Metadata-Check.md"
+      ],
+      "validators": [],
+      "adopterArtifacts": [
+        "SiteManifest.schema.toml",
+        "templates/Site-Manifest.toml",
+        "templates/Deployment-Record.md"
+      ],
+      "readFirst": [
+        "README.md",
+        "Website Development Standard.md",
+        "WDS.manifest.toml"
+      ],
+      "layer": "delivery standard",
+      "color": "#f97316"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "wgs",
+      "target": "pps",
+      "type": "governs-placement",
+      "label": "WGS places proposal-backed work in the drive model",
+      "strength": 0.95
+    },
+    {
+      "source": "pps",
+      "target": "cts",
+      "type": "routes-to",
+      "label": "CLI proposals mature into CTS command contracts",
+      "strength": 0.76
+    },
+    {
+      "source": "pps",
+      "target": "drs",
+      "type": "routes-to",
+      "label": "Desktop proposals mature into DRS release evidence",
+      "strength": 0.78
+    },
+    {
+      "source": "pps",
+      "target": "wds",
+      "type": "routes-to",
+      "label": "Website proposals mature into WDS deployment records",
+      "strength": 0.72
+    },
+    {
+      "source": "wgs",
+      "target": "cts",
+      "type": "governs-registration",
+      "label": "WGS registers command-tool projects and lifecycle state",
+      "strength": 0.86
+    },
+    {
+      "source": "wgs",
+      "target": "drs",
+      "type": "governs-registration",
+      "label": "WGS registers desktop projects and release posture",
+      "strength": 0.86
+    },
+    {
+      "source": "wgs",
+      "target": "wds",
+      "type": "governs-registration",
+      "label": "WGS registers websites and service surfaces",
+      "strength": 0.82
+    },
+    {
+      "source": "drs",
+      "target": "aamhs",
+      "type": "uses-integrity",
+      "label": "DRS release evidence can use AAMHS archive integrity records",
+      "strength": 0.8
+    },
+    {
+      "source": "cts",
+      "target": "aamhs",
+      "type": "uses-integrity",
+      "label": "CTS tools that publish archives can use AAMHS manifests",
+      "strength": 0.68
+    },
+    {
+      "source": "neonink",
+      "target": "wds",
+      "type": "styles",
+      "label": "NeonInk gives web surfaces a shared visual language",
+      "strength": 0.78
+    },
+    {
+      "source": "neonink",
+      "target": "drs",
+      "type": "styles",
+      "label": "NeonInk gives desktop releases a shared UI language",
+      "strength": 0.72
+    },
+    {
+      "source": "sesm",
+      "target": "neonink",
+      "type": "adds-metadata",
+      "label": "SESM gives generated visual assets portable semantic context",
+      "strength": 0.82
+    },
+    {
+      "source": "sesm",
+      "target": "wds",
+      "type": "adds-metadata",
+      "label": "SESM supports metadata-rich website assets",
+      "strength": 0.74
+    },
+    {
+      "source": "wgs",
+      "target": "sesm",
+      "type": "governs-registration",
+      "label": "WGS keeps semantic asset standards visible in City Hall",
+      "strength": 0.62
+    }
+  ],
+  "usagePatterns": [
+    {
+      "title": "Start or revive a project",
+      "appliesTo": ["PPS", "WGS", "Blanks"],
+      "steps": [
+        "Write the project proposal so intent, constraints, risks, and success criteria survive the first build.",
+        "Place the project through WGS so the directory, local manifest, AGENTS.md, and Project-README.md agree.",
+        "Use Blanks as the first pass for the manifest or README when the project does not have a stronger local template yet."
+      ]
+    },
+    {
+      "title": "Publish a desktop release",
+      "appliesTo": ["DRS", "AAMHS", "NeonInk"],
+      "steps": [
+        "Use DRS for release notes, installer metadata, verification blocks, and evidence folders.",
+        "Use AAMHS when the release also needs richer archive manifests, multi-hash records, or detached signature context.",
+        "Use NeonInk to keep the user-facing surface consistent with Aptlantis visual language."
+      ]
+    },
+    {
+      "title": "Ship a command-line tool",
+      "appliesTo": ["CTS", "AAMHS", "WGS"],
+      "steps": [
+        "Use CTS to define command contracts, output envelopes, exit code bands, examples, and automation-safe behavior.",
+        "Use AAMHS when command outputs include archives, bundles, or long-lived preservation artifacts.",
+        "Use WGS to register lifecycle state and keep the tool discoverable from City Hall."
+      ]
+    },
+    {
+      "title": "Build a web or visual surface",
+      "appliesTo": ["WDS", "NeonInk", "SESM"],
+      "steps": [
+        "Use WDS for deployment records, accessibility checks, metadata, route checks, rollback posture, and monitoring.",
+        "Use NeonInk for palette contracts, component tone, and cross-surface visual consistency.",
+        "Use SESM when SVG assets need embedded semantic metadata and safe-profile review."
+      ]
+    }
+  ],
+  "mermaid": {
+    "operatingModel": "flowchart LR\n    WGS[\"WGS<br/>workspace spine\"] --> PPS[\"PPS<br/>intent gate\"]\n    PPS --> CTS[\"CTS<br/>command tools\"]\n    PPS --> DRS[\"DRS<br/>desktop releases\"]\n    PPS --> WDS[\"WDS<br/>web surfaces\"]\n    DRS --> AAMHS[\"AAMHS<br/>integrity records\"]\n    CTS --> AAMHS\n    NeonInk[\"NeonInk<br/>visual language\"] --> DRS\n    NeonInk --> WDS\n    SESM[\"SESM<br/>semantic SVG metadata\"] --> NeonInk\n    SESM --> WDS",
+    "adoptionFlow": "flowchart TD\n    Idea[\"Project idea or revival\"] --> Proposal[\"PPS proposal\"]\n    Proposal --> Placement[\"WGS placement and manifest\"]\n    Placement --> Class{\"Delivery class\"}\n    Class -->|CLI/tool| CTS[\"CTS contract\"]\n    Class -->|Desktop app| DRS[\"DRS release evidence\"]\n    Class -->|Website/app| WDS[\"WDS deployment record\"]\n    CTS --> Integrity[\"AAMHS when archives are published\"]\n    DRS --> Integrity\n    WDS --> Visual[\"NeonInk + SESM when visual assets carry meaning\"]",
+    "artifactChain": "flowchart LR\n    Blanks[\"Blanks starter files\"] --> Manifest[\"Entity manifest\"]\n    Manifest --> ProjectReadme[\"Project-README.md\"]\n    ProjectReadme --> Evidence[\"Evidence docs\"]\n    Evidence --> Validators[\"Validators and checklists\"]\n    Validators --> CityHall[\"CityHall overview\"]"
+  }
+}

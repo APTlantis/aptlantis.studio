@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.tmp/
+.idea/
+
+server-runtime.log
+tsconfig.tsbuildinfo
+
+services/**/target/
+
+# Bundled/generated browser assets. Keep these byte-for-byte with their source.
+public/prism.js
+public/prism.css
+public/prism-components/
+
+# Static shared assets are served directly and are not part of the app source.
+public/shared/

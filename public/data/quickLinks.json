@@ -1,0 +1,23 @@
+[
+  {
+    "id": "website",
+    "label": "Visit Website",
+    "url": "",
+    "icon": "external-link",
+    "buttonClass": "button-primary"
+  },
+  {
+    "id": "iso",
+    "label": "ISO Directory",
+    "url": "",
+    "icon": "file-down",
+    "buttonClass": "button-secondary"
+  },
+  {
+    "id": "documentation",
+    "label": "Documentation",
+    "url": "",
+    "icon": "book",
+    "buttonClass": "button-info"
+  }
+]

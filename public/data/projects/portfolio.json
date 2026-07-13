@@ -1,0 +1,1703 @@
+{
+  "generatedAt": "2026-07-13T04:49:50.260Z",
+  "projectCount": 8,
+  "averageCompletion": 88,
+  "statusCounts": {
+    "active": 3,
+    "paused": 2,
+    "blocked": 1,
+    "Paused": 1,
+    "Production": 1
+  },
+  "governanceCounts": {
+    "CityHall": 1,
+    "CTS": 2,
+    "DRS": 5
+  },
+  "tagCounts": {
+    "standards": 1,
+    "cityhall": 1,
+    "wgs": 1,
+    "pps": 1,
+    "cts": 2,
+    "drs": 4,
+    "wds": 1,
+    "aamhs": 2,
+    "neonink": 1,
+    "sesm": 1,
+    "templates": 1,
+    "governance": 1,
+    "d3": 1,
+    "mermaid": 2,
+    "cratesio": 1,
+    "mirror": 1,
+    "go": 2,
+    "python": 1,
+    "cli": 2,
+    "local-first": 6,
+    "archive-oriented": 1,
+    "prometheus": 1,
+    "pprof": 1,
+    "jsonl": 1,
+    "tar.zst": 1,
+    "bundle": 1,
+    "airgap": 1,
+    "sidecars": 1,
+    "high-performance": 1,
+    "paused": 1,
+    "production": 1,
+    "chat": 1,
+    "tauri": 2,
+    "rust": 2,
+    "react": 2,
+    "sqlite": 1,
+    "openai": 1,
+    "importer": 1,
+    "artifact-index": 1,
+    "archive": 1,
+    "desktop-application": 2,
+    "operator-centric": 1,
+    "prism": 1,
+    "msi": 1,
+    "desktop": 2,
+    "vault": 1,
+    "artifact-management": 1,
+    "metadata": 2,
+    "integrity-verification": 1,
+    "preview-pipeline": 1,
+    "neon-ink": 1,
+    "dark-theme": 1,
+    "wpf": 1,
+    "vbnet": 1,
+    "cryptography": 1,
+    "hashing": 1,
+    "archive-integrity": 1,
+    "post-quantum": 1,
+    "dataset-pipeline": 1,
+    "pgp": 1,
+    "parallel-hashing": 1,
+    "snapshot-manifest": 1,
+    "winui": 1,
+    "dotnet": 1,
+    "csharp": 1,
+    "msix": 1,
+    "schema-driven": 2,
+    "toml": 1,
+    "command-generation": 1,
+    "wizard": 1,
+    "release-evidence": 2,
+    "chrome-extension": 1,
+    "mv3": 1,
+    "javascript": 1,
+    "archival": 1,
+    "markdown": 1,
+    "screenshots": 1,
+    "pdf": 1,
+    "browser": 1,
+    "downloads": 1,
+    "typescript": 1,
+    "vite": 1,
+    "structured-data": 1,
+    "workflow": 1,
+    "visual-builder": 1,
+    "json-schema": 1
+  },
+  "topPriorities": [
+    {
+      "id": "structra",
+      "name": "Structra",
+      "completion": 85,
+      "status": "active",
+      "governanceGroup": "DRS",
+      "next": "Run and record pnpm build, workflow smoke tests, and relevant Tauri checks from the current D:\\DRS\\Structra source."
+    },
+    {
+      "id": "chatarchive",
+      "name": "ChatArchive",
+      "completion": 85,
+      "status": "blocked",
+      "governanceGroup": "DRS",
+      "next": "Fix installer lifecycle restore issue identified in docs/Phase2-QA-Report.md (ensure test harness preserves MSI registration or adjust installer strategy) and re-run qa:phase2"
+    },
+    {
+      "id": "clone-cratesio",
+      "name": "CloneCratesio",
+      "completion": 85,
+      "status": "paused",
+      "governanceGroup": "CTS",
+      "next": "Run and record a full build/test/release verification (build binaries, run go test ./..., produce checksums)"
+    },
+    {
+      "id": "chromearchivalplugin",
+      "name": "ChromeArchivalPlugin",
+      "completion": 85,
+      "status": "active",
+      "governanceGroup": "DRS",
+      "next": "Repeat interactive capture/export smoke on ordinary HTTP/HTTPS pages before public distribution."
+    }
+  ],
+  "projects": [
+    {
+      "id": "cityhall",
+      "name": "CityHall",
+      "sourcePath": "D:\\.library\\aptlantis_core",
+      "summary": "Grouped view of the active Aptlantis standards library: WGS, AAMHS, Blanks, CTS, DRS, NeonInk, PPS, SESM, and WDS. It shows how governance, proposals, releases, command contracts, website deployment, archive integrity, design language, and semantic assets fit together.",
+      "ecosystemRole": "Central standards district for the Aptlantis ecosystem while the framework suite is being phased into the visible portfolio.",
+      "status": "active",
+      "lifecycle": "standards-hub",
+      "governanceGroup": "CityHall",
+      "governingStandard": "D:\\.library\\aptlantis_core\\WGS\\Workspace Governance Standard.md",
+      "completion": 88,
+      "operationalCompleteness": 92,
+      "productCompleteness": 76,
+      "complexity": "High",
+      "strategicRelevance": "High",
+      "maintenanceBurden": "Medium",
+      "capabilities": [
+        "group active standards under one visible CityHall card",
+        "show framework relationships from manifest metadata",
+        "surface templates, schemas, examples, validators, and read-first docs",
+        "teach which standard applies to proposal, command, desktop, web, archive, visual, and semantic-asset work",
+        "keep Blanks visible as a reusable resource kit rather than a governing standard",
+        "provide force-directed and Mermaid relationship views for standards adoption"
+      ],
+      "interfaces": [
+        "Portfolio project detail page",
+        "D3 force-directed framework map",
+        "Mermaid operating-model diagrams",
+        "public/data/projects/cityhall-frameworks.json",
+        "source manifests under D:\\.library\\aptlantis_core"
+      ],
+      "produces": [
+        "CityHall project card",
+        "standards overview and usage page",
+        "framework relationship graph data",
+        "templates and resource inventory",
+        "zoomed relationship diagrams"
+      ],
+      "consumes": [
+        "8 standard manifests",
+        "Blanks starter templates",
+        "README, adoption guide, checklist, schema, example, and validator metadata"
+      ],
+      "dependsOn": [
+        "WGS for workspace placement and City Hall governance",
+        "PPS for project intent and proposal intake",
+        "DRS/CTS/WDS for delivery-specific standards",
+        "AAMHS for richer integrity records",
+        "NeonInk and SESM for visual and metadata semantics"
+      ],
+      "usedBy": [
+        "Aptlantis project portfolio",
+        "standards adoption planning",
+        "new project scaffolding and review",
+        "release, command-tool, and website readiness passes"
+      ],
+      "missingPieces": [
+        "Full SFDS material is referenced as meta_standard but not yet represented as its own visible standards card.",
+        "Relationship weights are curated from current manifests and may need maintainer tuning after more standards are phased in.",
+        "Cross-project adopter counts are not yet generated from a live scan of every project manifest."
+      ],
+      "nextSteps": [
+        "Add adopter counts from the root governance inventory so each standard shows live project coverage.",
+        "Promote additional standards into CityHall as they are normalized in D:\\.library\\aptlantis_core.",
+        "Decide the tipping point for splitting standards back into a hidden-folder or separate standards catalog view.",
+        "Add per-standard deep links to source docs once public documentation URLs are stable."
+      ],
+      "potentialImprovements": [
+        "Generate the relationship graph directly from typed TOML relationship metadata once every standard declares it.",
+        "Add graph filters for lifecycle, layer, artifact type, and adopter project class.",
+        "Render usage recipes as downloadable project-scaffolding checklists.",
+        "Include a live City Hall audit summary from WGS tooling."
+      ],
+      "documentationOutputs": [
+        "WGS/Workspace Governance Standard.md",
+        "WGS/README.md",
+        "WGS/Adoption-Guide.md",
+        "WGS/Validation-Checklist.md",
+        "WGS/Manifest-Conventions.md",
+        "WGS/Agent-Startup-Procedure.md",
+        "AAMHS/Aptlantis Archive Multi-Hash Standard.md",
+        "AAMHS/README.md",
+        "AAMHS/Adoption-Guide.md",
+        "AAMHS/Validation-Checklist.md",
+        "AAMHS/AAMHS.manifest.toml",
+        "CTS/Command Tool Standard.md",
+        "CTS/README.md",
+        "CTS/Adoption-Guide.md",
+        "CTS/Validation-Checklist.md",
+        "CTS/CTS.manifest.toml",
+        "DRS/Desktop Application Release Standard.md",
+        "DRS/README.md",
+        "DRS/Adoption-Guide.md",
+        "DRS/Validation-Checklist.md",
+        "DRS/DRS.manifest.toml",
+        "DRS/SFDS-Adoption-Note.md",
+        "NeonInk/Docs/NeonInk-v0.1.1.md",
+        "NeonInk/README.md",
+        "NeonInk/Adoption-Guide.md",
+        "NeonInk/Validation-Checklist.md",
+        "NeonInk/Governance-Index.md",
+        "PPS/Project Proposal Standard.md",
+        "PPS/README.md",
+        "PPS/Adoption-Guide.md",
+        "PPS/Validation-Checklist.md",
+        "PPS/PPS.md",
+        "SESM/SESM-v0.2.md",
+        "SESM/README.md",
+        "SESM/Adoption-Guide.md",
+        "SESM/Validation-Checklist.md",
+        "SESM/EXPLAINER.md",
+        "SESM/SAFE-PROFILE.md",
+        "SESM/THREAT-MODEL.md",
+        "SESM/PRIVACY.md",
+        "SESM/CONFORMANCE.md",
+        "SESM/VALIDATOR-RULES.md",
+        "SESM/SESM.manifest.toml",
+        "WDS/Website Development Standard.md",
+        "WDS/README.md",
+        "WDS/Adoption-Guide.md",
+        "WDS/Validation-Checklist.md",
+        "WDS/WDS.manifest.toml"
+      ],
+      "tags": [
+        "standards",
+        "cityhall",
+        "wgs",
+        "pps",
+        "cts",
+        "drs",
+        "wds",
+        "aamhs",
+        "neonink",
+        "sesm",
+        "templates",
+        "governance",
+        "d3",
+        "mermaid"
+      ],
+      "repoUrl": "",
+      "cloneCommand": "",
+      "manifestPath": "D:\\.library\\aptlantis_core\\WGS\\WGS.manifest.toml",
+      "logoSrc": "/svg/apt-toml-logo.svg",
+      "screenshots": [],
+      "video": null,
+      "helpOutput": "CityHall groups WGS, AAMHS, CTS, DRS, NeonInk, PPS, SESM, WDS plus the Blanks resource kit.\n\nResource summary:\n- 8 active standards\n- 34 template/resource references\n- 9 validator entrypoints\n- 14 curated framework relationships\n\nStart with WGS for placement, PPS for intent, then route to CTS, DRS, WDS, AAMHS, NeonInk, or SESM based on the artifact being produced.",
+      "commandWizardSchema": null,
+      "frameworkSuite": {
+        "generatedFrom": [
+          "D:\\.library\\aptlantis_core\\WGS\\WGS.manifest.toml",
+          "D:\\.library\\aptlantis_core\\AAMHS\\AAMHS.manifest.toml",
+          "D:\\.library\\aptlantis_core\\CTS\\CTS.manifest.toml",
+          "D:\\.library\\aptlantis_core\\DRS\\DRS.manifest.toml",
+          "D:\\.library\\aptlantis_core\\NeonInk\\NeonInk.manifest.toml",
+          "D:\\.library\\aptlantis_core\\PPS\\PPS.manifest.toml",
+          "D:\\.library\\aptlantis_core\\SESM\\SESM.manifest.toml",
+          "D:\\.library\\aptlantis_core\\WDS\\WDS.manifest.toml"
+        ],
+        "resourceKits": [
+          {
+            "id": "blanks",
+            "title": "Blanks",
+            "sourcePath": "D:\\.library\\aptlantis_core\\Blanks",
+            "templates": [
+              "DatasetName.manifest.toml",
+              "DirectoryName.manifest.toml",
+              "ProjectName.manifest.toml",
+              "README-TEMPLATE.md",
+              "StandardName.manifest.toml"
+            ],
+            "description": "Starter manifest and README blanks used when a project, directory, dataset, or standard needs a clean governance shape."
+          }
+        ],
+        "nodes": [
+          {
+            "id": "wgs",
+            "title": "Workspace Governance Standard",
+            "abbreviation": "WGS",
+            "status": "active",
+            "maturity": "candidate",
+            "version": "0.2.7",
+            "description": "Governs the Aptlantis workspace structure, manifests, project registration, lifecycle visibility, services, standards hierarchy, responsibility boundaries, agent orientation, and workspace health.",
+            "scope": "Workspace roots, manifests, standards relationships, project classes, lifecycle states, shared services, metadata records, agent startup, and workspace health.",
+            "sourcePath": "D:\\.library\\aptlantis_core\\WGS",
+            "specification": "Workspace Governance Standard.md",
+            "schema": "STANDARD.manifest.schema.toml",
+            "templates": [
+              "templates/Development.manifest.toml",
+              "templates/DirectoryName.manifest.toml",
+              "templates/ProjectName.manifest.toml",
+              "templates/StandardName.manifest.toml",
+              "templates/AGENTS.root.md",
+              "templates/AGENTS.directory.md",
+              "templates/AGENTS.project.md",
+              "templates/Project-README.md",
+              "templates/Workspace-Health-Record.md"
+            ],
+            "examples": [
+              "examples/WGS-Suite-Map.md",
+              "examples/City-Hall-Health-Record.md",
+              "examples/City-Hall-Audit-2026-06-11.md",
+              "examples/Workspace-Governance-Audit-2026-07-07.md",
+              "examples/Workspace-Governance-Audit-2026-07-08.md"
+            ],
+            "validators": [
+              "tools/city_hall_audit.py",
+              "tools/workspace_inventory.py",
+              "tools/governance_scaffold.py",
+              "tools/normalize_entity_manifests.py",
+              "tools/snapshot_root_governance.py"
+            ],
+            "adopterArtifacts": [
+              "STANDARD.manifest.schema.toml",
+              "templates/Development.manifest.toml",
+              "templates/DirectoryName.manifest.toml",
+              "templates/ProjectName.manifest.toml",
+              "templates/StandardName.manifest.toml",
+              "templates/AGENTS.root.md",
+              "templates/AGENTS.directory.md",
+              "templates/AGENTS.project.md",
+              "templates/Project-README.md",
+              "templates/Workspace-Health-Record.md"
+            ],
+            "readFirst": [
+              "README.md",
+              "Workspace Governance Standard.md",
+              "Manifest-Conventions.md",
+              "Agent-Startup-Procedure.md"
+            ],
+            "layer": "governance spine",
+            "color": "#41b6c3"
+          },
+          {
+            "id": "aamhs",
+            "title": "Aptlantis Archive Multi-Hash Standard",
+            "abbreviation": "AAMHS",
+            "status": "active",
+            "maturity": "candidate",
+            "version": "1.0.3",
+            "description": "Governs archive verification, preservation hash suites, manifest formats, detached signatures, validation procedures, and integrity records.",
+            "scope": "Archival integrity, preservation hash manifests, detached signature policy, validation procedures, and archive integrity records.",
+            "sourcePath": "D:\\.library\\aptlantis_core\\AAMHS",
+            "specification": "Aptlantis Archive Multi-Hash Standard.md",
+            "schema": "HashManifest.schema.toml",
+            "templates": [
+              "templates/Hash-Manifest.toml",
+              "templates/Archive-Integrity-Record.md"
+            ],
+            "examples": [
+              "examples/AAMHS-Suite-Map.md",
+              "examples/Example-Archive-Integrity-Record.md"
+            ],
+            "validators": [],
+            "adopterArtifacts": [
+              "HashManifest.schema.toml",
+              "templates/Hash-Manifest.toml",
+              "templates/Archive-Integrity-Record.md"
+            ],
+            "readFirst": [
+              "README.md",
+              "Aptlantis Archive Multi-Hash Standard.md",
+              "AAMHS.manifest.toml"
+            ],
+            "layer": "release and integrity layer",
+            "color": "#f59e0b"
+          },
+          {
+            "id": "cts",
+            "title": "Command Tool Standard",
+            "abbreviation": "CTS",
+            "status": "active",
+            "maturity": "candidate",
+            "version": "0.2.1",
+            "description": "Governs CLI tools, command contracts, output schemas, exit codes, automation compatibility, and release verification.",
+            "scope": "Command-line tools, automation utilities, command contracts, output streams, exit codes, and destructive command safety.",
+            "sourcePath": "D:\\.library\\aptlantis_core\\CTS",
+            "specification": "Command Tool Standard.md",
+            "schema": "CommandOutput.schema.json",
+            "templates": [
+              "templates/Command-Contract.md",
+              "templates/CLI-Release-Checklist.md"
+            ],
+            "examples": [
+              "examples/CTS-Suite-Map.md",
+              "examples/Manifest-Audit-Command-Contract.md"
+            ],
+            "validators": [],
+            "adopterArtifacts": [
+              "CommandOutput.schema.json",
+              "templates/Command-Contract.md",
+              "templates/CLI-Release-Checklist.md"
+            ],
+            "readFirst": [
+              "README.md",
+              "Command Tool Standard.md",
+              "CTS.manifest.toml"
+            ],
+            "layer": "delivery standard",
+            "color": "#22c55e"
+          },
+          {
+            "id": "drs",
+            "title": "Desktop Application Release Standard",
+            "abbreviation": "DRS",
+            "status": "active",
+            "maturity": "reference",
+            "version": "1.0.2",
+            "description": "Governs desktop application release notes, manifests, artifacts, hashes, verification, and release evidence.",
+            "scope": "Desktop application release readiness and evidence.",
+            "sourcePath": "D:\\.library\\aptlantis_core\\DRS",
+            "specification": "Desktop Application Release Standard.md",
+            "schema": "DesktopApplicationRelease.manifest.schema.toml",
+            "templates": [
+              "templates/ProjectName.manifest.toml",
+              "templates/Release-Note.md",
+              "templates/Release-Checklist.md",
+              "templates/Trust-Security-Model.md",
+              "templates/Dependency-Provenance.md",
+              "templates/Build-Reproducibility-Guide.md",
+              "templates/Threat-Model.md",
+              "templates/Integrity-Validation-Matrix.md",
+              "templates/Data-Migration-Contract.md",
+              "templates/Withdrawn-Release.md"
+            ],
+            "examples": ["examples/MiniVault"],
+            "validators": ["drs.ps1"],
+            "adopterArtifacts": [
+              "DesktopApplicationRelease.manifest.schema.toml",
+              "templates/ProjectName.manifest.toml",
+              "templates/Release-Note.md",
+              "templates/Release-Checklist.md",
+              "templates/Trust-Security-Model.md",
+              "templates/Dependency-Provenance.md",
+              "templates/Build-Reproducibility-Guide.md",
+              "templates/Threat-Model.md",
+              "templates/Integrity-Validation-Matrix.md",
+              "templates/Data-Migration-Contract.md",
+              "templates/Withdrawn-Release.md"
+            ],
+            "readFirst": [
+              "README.md",
+              "Desktop Application Release Standard.md",
+              "DRS.manifest.toml",
+              "SFDS-Adoption-Note.md"
+            ],
+            "layer": "release and integrity layer",
+            "color": "#e879f9"
+          },
+          {
+            "id": "neonink",
+            "title": "NeonInk",
+            "abbreviation": "NeonInk",
+            "status": "active",
+            "maturity": "candidate",
+            "version": "0.1.6",
+            "description": "Semantic design language for Aptlantis color systems, theme behavior, visual intent, UI language, app surfaces, web surfaces, and generated assets.",
+            "scope": "Semantic color systems, visual language, theme contracts, component patterns, desktop app surfaces, web surfaces, and design consistency.",
+            "sourcePath": "D:\\.library\\aptlantis_core\\NeonInk",
+            "specification": "Docs/NeonInk-v0.1.1.md",
+            "schema": "schema.jsonld",
+            "templates": ["templates/NeonInk-Adoption-Record.md"],
+            "examples": ["examples/NeonInk-Suite-Map.md"],
+            "validators": [],
+            "adopterArtifacts": [
+              "schema.jsonld",
+              "templates/NeonInk-Adoption-Record.md"
+            ],
+            "readFirst": [
+              "Governance-Index.md",
+              "README.md",
+              "Docs/NeonInk-v0.1.1.md"
+            ],
+            "layer": "visual and semantic layer",
+            "color": "#fb7185"
+          },
+          {
+            "id": "pps",
+            "title": "Project Proposal Standard",
+            "abbreviation": "PPS",
+            "status": "active",
+            "maturity": "candidate",
+            "version": "0.2.2",
+            "description": "Governs project proposals, design boundaries, success criteria, failure criteria, constraints, risks, roadmaps, and project creation records.",
+            "scope": "Project creation, revival, pre-build clarity, proposal readiness, and intent preservation.",
+            "sourcePath": "D:\\.library\\aptlantis_core\\PPS",
+            "specification": "Project Proposal Standard.md",
+            "schema": "ProjectProposal.manifest.schema.toml",
+            "templates": [
+              "templates/PROJECT.manifest.toml",
+              "templates/Project-Proposal.md"
+            ],
+            "examples": [
+              "examples/PPS-Suite-Map.md",
+              "examples/Example-CLI-Project-Proposal.md",
+              "examples/Example-Desktop-Project-Proposal.md",
+              "examples/Example-Website-Project-Proposal.md",
+              "examples/Example-Dataset-Project-Proposal.md",
+              "examples/Example-Standard-Project-Proposal.md"
+            ],
+            "validators": [],
+            "adopterArtifacts": [
+              "ProjectProposal.manifest.schema.toml",
+              "templates/PROJECT.manifest.toml",
+              "templates/Project-Proposal.md"
+            ],
+            "readFirst": [
+              "README.md",
+              "Project Proposal Standard.md",
+              "PPS.md"
+            ],
+            "layer": "intake and intent",
+            "color": "#a78bfa"
+          },
+          {
+            "id": "sesm",
+            "title": "SVG Embedded Semantic Metadata",
+            "abbreviation": "SESM",
+            "status": "active",
+            "maturity": "candidate",
+            "version": "0.3.0",
+            "description": "Governs semantic metadata embedded in SVG assets, safe-profile review, privacy/conformance framing, fixtures, and supporting validation/conversion tooling.",
+            "scope": "SVG metadata structure, semantic asset records, safe-profile rules, privacy and conformance requirements, validator rules, fixture corpus, conversion support, and agent-readable visual context.",
+            "sourcePath": "D:\\.library\\aptlantis_core\\SESM",
+            "specification": "SESM-v0.2.md",
+            "schema": "svg_asset.schema.json",
+            "templates": ["templates/SESM-Metadata-Example.json"],
+            "examples": [
+              "examples/SESM-Suite-Map.md",
+              "templates/SESM-Metadata-Example.json",
+              "fixtures/valid/basic-safe.svg",
+              "fixtures/valid/full-metadata.svg",
+              "fixtures/invalid/script.svg",
+              "fixtures/invalid/event-handler.svg",
+              "fixtures/invalid/javascript-url.svg",
+              "fixtures/invalid/duplicate-metadata.svg",
+              "fixtures/invalid/bad-json.svg",
+              "fixtures/warning/remote-reference.svg"
+            ],
+            "validators": [
+              "tests/run_tests.py",
+              "Embed-SESM.py",
+              "Validate-SESM-Safe.py"
+            ],
+            "adopterArtifacts": [
+              "svg_asset.schema.json",
+              "templates/SESM-Metadata-Example.json"
+            ],
+            "readFirst": [
+              "README.md",
+              "EXPLAINER.md",
+              "SAFE-PROFILE.md",
+              "THREAT-MODEL.md",
+              "PRIVACY.md",
+              "CONFORMANCE.md",
+              "VALIDATOR-RULES.md",
+              "SESM-v0.2.md",
+              "SESM.manifest.toml"
+            ],
+            "layer": "visual and semantic layer",
+            "color": "#38bdf8"
+          },
+          {
+            "id": "wds",
+            "title": "Website Development Standard",
+            "abbreviation": "WDS",
+            "status": "active",
+            "maturity": "candidate",
+            "version": "0.2.1",
+            "description": "Governs websites and web applications as documented, deployable, accessible, metadata-rich, monitorable projects.",
+            "scope": "Websites, web applications, deployment records, accessibility, metadata, route checks, rollback expectations, and monitoring.",
+            "sourcePath": "D:\\.library\\aptlantis_core\\WDS",
+            "specification": "Website Development Standard.md",
+            "schema": "SiteManifest.schema.toml",
+            "templates": [
+              "templates/Site-Manifest.toml",
+              "templates/Deployment-Record.md"
+            ],
+            "examples": [
+              "examples/WDS-Suite-Map.md",
+              "examples/Example-Deployment-Record.md",
+              "examples/Example-Accessibility-Metadata-Check.md"
+            ],
+            "validators": [],
+            "adopterArtifacts": [
+              "SiteManifest.schema.toml",
+              "templates/Site-Manifest.toml",
+              "templates/Deployment-Record.md"
+            ],
+            "readFirst": [
+              "README.md",
+              "Website Development Standard.md",
+              "WDS.manifest.toml"
+            ],
+            "layer": "delivery standard",
+            "color": "#f97316"
+          }
+        ],
+        "relationships": [
+          {
+            "source": "wgs",
+            "target": "pps",
+            "type": "governs-placement",
+            "label": "WGS places proposal-backed work in the drive model",
+            "strength": 0.95
+          },
+          {
+            "source": "pps",
+            "target": "cts",
+            "type": "routes-to",
+            "label": "CLI proposals mature into CTS command contracts",
+            "strength": 0.76
+          },
+          {
+            "source": "pps",
+            "target": "drs",
+            "type": "routes-to",
+            "label": "Desktop proposals mature into DRS release evidence",
+            "strength": 0.78
+          },
+          {
+            "source": "pps",
+            "target": "wds",
+            "type": "routes-to",
+            "label": "Website proposals mature into WDS deployment records",
+            "strength": 0.72
+          },
+          {
+            "source": "wgs",
+            "target": "cts",
+            "type": "governs-registration",
+            "label": "WGS registers command-tool projects and lifecycle state",
+            "strength": 0.86
+          },
+          {
+            "source": "wgs",
+            "target": "drs",
+            "type": "governs-registration",
+            "label": "WGS registers desktop projects and release posture",
+            "strength": 0.86
+          },
+          {
+            "source": "wgs",
+            "target": "wds",
+            "type": "governs-registration",
+            "label": "WGS registers websites and service surfaces",
+            "strength": 0.82
+          },
+          {
+            "source": "drs",
+            "target": "aamhs",
+            "type": "uses-integrity",
+            "label": "DRS release evidence can use AAMHS archive integrity records",
+            "strength": 0.8
+          },
+          {
+            "source": "cts",
+            "target": "aamhs",
+            "type": "uses-integrity",
+            "label": "CTS tools that publish archives can use AAMHS manifests",
+            "strength": 0.68
+          },
+          {
+            "source": "neonink",
+            "target": "wds",
+            "type": "styles",
+            "label": "NeonInk gives web surfaces a shared visual language",
+            "strength": 0.78
+          },
+          {
+            "source": "neonink",
+            "target": "drs",
+            "type": "styles",
+            "label": "NeonInk gives desktop releases a shared UI language",
+            "strength": 0.72
+          },
+          {
+            "source": "sesm",
+            "target": "neonink",
+            "type": "adds-metadata",
+            "label": "SESM gives generated visual assets portable semantic context",
+            "strength": 0.82
+          },
+          {
+            "source": "sesm",
+            "target": "wds",
+            "type": "adds-metadata",
+            "label": "SESM supports metadata-rich website assets",
+            "strength": 0.74
+          },
+          {
+            "source": "wgs",
+            "target": "sesm",
+            "type": "governs-registration",
+            "label": "WGS keeps semantic asset standards visible in City Hall",
+            "strength": 0.62
+          }
+        ],
+        "usagePatterns": [
+          {
+            "title": "Start or revive a project",
+            "appliesTo": ["PPS", "WGS", "Blanks"],
+            "steps": [
+              "Write the project proposal so intent, constraints, risks, and success criteria survive the first build.",
+              "Place the project through WGS so the directory, local manifest, AGENTS.md, and Project-README.md agree.",
+              "Use Blanks as the first pass for the manifest or README when the project does not have a stronger local template yet."
+            ]
+          },
+          {
+            "title": "Publish a desktop release",
+            "appliesTo": ["DRS", "AAMHS", "NeonInk"],
+            "steps": [
+              "Use DRS for release notes, installer metadata, verification blocks, and evidence folders.",
+              "Use AAMHS when the release also needs richer archive manifests, multi-hash records, or detached signature context.",
+              "Use NeonInk to keep the user-facing surface consistent with Aptlantis visual language."
+            ]
+          },
+          {
+            "title": "Ship a command-line tool",
+            "appliesTo": ["CTS", "AAMHS", "WGS"],
+            "steps": [
+              "Use CTS to define command contracts, output envelopes, exit code bands, examples, and automation-safe behavior.",
+              "Use AAMHS when command outputs include archives, bundles, or long-lived preservation artifacts.",
+              "Use WGS to register lifecycle state and keep the tool discoverable from City Hall."
+            ]
+          },
+          {
+            "title": "Build a web or visual surface",
+            "appliesTo": ["WDS", "NeonInk", "SESM"],
+            "steps": [
+              "Use WDS for deployment records, accessibility checks, metadata, route checks, rollback posture, and monitoring.",
+              "Use NeonInk for palette contracts, component tone, and cross-surface visual consistency.",
+              "Use SESM when SVG assets need embedded semantic metadata and safe-profile review."
+            ]
+          }
+        ],
+        "mermaid": {
+          "operatingModel": "flowchart LR\n    WGS[\"WGS<br/>workspace spine\"] --> PPS[\"PPS<br/>intent gate\"]\n    PPS --> CTS[\"CTS<br/>command tools\"]\n    PPS --> DRS[\"DRS<br/>desktop releases\"]\n    PPS --> WDS[\"WDS<br/>web surfaces\"]\n    DRS --> AAMHS[\"AAMHS<br/>integrity records\"]\n    CTS --> AAMHS\n    NeonInk[\"NeonInk<br/>visual language\"] --> DRS\n    NeonInk --> WDS\n    SESM[\"SESM<br/>semantic SVG metadata\"] --> NeonInk\n    SESM --> WDS",
+          "adoptionFlow": "flowchart TD\n    Idea[\"Project idea or revival\"] --> Proposal[\"PPS proposal\"]\n    Proposal --> Placement[\"WGS placement and manifest\"]\n    Placement --> Class{\"Delivery class\"}\n    Class -->|CLI/tool| CTS[\"CTS contract\"]\n    Class -->|Desktop app| DRS[\"DRS release evidence\"]\n    Class -->|Website/app| WDS[\"WDS deployment record\"]\n    CTS --> Integrity[\"AAMHS when archives are published\"]\n    DRS --> Integrity\n    WDS --> Visual[\"NeonInk + SESM when visual assets carry meaning\"]",
+          "artifactChain": "flowchart LR\n    Blanks[\"Blanks starter files\"] --> Manifest[\"Entity manifest\"]\n    Manifest --> ProjectReadme[\"Project-README.md\"]\n    ProjectReadme --> Evidence[\"Evidence docs\"]\n    Evidence --> Validators[\"Validators and checklists\"]\n    Validators --> CityHall[\"CityHall overview\"]"
+        }
+      }
+    },
+    {
+      "id": "clone-cratesio",
+      "name": "CloneCratesio",
+      "sourcePath": "D:\\CTS\\CloneCratesio",
+      "summary": "Go-based command-tool that mirrors crates.io by expanding a local crates.io-index into downloaded .crate files or rolling tar.zst bundles, emits JSONL manifests and sidecar metadata, exposes Prometheus and pprof endpoints, and provides utilities to generate sidecars and extract bundles. It is operator-focused, local-first, and designed for large-registry, restart-friendly runs and airgap packaging.",
+      "ecosystemRole": "high-throughput local crates.io mirror and archive pipeline used for offline development, archival capture, and metadata generation",
+      "status": "paused",
+      "lifecycle": "active-core",
+      "governanceGroup": "CTS",
+      "governingStandard": "D:\\.library\\aptlantis_core\\CTS\\Command Tool Standard.md",
+      "completion": 85,
+      "operationalCompleteness": 90,
+      "productCompleteness": 60,
+      "complexity": "High",
+      "strategicRelevance": "High",
+      "maintenanceBurden": "Medium",
+      "capabilities": [
+        "mirror crates.io-index to local storage",
+        "high-concurrency HTTP/2 downloads with retries",
+        "optional rolling tar.zst bundling",
+        "emit JSONL per-run manifest audit log",
+        "generate per-crate .crate.json sidecars or aggregated JSONL",
+        "extract bundles into shard layout",
+        "prometheus metrics and pprof endpoints",
+        "fast incremental update mode with verify-existing option",
+        "wrapper script for index clone/update and downloader invocation",
+        "bundle-per-manifest and bundles.index.jsonl"
+      ],
+      "interfaces": [
+        "CLI: download-crates (Go)",
+        "CLI: generate-sidecars (Go)",
+        "CLI: extract-bundles (Go)",
+        "Wrapper: Clone-Index.py (Python)",
+        "HTTP: /metrics (Prometheus)",
+        "HTTP: /api/status (JSON status)",
+        "HTTP: /debug/pprof/ (pprof)"
+      ],
+      "produces": [
+        ".crate files (loose-file mirror)",
+        "rolling .tar.zst bundle archives",
+        "manifest.jsonl (per-run JSONL audit log)",
+        "per-crate .crate.json sidecars",
+        "aggregated JSONL sidecar streams",
+        "bundles.index.jsonl and per-bundle manifests",
+        "Prometheus metrics on /metrics",
+        "pprof endpoints and /api/status JSON"
+      ],
+      "consumes": [
+        "local crates.io-index git checkout",
+        "optional checksums JSONL input",
+        "newline-delimited URL lists",
+        "bundles for extraction",
+        "operator-provided flags and filesystem paths"
+      ],
+      "dependsOn": [
+        "Go toolchain (1.25+ documented)",
+        "Python 3.9+ (wrapper)",
+        "git (for index clone/update)",
+        "klauspost/compress/zstd (Go library)",
+        "prometheus client_golang",
+        "OS filesystem and sufficient disk I/O"
+      ],
+      "usedBy": [
+        "single operator mirror runs",
+        "airgap transport and offline verification workflows",
+        "local ecosystem analysis and dataset generation",
+        "internal dashboards and Prometheus scraping",
+        "downstream forensic/forensic metadata tooling"
+      ],
+      "missingPieces": [
+        "Formal CTS-style command contracts for each public command (purpose, invocation, inputs, stdout/stderr norms, machine-readable mode, exit codes, examples, stability notes)",
+        "Documented exit code table describing mapping to CTS exit code bands",
+        "Documented JSON command output envelope (CommandOutput.schema.json) or deliberate justification for per-command JSONL formats",
+        "Explicit machine-readable /api/status schema and CLI JSON output schema documentation",
+        "Structured error examples and machine-readable error object specification for JSON mode",
+        "Release checklist and verified artifact publication steps (build_verified=false, release_verified=false)",
+        "CI/workflow for reproducible builds, tests, and release artifact publication (TODOs reference this)",
+        "Integration test harness covering end-to-end bundle and extraction workflows (noted in TODO)",
+        "Grafana dashboard examples for Prometheus metrics (listed in TODO)",
+        "CONTRIBUTING.md, CODEOWNERS, and release automation (not yet created)"
+      ],
+      "nextSteps": [
+        "Run and record a full build/test/release verification (build binaries, run go test ./..., produce checksums)",
+        "Add explicit CTS command contracts per CLI (download-crates, generate-sidecars, extract-bundles, Clone-Index.py)",
+        "Document exit code table and map existing os.Exit uses to CTS bands",
+        "Publish JSON output schema(s) and adopt a CommandOutput envelope or document rationale for JSONL manifest exception",
+        "Create CI workflow to run tests, vet packages, and publish release artifacts with checksums",
+        "Author CONTRIBUTING.md and basic release/checklist in repository",
+        "Provide Grafana dashboard examples and sample manifests for automation consumers",
+        "Reconcile legacy manifest fields and confirm lifecycle state with maintainer (manifest notes request confirmation)"
+      ],
+      "potentialImprovements": [
+        "Add --json / --format json machine-readable flag with CTS CommandOutput envelope for CLI status endpoints",
+        "Provide a formal exit-code mapping doc and ensure all commands return documented codes",
+        "Add --dry-run or preview mode to extract-bundles (destructive operation safety)",
+        "Publish stable JSON schemas for manifest.jsonl and /api/status and add small JSON schema files into docs/",
+        "Add small automation-friendly examples showing how to parse manifest.jsonl and detect errors via exit codes",
+        "Ship Grafana dashboard JSON and example Prometheus scrape configs"
+      ],
+      "documentationOutputs": [
+        "README.md",
+        "Project-README.md",
+        "AGENTS.md",
+        "help.txt",
+        "docs/Architecture.md",
+        "docs/Quickstart-Windows.md",
+        "docs/Airgap-Guide.md",
+        "docs/Prometheus.md",
+        "docs/RELEASE-v1.1.0.md",
+        "docs/TODO.md",
+        "docs/Progress-Log.md",
+        "docs/Technical-Overview-2025-08-23.md",
+        "docs/Maintainer-Retrospective-v1.1.0.md"
+      ],
+      "tags": [
+        "cratesio",
+        "mirror",
+        "go",
+        "python",
+        "cli",
+        "local-first",
+        "archive-oriented",
+        "prometheus",
+        "pprof",
+        "jsonl",
+        "tar.zst",
+        "bundle",
+        "airgap",
+        "sidecars",
+        "high-performance",
+        "cts",
+        "paused",
+        "production"
+      ],
+      "repoUrl": "https://github.com/APTlantis/Clone-Cratesio",
+      "cloneCommand": "git clone https://github.com/APTlantis/Clone-Cratesio",
+      "manifestPath": "D:\\CTS\\CloneCratesio\\CloneCratesio.manifest.toml",
+      "logoSrc": "/svg/apt-rust-logo.svg",
+      "screenshots": [
+        {
+          "src": "/projects/clonecratesio/crates-mirror.png",
+          "caption": "Bundle output and manifest evidence from a CloneCratesio run."
+        },
+        {
+          "src": "/projects/clonecratesio/clonecrates-screenshot.png",
+          "caption": "CloneCratesio downloader run in progress."
+        }
+      ],
+      "video": {
+        "src": "/projects/clonecratesio/CloneCrates.mp4",
+        "captions": "/projects/clonecratesio/CloneCrates.srt",
+        "title": "Architecting an Airgapped Rust Registry",
+        "description": "NotebookLM explainer produced from a complete successful run that downloaded more than 2.5 million files in roughly two hours."
+      },
+      "helpOutput": "# Mirror Rust crates from crates.io\n\n## Clone Index\n\n```text\npython Clone-Index.py --help\n\noptions:\n  --index-dir INDEX_DIR\n  --output-dir OUTPUT_DIR\n  --log-path LOG_PATH\n  --threads THREADS                      default: 128\n  --include-yanked\n  --verify-existing\n  --bundle\n  --bundle-mode {only,add}               default: only\n  --bundle-size-gb BUNDLE_SIZE_GB        default: 8\n  --bundles-out BUNDLES_OUT\n  --manifest MANIFEST\n  --listen LISTEN                        default: :9090\n  --progress-interval PROGRESS_INTERVAL  default: 5s\n  --progress-every PROGRESS_EVERY\n  --dry-run\n  --skip-index-update\n  --non-interactive, --yes\n  --log-level {debug,info,warning,error}\n  --downloader-path DOWNLOADER_PATH\n\nlegacy compatibility flags:\n  --rate-limit\n  --resume\n  --verify\n```\n\nExample:\n\n```powershell\npython Clone-Index.py --index-dir \"A:\\rust-lang\\crates\\crates.io-index\" --output-dir \"A:\\rust-lang\\crates\\crates.io\" --threads 128 --progress-interval 5s --non-interactive\n```\n\n## Download Crates\n\n```text\ngo run ./cmd/download-crates -h\n\nimportant flags:\n  -index-dir string\n  -out string\n  -concurrency int                     default: 128\n  -verify-existing\n  -bundle\n  -bundle-mode string                  only|add, default: only\n  -bundle-size-gb int                  default: 8\n  -bundles-out string\n  -manifest string                     JSONL audit log for the run\n  -include-yanked\n  -listen string                       default :9090; use :PORT to override or empty string to disable\n  -progress-interval duration\n  -log-format string                   text|json\n  -log-level string                    debug|info|warn|error\n```\n\nLoose-file mirror:\n\n```powershell\n.\\bin\\download-crates.exe -index-dir \"A:\\rust-lang\\crates\\crates.io-index\" -out \"A:\\rust-lang\\crates\\crates.io\" -concurrency 128 -include-yanked\n```\n\nFast update run:\n\n```powershell\n.\\bin\\download-crates.exe -index-dir \"A:\\rust-lang\\crates\\crates.io-index\" -out \"A:\\rust-lang\\crates\\crates.io\" -concurrency 128\n```\n\nFull re-verification of existing files:\n\n```powershell\n.\\bin\\download-crates.exe -index-dir \"A:\\rust-lang\\crates\\crates.io-index\" -out \"A:\\rust-lang\\crates\\crates.io\" -verify-existing -concurrency 128\n```\n\nBundle-first mirror:\n\n```powershell\n.\\bin\\download-crates.exe -index-dir \"A:\\rust-lang\\crates\\crates.io-index\" -out \"A:\\rust-lang\\crates\\staging\" -bundle -bundle-mode only -bundle-size-gb 5 -bundles-out \"A:\\rust-lang\\bundles\" -manifest \"A:\\rust-lang\\manifest.jsonl\" -concurrency 128\n```\n\nNotes:\n\n- `-bundle-mode only` removes loose `.crate` files after they are added to the archive\n- `-bundle-mode add` keeps both loose files and bundles\n- bundled runs now produce per-bundle manifests and a top-level `bundles.index.jsonl`\n- the downloader prints a cleaner startup configuration block and a final run summary\n\n## Generate Sidecars\n\n```text\ngo run ./cmd/generate-sidecars -h\n\nimportant flags:\n  -index-dir string\n  -out string\n  -output-mode string                  files|jsonl, default: files\n  -jsonl-out string                    required for jsonl mode\n  -manifest string                     optional downloader manifest for bundle metadata\n  -concurrency int                     default: 128\n  -include-yanked\n  -progress-interval duration\n  -log-format string                   text|json\n  -log-level string                    debug|info|warn|error\n```\n\nLoose sidecars:\n\n```powershell\n.\\bin\\generate-sidecars.exe -index-dir \"A:\\rust-lang\\crates\\crates.io-index\" -out \"A:\\rust-lang\\crates\\crates.io\" -output-mode files -include-yanked -concurrency 128\n```\n\nBundle-oriented JSONL sidecars:\n\n```powershell\n.\\bin\\generate-sidecars.exe -index-dir \"A:\\rust-lang\\crates\\crates.io-index\" -output-mode jsonl -jsonl-out \"A:\\rust-lang\\bundle-sidecars.jsonl\" -manifest \"A:\\rust-lang\\manifest.jsonl\" -include-yanked -concurrency 128\n```\n\n## Extract Bundles\n\n```text\ngo run ./cmd/extract-bundles -h\n\nimportant flags:\n  -bundles-dir string\n  -pattern string                      default: *.tar.zst\n  -out string\n  -overwrite\n```\n\nExample:\n\n```powershell\n.\\bin\\extract-bundles.exe -bundles-dir \"A:\\rust-lang\\bundles\" -out \"A:\\rust-lang\\restored\"\n```\n\n## Metrics\n\nThe downloader exposes metrics on `:9090` by default. Use `-listen :PORT` to override it, or pass an empty string to disable it.\n\nEndpoints:\n\n- `http://localhost:PORT/metrics`\n- `http://localhost:PORT/api/status`\n- `http://localhost:PORT/debug/pprof/`\n",
+      "commandWizardSchema": "clone-index"
+    },
+    {
+      "id": "chatarchive",
+      "name": "ChatArchive",
+      "sourcePath": "D:\\DRS\\Chat",
+      "summary": "Tauri-based local-first desktop app (ChatArchive) that imports OpenAI conversation exports, normalizes conversation trees, extracts artifacts (code, documents, assets, links), stores durable metadata in SQLite, and provides a React reader/dashboard for search, exploration, and export. Rust importer handles sharded OpenAI exports and .dat blobs; frontend is Vite/React; app packaged via Tauri.",
+      "ecosystemRole": "operator-centric local archive and importer for OpenAI conversation exports; provides normalized archive outputs and artifact indexes consumed by the operator and other Aptlantis data workflows.",
+      "status": "blocked",
+      "lifecycle": "blocked",
+      "governanceGroup": "DRS",
+      "governingStandard": "D:\\.library\\aptlantis_core\\DRS\\Desktop Application Release Standard.md",
+      "completion": 85,
+      "operationalCompleteness": 90,
+      "productCompleteness": 45,
+      "complexity": "High",
+      "strategicRelevance": "High",
+      "maintenanceBurden": "High",
+      "capabilities": [
+        "import OpenAI conversation exports (conversations-*.json and conversations.json)",
+        "resolve .dat asset blobs to filenames",
+        "normalize conversation trees into ordered threads",
+        "index and extract artifacts: code, documents, images, links",
+        "persist metadata and viewer state in SQLite (chatarchive.db)",
+        "React reader with search, code highlighting, Mermaid/ZenUML rendering",
+        "dashboard with archive totals and telemetry",
+        "Tauri commands for library setup, import, listing, search, export",
+        "produce public/archive-data JSON indexes (index.json, artifacts.json, assets-manifest.json)"
+      ],
+      "interfaces": [
+        "Tauri IPC / commands (importer, list_code_artifacts, search, export)",
+        "React/Vite frontend (reader, dashboard, explorers)",
+        "Rust backend CLI/commands (src-tauri importer and tests)",
+        "Filesystem-backed library folder (user-selected ChatArchive/ directory)",
+        "SQLite persistence layer accessed by Rust/Tauri",
+        "npm scripts / PowerShell QA runners (qa:phase2, test:installer)"
+      ],
+      "produces": [
+        "public/archive-data/index.json",
+        "public/archive-data/artifacts.json",
+        "public/archive-data/assets-manifest.json",
+        "public/archive-data/conversations/*.json (normalized per-conversation JSON)",
+        "chatarchive.db (SQLite app state)",
+        "normalized per-conversation JSON files in library",
+        "packaged Tauri builds (MSI/NSIS produced in QA)",
+        "QA reports and logs (docs/Phase2-QA-Report.md)"
+      ],
+      "consumes": [
+        "OpenAI export folder (conversations-*.json, conversation_asset_file_names.json, .dat blobs)",
+        "user-selected ChatArchive library folder",
+        "frontend assets (prism, mermaid-zenuml) and npm package dependencies"
+      ],
+      "dependsOn": [
+        "tauri (v2)",
+        "rust crates: rusqlite, serde, serde_json, walkdir, regex, chrono",
+        "node ecosystem: react, vite, mermaid, @mermaid-js/mermaid-zenuml",
+        "tauri CLI / tauri-build",
+        "PowerShell (QA runners)",
+        "Prism (bundled)",
+        "Playwright / Vitest (tests)"
+      ],
+      "usedBy": ["herb (maintainer / single operator)"],
+      "missingPieces": [
+        "DRS-style release document per-version (release note with theme name, highlights, design boundaries)",
+        "Project manifest release fields populated (release.installer.sha256, release.package_version, release.date, release.verified)",
+        "Per-version verification block appended to a release checklist (build/tests/install/uninstall/data safety evidence)",
+        "Release-evidence bundle (release-evidence/vX.Y.Z/filehash.txt, build.log, test.log, install-check.txt)",
+        "Installer lifecycle issue resolution (MSI/installer restore/Windows Installer registration mismatch found in Phase 2 QA)",
+        "Recorded signing status for installer artifact (signed / self-signed / unsigned) and signing evidence",
+        "Computed SHA-256 of final installer artifact recorded in docs and manifest",
+        "Build/test/artifact verification recorded in manifest (manifest.verification flags are false)",
+        "Explicit confirmation that docs/ are included in installer/publish output (DRS documentation delivery requirement)"
+      ],
+      "nextSteps": [
+        "Fix installer lifecycle restore issue identified in docs/Phase2-QA-Report.md (ensure test harness preserves MSI registration or adjust installer strategy) and re-run qa:phase2",
+        "Produce a DRS-compliant release document for current candidate (theme name, highlights, design boundaries, built-with, artifact filename)",
+        "Build final installer, compute SHA-256 (uppercase hex), record filename and hash in release note and Chat.manifest.toml under release.installer.sha256",
+        "Append per-version verification block to the release checklist and update manifest.release.verified with build/test/install/uninstall evidence and test counts",
+        "Create a release-evidence folder (build.log, test.log, install-check.txt, filehash.txt) and store alongside docs in publish output",
+        "Record installer signing status and, if signing is intended, complete code-signing and include signing evidence in manifest and release-evidence",
+        "Include docs/ (release note, trust/security summary, verification summary) in the installer and verify installed copy is accessible to an operator without the source repository",
+        "Reconcile manifest.lifecycle/state with the project owner after verification and update lifecycle fields (blocked -> local-verified / published as appropriate)"
+      ],
+      "potentialImprovements": [
+        "Generate an SBOM (CycloneDX or SPDX) for published installers and store in artifacts/sbom/",
+        "Document dependency provenance and exact build flags used for Rust and Node dependencies (templates/Dependency-Provenance.md)",
+        "Add a reproducible-build guide (clean-clone build steps with exact tool versions) to reduce future release friction",
+        "Automate installer lifecycle QA to preserve and restore Windows Installer registration during native install/uninstall tests",
+        "Surface a simple migration contract for chatArchive.viewerState and any future schema changes (templates/Data-Migration-Contract.md)",
+        "Provide an authenticated optional export path to package curated code artifacts as a dataset (for upstream Aptlantis generation pipelines)"
+      ],
+      "documentationOutputs": [
+        "README.md (user-facing overview and feature list)",
+        "Project-README.md (governance entry point)",
+        "AGENTS.md (working rules, commands, stack)",
+        "docs/Phase2-QA-Report.md (release gate QA evidence)",
+        "docs/Phase2-ArtifactExtraction.md",
+        "docs/Phase 1-ArchiveViewerMaturity.md",
+        "public/archive-data/index.json",
+        "public/archive-data/artifacts.json",
+        "public/archive-data/assets-manifest.json",
+        "public/archive-data/conversations/*.json"
+      ],
+      "tags": [
+        "chat",
+        "local-first",
+        "tauri",
+        "rust",
+        "react",
+        "sqlite",
+        "openai",
+        "importer",
+        "artifact-index",
+        "archive",
+        "desktop-application",
+        "operator-centric",
+        "prism",
+        "mermaid",
+        "msi"
+      ],
+      "repoUrl": "https://github.com/APTlantis/ChatArchive",
+      "cloneCommand": "git clone https://github.com/APTlantis/ChatArchive",
+      "manifestPath": "D:\\DRS\\Chat\\Chat.manifest.toml",
+      "logoSrc": "/svg/apt-typescript-logo.svg",
+      "screenshots": [
+        {
+          "src": "/projects/chatarchive/chatarchive-dashboard-code.png",
+          "caption": "ChatArchive desktop dashboard with the Code Explorer open: imported conversations, visible message counts, unresolved assets, language filters, snippet copy/export controls, and source-conversation navigation."
+        },
+        {
+          "src": "/projects/chatarchive/chatarchive-document-explorer.png",
+          "caption": "Document Explorer view that classifies extracted documents and lets an operator inspect standards, plans, notes, and other long-form artifacts without reopening the original chat."
+        },
+        {
+          "src": "/projects/chatarchive/chatarchive-asset-explorer.png",
+          "caption": "Asset Explorer full-size preview showing copied local assets, source tracing, and visual review of generated or referenced images from imported conversations."
+        },
+        {
+          "src": "/projects/chatarchive/chatarchive-code-explorer.png",
+          "caption": "Code Explorer detail view with language grouping, searchable snippets, copy/export actions, syntax highlighting, and a source button for returning to the originating thread."
+        }
+      ],
+      "video": null,
+      "helpOutput": "",
+      "commandWizardSchema": null
+    },
+    {
+      "id": "filecabinet",
+      "name": "FileCabinet",
+      "sourcePath": "D:\\DRS\\FileCabinet",
+      "summary": "Local-first Windows desktop vault (VB.NET/WPF) for deterministic retention, cataloging, previewing, integrity verification, repair, and deterministic packaging of high-signal technical artifacts. Includes a CLI, unit tests, WiX installer pipeline, and extensive preservation-focused documentation.",
+      "ecosystemRole": "Core local-first preservation vault and exemplar desktop release model for the Aptlantis ecosystem; operator-centric archive tool for long-term artifact custody.",
+      "status": "Paused",
+      "lifecycle": "active-core",
+      "governanceGroup": "DRS",
+      "governingStandard": "D:\\.library\\aptlantis_core\\DRS\\Desktop Application Release Standard.md",
+      "completion": 90,
+      "operationalCompleteness": 90,
+      "productCompleteness": 60,
+      "complexity": "High",
+      "strategicRelevance": "High",
+      "maintenanceBurden": "Medium",
+      "capabilities": [
+        "deterministic ingest (copy/move)",
+        "local JSON catalog with extensible hashes",
+        "SHA-256 and optional BLAKE3/KangarooTwelve and legacy hash families",
+        "vault health analysis and repair preview",
+        "thumbnail and extracted-text generation",
+        "bulk repair selection and safe apply controls",
+        "deterministic packaging/export (folder or zip)",
+        "headless CLI for verify, repair, package, rescan, report",
+        "WiX MSI installer build pipeline (PowerShell)",
+        "release notes and release-verification metadata"
+      ],
+      "interfaces": [
+        "WPF desktop UI (MainWindow, neon-ink theme)",
+        "FileCabinet.Cli.exe (headless CLI)",
+        "installer/build-installer.ps1 (PowerShell)",
+        "WiX Toolset MSI packaging",
+        "JSON catalog files on disk"
+      ],
+      "produces": [
+        "artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi",
+        "FileCabinet.Cli.exe",
+        "docs/*.md (release notes and core docs)",
+        "Vault catalog JSON",
+        "Vault thumbnail PNG assets",
+        "Vault extracted text indexes",
+        "Vault catalog backup exports",
+        "Vault repair log JSONL history",
+        "Deterministic vault package exports",
+        "Assets (icons, logo, MaterialSymbolsIconMap)"
+      ],
+      "consumes": [
+        "User-selected files and folders for vault ingestion",
+        "Existing vault item files during rescan",
+        "Existing catalog data from AppData",
+        "Operator-supplied metadata (tags, reason, retention fields)"
+      ],
+      "dependsOn": [
+        ".NET 10",
+        "WPF",
+        "WiX Toolset 6.0.2",
+        "Blake3 2.2.1",
+        "StreamHash 1.11.3",
+        "System.IO.Hashing 10.0.5",
+        "MSTest",
+        "BouncyCastle.Cryptography (optional for expanded hashes)"
+      ],
+      "usedBy": [],
+      "missingPieces": [
+        "Documented MSI artifact (FileCabinet-1.7.3.0-win-x64.msi) is not present in the checkout (manifest notes this explicitly).",
+        "Local rebuild/verification of the documented v1.7.3 release has not been performed in this checkout (release_verified/build_verified/tests_verified flags false).",
+        "Detached signatures (SPHINCS+, PGP) not generated for v1.7.3; release.signatures entries show not generated.",
+        "Per-DRS install/uninstall verification evidence (installed window title, uninstall safety checks) not recorded for the current checkout.",
+        "Release evidence folder (release-evidence/v1.7.3/) with build.log/test.log/install-check/filehash.txt is not present in the repository snapshot."
+      ],
+      "nextSteps": [
+        "Run CI/manual build: dotnet build/test and installer/build-installer.ps1 -Version 1.7.3.0 in a clean clone.",
+        "Place resulting MSI under artifacts/installer/ and recompute SHA-256; ensure computed hash matches or update manifest after reconciliation.",
+        "Perform install/launch/uninstall checks and record results in manifest.release.verified and append a per-version verification block in the release checklist.",
+        "Generate desired detached signatures (SPHINCS+/PGP) or explicitly document unsigned status; record in release.signatures.* and manifest release fields.",
+        "Create a release-evidence folder v1.7.3 with build.log, test.log, install-check.txt, uninstall-check.txt, and filehash.txt and commit alongside updated manifest.",
+        "If public distribution is intended later, consider producing an SBOM and a reproducible-build guide and update automation scripts to produce them."
+      ],
+      "potentialImprovements": [
+        "Automate release-evidence generation and bundling as part of installer/build-installer.ps1.",
+        "Add an explicit reproducible-build guide and build flags to make MSI rebuild bit-for-bit when inputs are unchanged.",
+        "Produce detached code-signing and PGP signatures for patch/minor releases to strengthen trust evidence.",
+        "Add an optional SBOM (CycloneDX) generation step for releases intended for wider distribution.",
+        "Tighten verification automation to include install/uninstall smoke tests and record window title in manifest.release.verified."
+      ],
+      "documentationOutputs": [
+        "README.md (User Guide)",
+        "Project-README.md",
+        "AGENTS.md",
+        "docs/FileCabinet v1.7.3 — Vault Health Workspace Patch.md",
+        "docs/FileCabinet — Trust and Verification Model.md",
+        "docs/FileCabinet — Vault Lifecycle.md",
+        "docs/FileCabinet — Repair and Recovery Guide.md",
+        "docs/NeonInk-Theme-Integration-Overview.md",
+        "docs/FileCabinet — Vault Integrity Validation Matrix.md",
+        "docs/FileCabinet — Testing Maturity Roadmap.md",
+        "docs/FileCabinet — Hash Choices and Compatibility.md"
+      ],
+      "tags": [
+        "local-first",
+        "desktop",
+        "vault",
+        "artifact-management",
+        "metadata",
+        "integrity-verification",
+        "preview-pipeline",
+        "neon-ink",
+        "dark-theme",
+        "wpf",
+        "vbnet"
+      ],
+      "repoUrl": "https://github.com/APTlantis/FileCabinet",
+      "cloneCommand": "git clone https://github.com/APTlantis/FileCabinet",
+      "manifestPath": "D:\\DRS\\FileCabinet\\FileCabinet.manifest.toml",
+      "logoSrc": "/svg/apt-csharp-logo.svg",
+      "screenshots": [
+        {
+          "src": "/projects/filecabinet/filecabinet-dashboard.png",
+          "caption": "FileCabinet dashboard showing a live vault with ingest controls, retained size, item counts, recent activity, filtered catalog rows, category navigation, integrity hash status, and vault-health actions."
+        },
+        {
+          "src": "/projects/filecabinet/filecabinet-repair.jpg",
+          "caption": "Vault Health workspace during an Apply Selected Repairs pass, with findings grouped by repairability, selected hash recomputation tasks, progress, and related-item preview context."
+        }
+      ],
+      "video": null,
+      "helpOutput": "",
+      "commandWizardSchema": null
+    },
+    {
+      "id": "archivehasher",
+      "name": "ArchiveHasher",
+      "sourcePath": "D:\\CTS\\ArchiveHasher",
+      "summary": "Production Go command suite for AAMHS v2.0 archive publication: archive-hasher creates an 8-algorithm snapshot-hashes.txt manifest, while manifest-signer adds detached PGP and optional post-quantum SLH-DSA signatures without modifying the canonical manifest.",
+      "ecosystemRole": "core dataset-pipeline tool for archive integrity and detached signing",
+      "status": "Production",
+      "lifecycle": "active-core",
+      "governanceGroup": "CTS",
+      "governingStandard": "D:\\.library\\aptlantis_core\\CTS\\Command Tool Standard.md",
+      "completion": 90,
+      "operationalCompleteness": 90,
+      "productCompleteness": 70,
+      "complexity": "High",
+      "strategicRelevance": "High",
+      "maintenanceBurden": "Low",
+      "capabilities": [
+        "parallel hashing",
+        "multi-hash suite (8 algorithms)",
+        "snapshot generation",
+        "manifest verification",
+        "PGP detached signing",
+        "post-quantum (SLH-DSA) detached signing",
+        "archive integrity validation"
+      ],
+      "interfaces": ["CLI: archive-hasher", "CLI: manifest-signer"],
+      "produces": [
+        "snapshot-hashes.txt",
+        "PGP detached signature (snapshot-hashes.txt.asc / .sig)",
+        "PQ detached signature (snapshot-hashes.txt.sphincs / .slh-dsa)"
+      ],
+      "consumes": [
+        "archive artifact file",
+        "PGP private key (ASCII-armored)",
+        "PQ private key (OpenSSL SLH-DSA, optional)"
+      ],
+      "dependsOn": [
+        "Go 1.26",
+        "GnuPG (for PGP signing)",
+        "liboqs (for SLH-DSA)",
+        "OpenSSL (used for PQ signing invocation)"
+      ],
+      "usedBy": [],
+      "missingPieces": [
+        "Formal per-command CTS command contracts documenting purpose, invocation, inputs, stdout/stderr behavior, machine-readable mode, and stability notes",
+        "Exit code table that maps implemented exit codes to CTS bands and explains tool-specific codes",
+        "Explicit documentation stating machine-readable output policy (JSON envelope) or a documented --json mode; currently text-first manifests are used but no formal statement exists",
+        "Documented --version / version output behavior for both CLIs",
+        "Release checklist aligned to CTS release blockers (help accuracy, exit-code verification, JSON output rules, destructive command previews)",
+        "Structured error examples and machine-readable error object examples for automation consumers",
+        "Preview / --dry-run support or documented confirmation workflow for destructive behavior (overwrite) — overwrite flag exists but no dry-run/preview mechanism documented"
+      ],
+      "nextSteps": [
+        "Publish formal command contracts for archive-hasher and manifest-signer that include exit-code tables and machine-readable behavior notes",
+        "Add a documented --version flag and include version in produced manifests (Generated-By already present but explicit CLI version output is needed)",
+        "Either implement a machine-readable output mode (--json) following the CTS JSON envelope or document an explicit 'no JSON' policy in the manifest/docs",
+        "Add a --dry-run or --preview mode for overwrite/destructive operations and document rollback/recovery behavior",
+        "Create a CTS-aligned release checklist and verify help output, exit codes, and example automation runs before releases",
+        "Automate integration tests for signing workflows (PGP and PQ) in CI to validate external dependency behavior"
+      ],
+      "potentialImprovements": [
+        "Provide an optional machine-readable provenance envelope (JSON) alongside snapshot-hashes.txt for automation consumers",
+        "Add resumable/streaming hashing mode for very large archives to reduce memory/IO pressure",
+        "Improve progress reporting with structured progress events sent to stderr (kept separate from stdout manifest output)",
+        "Add audit logging option to record hashing and signing actions for operator audit trails",
+        "Offer platform-agnostic PQ key management examples and scripts for generating SLH-DSA keys with OpenSSL",
+        "Provide prebuilt binaries and checksums in releases to simplify operator installation (manifest shows packaged=true but explicit release assets could be expanded)"
+      ],
+      "documentationOutputs": [
+        "README.md",
+        "Help.txt (CLI usage output captured)",
+        "docs/AAMHS v2.0.md",
+        "docs/AAMHS-hashing-v2.0.md",
+        "docs/AAMHS-signing-v2.0.md",
+        "archive-hasher.manifest.toml"
+      ],
+      "tags": [
+        "cryptography",
+        "hashing",
+        "archive-integrity",
+        "post-quantum",
+        "cli",
+        "dataset-pipeline",
+        "go",
+        "pgp",
+        "aamhs",
+        "parallel-hashing",
+        "snapshot-manifest"
+      ],
+      "repoUrl": "https://github.com/APTlantis/Archive-Hasher",
+      "cloneCommand": "git clone https://github.com/APTlantis/Archive-Hasher.git",
+      "manifestPath": "D:\\CTS\\ArchiveHasher\\ArchiveHasher.manifest.toml",
+      "logoSrc": "/svg/apt-powershell-logo.svg",
+      "screenshots": [],
+      "video": null,
+      "helpOutput": "",
+      "commandWizardSchema": null
+    },
+    {
+      "id": "commandwizard",
+      "name": "CommandWizard",
+      "sourcePath": "D:\\DRS\\CommandWizard",
+      "summary": "Schema-driven Windows desktop app shipped as Aptlantis Command Wizard. It lets an operator build, edit, and save CLI command workflows through TOML tool schemas, help-text import, guided wizard controls, command previews, history, and favorites.",
+      "ecosystemRole": "DRS desktop release example and schema-guided command-construction tool; also the origin of the command schema shape imported by AptlantisConsole command-builder workflows.",
+      "status": "paused",
+      "lifecycle": "production-paused",
+      "governanceGroup": "DRS",
+      "governingStandard": "D:\\.library\\aptlantis_core\\DRS\\README.md",
+      "completion": 95,
+      "operationalCompleteness": 100,
+      "productCompleteness": 85,
+      "complexity": "Medium",
+      "strategicRelevance": "High",
+      "maintenanceBurden": "Low",
+      "capabilities": [
+        "build CLI command strings from TOML tool schemas",
+        "edit schemas through a desktop Schema Editor",
+        "import schema starters from CLI help text",
+        "represent actions, arguments, tags, installed command names, and value styles",
+        "guide operators through wizard-based command assembly",
+        "save command history and favorites in local AppData",
+        "package as a locally signed MSIX",
+        "record DRS-style release evidence for build, test, install, uninstall, and hash checks"
+      ],
+      "interfaces": [
+        "WPF / Material Design desktop UI",
+        "Schema Editor tab",
+        "Wizard tab with command preview",
+        "Favorites and command history storage",
+        "TOML schema files",
+        "PowerShell packaging script: scripts\\package-msix.ps1",
+        "MSIX installer: dist\\CommandWizard-1.0.5.0.msix"
+      ],
+      "produces": [
+        "CLI command strings",
+        "TOML tool schemas",
+        "local command history and favorites",
+        "locally signed MSIX package",
+        "release-evidence/v1.0.5/filehash.txt",
+        "release-evidence/v1.0.5/build.log",
+        "release-evidence/v1.0.5/test.log",
+        "release-evidence/v1.0.5/install-check.txt"
+      ],
+      "consumes": [
+        "operator-authored TOML tool schemas",
+        "CLI help text for schema import",
+        ".NET 10 SDK/runtime",
+        "MaterialDesignThemes.Wpf",
+        "Tomlyn",
+        "Windows SDK Build Tools"
+      ],
+      "dependsOn": [
+        ".NET 10",
+        "WPF",
+        "MaterialDesignThemes.Wpf 5.x",
+        "Tomlyn 0.19.x",
+        "Windows App SDK 1.8.x",
+        "Microsoft.Windows.SDK.BuildTools",
+        "PowerShell"
+      ],
+      "usedBy": [
+        "single-operator command workflow authoring",
+        "AptlantisConsole Terminal -> Command Builder schema parity work",
+        "DRS release-evidence examples for desktop packaging"
+      ],
+      "missingPieces": [
+        "Lifecycle remains marked paused; owner still needs to decide whether the project should be active, archived, or kept as a completed reference tool.",
+        "The MSIX is signed with a local developer certificate rather than a publicly trusted code-signing certificate.",
+        "Packaging is not byte-for-byte reproducible because each MSIX rebuild receives a different package hash.",
+        "The direct makeappx/signtool packaging workaround should be reported upstream to the winapp CLI project if that tool remains in the workflow."
+      ],
+      "nextSteps": [
+        "Confirm whether the release-verified v1.0.5 state should move lifecycle from paused to active or archived.",
+        "If wider distribution is intended, replace the local developer certificate with a trusted code-signing certificate and update publisher metadata.",
+        "Document the one-directional CommandWizard parity relationship now used by AptlantisConsole.",
+        "Keep release-evidence/v1.0.5 with README and manifest references synchronized if the MSIX is rebuilt."
+      ],
+      "potentialImprovements": [
+        "Add schema export/import examples for common Aptlantis tools.",
+        "Record a concise command-schema compatibility note for AptlantisConsole consumers.",
+        "Add an optional machine-readable schema validation report before packaging.",
+        "Create a public trust note explaining the local-dev signing posture and install requirements."
+      ],
+      "documentationOutputs": [
+        "README.md",
+        "Project-README.md",
+        "AGENTS.md",
+        "RELEASE-v1.0.5.md",
+        "CommandWizard.manifest.toml",
+        "release-evidence/v1.0.5/filehash.txt",
+        "release-evidence/v1.0.5/build.log",
+        "release-evidence/v1.0.5/test.log",
+        "release-evidence/v1.0.5/install-check.txt"
+      ],
+      "tags": [
+        "winui",
+        "dotnet",
+        "csharp",
+        "desktop",
+        "msix",
+        "schema-driven",
+        "toml",
+        "local-first",
+        "command-generation",
+        "wizard",
+        "release-evidence",
+        "drs"
+      ],
+      "repoUrl": "",
+      "cloneCommand": "",
+      "manifestPath": "D:\\DRS\\CommandWizard\\CommandWizard.manifest.toml",
+      "logoSrc": "/svg/apt-qbasic-logo.svg",
+      "screenshots": [
+        {
+          "src": "/projects/commandwizard/schema-editor.png",
+          "caption": "Schema Editor view showing tool records, installed/not-found status, tag badges, schema metadata fields, action controls, and the Arguments grid with Value Style visible."
+        },
+        {
+          "src": "/projects/commandwizard/wizard-command-preview.png",
+          "caption": "Wizard view showing schema-guided option selection for Bun, per-option edit controls, and a bottom command preview that assembles the current command string."
+        }
+      ],
+      "video": null,
+      "helpOutput": "Release verification: dotnet build .\\CommandWizard.csproj -c Release; dotnet test .\\CommandWizard.Tests\\CommandWizard.Tests.csproj -c Release (26/26 passed); .\\scripts\\package-msix.ps1; Get-AuthenticodeSignature .\\dist\\CommandWizard-1.0.5.0.msix; Add-AppxPackage .\\dist\\CommandWizard-1.0.5.0.msix.",
+      "commandWizardSchema": null
+    },
+    {
+      "id": "chromearchivalplugin",
+      "name": "ChromeArchivalPlugin",
+      "sourcePath": "D:\\DRS\\ChromeArchivalPlugin",
+      "summary": "Chrome MV3 extension packaged as APTlantis Archival. It captures page lists, links, metadata, clean article markdown, full-page markdown, screenshots, and paginated PDFs into deterministic local download folders.",
+      "ecosystemRole": "Local browser-archival utility for manual web capture and ingestion; produces file artifacts suitable for downstream Aptlantis archive, documentation, and analysis workflows.",
+      "status": "active",
+      "lifecycle": "local-release-candidate",
+      "governanceGroup": "DRS",
+      "governingStandard": "D:\\.library\\aptlantis_core\\DRS\\README.md",
+      "completion": 85,
+      "operationalCompleteness": 85,
+      "productCompleteness": 60,
+      "complexity": "Medium",
+      "strategicRelevance": "High",
+      "maintenanceBurden": "Medium",
+      "capabilities": [
+        "save active page title, URL, and timestamp to browser local storage",
+        "harvest HTTP/HTTPS links from the active page",
+        "export saved URL lists as one-link-per-line text files",
+        "capture Open Graph fields, JSON-LD, common metadata, and Readability metadata as JSON",
+        "export clean article markdown through Readability.js and Turndown",
+        "export full-page markdown with absolute links and images",
+        "capture viewport and full-page PNG screenshots",
+        "export paginated PDFs through Chrome DevTools Page.printToPDF",
+        "reject Chrome/system pages where screenshot and PDF capture are not meaningful"
+      ],
+      "interfaces": [
+        "Chrome/Chromium MV3 extension popup",
+        "extension/manifest.json permission declaration",
+        "extension/popup.html",
+        "extension/popup.js",
+        "Chrome local extension storage",
+        "Chrome downloads API",
+        "Chrome debugger / DevTools Protocol",
+        "PowerShell scripts for static validation, packaging, and load smoke"
+      ],
+      "produces": [
+        "APTlantis/exports/*.txt",
+        "APTlantis/metadata/*.json",
+        "APTlantis/markdown/*.md",
+        "APTlantis/screenshots/*.png",
+        "APTlantis/pdf/*.pdf",
+        "artifacts/ChromeArchivalPlugin-v0.1.0.zip",
+        "release-evidence/v0.1.0/build.log",
+        "release-evidence/v0.1.0/test.log",
+        "release-evidence/v0.1.0/install-check.txt",
+        "release-evidence/v0.1.0/filehash.txt"
+      ],
+      "consumes": [
+        "active browser tabs selected by the operator",
+        "page DOM, metadata tags, Open Graph fields, and JSON-LD",
+        "vendored Mozilla Readability.js",
+        "vendored Turndown",
+        "Chrome extension APIs: activeTab, scripting, storage, downloads, debugger"
+      ],
+      "dependsOn": [
+        "Chrome/Chromium 90+",
+        "Manifest V3",
+        "JavaScript",
+        "Mozilla Readability.js (vendored)",
+        "Turndown (vendored)",
+        "PowerShell"
+      ],
+      "usedBy": [
+        "manual web archival and ingestion workflows",
+        "operators preparing pages for Aptlantis archive pipelines",
+        "local-first capture workflows that avoid external save-page services"
+      ],
+      "missingPieces": [
+        "Full interactive capture/export smoke remains manual before public distribution.",
+        "The package is an unsigned zip; no signed CRX or Chrome Web Store distribution evidence exists.",
+        "Dependency provenance for vendored Readability and Turndown files still needs to be recorded.",
+        "Only one curated screenshot is present; popup workflow screenshots still need to be captured."
+      ],
+      "nextSteps": [
+        "Repeat interactive capture/export smoke on ordinary HTTP/HTTPS pages before public distribution.",
+        "Decide whether the extension remains local-unpacked only or graduates to CRX signing.",
+        "Record vendored dependency provenance for Readability and Turndown.",
+        "Capture popup screenshots for page list, capture controls, and export state."
+      ],
+      "potentialImprovements": [
+        "Add an optional artifact manifest that records every downloaded file path, page URL, timestamp, and capture action.",
+        "Add a deterministic sample capture fixture for regression checks.",
+        "Expose a compact export summary after each batch capture.",
+        "Add a permission rationale panel in the popup or linked trust note for local users."
+      ],
+      "documentationOutputs": [
+        "README.md",
+        "Project-README.md",
+        "AGENTS.md",
+        "ChromeArchivalPlugin.manifest.toml",
+        "docs/ChromeArchivalPlugin v0.1.0.md",
+        "docs/ChromeArchivalPlugin - Release Checklist.md",
+        "docs/ChromeArchivalPlugin - Trust and Distribution Note.md",
+        "release-evidence/v0.1.0/build.log",
+        "release-evidence/v0.1.0/test.log",
+        "release-evidence/v0.1.0/install-check.txt",
+        "release-evidence/v0.1.0/filehash.txt"
+      ],
+      "tags": [
+        "chrome-extension",
+        "mv3",
+        "javascript",
+        "local-first",
+        "archival",
+        "metadata",
+        "markdown",
+        "screenshots",
+        "pdf",
+        "browser",
+        "downloads",
+        "drs",
+        "release-evidence"
+      ],
+      "repoUrl": "",
+      "cloneCommand": "",
+      "manifestPath": "D:\\DRS\\ChromeArchivalPlugin\\ChromeArchivalPlugin.manifest.toml",
+      "logoSrc": "/svg/apt-node-logo.svg",
+      "screenshots": [
+        {
+          "src": "/projects/chromearchivalplugin/metadata-json.png",
+          "caption": "Example metadata JSON produced by the extension, showing canonical URL, Open Graph fields, Readability output, title, URL, and retrieval timestamp opened for inspection."
+        }
+      ],
+      "video": null,
+      "helpOutput": "Release verification: scripts\\test-extension.ps1 passed static validation; scripts\\package-extension.ps1 produced ChromeArchivalPlugin-v0.1.0.zip; scripts\\install-smoke.ps1 launched Chrome with --load-extension for five seconds. Interactive capture/export smoke remains manual.",
+      "commandWizardSchema": null
+    },
+    {
+      "id": "structra",
+      "name": "Structra",
+      "sourcePath": "D:\\DRS\\Structra",
+      "summary": "Tauri desktop application for visual structured-data building and workflow assembly. It turns field models and workflow steps into exportable JSON, YAML, TOML, XML, JSON Schema, and CI-style workflow shapes.",
+      "ecosystemRole": "Development tool for architecture planning, structured data modeling, and workflow design; the studio version demonstrates the same visual-model-to-machine-output concept in a browser-safe teaching lab.",
+      "status": "active",
+      "lifecycle": "active-core",
+      "governanceGroup": "DRS",
+      "governingStandard": "DRS",
+      "completion": 85,
+      "operationalCompleteness": 90,
+      "productCompleteness": 70,
+      "complexity": "High",
+      "strategicRelevance": "High",
+      "maintenanceBurden": "Medium",
+      "capabilities": [
+        "visual structured data building",
+        "nested field and object modeling",
+        "live export to JSON, YAML, TOML, XML, and JSON Schema",
+        "JSON and JSON Schema import workflows",
+        "workflow dependency modeling",
+        "workflow export to portable YAML, GitHub Actions, and GitLab CI shapes",
+        "template support and project save/load flows",
+        "structured data validation"
+      ],
+      "interfaces": [
+        "React desktop UI packaged through Tauri",
+        "visual field builder and structure canvas",
+        "workflow graph and step inspector",
+        "Tauri Rust backend commands for transform and validation paths",
+        "browser teaching lab at /structra-lab",
+        "workflow smoke script in scripts/workflow-smoke.mjs"
+      ],
+      "produces": [
+        "structured data values in JSON, YAML, TOML, and XML",
+        "JSON Schema-style outputs",
+        "workflow YAML definitions",
+        "GitHub Actions and GitLab CI workflow shapes",
+        "Structra project files",
+        "Tauri desktop application bundles when packaging is run"
+      ],
+      "consumes": [
+        "visual field definitions",
+        "binding paths and example values",
+        "JSON value imports",
+        "JSON Schema imports",
+        "workflow YAML imports",
+        "operator-authored workflow steps and dependencies"
+      ],
+      "dependsOn": [
+        "Node.js",
+        "React 19",
+        "Vite",
+        "Tauri 2",
+        "Rust",
+        "Zustand",
+        "React Flow",
+        "Tailwind CSS v4",
+        "lucide-react"
+      ],
+      "usedBy": [
+        "Aptlantis Studio Structra Lab teaching surface",
+        "Aptlantis structured-data and workflow planning processes"
+      ],
+      "missingPieces": [
+        "Current build, test, packaging, and release posture were not executed during the 2026-07-08 governance metadata pass.",
+        "README still contains stale legacy source-path context and should be reconciled with D:\\DRS\\Structra.",
+        "Release artifact verification is not recorded in the current studio evidence snapshot.",
+        "SESM SVG project mark and workflow diagram assets still need to be created."
+      ],
+      "nextSteps": [
+        "Run and record pnpm build, workflow smoke tests, and relevant Tauri checks from the current D:\\DRS\\Structra source.",
+        "Reconcile README and project docs so paths and release posture match the current checkout.",
+        "Capture current desktop screenshots for the field builder, workflow graph, export panel, and validation states.",
+        "Create SESM-embedded SVG assets for Structra project mark, workflow graph, and visual-model-to-output diagram.",
+        "Decide whether the browser Structra Lab should export SESM metadata for generated diagrams."
+      ],
+      "potentialImprovements": [
+        "Add automated tests for transformation and validation flows.",
+        "Improve packaging and installer automation evidence.",
+        "Expand workflow target adapters only when real operator workflows need them.",
+        "Improve accessibility and responsive behavior in the desktop UI.",
+        "Add advanced usage notes for imports, schemas, and workflow dependencies."
+      ],
+      "documentationOutputs": [
+        "README.md",
+        "Project-README.md",
+        "Structra.manifest.toml",
+        "Structra-AI-EVALUATION.json",
+        "docs/release-notes-v1.0.0.md",
+        "scripts/workflow-smoke.mjs"
+      ],
+      "tags": [
+        "drs",
+        "desktop-application",
+        "tauri",
+        "rust",
+        "react",
+        "typescript",
+        "vite",
+        "schema-driven",
+        "structured-data",
+        "workflow",
+        "visual-builder",
+        "local-first",
+        "json-schema"
+      ],
+      "repoUrl": "",
+      "cloneCommand": "git clone D:\\DRS\\Structra",
+      "manifestPath": "D:\\DRS\\Structra\\Structra.manifest.toml",
+      "logoSrc": "/svg/apt-react-logo.svg",
+      "screenshots": [
+        {
+          "src": "/projects/structra/Structra-Builder.png",
+          "caption": "Structra desktop builder view showing the visual structure authoring surface for fields and workflow assembly."
+        },
+        {
+          "src": "/projects/structra/Structra-StructureView.png",
+          "caption": "Structure view evidence for how Structra exposes the modeled data shape before export."
+        },
+        {
+          "src": "/projects/structra/Structra-FormView.png",
+          "caption": "Form view evidence showing the same structured model rendered as an operator-editable input surface."
+        },
+        {
+          "src": "/projects/structra/Structra-AptlantisSchema.png",
+          "caption": "Aptlantis schema view showing Structra output aligned to reusable schema-oriented project records."
+        }
+      ],
+      "video": null,
+      "helpOutput": "pnpm install\npnpm build\npnpm test:workflow\npnpm tauri build",
+      "commandWizardSchema": null
+    }
+  ]
+}

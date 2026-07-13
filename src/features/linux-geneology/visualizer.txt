@@ -1,0 +1,85 @@
+// DistroDNA3_Visualizer.jsx
+import React from "react";
+import ReactFlow, {
+  Background,
+  Controls,
+  MiniMap,
+  useNodesState,
+  useEdgesState,
+  addEdge
+} from "reactflow";
+import "reactflow/dist/style.css";
+
+const initialNodes = [
+  {
+    id: "1",
+    data: { label: "Linux Kernel (1991)" },
+    position: { x: 0, y: 0 },
+    style: {
+      background: "#6666ff",
+      color: "white",
+      border: "1px solid #333",
+      borderRadius: 8,
+      padding: 10
+    }
+  },
+  {
+    id: "2",
+    data: { label: "Debian (1993)" },
+    position: { x: -150, y: 150 },
+    style: { background: "#cc0000", color: "white" }
+  },
+  {
+    id: "3",
+    data: { label: "Red Hat (1994)" },
+    position: { x: 0, y: 150 },
+    style: { background: "#990000", color: "white" }
+  },
+  {
+    id: "4",
+    data: { label: "Slackware (1993)" },
+    position: { x: 150, y: 150 },
+    style: { background: "#444", color: "white" }
+  },
+  {
+    id: "5",
+    data: { label: "Ubuntu (2004)" },
+    position: { x: -180, y: 300 },
+    style: { background: "#dd4814", color: "white" }
+  },
+  {
+    id: "6",
+    data: { label: "Linux Mint (2006)" },
+    position: { x: -200, y: 450 },
+    style: { background: "#87cf3e", color: "white" }
+  }
+];
+
+const initialEdges = [
+  { id: "e1-2", source: "1", target: "2" },
+  { id: "e1-3", source: "1", target: "3" },
+  { id: "e1-4", source: "1", target: "4" },
+  { id: "e2-5", source: "2", target: "5" },
+  { id: "e5-6", source: "5", target: "6" }
+];
+
+export default function DistroDNA3_Visualizer() {
+  const [nodes, , onNodesChange] = useNodesState(initialNodes);
+  const [edges, , onEdgesChange] = useEdgesState(initialEdges);
+
+  return (
+    <div style={{ width: "100vw", height: "100vh" }}>
+      <ReactFlow
+        nodes={nodes}
+        edges={edges}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
+        fitView
+      >
+        <MiniMap />
+        <Controls />
+        <Background gap={16} color="#222" />
+      </ReactFlow>
+    </div>
+  );
+}

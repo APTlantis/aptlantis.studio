@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.tmp/
+.idea/
+
+server-runtime.log
+tsconfig.tsbuildinfo
+
+services/**/target/
+
+*.local
+.env
+.env.*
+!.env.example

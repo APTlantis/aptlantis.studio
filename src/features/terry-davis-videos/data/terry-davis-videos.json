@@ -1,0 +1,146 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "title": "HolyC Programming: Basic Syntax",
+      "description": "Terry Davis explains the basic syntax of HolyC programming language in TempleOS.",
+      "year": 2013,
+      "duration": "5:23",
+      "url": "https://example.com/videos/holyc-basic-syntax",
+      "thumbnailUrl": "/images/terry-davis/holyc-basic-syntax.jpg",
+      "tags": ["HolyC", "Programming", "TempleOS", "Syntax"]
+    },
+    {
+      "id": "2",
+      "title": "Building a Simple Game in TempleOS",
+      "description": "Watch Terry create a simple game from scratch in TempleOS using HolyC.",
+      "year": 2014,
+      "duration": "7:15",
+      "url": "https://example.com/videos/templeos-simple-game",
+      "thumbnailUrl": "/images/terry-davis/templeos-simple-game.jpg",
+      "tags": ["Game Development", "TempleOS", "HolyC"]
+    },
+    {
+      "id": "3",
+      "title": "TempleOS File System Explained",
+      "description": "Terry explains how the file system works in TempleOS and its unique features.",
+      "year": 2015,
+      "duration": "4:45",
+      "url": "https://example.com/videos/templeos-filesystem",
+      "thumbnailUrl": "/images/terry-davis/templeos-filesystem.jpg",
+      "tags": ["File System", "TempleOS", "Operating Systems"]
+    },
+    {
+      "id": "4",
+      "title": "Creating Graphics in TempleOS",
+      "description": "Learn how to create graphics in TempleOS with Terry's guidance.",
+      "year": 2012,
+      "duration": "6:30",
+      "url": "https://example.com/videos/templeos-graphics",
+      "thumbnailUrl": "/images/terry-davis/templeos-graphics.jpg",
+      "tags": ["Graphics", "TempleOS", "HolyC"]
+    },
+    {
+      "id": "5",
+      "title": "TempleOS Kernel Deep Dive",
+      "description": "Terry explores the internals of the TempleOS kernel and explains its design.",
+      "year": 2016,
+      "duration": "8:12",
+      "url": "https://example.com/videos/templeos-kernel",
+      "thumbnailUrl": "/images/terry-davis/templeos-kernel.jpg",
+      "tags": ["Kernel", "TempleOS", "Operating Systems", "Low-level"]
+    },
+    {
+      "id": "6",
+      "title": "Implementing a Compiler in HolyC",
+      "description": "Terry demonstrates how to implement a simple compiler in HolyC.",
+      "year": 2014,
+      "duration": "9:45",
+      "url": "https://example.com/videos/holyc-compiler",
+      "thumbnailUrl": "/images/terry-davis/holyc-compiler.jpg",
+      "tags": ["Compiler", "HolyC", "Programming", "TempleOS"]
+    },
+    {
+      "id": "7",
+      "title": "TempleOS GUI Programming",
+      "description": "Learn how to create GUI applications in TempleOS with Terry Davis.",
+      "year": 2013,
+      "duration": "5:50",
+      "url": "https://example.com/videos/templeos-gui",
+      "thumbnailUrl": "/images/terry-davis/templeos-gui.jpg",
+      "tags": ["GUI", "TempleOS", "HolyC", "Programming"]
+    },
+    {
+      "id": "8",
+      "title": "Data Structures in HolyC",
+      "description": "Terry explains how to implement common data structures in HolyC.",
+      "year": 2015,
+      "duration": "7:20",
+      "url": "https://example.com/videos/holyc-data-structures",
+      "thumbnailUrl": "/images/terry-davis/holyc-data-structures.jpg",
+      "tags": ["Data Structures", "HolyC", "Programming", "Algorithms"]
+    },
+    {
+      "id": "9",
+      "title": "Building TempleOS from Scratch",
+      "description": "Watch Terry explain the process of building TempleOS from scratch.",
+      "year": 2011,
+      "duration": "10:15",
+      "url": "https://example.com/videos/building-templeos",
+      "thumbnailUrl": "/images/terry-davis/building-templeos.jpg",
+      "tags": ["TempleOS", "Operating Systems", "Development"]
+    },
+    {
+      "id": "10",
+      "title": "Memory Management in TempleOS",
+      "description": "Terry discusses memory management techniques used in TempleOS.",
+      "year": 2017,
+      "duration": "6:40",
+      "url": "https://example.com/videos/templeos-memory",
+      "thumbnailUrl": "/images/terry-davis/templeos-memory.jpg",
+      "tags": ["Memory Management", "TempleOS", "Operating Systems"]
+    },
+    {
+      "id": "11",
+      "title": "Networking Concepts in TempleOS",
+      "description": "Terry explains his approach to networking concepts in TempleOS.",
+      "year": 2016,
+      "duration": "5:35",
+      "url": "https://example.com/videos/templeos-networking",
+      "thumbnailUrl": "/images/terry-davis/templeos-networking.jpg",
+      "tags": ["Networking", "TempleOS", "Operating Systems"]
+    },
+    {
+      "id": "12",
+      "title": "TempleOS - 5-Minute Random Code Walk-Thru #94",
+      "description": "Watch Terry Davis explain random code in TempleOS in this 5-minute code walk-through video.",
+      "year": 2015,
+      "duration": "5:00",
+      "url": "src/features/terry-davis-videos/videos/2012-12-05T08_03_00+00_00 - TempleOS System Guide Part 3 (pbaoo_TMa1w).mp4",
+      "thumbnailUrl": "/images/terry-davis/holyc-text-editor.jpg",
+      "tags": ["Code Walk-Thru", "HolyC", "Programming", "TempleOS"]
+    }
+  ],
+  "tags": [
+    "HolyC",
+    "Programming",
+    "TempleOS",
+    "Syntax",
+    "Game Development",
+    "File System",
+    "Operating Systems",
+    "Graphics",
+    "Kernel",
+    "Low-level",
+    "Compiler",
+    "GUI",
+    "Data Structures",
+    "Algorithms",
+    "Development",
+    "Memory Management",
+    "Networking",
+    "Text Editor",
+    "Code Walk-Thru"
+  ],
+  "years": [2011, 2012, 2013, 2014, 2015, 2016, 2017]
+}

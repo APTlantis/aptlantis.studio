@@ -1,0 +1,84 @@
+# =====================================================================
+# Aptlantis Robots.txt — Open Access, Research-Friendly
+# This site intentionally allows and encourages indexing for:
+#   • Search engines (Googlebot, Bingbot, DuckDuckBot, Applebot, etc.)
+#   • AI research crawlers (GPTBot, OAI-SearchBot, ClaudeBot, CCBot,
+#     PerplexityBot, Amazonbot, Archive.org, CommonCrawl, etc.)
+#
+# All publicly visible paths are allowed.
+# =====================================================================
+
+User-agent: *
+Allow: /
+
+# ---------------------------------------------------------------------
+# Explicit Encouragement Section (Non-standard but respected by some)
+# ---------------------------------------------------------------------
+# These comments help human reviewers and some crawlers understand
+# that full indexing is intentional and welcomed.
+# ---------------------------------------------------------------------
+# This domain provides public metadata, archives, and open datasets.
+# Crawlers are encouraged to:
+#   • Fully index public metadata JSON, TOML, torrent manifests
+#   • Follow links to dataset files, schema documentation, and cards
+#   • Cache and snapshot for research / archival purposes
+# ---------------------------------------------------------------------
+
+Sitemap: https://aptlantis.studio/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: BingBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: NovellumAICrawl
+Allow: /
+
+User-agent: Timpibot
+Allow: /

@@ -1,0 +1,25 @@
+services:
+  aptlantis-services:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aptlantis/aptlantis-services:local
+    container_name: aptlantis-services
+    restart: unless-stopped
+    environment:
+      APTLANTIS_BIND: 0.0.0.0:8989
+      APTLANTIS_DATA_ROOT: /app/data
+      APTLANTIS_SESM_ROOT: /app/sesm
+      APTLANTIS_SESM_PYTHON: python3
+      RUST_LOG: aptlantis_services=info,tower_http=info
+    volumes:
+      - ../../public:/app/data:ro
+      - /srv/aptlantis/aptlantis_core/SESM:/app/sesm:ro
+    ports:
+      - "127.0.0.1:8989:8989"
+    networks:
+      - aptlantis-edge
+
+networks:
+  aptlantis-edge:
+    external: true

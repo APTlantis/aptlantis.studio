@@ -1,0 +1,1127 @@
+{
+  "cargo": {
+    "id": "cargo",
+    "tool": {
+      "name": "cargo",
+      "description": "Rust's package manager",
+      "installedName": "cargo"
+    },
+    "actions": [
+      {
+        "name": "build",
+        "description": "Compile the current package"
+      },
+      {
+        "name": "check",
+        "description": "Analyze the current package and report errors, but don't build object files"
+      },
+      {
+        "name": "clean",
+        "description": "Remove the target directory"
+      },
+      {
+        "name": "doc",
+        "description": "Build this package's and its dependencies' documentation"
+      },
+      {
+        "name": "new",
+        "description": "Create a new cargo package"
+      },
+      {
+        "name": "init",
+        "description": "Create a new cargo package in an existing directory"
+      },
+      {
+        "name": "add",
+        "description": "Add dependencies to a manifest file"
+      },
+      {
+        "name": "remove",
+        "description": "Remove dependencies from a manifest file"
+      },
+      {
+        "name": "run",
+        "description": "Run a binary or example of the local package"
+      },
+      {
+        "name": "test",
+        "description": "Run the tests"
+      },
+      {
+        "name": "bench",
+        "description": "Run the benchmarks"
+      },
+      {
+        "name": "update",
+        "description": "Update dependencies listed in Cargo.lock"
+      },
+      {
+        "name": "search",
+        "description": "Search registry for crates"
+      },
+      {
+        "name": "publish",
+        "description": "Package and upload this package to the registry"
+      },
+      {
+        "name": "install",
+        "description": "Install a Rust binary"
+      },
+      {
+        "name": "uninstall",
+        "description": "Uninstall a Rust binary"
+      }
+    ],
+    "arguments": [
+      {
+        "flag": "V",
+        "description": "Print version info and exit",
+        "type": "boolean",
+        "long": "version"
+      },
+      {
+        "flag": "",
+        "description": "List installed commands",
+        "type": "boolean",
+        "long": "list"
+      },
+      {
+        "flag": "",
+        "description": "Provide a detailed explanation of a rustc error message",
+        "type": "string",
+        "long": "explain"
+      },
+      {
+        "flag": "v",
+        "description": "Use verbose output (-vv very verbose/build.rs output)",
+        "type": "boolean",
+        "long": "verbose"
+      },
+      {
+        "flag": "q",
+        "description": "Do not print cargo log messages",
+        "type": "boolean",
+        "long": "quiet"
+      },
+      {
+        "flag": "",
+        "description": "Coloring [possible values: auto, always, never]",
+        "type": "string",
+        "long": "color"
+      },
+      {
+        "flag": "C",
+        "description": "Change to DIRECTORY before doing anything (nightly-only)",
+        "type": "string"
+      },
+      {
+        "flag": "",
+        "description": "Assert that `Cargo.lock` will remain unchanged",
+        "type": "boolean",
+        "long": "locked"
+      },
+      {
+        "flag": "",
+        "description": "Run without accessing the network",
+        "type": "boolean",
+        "long": "offline"
+      },
+      {
+        "flag": "",
+        "description": "Equivalent to specifying both --locked and --offline",
+        "type": "boolean",
+        "long": "frozen"
+      },
+      {
+        "flag": "",
+        "description": "Override a configuration value",
+        "type": "string",
+        "long": "config"
+      },
+      {
+        "flag": "Z",
+        "description": "Unstable (nightly-only) flags to Cargo",
+        "type": "string"
+      },
+      {
+        "flag": "h",
+        "description": "Print help",
+        "type": "boolean",
+        "long": "help"
+      }
+    ],
+    "tags": [
+      {
+        "name": "package-manager",
+        "color": "#E8175D"
+      },
+      {
+        "name": "rust",
+        "color": "#7A7A7A"
+      }
+    ],
+    "rawToml": "[tool]\r\nname = \"cargo\"\r\ndescription = \"Rust's package manager\"\r\ninstalled_name = \"cargo\"\r\n[[actions]]\r\nname = \"build\"\r\ndescription = \"Compile the current package\"\r\n[[actions]]\r\nname = \"check\"\r\ndescription = \"Analyze the current package and report errors, but don't build object files\"\r\n[[actions]]\r\nname = \"clean\"\r\ndescription = \"Remove the target directory\"\r\n[[actions]]\r\nname = \"doc\"\r\ndescription = \"Build this package's and its dependencies' documentation\"\r\n[[actions]]\r\nname = \"new\"\r\ndescription = \"Create a new cargo package\"\r\n[[actions]]\r\nname = \"init\"\r\ndescription = \"Create a new cargo package in an existing directory\"\r\n[[actions]]\r\nname = \"add\"\r\ndescription = \"Add dependencies to a manifest file\"\r\n[[actions]]\r\nname = \"remove\"\r\ndescription = \"Remove dependencies from a manifest file\"\r\n[[actions]]\r\nname = \"run\"\r\ndescription = \"Run a binary or example of the local package\"\r\n[[actions]]\r\nname = \"test\"\r\ndescription = \"Run the tests\"\r\n[[actions]]\r\nname = \"bench\"\r\ndescription = \"Run the benchmarks\"\r\n[[actions]]\r\nname = \"update\"\r\ndescription = \"Update dependencies listed in Cargo.lock\"\r\n[[actions]]\r\nname = \"search\"\r\ndescription = \"Search registry for crates\"\r\n[[actions]]\r\nname = \"publish\"\r\ndescription = \"Package and upload this package to the registry\"\r\n[[actions]]\r\nname = \"install\"\r\ndescription = \"Install a Rust binary\"\r\n[[actions]]\r\nname = \"uninstall\"\r\ndescription = \"Uninstall a Rust binary\"\r\n[[arguments]]\r\nflag = \"V\"\r\ndescription = \"Print version info and exit\"\r\ntype = \"boolean\"\r\nlong = \"version\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"List installed commands\"\r\ntype = \"boolean\"\r\nlong = \"list\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Provide a detailed explanation of a rustc error message\"\r\ntype = \"string\"\r\nlong = \"explain\"\r\n[[arguments]]\r\nflag = \"v\"\r\ndescription = \"Use verbose output (-vv very verbose/build.rs output)\"\r\ntype = \"boolean\"\r\nlong = \"verbose\"\r\n[[arguments]]\r\nflag = \"q\"\r\ndescription = \"Do not print cargo log messages\"\r\ntype = \"boolean\"\r\nlong = \"quiet\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Coloring [possible values: auto, always, never]\"\r\ntype = \"string\"\r\nlong = \"color\"\r\n[[arguments]]\r\nflag = \"C\"\r\ndescription = \"Change to DIRECTORY before doing anything (nightly-only)\"\r\ntype = \"string\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Assert that `Cargo.lock` will remain unchanged\"\r\ntype = \"boolean\"\r\nlong = \"locked\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Run without accessing the network\"\r\ntype = \"boolean\"\r\nlong = \"offline\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Equivalent to specifying both --locked and --offline\"\r\ntype = \"boolean\"\r\nlong = \"frozen\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Override a configuration value\"\r\ntype = \"string\"\r\nlong = \"config\"\r\n[[arguments]]\r\nflag = \"Z\"\r\ndescription = \"Unstable (nightly-only) flags to Cargo\"\r\ntype = \"string\"\r\n[[arguments]]\r\nflag = \"h\"\r\ndescription = \"Print help\"\r\ntype = \"boolean\"\r\nlong = \"help\"\r\n[[tags]]\r\nname = \"package-manager\"\r\ncolor = \"#E8175D\"\r\n[[tags]]\r\nname = \"rust\"\r\ncolor = \"#7A7A7A\"\r\n"
+  },
+  "dotnet": {
+    "id": "dotnet",
+    "tool": {
+      "name": "dotnet",
+      "description": "Execute a .NET application or SDK command.",
+      "installedName": "dotnet",
+      "notes": "Can be used as both a runtime executor for .dll files and as an SDK command-line tool."
+    },
+    "actions": [
+      {
+        "name": "build",
+        "description": "Build a .NET project."
+      },
+      {
+        "name": "clean",
+        "description": "Clean build outputs of a .NET project."
+      },
+      {
+        "name": "format",
+        "description": "Apply style preferences to a project or solution."
+      },
+      {
+        "name": "help",
+        "description": "Opens the reference page in a browser for the specified command."
+      },
+      {
+        "name": "msbuild",
+        "description": "Run Microsoft Build Engine (MSBuild) commands."
+      },
+      {
+        "name": "new",
+        "description": "Create a new .NET project or file."
+      },
+      {
+        "name": "nuget",
+        "description": "Provides additional NuGet commands."
+      },
+      {
+        "name": "pack",
+        "description": "Create a NuGet package."
+      },
+      {
+        "name": "package",
+        "description": "Search for, add, remove, or list PackageReferences for a .NET project."
+      },
+      {
+        "name": "publish",
+        "description": "Publish a .NET project for deployment."
+      },
+      {
+        "name": "restore",
+        "description": "Restore dependencies specified in a .NET project."
+      },
+      {
+        "name": "run",
+        "description": "Build and run a .NET project output."
+      },
+      {
+        "name": "sdk",
+        "description": "Manage .NET SDK installation."
+      },
+      {
+        "name": "test",
+        "description": "Run unit tests using the test runner specified in a .NET project."
+      },
+      {
+        "name": "tool",
+        "description": "Install or manage tools that extend the .NET experience."
+      },
+      {
+        "name": "watch",
+        "description": "Start a file watcher that runs a command when files change."
+      }
+    ],
+    "arguments": [
+      {
+        "flag": "d",
+        "description": "Enable diagnostic output.",
+        "type": "boolean",
+        "long": "diagnostics"
+      },
+      {
+        "flag": "h",
+        "description": "Show command line help.",
+        "type": "boolean",
+        "long": "help"
+      },
+      {
+        "flag": "",
+        "description": "Display .NET information.",
+        "type": "boolean",
+        "long": "info"
+      },
+      {
+        "flag": "",
+        "description": "Display the installed runtimes.",
+        "type": "boolean",
+        "long": "list-runtimes"
+      },
+      {
+        "flag": "",
+        "description": "Display the installed SDKs.",
+        "type": "boolean",
+        "long": "list-sdks"
+      },
+      {
+        "flag": "",
+        "description": "Display .NET SDK version in use.",
+        "type": "boolean",
+        "long": "version"
+      },
+      {
+        "flag": "",
+        "description": "Path containing probing policy and assemblies to probe for.",
+        "type": "string",
+        "long": "additionalprobingpath"
+      },
+      {
+        "flag": "",
+        "description": "Path to additional deps.json file.",
+        "type": "string",
+        "long": "additional-deps"
+      },
+      {
+        "flag": "",
+        "description": "Path to <application>.deps.json file.",
+        "type": "string",
+        "long": "depsfile"
+      },
+      {
+        "flag": "",
+        "description": "Version of the installed Shared Framework to use to run the application.",
+        "type": "string",
+        "long": "fx-version"
+      },
+      {
+        "flag": "",
+        "description": "Roll forward to framework version (LatestPatch, Minor, LatestMinor, Major, LatestMajor, Disable).",
+        "type": "string",
+        "long": "roll-forward"
+      },
+      {
+        "flag": "",
+        "description": "Path to <application>.runtimeconfig.json file.",
+        "type": "string",
+        "long": "runtimeconfig",
+        "name": "path-to-application",
+        "required": "false"
+      }
+    ],
+    "tags": [
+      {
+        "name": "dotnet",
+        "color": "#512BD4"
+      },
+      {
+        "name": "sdk",
+        "color": "#7A7A7A"
+      },
+      {
+        "name": "runtime",
+        "color": "#7A7A7A"
+      }
+    ],
+    "rawToml": "[tool]\r\nname = \"dotnet\"\r\ndescription = \"Execute a .NET application or SDK command.\"\r\nnotes = \"Can be used as both a runtime executor for .dll files and as an SDK command-line tool.\"\r\ninstalled_name = \"dotnet\"\r\n[[actions]]\r\nname = \"build\"\r\ndescription = \"Build a .NET project.\"\r\n[[actions]]\r\nname = \"clean\"\r\ndescription = \"Clean build outputs of a .NET project.\"\r\n[[actions]]\r\nname = \"format\"\r\ndescription = \"Apply style preferences to a project or solution.\"\r\n[[actions]]\r\nname = \"help\"\r\ndescription = \"Opens the reference page in a browser for the specified command.\"\r\n[[actions]]\r\nname = \"msbuild\"\r\ndescription = \"Run Microsoft Build Engine (MSBuild) commands.\"\r\n[[actions]]\r\nname = \"new\"\r\ndescription = \"Create a new .NET project or file.\"\r\n[[actions]]\r\nname = \"nuget\"\r\ndescription = \"Provides additional NuGet commands.\"\r\n[[actions]]\r\nname = \"pack\"\r\ndescription = \"Create a NuGet package.\"\r\n[[actions]]\r\nname = \"package\"\r\ndescription = \"Search for, add, remove, or list PackageReferences for a .NET project.\"\r\n[[actions]]\r\nname = \"publish\"\r\ndescription = \"Publish a .NET project for deployment.\"\r\n[[actions]]\r\nname = \"restore\"\r\ndescription = \"Restore dependencies specified in a .NET project.\"\r\n[[actions]]\r\nname = \"run\"\r\ndescription = \"Build and run a .NET project output.\"\r\n[[actions]]\r\nname = \"sdk\"\r\ndescription = \"Manage .NET SDK installation.\"\r\n[[actions]]\r\nname = \"test\"\r\ndescription = \"Run unit tests using the test runner specified in a .NET project.\"\r\n[[actions]]\r\nname = \"tool\"\r\ndescription = \"Install or manage tools that extend the .NET experience.\"\r\n[[actions]]\r\nname = \"watch\"\r\ndescription = \"Start a file watcher that runs a command when files change.\"\r\n[[arguments]]\r\nflag = \"d\"\r\ndescription = \"Enable diagnostic output.\"\r\ntype = \"boolean\"\r\nlong = \"diagnostics\"\r\n[[arguments]]\r\nflag = \"h\"\r\ndescription = \"Show command line help.\"\r\ntype = \"boolean\"\r\nlong = \"help\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Display .NET information.\"\r\ntype = \"boolean\"\r\nlong = \"info\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Display the installed runtimes.\"\r\ntype = \"boolean\"\r\nlong = \"list-runtimes\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Display the installed SDKs.\"\r\ntype = \"boolean\"\r\nlong = \"list-sdks\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Display .NET SDK version in use.\"\r\ntype = \"boolean\"\r\nlong = \"version\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Path containing probing policy and assemblies to probe for.\"\r\ntype = \"string\"\r\nlong = \"additionalprobingpath\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Path to additional deps.json file.\"\r\ntype = \"string\"\r\nlong = \"additional-deps\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Path to <application>.deps.json file.\"\r\ntype = \"string\"\r\nlong = \"depsfile\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Version of the installed Shared Framework to use to run the application.\"\r\ntype = \"string\"\r\nlong = \"fx-version\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Roll forward to framework version (LatestPatch, Minor, LatestMinor, Major, LatestMajor, Disable).\"\r\ntype = \"string\"\r\nlong = \"roll-forward\"\r\n[[arguments]]\r\nflag = \"\"\r\ndescription = \"Path to <application>.runtimeconfig.json file.\"\r\ntype = \"string\"\r\nlong = \"runtimeconfig\"\r\n[[parameters]]\r\nname = \"path-to-application\"\r\ntype = \"string\"\r\nrequired = false\r\n[[tags]]\r\nname = \"dotnet\"\r\ncolor = \"#512BD4\"\r\n[[tags]]\r\nname = \"sdk\"\r\ncolor = \"#7A7A7A\"\r\n[[tags]]\r\nname = \"runtime\"\r\ncolor = \"#7A7A7A\"\r\n"
+  },
+  "git": {
+    "id": "git",
+    "tool": {
+      "name": "gpg",
+      "description": "Sign, check, encrypt or decrypt data",
+      "installedName": "gpg",
+      "notes": "Default operation depends on the input data",
+      "executablePath": ""
+    },
+    "actions": [
+      {
+        "name": "sign",
+        "description": "make a signature",
+        "flag": "s",
+        "long": "sign",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "name": "encrypt",
+        "description": "encrypt data",
+        "flag": "e",
+        "long": "encrypt",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "name": "decrypt",
+        "description": "decrypt data",
+        "flag": "d",
+        "long": "decrypt",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "name": "list-keys",
+        "description": "list keys",
+        "flag": "k",
+        "long": "list-keys",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "name": "generate-key",
+        "description": "generate a new key pair",
+        "flag": "",
+        "long": "generate-key",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "name": "import",
+        "description": "import/merge keys",
+        "flag": "",
+        "long": "import",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "name": "files",
+        "description": "export keys",
+        "flag": "",
+        "long": "export",
+        "type": "string",
+        "valueStyle": "none",
+        "required": "false"
+      }
+    ],
+    "arguments": [
+      {
+        "flag": "v",
+        "long": "verbose",
+        "description": "verbose",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "q",
+        "long": "quiet",
+        "description": "be somewhat more quiet",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "a",
+        "long": "armor",
+        "description": "create ascii armored output",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "o",
+        "long": "output",
+        "description": "write output to FILE",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "r",
+        "long": "recipient",
+        "description": "encrypt for USER-ID",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "u",
+        "long": "local-user",
+        "description": "use USER-ID to sign or decrypt",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "z",
+        "long": "",
+        "description": "set compress level to N (0 disables)",
+        "type": "integer",
+        "valueStyle": "space"
+      }
+    ],
+    "tags": [
+      {
+        "name": "encryption",
+        "color": "#7A7A7A"
+      },
+      {
+        "name": "security",
+        "color": "#7A7A7A"
+      },
+      {
+        "name": "cryptography",
+        "color": "#7A7A7A"
+      }
+    ],
+    "rawToml": "[tool]\r\nname = \"gpg\"\r\ndescription = \"Sign, check, encrypt or decrypt data\"\r\nnotes = \"Default operation depends on the input data\"\r\nexecutable_path = \"\"\r\ninstalled_name = \"gpg\"\r\n\r\n[[actions]]\r\nname = \"sign\"\r\ndescription = \"make a signature\"\r\n\r\n  [[actions.arguments]]\r\n  flag = \"s\"\r\n  long = \"sign\"\r\n  description = \"make a signature\"\r\n  type = \"boolean\"\r\n  value_style = \"none\"\r\n\r\n[[actions]]\r\nname = \"encrypt\"\r\ndescription = \"encrypt data\"\r\n\r\n  [[actions.arguments]]\r\n  flag = \"e\"\r\n  long = \"encrypt\"\r\n  description = \"encrypt data\"\r\n  type = \"boolean\"\r\n  value_style = \"none\"\r\n\r\n[[actions]]\r\nname = \"decrypt\"\r\ndescription = \"decrypt data (default)\"\r\n\r\n  [[actions.arguments]]\r\n  flag = \"d\"\r\n  long = \"decrypt\"\r\n  description = \"decrypt data\"\r\n  type = \"boolean\"\r\n  value_style = \"none\"\r\n\r\n[[actions]]\r\nname = \"list-keys\"\r\ndescription = \"list keys\"\r\n\r\n  [[actions.arguments]]\r\n  flag = \"k\"\r\n  long = \"list-keys\"\r\n  description = \"list keys\"\r\n  type = \"boolean\"\r\n  value_style = \"none\"\r\n\r\n[[actions]]\r\nname = \"generate-key\"\r\ndescription = \"generate a new key pair\"\r\n\r\n  [[actions.arguments]]\r\n  flag = \"\"\r\n  long = \"generate-key\"\r\n  description = \"generate a new key pair\"\r\n  type = \"boolean\"\r\n  value_style = \"none\"\r\n\r\n[[actions]]\r\nname = \"import\"\r\ndescription = \"import/merge keys\"\r\n\r\n  [[actions.arguments]]\r\n  flag = \"\"\r\n  long = \"import\"\r\n  description = \"import/merge keys\"\r\n  type = \"boolean\"\r\n  value_style = \"none\"\r\n\r\n[[actions]]\r\nname = \"export\"\r\ndescription = \"export keys\"\r\n\r\n  [[actions.arguments]]\r\n  flag = \"\"\r\n  long = \"export\"\r\n  description = \"export keys\"\r\n  type = \"boolean\"\r\n  value_style = \"none\"\r\n\r\n[[actions.parameters]]\r\nname = \"files\"\r\ntype = \"string\"\r\nrequired = false\r\n\r\n[[arguments]]\r\nflag = \"v\"\r\nlong = \"verbose\"\r\ndescription = \"verbose\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"q\"\r\nlong = \"quiet\"\r\ndescription = \"be somewhat more quiet\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"a\"\r\nlong = \"armor\"\r\ndescription = \"create ascii armored output\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"o\"\r\nlong = \"output\"\r\ndescription = \"write output to FILE\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"r\"\r\nlong = \"recipient\"\r\ndescription = \"encrypt for USER-ID\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"u\"\r\nlong = \"local-user\"\r\ndescription = \"use USER-ID to sign or decrypt\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"z\"\r\nlong = \"\"\r\ndescription = \"set compress level to N (0 disables)\"\r\ntype = \"integer\"\r\nvalue_style = \"space\"\r\n\r\n[[tags]]\r\nname = \"encryption\"\r\ncolor = \"#7A7A7A\"\r\n\r\n[[tags]]\r\nname = \"security\"\r\ncolor = \"#7A7A7A\"\r\n\r\n[[tags]]\r\nname = \"cryptography\"\r\ncolor = \"#7A7A7A\""
+  },
+  "pnpm": {
+    "id": "pnpm",
+    "tool": {
+      "name": "pnpm",
+      "description": "Performant, disk space efficient package manager",
+      "installedName": "pnpm",
+      "notes": "Use 'pnpm help -a' to list all commands"
+    },
+    "actions": [
+      {
+        "name": "add",
+        "description": "Installs a package and any packages that it depends on"
+      },
+      {
+        "name": "install",
+        "description": "Install all dependencies for a project"
+      },
+      {
+        "name": "link",
+        "description": "Connect the local project to another one"
+      },
+      {
+        "name": "remove",
+        "description": "Removes packages from node_modules and from the project's package.json"
+      },
+      {
+        "name": "unlink",
+        "description": "Unlinks a package and re-installs the dependency"
+      },
+      {
+        "name": "update",
+        "description": "Updates packages to their latest version based on the specified range"
+      },
+      {
+        "name": "audit",
+        "description": "Checks for known security issues with the installed packages"
+      },
+      {
+        "name": "list",
+        "description": "Print all the versions of packages that are installed in a tree-structure"
+      },
+      {
+        "name": "outdated",
+        "description": "Check for outdated packages"
+      },
+      {
+        "name": "why",
+        "description": "Shows all packages that depend on the specified package"
+      },
+      {
+        "name": "create",
+        "description": "Create a project from a starter kit"
+      },
+      {
+        "name": "dlx",
+        "description": "Fetches a package from the registry and runs its default command binary"
+      },
+      {
+        "name": "exec",
+        "description": "Executes a shell command in scope of a project"
+      },
+      {
+        "name": "run",
+        "description": "Runs a defined package script"
+      },
+      {
+        "name": "config",
+        "description": "Manage the pnpm configuration files"
+      },
+      {
+        "name": "init",
+        "description": "Create a package.json file"
+      },
+      {
+        "name": "publish",
+        "description": "Publishes a package to the registry"
+      },
+      {
+        "name": "self-update",
+        "description": "Updates pnpm to the latest version"
+      }
+    ],
+    "arguments": [
+      {
+        "flag": "r",
+        "description": "Run the command for each project in the workspace",
+        "type": "boolean",
+        "long": "recursive"
+      }
+    ],
+    "tags": [
+      {
+        "name": "package-manager",
+        "color": "#E8175D"
+      },
+      {
+        "name": "nodejs",
+        "color": "#7A7A7A"
+      }
+    ],
+    "rawToml": "[tool]\r\nname = \"pnpm\"\r\ndescription = \"Performant, disk space efficient package manager\"\r\nnotes = \"Use 'pnpm help -a' to list all commands\"\r\ninstalled_name = \"pnpm\"\r\n[[actions]]\r\nname = \"add\"\r\ndescription = \"Installs a package and any packages that it depends on\"\r\n[[actions]]\r\nname = \"install\"\r\ndescription = \"Install all dependencies for a project\"\r\n[[actions]]\r\nname = \"link\"\r\ndescription = \"Connect the local project to another one\"\r\n[[actions]]\r\nname = \"remove\"\r\ndescription = \"Removes packages from node_modules and from the project's package.json\"\r\n[[actions]]\r\nname = \"unlink\"\r\ndescription = \"Unlinks a package and re-installs the dependency\"\r\n[[actions]]\r\nname = \"update\"\r\ndescription = \"Updates packages to their latest version based on the specified range\"\r\n[[actions]]\r\nname = \"audit\"\r\ndescription = \"Checks for known security issues with the installed packages\"\r\n[[actions]]\r\nname = \"list\"\r\ndescription = \"Print all the versions of packages that are installed in a tree-structure\"\r\n[[actions]]\r\nname = \"outdated\"\r\ndescription = \"Check for outdated packages\"\r\n[[actions]]\r\nname = \"why\"\r\ndescription = \"Shows all packages that depend on the specified package\"\r\n[[actions]]\r\nname = \"create\"\r\ndescription = \"Create a project from a starter kit\"\r\n[[actions]]\r\nname = \"dlx\"\r\ndescription = \"Fetches a package from the registry and runs its default command binary\"\r\n[[actions]]\r\nname = \"exec\"\r\ndescription = \"Executes a shell command in scope of a project\"\r\n[[actions]]\r\nname = \"run\"\r\ndescription = \"Runs a defined package script\"\r\n[[actions]]\r\nname = \"config\"\r\ndescription = \"Manage the pnpm configuration files\"\r\n[[actions]]\r\nname = \"init\"\r\ndescription = \"Create a package.json file\"\r\n[[actions]]\r\nname = \"publish\"\r\ndescription = \"Publishes a package to the registry\"\r\n[[actions]]\r\nname = \"self-update\"\r\ndescription = \"Updates pnpm to the latest version\"\r\n[[arguments]]\r\nflag = \"r\"\r\ndescription = \"Run the command for each project in the workspace\"\r\ntype = \"boolean\"\r\nlong = \"recursive\"\r\n[[tags]]\r\nname = \"package-manager\"\r\ncolor = \"#E8175D\"\r\n[[tags]]\r\nname = \"nodejs\"\r\ncolor = \"#7A7A7A\"\r\n"
+  },
+  "python": {
+    "id": "python",
+    "tool": {
+      "name": "python",
+      "description": "The Python interpreter",
+      "installedName": "python",
+      "notes": "",
+      "executablePath": ""
+    },
+    "actions": [],
+    "arguments": [
+      {
+        "flag": "b",
+        "long": "",
+        "description": "issue warnings about converting bytes/bytearray to str",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "B",
+        "long": "",
+        "description": "don't write .pyc files on import",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "c",
+        "long": "",
+        "description": "program passed in as string",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "d",
+        "long": "",
+        "description": "turn on parser debugging output",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "E",
+        "long": "",
+        "description": "ignore PYTHON* environment variables",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "h",
+        "long": "help",
+        "description": "print this help message and exit",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "i",
+        "long": "",
+        "description": "inspect interactively after running script",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "I",
+        "long": "",
+        "description": "isolate Python from the user's environment",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "m",
+        "long": "",
+        "description": "run library module as a script",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "O",
+        "long": "",
+        "description": "remove assert and __debug__-dependent statements",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "OO",
+        "long": "",
+        "description": "do -O changes and also discard docstrings",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "P",
+        "long": "",
+        "description": "don't prepend a potentially unsafe path to sys.path",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "q",
+        "long": "",
+        "description": "don't print version and copyright messages on interactive startup",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "s",
+        "long": "",
+        "description": "don't add user site directory to sys.path",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "S",
+        "long": "",
+        "description": "don't imply 'import site' on initialization",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "u",
+        "long": "",
+        "description": "force the stdout and stderr streams to be unbuffered",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "v",
+        "long": "",
+        "description": "verbose (trace import statements)",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "V",
+        "long": "version",
+        "description": "print the Python version number and exit",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "W",
+        "long": "",
+        "description": "warning control; arg is action:message:category:module:lineno",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "x",
+        "long": "",
+        "description": "skip first line of source",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "X",
+        "long": "",
+        "description": "set implementation-specific option",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "",
+        "long": "check-hash-based-pycs",
+        "description": "control how Python invalidates hash-based .pyc files",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "",
+        "long": "help-env",
+        "description": "print help about Python environment variables and exit",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "",
+        "long": "help-xoptions",
+        "description": "print help about implementation-specific -X options and exit",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "",
+        "long": "help-all",
+        "description": "print complete help information and exit",
+        "type": "string",
+        "valueStyle": "none",
+        "name": "arg",
+        "required": "false"
+      }
+    ],
+    "tags": [
+      {
+        "name": "programming-language",
+        "color": "#7A7A7A"
+      },
+      {
+        "name": "interpreter",
+        "color": "#7A7A7A"
+      }
+    ],
+    "rawToml": "[tool]\r\nname = \"python\"\r\ndescription = \"The Python interpreter\"\r\nnotes = \"\"\r\nexecutable_path = \"\"\r\ninstalled_name = \"python\"\r\n\r\n[[arguments]]\r\nflag = \"b\"\r\nlong = \"\"\r\ndescription = \"issue warnings about converting bytes/bytearray to str\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"B\"\r\nlong = \"\"\r\ndescription = \"don't write .pyc files on import\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"c\"\r\nlong = \"\"\r\ndescription = \"program passed in as string\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"d\"\r\nlong = \"\"\r\ndescription = \"turn on parser debugging output\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"E\"\r\nlong = \"\"\r\ndescription = \"ignore PYTHON* environment variables\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"h\"\r\nlong = \"help\"\r\ndescription = \"print this help message and exit\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"i\"\r\nlong = \"\"\r\ndescription = \"inspect interactively after running script\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"I\"\r\nlong = \"\"\r\ndescription = \"isolate Python from the user's environment\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"m\"\r\nlong = \"\"\r\ndescription = \"run library module as a script\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"O\"\r\nlong = \"\"\r\ndescription = \"remove assert and __debug__-dependent statements\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"OO\"\r\nlong = \"\"\r\ndescription = \"do -O changes and also discard docstrings\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"P\"\r\nlong = \"\"\r\ndescription = \"don't prepend a potentially unsafe path to sys.path\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"q\"\r\nlong = \"\"\r\ndescription = \"don't print version and copyright messages on interactive startup\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"s\"\r\nlong = \"\"\r\ndescription = \"don't add user site directory to sys.path\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"S\"\r\nlong = \"\"\r\ndescription = \"don't imply 'import site' on initialization\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"u\"\r\nlong = \"\"\r\ndescription = \"force the stdout and stderr streams to be unbuffered\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"v\"\r\nlong = \"\"\r\ndescription = \"verbose (trace import statements)\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"V\"\r\nlong = \"version\"\r\ndescription = \"print the Python version number and exit\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"W\"\r\nlong = \"\"\r\ndescription = \"warning control; arg is action:message:category:module:lineno\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"x\"\r\nlong = \"\"\r\ndescription = \"skip first line of source\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"X\"\r\nlong = \"\"\r\ndescription = \"set implementation-specific option\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"\"\r\nlong = \"check-hash-based-pycs\"\r\ndescription = \"control how Python invalidates hash-based .pyc files\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"\"\r\nlong = \"help-env\"\r\ndescription = \"print help about Python environment variables and exit\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"\"\r\nlong = \"help-xoptions\"\r\ndescription = \"print help about implementation-specific -X options and exit\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"\"\r\nlong = \"help-all\"\r\ndescription = \"print complete help information and exit\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[parameters]]\r\nname = \"file\"\r\ntype = \"string\"\r\nrequired = false\r\n\r\n[[parameters]]\r\nname = \"arg\"\r\ntype = \"string\"\r\nrequired = false\r\n\r\n[[tags]]\r\nname = \"programming-language\"\r\ncolor = \"#7A7A7A\"\r\n\r\n[[tags]]\r\nname = \"interpreter\"\r\ncolor = \"#7A7A7A\""
+  },
+  "node": {
+    "id": "node",
+    "tool": {
+      "name": "node",
+      "description": "JavaScript runtime built on Chrome's V8 engine",
+      "installedName": "node",
+      "notes": "",
+      "executablePath": ""
+    },
+    "actions": [
+      {
+        "name": "script",
+        "description": "Activate the inspector for debugging",
+        "type": "string",
+        "required": "false"
+      }
+    ],
+    "arguments": [
+      {
+        "flag": "c",
+        "long": "check",
+        "description": "syntax check script without executing",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "e",
+        "long": "eval",
+        "description": "evaluate script",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "i",
+        "long": "interactive",
+        "description": "always enter the REPL even if stdin does not appear to be a terminal",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "p",
+        "long": "print",
+        "description": "evaluate script and print result",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "r",
+        "long": "require",
+        "description": "CommonJS module to preload",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "v",
+        "long": "version",
+        "description": "print Node.js version",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "h",
+        "long": "help",
+        "description": "print node command line options",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "",
+        "long": "watch",
+        "description": "run in watch mode",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "",
+        "long": "test",
+        "description": "launch test runner on startup",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "",
+        "long": "import",
+        "description": "ES module to preload",
+        "type": "string",
+        "valueStyle": "space",
+        "name": "script.js",
+        "required": "false"
+      }
+    ],
+    "tags": [
+      {
+        "name": "runtime",
+        "color": "#7A7A7A"
+      },
+      {
+        "name": "javascript",
+        "color": "#7A7A7A"
+      }
+    ],
+    "rawToml": "[tool]\r\nname = \"node\"\r\ndescription = \"JavaScript runtime built on Chrome's V8 engine\"\r\nnotes = \"\"\r\nexecutable_path = \"\"\r\ninstalled_name = \"node\"\r\n\r\n[[actions]]\r\nname = \"inspect\"\r\ndescription = \"Activate the inspector for debugging\"\r\n\r\n  [[actions.parameters]]\r\n  name = \"script\"\r\n  type = \"string\"\r\n  required = false\r\n\r\n[[arguments]]\r\nflag = \"c\"\r\nlong = \"check\"\r\ndescription = \"syntax check script without executing\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"e\"\r\nlong = \"eval\"\r\ndescription = \"evaluate script\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"i\"\r\nlong = \"interactive\"\r\ndescription = \"always enter the REPL even if stdin does not appear to be a terminal\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"p\"\r\nlong = \"print\"\r\ndescription = \"evaluate script and print result\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"r\"\r\nlong = \"require\"\r\ndescription = \"CommonJS module to preload\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"v\"\r\nlong = \"version\"\r\ndescription = \"print Node.js version\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"h\"\r\nlong = \"help\"\r\ndescription = \"print node command line options\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"\"\r\nlong = \"watch\"\r\ndescription = \"run in watch mode\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"\"\r\nlong = \"test\"\r\ndescription = \"launch test runner on startup\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"\"\r\nlong = \"import\"\r\ndescription = \"ES module to preload\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[parameters]]\r\nname = \"script.js\"\r\ntype = \"string\"\r\nrequired = false\r\n\r\n[[tags]]\r\nname = \"runtime\"\r\ncolor = \"#7A7A7A\"\r\n\r\n[[tags]]\r\nname = \"javascript\"\r\ncolor = \"#7A7A7A\""
+  },
+  "docker": {
+    "id": "docker",
+    "tool": {
+      "name": "docker",
+      "description": "A self-sufficient runtime for containers",
+      "installedName": "docker",
+      "notes": "",
+      "executablePath": ""
+    },
+    "actions": [
+      {
+        "name": "run",
+        "description": "Create and run a new container from an image"
+      },
+      {
+        "name": "exec",
+        "description": "Execute a command in a running container"
+      },
+      {
+        "name": "ps",
+        "description": "List containers"
+      },
+      {
+        "name": "build",
+        "description": "Build an image from a Dockerfile"
+      },
+      {
+        "name": "pull",
+        "description": "Download an image from a registry"
+      },
+      {
+        "name": "push",
+        "description": "Upload an image to a registry"
+      },
+      {
+        "name": "images",
+        "description": "List images"
+      },
+      {
+        "name": "login",
+        "description": "Authenticate to a registry"
+      },
+      {
+        "name": "logout",
+        "description": "Log out from a registry"
+      },
+      {
+        "name": "search",
+        "description": "Search Docker Hub for images"
+      },
+      {
+        "name": "version",
+        "description": "Show the Docker version information"
+      },
+      {
+        "name": "info",
+        "description": "Display system-wide information"
+      },
+      {
+        "name": "container",
+        "description": "Manage containers"
+      },
+      {
+        "name": "image",
+        "description": "Manage images"
+      },
+      {
+        "name": "network",
+        "description": "Manage networks"
+      },
+      {
+        "name": "volume",
+        "description": "Manage volumes"
+      },
+      {
+        "name": "compose",
+        "description": "Docker Compose"
+      },
+      {
+        "name": "system",
+        "description": "Manage Docker"
+      },
+      {
+        "name": "swarm",
+        "description": "Manage Swarm"
+      },
+      {
+        "name": "inspect",
+        "description": "Return low-level information on Docker objects"
+      }
+    ],
+    "arguments": [
+      {
+        "flag": "",
+        "long": "config",
+        "description": "Location of client config files",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "c",
+        "long": "context",
+        "description": "Name of the context to use to connect to the daemon",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "D",
+        "long": "debug",
+        "description": "Enable debug mode",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "H",
+        "long": "host",
+        "description": "Daemon socket to connect to",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "l",
+        "long": "log-level",
+        "description": "Set the logging level",
+        "type": "string",
+        "valueStyle": "space"
+      },
+      {
+        "flag": "",
+        "long": "tls",
+        "description": "Use TLS; implied by --tlsverify",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "",
+        "long": "tlsverify",
+        "description": "Use TLS and verify the remote",
+        "type": "boolean",
+        "valueStyle": "none"
+      },
+      {
+        "flag": "v",
+        "long": "version",
+        "description": "Print version information and quit",
+        "type": "boolean",
+        "valueStyle": "none"
+      }
+    ],
+    "tags": [
+      {
+        "name": "containers",
+        "color": "#7A7A7A"
+      },
+      {
+        "name": "virtualization",
+        "color": "#7A7A7A"
+      },
+      {
+        "name": "devops",
+        "color": "#7A7A7A"
+      }
+    ],
+    "rawToml": "[tool]\r\nname = \"docker\"\r\ndescription = \"A self-sufficient runtime for containers\"\r\nnotes = \"\"\r\nexecutable_path = \"\"\r\ninstalled_name = \"docker\"\r\n\r\n[[actions]]\r\nname = \"run\"\r\ndescription = \"Create and run a new container from an image\"\r\n\r\n[[actions]]\r\nname = \"exec\"\r\ndescription = \"Execute a command in a running container\"\r\n\r\n[[actions]]\r\nname = \"ps\"\r\ndescription = \"List containers\"\r\n\r\n[[actions]]\r\nname = \"build\"\r\ndescription = \"Build an image from a Dockerfile\"\r\n\r\n[[actions]]\r\nname = \"pull\"\r\ndescription = \"Download an image from a registry\"\r\n\r\n[[actions]]\r\nname = \"push\"\r\ndescription = \"Upload an image to a registry\"\r\n\r\n[[actions]]\r\nname = \"images\"\r\ndescription = \"List images\"\r\n\r\n[[actions]]\r\nname = \"login\"\r\ndescription = \"Authenticate to a registry\"\r\n\r\n[[actions]]\r\nname = \"logout\"\r\ndescription = \"Log out from a registry\"\r\n\r\n[[actions]]\r\nname = \"search\"\r\ndescription = \"Search Docker Hub for images\"\r\n\r\n[[actions]]\r\nname = \"version\"\r\ndescription = \"Show the Docker version information\"\r\n\r\n[[actions]]\r\nname = \"info\"\r\ndescription = \"Display system-wide information\"\r\n\r\n[[actions]]\r\nname = \"container\"\r\ndescription = \"Manage containers\"\r\n\r\n[[actions]]\r\nname = \"image\"\r\ndescription = \"Manage images\"\r\n\r\n[[actions]]\r\nname = \"network\"\r\ndescription = \"Manage networks\"\r\n\r\n[[actions]]\r\nname = \"volume\"\r\ndescription = \"Manage volumes\"\r\n\r\n[[actions]]\r\nname = \"compose\"\r\ndescription = \"Docker Compose\"\r\n\r\n[[actions]]\r\nname = \"system\"\r\ndescription = \"Manage Docker\"\r\n\r\n[[actions]]\r\nname = \"swarm\"\r\ndescription = \"Manage Swarm\"\r\n\r\n[[actions]]\r\nname = \"inspect\"\r\ndescription = \"Return low-level information on Docker objects\"\r\n\r\n[[arguments]]\r\nflag = \"\"\r\nlong = \"config\"\r\ndescription = \"Location of client config files\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"c\"\r\nlong = \"context\"\r\ndescription = \"Name of the context to use to connect to the daemon\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"D\"\r\nlong = \"debug\"\r\ndescription = \"Enable debug mode\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"H\"\r\nlong = \"host\"\r\ndescription = \"Daemon socket to connect to\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"l\"\r\nlong = \"log-level\"\r\ndescription = \"Set the logging level\"\r\ntype = \"string\"\r\nvalue_style = \"space\"\r\n\r\n[[arguments]]\r\nflag = \"\"\r\nlong = \"tls\"\r\ndescription = \"Use TLS; implied by --tlsverify\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"\"\r\nlong = \"tlsverify\"\r\ndescription = \"Use TLS and verify the remote\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[arguments]]\r\nflag = \"v\"\r\nlong = \"version\"\r\ndescription = \"Print version information and quit\"\r\ntype = \"boolean\"\r\nvalue_style = \"none\"\r\n\r\n[[tags]]\r\nname = \"containers\"\r\ncolor = \"#7A7A7A\"\r\n\r\n[[tags]]\r\nname = \"virtualization\"\r\ncolor = \"#7A7A7A\"\r\n\r\n[[tags]]\r\nname = \"devops\"\r\ncolor = \"#7A7A7A\""
+  },
+  "clone-index": {
+    "id": "clone-index",
+    "tool": {
+      "name": "Clone-Index.py",
+      "description": "Clone or update the crates.io index, then optionally download crates.",
+      "installedName": "python Clone-Index.py"
+    },
+    "actions": [
+      {
+        "name": "mirror",
+        "description": "Mirror Rust crates from crates.io."
+      }
+    ],
+    "arguments": [
+      {
+        "long": "index-dir",
+        "description": "Path to local crates.io index",
+        "type": "path",
+        "required": true
+      },
+      {
+        "long": "output-dir",
+        "description": "Directory where .crate files are saved",
+        "type": "path",
+        "required": true
+      },
+      {
+        "long": "threads",
+        "description": "Downloader concurrency",
+        "type": "number",
+        "default": "128"
+      },
+      {
+        "long": "include-yanked",
+        "description": "Include yanked crate versions",
+        "type": "boolean"
+      },
+      {
+        "long": "verify-existing",
+        "description": "Re-check existing files",
+        "type": "boolean"
+      },
+      {
+        "long": "bundle",
+        "description": "Write rolling tar.zst bundles",
+        "type": "boolean"
+      },
+      {
+        "long": "bundle-mode",
+        "description": "Bundle mode: only or add",
+        "type": "string",
+        "default": "only"
+      },
+      {
+        "long": "bundles-out",
+        "description": "Bundle output directory",
+        "type": "path"
+      },
+      {
+        "long": "manifest",
+        "description": "JSONL audit manifest path",
+        "type": "path"
+      },
+      {
+        "long": "dry-run",
+        "description": "Validate settings without downloading",
+        "type": "boolean"
+      },
+      {
+        "long": "non-interactive",
+        "description": "Run without prompts",
+        "type": "boolean",
+        "default": "true"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Full mirror with yanked crates",
+        "command": "python Clone-Index.py --index-dir \"A:\\rust-lang\\crates.io-index\" --output-dir \"A:\\rust-lang\\crates\" --threads 128 --include-yanked --non-interactive"
+      },
+      {
+        "title": "Bundle-first archive run",
+        "command": "python Clone-Index.py --index-dir \"A:\\rust-lang\\crates.io-index\" --output-dir \"A:\\rust-lang\\crates\" --bundle --bundle-mode only --bundles-out \"A:\\rust-lang\\bundles\" --manifest \"A:\\rust-lang\\manifest.jsonl\" --non-interactive"
+      },
+      {
+        "title": "Dry-run validation",
+        "command": "python Clone-Index.py --index-dir \"A:\\rust-lang\\crates.io-index\" --output-dir \"A:\\rust-lang\\crates\" --dry-run --non-interactive"
+      }
+    ]
+  }
+}

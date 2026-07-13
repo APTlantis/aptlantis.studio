@@ -1,0 +1,212 @@
+/* APTlantis shared styles */
+
+:root {
+  --primary-color: #06b6d4;
+  --secondary-color: #0891b2;
+  --accent-color: #10b981;
+  --background-dark: #1a1a1a;
+  --background-light: #f8f9fa;
+  --text-dark: #333333;
+  --text-light: #ffffff;
+  --border-color: rgba(6, 182, 212, 0.3);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Dark/Light mode */
+html[data-bs-theme='dark'] {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+html[data-bs-theme='light'] {
+  background-color: var(--background-light);
+  color: var(--text-dark);
+}
+
+/* Common elements */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Header and navigation */
+header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-nav a {
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.main-nav a:hover {
+  background-color: rgba(6, 182, 212, 0.1);
+  text-decoration: none;
+}
+
+/* Theme toggle */
+.theme-toggle button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Search form */
+.search-nav form {
+  display: flex;
+  align-items: center;
+}
+
+.search-nav input {
+  padding: 5px 10px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-nav button {
+  padding: 5px 10px;
+  border-radius: 0 4px 4px 0;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-nav form {
+    width: 100%;
+  }
+
+  .search-nav input {
+    width: 100%;
+  }
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}

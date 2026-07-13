@@ -1,0 +1,5 @@
+Contact: mailto:contact@aptlantis.net
+Policy: https://aptlantis.net/about
+Expires: 2026-12-31T23:59:59Z
+Preferred-Languages: en
+Canonical: https://aptlantis.net/.well-known/security.txt

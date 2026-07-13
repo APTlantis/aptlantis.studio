@@ -1,0 +1,136 @@
+{
+  "overallStatus": "healthy",
+  "lastUpdated": "2025-05-08T01:30:00Z",
+  "totalRepoSize": "15.7 TB",
+  "distroStatuses": {
+    "alma": "synced",
+    "alpine": "synced",
+    "arch": "syncing",
+    "artix": "synced",
+    "athena": "synced",
+    "backbox": "synced",
+    "blackarch": "synced",
+    "calculate": "synced",
+    "debian": "synced",
+    "deepin": "synced",
+    "devuan": "synced",
+    "endeavour": "synced",
+    "endlessos": "synced",
+    "freebsd": "synced",
+    "gentoo": "synced",
+    "kali": "synced",
+    "knoppix": "failed",
+    "kolibrios": "synced",
+    "kubuntu": "synced",
+    "linuxmint": "synced",
+    "manjaro": "synced",
+    "mxlinux": "synced",
+    "openbsd": "synced",
+    "openmandriva": "synced",
+    "opensuse": "synced",
+    "parrot": "synced",
+    "pclinux": "synced",
+    "puppylinux": "synced",
+    "qubes": "synced",
+    "ravynos": "synced",
+    "reactos": "synced",
+    "redcore": "synced",
+    "rocky": "synced",
+    "slackware": "synced",
+    "trisquel": "synced",
+    "turnkey": "synced",
+    "ubuntu": "synced",
+    "void": "synced",
+    "whonix": "synced",
+    "xubuntu": "synced",
+    "zorin": "synced"
+  },
+  "distroDetails": {
+    "alma": {
+      "lastSyncTime": "2025-05-07T22:15:00Z",
+      "repoSize": "320 GB",
+      "syncDuration": "45 min",
+      "isSyncing": false
+    },
+    "rocky": {
+      "lastSyncTime": "2025-05-07T22:30:00Z",
+      "repoSize": "320 GB",
+      "syncDuration": "45 min",
+      "isSyncing": false
+    },
+    "linuxmint": {
+      "lastSyncTime": "2025-05-07T22:45:00Z",
+      "repoSize": "320 GB",
+      "syncDuration": "45 min",
+      "isSyncing": false
+    },
+    "alpine": {
+      "lastSyncTime": "2025-05-07T23:30:00Z",
+      "repoSize": "1.8 TB",
+      "syncDuration": "20 min",
+      "isSyncing": false
+    },
+    "arch": {
+      "lastSyncTime": "2025-05-08T01:00:00Z",
+      "repoSize": "450 GB",
+      "syncDuration": "60 min",
+      "isSyncing": true
+    },
+    "debian": {
+      "lastSyncTime": "2025-05-07T21:45:00Z",
+      "repoSize": "1.2 TB",
+      "syncDuration": "90 min",
+      "isSyncing": false
+    },
+    "ubuntu": {
+      "lastSyncTime": "2025-05-07T20:30:00Z",
+      "repoSize": "1.5 TB",
+      "syncDuration": "120 min",
+      "isSyncing": false
+    },
+    "manjaro": {
+      "lastSyncTime": "2025-05-08T00:15:00Z",
+      "repoSize": "380 GB",
+      "syncDuration": "40 min",
+      "isSyncing": false
+    },
+    "kali": {
+      "lastSyncTime": "2025-05-07T22:45:00Z",
+      "repoSize": "280 GB",
+      "syncDuration": "35 min",
+      "isSyncing": false
+    },
+    "knoppix": {
+      "lastSyncTime": "2025-05-07T18:30:00Z",
+      "repoSize": "120 GB",
+      "syncDuration": "25 min",
+      "isSyncing": false
+    },
+    "gentoo": {
+      "lastSyncTime": "2025-05-07T23:00:00Z",
+      "repoSize": "520 GB",
+      "syncDuration": "70 min",
+      "isSyncing": false
+    },
+    "opensuse": {
+      "lastSyncTime": "2025-05-07T21:15:00Z",
+      "repoSize": "650 GB",
+      "syncDuration": "80 min",
+      "isSyncing": false
+    }
+  },
+  "featuredDistros": [
+    "ubuntu",
+    "debian",
+    "arch",
+    "manjaro",
+    "kali",
+    "opensuse",
+    "gentoo",
+    "alpine",
+    "knoppix",
+    "alma",
+    "rocky",
+    "linuxmint"
+  ]
+}
