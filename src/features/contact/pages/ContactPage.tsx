@@ -1,6 +1,7 @@
 import type React from "react";
 import { useState } from "react";
 import MetaTags from "../../../components/MetaTags";
+import SesmHeroImage from "../../../components/SesmHeroImage";
 
 type MessageCategory =
   | "general"
@@ -157,18 +158,12 @@ const ContactPage = () => {
 
       <header className="atl-panel atl-ornament overflow-hidden">
         <div className="grid gap-0 lg:grid-cols-[1fr_330px]">
-          <div className="p-6 sm:p-8">
-            <p className="atl-eyebrow">Aptlantis / Contact</p>
-            <h1 className="atl-title atl-gradient-text atl-text-balance mt-4 text-4xl font-black sm:text-5xl">
-              Route corrections with evidence.
-            </h1>
-            <p className="atl-subtitle mt-5 max-w-3xl">
-              Use this page for project corrections, metadata issues, missing
-              evidence, public asset concerns, and collaboration notes. The most
-              useful messages point to a specific page or artifact and explain
-              what would make it more accurate.
-            </p>
-          </div>
+          <SesmHeroImage
+            src="/logos/aptlantis-contact-hero-logo.svg"
+            alt="Aptlantis Contact hero artwork for routing corrections with evidence."
+            title="Route corrections with evidence."
+            description="Use this page for project corrections, metadata issues, missing evidence, public asset concerns, and collaboration notes."
+          />
           <aside className="border-t border-atl-ridge/60 bg-atl-void/40 p-6 lg:border-l lg:border-t-0">
             <p className="atl-eyebrow">Do not send</p>
             <ul className="mt-4 space-y-3 text-sm text-atl-silver">

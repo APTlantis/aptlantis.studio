@@ -1,0 +1,835 @@
+{
+  "$schema": "/schemas/svg-asset-registry.schema.json",
+  "id": "aptlantis-studio-svg-asset-registry",
+  "title": "Aptlantis Studio SVG Asset Registry",
+  "version": "0.1.0",
+  "lastUpdated": "2026-07-15",
+  "assets": [
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "aptlantis-about-hero-logo",
+      "title": "Aptlantis About Hero Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/aptlantis-about-hero-logo.svg",
+        "publicUrl": "/logos/aptlantis-about-hero-logo.svg",
+        "content_hash": "sha256:8d80cb0f7e57ab065c457f2a2433bacd258dee7bc47568dddf82fcdece93a2c0"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Aptlantis About Hero Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "aptlantis-about-hero-logo",
+          "role": "branding",
+          "tags": ["branding", "illustration"],
+          "title": "Aptlantis About Hero Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/aptlantis-about-hero-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1448",
+        "height": "1086",
+        "viewBox": "0 0 1448 1086"
+      },
+      "roles": ["branding", "illustration"]
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "aptlantis-contact-hero-logo",
+      "title": "Aptlantis Contact Hero Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/aptlantis-contact-hero-logo.svg",
+        "publicUrl": "/logos/aptlantis-contact-hero-logo.svg",
+        "content_hash": "sha256:d6770e4212640a2e17ad496ac49ab7397c150d6b075ac8f7201130fa01451484"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Aptlantis Contact Hero Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "aptlantis-contact-hero-logo",
+          "role": "branding",
+          "tags": ["branding", "illustration"],
+          "title": "Aptlantis Contact Hero Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/aptlantis-contact-hero-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1448",
+        "height": "1086",
+        "viewBox": "0 0 1448 1086"
+      },
+      "roles": ["branding", "illustration"]
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "aptlantis-hero-logo",
+      "title": "Aptlantis Hero Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/aptlantis-hero-logo.svg",
+        "publicUrl": "/logos/aptlantis-hero-logo.svg",
+        "content_hash": "sha256:30f14fa5e3d26ad85234607f2ccf2205218ff61c4108929f80ddb1287e1a1ba5"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Aptlantis Hero Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "aptlantis-hero-logo",
+          "role": "logo",
+          "tags": ["logo", "branding", "illustration"],
+          "title": "Aptlantis Hero Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/aptlantis-hero-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1448",
+        "height": "1086",
+        "viewBox": "0 0 1448 1086"
+      },
+      "roles": ["logo", "branding", "illustration"],
+      "debug": {
+        "imported_at": "1784132581",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "aptlantis-privacy-hero-logo",
+      "title": "Aptlantis Privacy Hero Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/aptlantis-privacy-hero-logo.svg",
+        "publicUrl": "/logos/aptlantis-privacy-hero-logo.svg",
+        "content_hash": "sha256:3b421aaaccbf4e72d95abe5bc84d744bf57d30cdca29ba89b5c44638b61cd9cc"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Aptlantis Privacy Hero Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "aptlantis-privacy-hero-logo",
+          "role": "branding",
+          "tags": ["branding", "illustration"],
+          "title": "Aptlantis Privacy Hero Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/aptlantis-privacy-hero-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1448",
+        "height": "1086",
+        "viewBox": "0 0 1448 1086"
+      },
+      "roles": ["branding", "illustration"]
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "aptlantis-studio-logo",
+      "title": "Aptlantis Studio Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/aptlantis-studio-logo.svg",
+        "publicUrl": "/logos/aptlantis-studio-logo.svg",
+        "content_hash": "sha256:a49ee533cdbd6d57c3c16b9dc95c0607e856a128fc7d0cc2616051ed81fad5fb"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Aptlantis Studio Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "aptlantis-studio-logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "Aptlantis Studio Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/aptlantis-studio-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": ["logo", "branding"]
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "dnf-achivalplugin-logo",
+      "title": "Dnf Achivalplugin Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/dnf-achivalplugin-logo.svg",
+        "publicUrl": "/logos/dnf-achivalplugin-logo.svg",
+        "content_hash": "sha256:a0d4b448c358f1a9a7c3f1e91afa0d0e0653d8688536925438d63b2b2459caa7"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Dnf Achivalplugin Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "dnf-achivalplugin-logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "Dnf Achivalplugin Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/dnf-achivalplugin-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": ["logo", "branding"],
+      "debug": {
+        "imported_at": "1784132581",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "dnf-archivehasher-logo",
+      "title": "Dnf Archivehasher Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/dnf-archivehasher-logo.svg",
+        "publicUrl": "/logos/dnf-archivehasher-logo.svg",
+        "content_hash": "sha256:a0beb925775b2a1cba198a1da1584deaa0d5978b9767034976d045e994274c24"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Dnf Archivehasher Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "dnf-archivehasher-logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "Dnf Archivehasher Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/dnf-archivehasher-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": ["logo", "branding"],
+      "debug": {
+        "imported_at": "1784132581",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "dnf-chatarchive-logo",
+      "title": "Dnf Chatarchive Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/dnf-chatarchive-logo.svg",
+        "publicUrl": "/logos/dnf-chatarchive-logo.svg",
+        "content_hash": "sha256:cd60345a1821ea600c9e5a8f4cc303f18e6650f97989066dd8d68a4003c73080"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Dnf Chatarchive Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "dnf-chatarchive-logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "Dnf Chatarchive Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/dnf-chatarchive-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": ["logo", "branding"],
+      "debug": {
+        "imported_at": "1784132581",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "dnf-cityhall-logo",
+      "title": "Dnf Cityhall Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/dnf-cityhall-logo.svg",
+        "publicUrl": "/logos/dnf-cityhall-logo.svg",
+        "content_hash": "sha256:6b2cfd819c1d2d6a9b1efe5585d620522a4eebfa43ce8dd9bb97217a20049bb0"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Dnf Cityhall Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "dnf-cityhall-logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "Dnf Cityhall Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/dnf-cityhall-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": ["logo", "branding"],
+      "debug": {
+        "imported_at": "1784132581",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "dnf-clonecratesio-logo",
+      "title": "Dnf Clonecratesio Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/dnf-clonecratesio-logo.svg",
+        "publicUrl": "/logos/dnf-clonecratesio-logo.svg",
+        "content_hash": "sha256:bc0f786023b7816b87db3967728f9b383e7c94159ea1170dcf0a87baccd2d876"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Dnf Clonecratesio Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "dnf-clonecratesio-logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "Dnf Clonecratesio Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/dnf-clonecratesio-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": ["logo", "branding"],
+      "debug": {
+        "imported_at": "1784132581",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "dnf-commandwizard-logo",
+      "title": "DNF CommandWizard Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/dnf-commandwizard-logo.svg",
+        "publicUrl": "/logos/dnf-commandwizard-logo.svg",
+        "content_hash": "sha256:7c7484fbff902324ce67364cda52eb90aef2d64b5ce8f33171cd0c884b5495bc"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "DNF CommandWizard Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "dnf-commandwizard-logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "DNF CommandWizard Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/dnf-commandwizard-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": ["logo", "branding"]
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "dnf-filecabinet-logo",
+      "title": "Dnf Filecabinet Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/dnf-filecabinet-logo.svg",
+        "publicUrl": "/logos/dnf-filecabinet-logo.svg",
+        "content_hash": "sha256:cfcda4e98e45dd643bc1acb193e5e1fa4f6ea7617a0dd515f31a3e1fce0ed73d"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Dnf Filecabinet Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "dnf-filecabinet-logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "Dnf Filecabinet Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/dnf-filecabinet-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": ["logo", "branding"],
+      "debug": {
+        "imported_at": "1784132581",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "dnf-squashfswsl-logo",
+      "title": "Dnf Squashfswsl Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/dnf-squashfswsl-logo.svg",
+        "publicUrl": "/logos/dnf-squashfswsl-logo.svg",
+        "content_hash": "sha256:224eecc69f91a1776d6b9d1dacc8a08489e41fcebebae6b6670c89365bacda6f"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Dnf Squashfswsl Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "dnf-squashfswsl-logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "Dnf Squashfswsl Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133488",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/dnf-squashfswsl-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": ["logo", "branding"],
+      "debug": {
+        "imported_at": "1784132581",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "dnf-structra-logo",
+      "title": "Dnf Structra Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/dnf-structra-logo.svg",
+        "publicUrl": "/logos/dnf-structra-logo.svg",
+        "content_hash": "sha256:230151991be585c556ae20895ed04ae656d41eb5e1764c85e311e17ec7201dcf"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Dnf Structra Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "dnf-structra-logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "Dnf Structra Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133489",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/dnf-structra-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": ["logo", "branding"],
+      "debug": {
+        "imported_at": "1784132582",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "dnf-wingettingqb64-logo",
+      "title": "Dnf Wingettingqb64 Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/dnf-wingettingqb64-logo.svg",
+        "publicUrl": "/logos/dnf-wingettingqb64-logo.svg",
+        "content_hash": "sha256:680956bf3b43033b8e7f95aebba092b72a097fc54df0a26f54b57fc1290962eb"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Dnf Wingettingqb64 Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "dnf-wingettingqb64-logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "Dnf Wingettingqb64 Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133489",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/dnf-wingettingqb64-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": ["logo", "branding"],
+      "debug": {
+        "imported_at": "1784132582",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "dnf-wintrim-logo",
+      "title": "Dnf Wintrim Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/dnf-wintrim-logo.svg",
+        "publicUrl": "/logos/dnf-wintrim-logo.svg",
+        "content_hash": "sha256:f1e880ec3412ecc050bdf558146ddac3b8a3e6c4941c5db5f33e17d9c63dac0c"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Dnf Wintrim Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "dnf-wintrim-logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "Dnf Wintrim Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133489",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/dnf-wintrim-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": ["logo", "branding"],
+      "debug": {
+        "imported_at": "1784132582",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "favicon",
+      "title": "Favicon",
+      "source": {
+        "format": "svg",
+        "path": "/logos/favicon.svg",
+        "publicUrl": "/logos/favicon.svg",
+        "content_hash": "sha256:5ad5b2819ee46a6fcc4004f2de7c4fcd045fa76e17784d5e550cc5281ec091e6"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Favicon"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "favicon",
+          "role": "logo",
+          "tags": ["logo", "branding", "icon"],
+          "title": "Favicon"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133489",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/favicon.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 940.5 940.499971"
+      },
+      "roles": ["logo", "branding", "icon"],
+      "debug": {
+        "imported_at": "1784132582",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "logo",
+      "title": "Logo",
+      "source": {
+        "format": "svg",
+        "path": "/logos/logo.svg",
+        "publicUrl": "/logos/logo.svg",
+        "content_hash": "sha256:2d23738fed1ee79ed951101d22f907d1717c73857dd8e1f113831fecabb044b3"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "logo",
+          "role": "logo",
+          "tags": ["logo", "branding"],
+          "title": "Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784133489",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/logos/logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 940.5 940.499971"
+      },
+      "roles": ["logo", "branding"],
+      "debug": {
+        "imported_at": "1784132582",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    }
+  ]
+}

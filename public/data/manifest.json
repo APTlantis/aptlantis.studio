@@ -53,7 +53,7 @@
     {
       "id": "coding-against-the-grain-experiments",
       "title": "Coding Against The Grain Experiments",
-      "description": "Catalog seed for unusual programming experiments, constrained systems, esolang notes, terminal tools, and wrong-tool teaching examples.",
+      "description": "Catalog seed for unusual programming experiments, constrained systems, esolang notes, and wrong-tool teaching examples.",
       "url": "/data/coding-against-the-grain/experiments.json",
       "schemaUrl": null,
       "kind": "section-catalog",
@@ -77,6 +77,20 @@
       "lastUpdated": "2026-07-15",
       "license": "Site content license pending",
       "crawlerUse": "Index distribution names, parent-child relationships, years, tags, and public genealogy facts."
+    },
+    {
+      "id": "svg-asset-registry",
+      "title": "SVG Asset Registry",
+      "description": "Running catalog of public SVG assets and SESM metadata used by the site and embedding service.",
+      "url": "/data/svg-assets/registry.json",
+      "schemaUrl": "/schemas/svg-asset-registry.schema.json",
+      "kind": "asset-registry",
+      "status": "draft",
+      "source": "Aptlantis Studio SVG asset service",
+      "updateCadence": "when SVG assets are added or regenerated",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Index SVG asset paths, roles, hashes, and embedded SESM metadata expectations."
     }
   ],
   "schemas": [
@@ -105,6 +119,32 @@
       "lastUpdated": "2026-07-15",
       "license": "Site content license pending",
       "crawlerUse": "Use to understand the intended public schema for contact intake records. Do not infer that submitted private messages are public data."
+    },
+    {
+      "id": "svg-asset-schema",
+      "title": "SVG Asset Schema",
+      "description": "JSON Schema for public SVG asset metadata records without MongoDB storage assumptions.",
+      "url": "/schemas/svg-asset.schema.json",
+      "kind": "json-schema",
+      "status": "draft",
+      "source": "Aptlantis Studio SESM asset model",
+      "updateCadence": "with SVG asset registry changes",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Use to validate or interpret individual records in the SVG asset registry."
+    },
+    {
+      "id": "svg-asset-registry-schema",
+      "title": "SVG Asset Registry Schema",
+      "description": "JSON Schema for the crawlable registry of public SVG assets and SESM metadata.",
+      "url": "/schemas/svg-asset-registry.schema.json",
+      "kind": "json-schema",
+      "status": "draft",
+      "source": "Aptlantis Studio SESM asset model",
+      "updateCadence": "with SVG asset registry changes",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Use to validate or interpret /data/svg-assets/registry.json."
     }
   ],
   "evidenceAssetGroups": [
@@ -124,7 +164,7 @@
     {
       "id": "identity-assets",
       "title": "Identity And Logo Assets",
-      "description": "Public Aptlantis and project logo assets used by the site.",
+      "description": "Public Aptlantis and project logo assets used by the site. The SVG asset registry is the canonical metadata catalog for these assets.",
       "url": "/logos/",
       "kind": "identity-assets",
       "status": "curated",

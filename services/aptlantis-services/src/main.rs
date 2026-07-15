@@ -1,5 +1,6 @@
 use std::{
-    env,
+    collections::{HashMap, HashSet},
+    env, fs as stdfs,
     net::{SocketAddr, TcpStream},
     path::{Path, PathBuf},
     process,
@@ -18,6 +19,7 @@ use axum::{
 use regex::Regex;
 use serde::{Deserialize, Serialize};
 use serde_json::{json, Value};
+use sha2::{Digest, Sha256};
 use tokio::{fs, net::TcpListener, process::Command, signal, time::timeout};
 use tower_http::{cors::CorsLayer, trace::TraceLayer};
 use tracing::{info, warn};
@@ -30,6 +32,8 @@ const REQUEST_BODY_MAX_BYTES: usize = 12 * 1024 * 1024;
 const SVG_LAB_TIMEOUT_MS: u64 = 10_000;
 
 static SVG_ROOT_RE: OnceLock<Regex> = OnceLock::new();
+static SVG_OPEN_RE: OnceLock<Regex> = OnceLock::new();
+static SVG_ATTR_RE_CACHE: OnceLock<std::sync::Mutex<HashMap<String, Regex>>> = OnceLock::new();
 static METADATA_RE: OnceLock<Regex> = OnceLock::new();
 static SCRIPT_RE: OnceLock<Regex> = OnceLock::new();
 
@@ -44,6 +48,7 @@ struct AppConfig {
     bind: SocketAddr,
     data_root: PathBuf,
     command_schema_path: PathBuf,
+    svg_asset_registry_path: PathBuf,
     sesm_root: PathBuf,
     sesm_validator: PathBuf,
     sesm_schema: PathBuf,
@@ -201,6 +206,133 @@ struct SvgLabExampleSource {
     expected_status: &'static str,
 }
 
+#[derive(Serialize, Deserialize, Clone, Debug)]
+#[serde(rename_all = "camelCase")]
+struct SvgAssetRegistry {
+    #[serde(rename = "$schema", skip_serializing_if = "Option::is_none")]
+    schema: Option<String>,
+    id: String,
+    title: String,
+    version: String,
+    last_updated: String,
+    assets: Vec<SvgAssetRecord>,
+}
+
+impl Default for SvgAssetRegistry {
+    fn default() -> Self {
+        Self {
+            schema: Some("/schemas/svg-asset-registry.schema.json".to_string()),
+            id: "aptlantis-studio-svg-asset-registry".to_string(),
+            title: "Aptlantis Studio SVG Asset Registry".to_string(),
+            version: "0.1.0".to_string(),
+            last_updated: "2026-07-15".to_string(),
+            assets: Vec::new(),
+        }
+    }
+}
+
+#[derive(Serialize, Deserialize, Clone, Debug, Default)]
+struct SvgAssetRecord {
+    #[serde(rename = "type")]
+    record_type: String,
+    asset_type: String,
+    slug: String,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    title: Option<String>,
+    source: SvgAssetSource,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    sesm: Option<Value>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    dimensions: Option<SvgDimensions>,
+    #[serde(default)]
+    roles: Vec<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    debug: Option<Value>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    ai: Option<Value>,
+}
+
+#[derive(Serialize, Deserialize, Clone, Debug, Default)]
+struct SvgAssetSource {
+    format: String,
+    path: String,
+    #[serde(rename = "publicUrl", default, skip_serializing_if = "Option::is_none")]
+    public_url: Option<String>,
+    #[serde(
+        rename = "content_hash",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
+    content_hash: Option<String>,
+}
+
+#[derive(Serialize, Deserialize, Clone, Debug, Default)]
+struct SvgDimensions {
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    width: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    height: Option<String>,
+    #[serde(rename = "viewBox", default, skip_serializing_if = "Option::is_none")]
+    view_box: Option<String>,
+}
+
+#[derive(Deserialize, Default)]
+#[serde(rename_all = "camelCase")]
+struct SvgAssetScanRequest {
+    roots: Option<Vec<String>>,
+    write_registry: Option<bool>,
+}
+
+#[derive(Deserialize, Default)]
+#[serde(rename_all = "camelCase")]
+struct SvgAssetEmbedRequest {
+    slugs: Option<Vec<String>>,
+    dry_run: Option<bool>,
+    validate: Option<bool>,
+}
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+struct SvgAssetRegistryResponse {
+    registry_path: String,
+    registry: SvgAssetRegistry,
+}
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+struct SvgAssetScanResponse {
+    registry_path: String,
+    scanned: usize,
+    added: usize,
+    updated: usize,
+    wrote_registry: bool,
+    registry: SvgAssetRegistry,
+}
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+struct SvgAssetEmbedResponse {
+    registry_path: String,
+    dry_run: bool,
+    requested: usize,
+    embedded: usize,
+    changed: usize,
+    skipped: usize,
+    wrote_assets: bool,
+    results: Vec<SvgAssetEmbedResult>,
+}
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+struct SvgAssetEmbedResult {
+    slug: String,
+    path: String,
+    status: String,
+    changed: bool,
+    message: Option<String>,
+    validation: Option<SvgLabValidation>,
+}
+
 fn service_registry() -> Vec<ServiceDescriptor> {
     vec![
         ServiceDescriptor {
@@ -224,6 +356,14 @@ fn service_registry() -> Vec<ServiceDescriptor> {
             status: "ready",
             route: "/api/svg-lab/*",
             description: "SESM validation, metadata generation, and fixture example services.",
+        },
+        ServiceDescriptor {
+            id: "svg-assets",
+            label: "SVG Asset Registry",
+            status: "draft",
+            route: "/api/svg-assets/*",
+            description:
+                "Public SVG registry scanning and explicit SESM metadata embedding services.",
         },
         ServiceDescriptor {
             id: "project-index",
@@ -253,6 +393,14 @@ fn config_from_env() -> Result<AppConfig> {
                 .join("command-schemas")
                 .join("command-schemas.json")
         });
+    let svg_asset_registry_path = env::var("APTLANTIS_SVG_ASSET_REGISTRY")
+        .map(PathBuf::from)
+        .unwrap_or_else(|_| {
+            data_root
+                .join("data")
+                .join("svg-assets")
+                .join("registry.json")
+        });
 
     let sesm_root = env::var("APTLANTIS_SESM_ROOT")
         .or_else(|_| env::var("SESM_ROOT"))
@@ -278,6 +426,7 @@ fn config_from_env() -> Result<AppConfig> {
         bind,
         data_root,
         command_schema_path,
+        svg_asset_registry_path,
         sesm_root,
         sesm_validator,
         sesm_schema,
@@ -710,6 +859,319 @@ fn svg_lab_examples(config: &AppConfig) -> Vec<SvgLabExampleSource> {
     ]
 }
 
+fn svg_open_re() -> &'static Regex {
+    SVG_OPEN_RE.get_or_init(|| Regex::new(r"(?is)<svg\b([^>]*)>").expect("valid svg open regex"))
+}
+
+fn attr_re(name: &str) -> Regex {
+    let cache = SVG_ATTR_RE_CACHE.get_or_init(|| std::sync::Mutex::new(HashMap::new()));
+    let mut cache = cache.lock().expect("svg attr regex cache lock");
+    if let Some(regex) = cache.get(name) {
+        return regex.clone();
+    }
+
+    let regex = Regex::new(&format!(
+        r#"(?i)\b{}\s*=\s*["']([^"']+)["']"#,
+        regex::escape(name)
+    ))
+    .expect("valid svg attr regex");
+    cache.insert(name.to_string(), regex.clone());
+    regex
+}
+
+fn extract_attr(attrs: &str, name: &str) -> Option<String> {
+    attr_re(name)
+        .captures(attrs)
+        .and_then(|captures| captures.get(1))
+        .map(|value| value.as_str().trim().to_string())
+        .filter(|value| !value.is_empty())
+}
+
+fn extract_svg_dimensions(svg_text: &str) -> Option<SvgDimensions> {
+    let attrs = svg_open_re().captures(svg_text)?.get(1)?.as_str();
+    let dimensions = SvgDimensions {
+        width: extract_attr(attrs, "width"),
+        height: extract_attr(attrs, "height"),
+        view_box: extract_attr(attrs, "viewBox"),
+    };
+
+    if dimensions.width.is_none() && dimensions.height.is_none() && dimensions.view_box.is_none() {
+        None
+    } else {
+        Some(dimensions)
+    }
+}
+
+fn public_path_to_fs(config: &AppConfig, public_path: &str) -> Result<PathBuf, ApiError> {
+    let trimmed = public_path.trim();
+    if trimmed.is_empty() {
+        return Err(ApiError::BadRequest("Public path is required.".to_string()));
+    }
+
+    let relative = trimmed.trim_start_matches('/');
+    let relative_path = Path::new(relative);
+    if relative_path.is_absolute()
+        || relative_path
+            .components()
+            .any(|component| matches!(component, std::path::Component::ParentDir))
+    {
+        return Err(ApiError::BadRequest(format!(
+            "Public path {trimmed} must stay inside the configured data root."
+        )));
+    }
+
+    Ok(config.data_root.join(relative_path))
+}
+
+fn path_to_public_path(config: &AppConfig, file_path: &Path) -> Result<String, ApiError> {
+    let relative = file_path.strip_prefix(&config.data_root).with_context(|| {
+        format!(
+            "{} is not inside {}",
+            file_path.display(),
+            config.data_root.display()
+        )
+    })?;
+    let relative = relative.to_string_lossy().replace('\\', "/");
+    Ok(format!("/{relative}"))
+}
+
+fn sha256_hex(bytes: &[u8]) -> String {
+    let digest = Sha256::digest(bytes);
+    format!("sha256:{digest:x}")
+}
+
+fn collect_svg_files(root: &Path, files: &mut Vec<PathBuf>) -> Result<(), ApiError> {
+    if !root.exists() {
+        return Ok(());
+    }
+
+    for entry in
+        stdfs::read_dir(root).with_context(|| format!("Failed to read {}", root.display()))?
+    {
+        let entry = entry.with_context(|| format!("Failed to read entry in {}", root.display()))?;
+        let path = entry.path();
+        if path.is_dir() {
+            collect_svg_files(&path, files)?;
+        } else if path
+            .extension()
+            .and_then(|extension| extension.to_str())
+            .map(|extension| extension.eq_ignore_ascii_case("svg"))
+            .unwrap_or(false)
+        {
+            files.push(path);
+        }
+    }
+
+    Ok(())
+}
+
+fn infer_svg_roles(public_path: &str) -> Vec<String> {
+    let lower = public_path.to_ascii_lowercase();
+    let mut roles = Vec::new();
+
+    if lower.contains("/logos/") || lower.contains("logo") {
+        roles.push("logo".to_string());
+        roles.push("branding".to_string());
+    }
+    if lower.contains("favicon") || lower.contains("icon") {
+        roles.push("icon".to_string());
+    }
+    if lower.contains("hero") {
+        roles.push("illustration".to_string());
+        roles.push("branding".to_string());
+    }
+    if roles.is_empty() {
+        roles.push("other".to_string());
+    }
+
+    let mut seen = HashSet::new();
+    roles
+        .into_iter()
+        .filter(|role| seen.insert(role.clone()))
+        .collect()
+}
+
+fn display_title_from_slug(slug: &str) -> String {
+    slug.split('-')
+        .filter(|part| !part.is_empty())
+        .map(|part| {
+            let mut chars = part.chars();
+            match chars.next() {
+                Some(first) => first.to_uppercase().collect::<String>() + chars.as_str(),
+                None => String::new(),
+            }
+        })
+        .collect::<Vec<_>>()
+        .join(" ")
+}
+
+fn normalize_asset_record(mut record: SvgAssetRecord) -> SvgAssetRecord {
+    record.record_type = if record.record_type.trim().is_empty() {
+        "asset".to_string()
+    } else {
+        record.record_type
+    };
+    record.asset_type = if record.asset_type.trim().is_empty() {
+        "svg".to_string()
+    } else {
+        record.asset_type
+    };
+    record.source.format = if record.source.format.trim().is_empty() {
+        "svg".to_string()
+    } else {
+        record.source.format
+    };
+    if record.source.public_url.is_none() {
+        record.source.public_url = Some(record.source.path.clone());
+    }
+    if record.title.is_none() {
+        record.title = Some(display_title_from_slug(&record.slug));
+    }
+    if record.roles.is_empty() {
+        record.roles = infer_svg_roles(&record.source.path);
+    }
+    record
+}
+
+async fn read_svg_asset_registry(config: &AppConfig) -> Result<SvgAssetRegistry, ApiError> {
+    if !config.svg_asset_registry_path.exists() {
+        return Ok(SvgAssetRegistry::default());
+    }
+
+    let registry_text = fs::read_to_string(&config.svg_asset_registry_path)
+        .await
+        .with_context(|| {
+            format!(
+                "Failed to read {}",
+                config.svg_asset_registry_path.display()
+            )
+        })?;
+    let mut registry =
+        serde_json::from_str::<SvgAssetRegistry>(&registry_text).with_context(|| {
+            format!(
+                "Failed to parse {}",
+                config.svg_asset_registry_path.display()
+            )
+        })?;
+    registry.assets = registry
+        .assets
+        .into_iter()
+        .map(normalize_asset_record)
+        .collect();
+    Ok(registry)
+}
+
+async fn write_svg_asset_registry(
+    config: &AppConfig,
+    registry: &SvgAssetRegistry,
+) -> Result<(), ApiError> {
+    if let Some(parent) = config.svg_asset_registry_path.parent() {
+        fs::create_dir_all(parent)
+            .await
+            .with_context(|| format!("Failed to create {}", parent.display()))?;
+    }
+    let registry_text = serde_json::to_string_pretty(registry)
+        .map_err(|error| ApiError::Internal(anyhow!(error)))?;
+    fs::write(&config.svg_asset_registry_path, registry_text)
+        .await
+        .with_context(|| {
+            format!(
+                "Failed to write {}",
+                config.svg_asset_registry_path.display()
+            )
+        })?;
+    Ok(())
+}
+
+fn build_asset_record_from_svg(
+    config: &AppConfig,
+    file_path: &Path,
+) -> Result<SvgAssetRecord, ApiError> {
+    let svg_bytes = stdfs::read(file_path)
+        .with_context(|| format!("Failed to read {}", file_path.display()))?;
+    let svg_text = String::from_utf8_lossy(&svg_bytes);
+    let public_path = path_to_public_path(config, file_path)?;
+    let slug = file_path
+        .file_stem()
+        .and_then(|stem| stem.to_str())
+        .map(slugify)
+        .filter(|slug| !slug.is_empty())
+        .ok_or_else(|| ApiError::BadRequest(format!("Could not derive slug for {public_path}")))?;
+    let existing_metadata = extract_sesm_metadata(&svg_text);
+    let title = existing_metadata
+        .as_ref()
+        .and_then(|metadata| metadata.pointer("/asset/title"))
+        .and_then(Value::as_str)
+        .map(ToString::to_string)
+        .unwrap_or_else(|| display_title_from_slug(&slug));
+
+    Ok(normalize_asset_record(SvgAssetRecord {
+        record_type: "asset".to_string(),
+        asset_type: "svg".to_string(),
+        slug,
+        title: Some(title),
+        source: SvgAssetSource {
+            format: "svg".to_string(),
+            path: public_path.clone(),
+            public_url: Some(public_path.clone()),
+            content_hash: Some(sha256_hex(&svg_bytes)),
+        },
+        sesm: existing_metadata,
+        dimensions: extract_svg_dimensions(&svg_text),
+        roles: infer_svg_roles(&public_path),
+        debug: Some(json!({
+            "imported_by": "aptlantis-services/svg-assets-scan",
+            "imported_at": unix_timestamp_string(),
+        })),
+        ai: None,
+    }))
+}
+
+fn asset_metadata(record: &SvgAssetRecord) -> Value {
+    if let Some(metadata) = &record.sesm {
+        return metadata.clone();
+    }
+
+    let title = record
+        .title
+        .as_deref()
+        .filter(|value| !value.trim().is_empty())
+        .unwrap_or(&record.slug);
+    let role = record.roles.first().map(String::as_str).unwrap_or("logo");
+    let summary = record
+        .ai
+        .as_ref()
+        .and_then(|ai| ai.get("summary"))
+        .and_then(Value::as_str)
+        .unwrap_or(title);
+
+    json!({
+        "sesm_version": "0.3.0",
+        "asset": {
+            "id": record.slug,
+            "role": role,
+            "title": title,
+            "ecosystem": "Aptlantis Studio",
+            "tags": record.roles,
+        },
+        "accessibility": {
+            "summary": summary,
+        },
+        "provenance": {
+            "generated": false,
+            "generator": {
+                "name": "aptlantis-svg-asset-registry",
+                "version": SERVICE_VERSION,
+                "language": "rust",
+            },
+            "author": "Aptlantis",
+            "license": "Site content license pending",
+            "source": record.source.path,
+            "generated_at": unix_timestamp_string(),
+        },
+    })
+}
+
 async fn svg_lab_example_list(
     State(state): State<AppState>,
 ) -> Result<Json<Vec<SvgLabExample>>, ApiError> {
@@ -732,6 +1194,179 @@ async fn svg_lab_example_list(
     Ok(Json(examples))
 }
 
+async fn svg_asset_registry(
+    State(state): State<AppState>,
+) -> Result<Json<SvgAssetRegistryResponse>, ApiError> {
+    let registry = read_svg_asset_registry(&state.config).await?;
+    Ok(Json(SvgAssetRegistryResponse {
+        registry_path: state.config.svg_asset_registry_path.display().to_string(),
+        registry,
+    }))
+}
+
+async fn svg_asset_scan(
+    State(state): State<AppState>,
+    Json(payload): Json<SvgAssetScanRequest>,
+) -> Result<Json<SvgAssetScanResponse>, ApiError> {
+    let mut registry = read_svg_asset_registry(&state.config).await?;
+    let roots = payload.roots.unwrap_or_else(|| vec!["/logos".to_string()]);
+    let write_registry = payload.write_registry.unwrap_or(true);
+    let mut svg_files = Vec::new();
+
+    for root in roots {
+        let root_path = public_path_to_fs(&state.config, &root)?;
+        collect_svg_files(&root_path, &mut svg_files)?;
+    }
+
+    svg_files.sort();
+
+    let mut added = 0usize;
+    let mut updated = 0usize;
+    for file_path in &svg_files {
+        let scanned = build_asset_record_from_svg(&state.config, file_path)?;
+        if let Some(existing) = registry
+            .assets
+            .iter_mut()
+            .find(|asset| asset.slug == scanned.slug || asset.source.path == scanned.source.path)
+        {
+            existing.source = scanned.source;
+            existing.dimensions = scanned.dimensions;
+            if existing.title.is_none() {
+                existing.title = scanned.title;
+            }
+            if existing.roles.is_empty() {
+                existing.roles = scanned.roles;
+            }
+            if scanned.sesm.is_some() {
+                existing.sesm = scanned.sesm;
+            }
+            updated += 1;
+        } else {
+            registry.assets.push(scanned);
+            added += 1;
+        }
+    }
+
+    registry
+        .assets
+        .sort_by(|left, right| left.slug.cmp(&right.slug));
+    registry.last_updated = "2026-07-15".to_string();
+
+    if write_registry {
+        write_svg_asset_registry(&state.config, &registry).await?;
+    }
+
+    Ok(Json(SvgAssetScanResponse {
+        registry_path: state.config.svg_asset_registry_path.display().to_string(),
+        scanned: svg_files.len(),
+        added,
+        updated,
+        wrote_registry: write_registry,
+        registry,
+    }))
+}
+
+async fn svg_asset_embed(
+    State(state): State<AppState>,
+    Json(payload): Json<SvgAssetEmbedRequest>,
+) -> Result<Json<SvgAssetEmbedResponse>, ApiError> {
+    let mut registry = read_svg_asset_registry(&state.config).await?;
+    let dry_run = payload.dry_run.unwrap_or(true);
+    let validate = payload.validate.unwrap_or(false);
+    let selected_slugs = payload
+        .slugs
+        .map(|slugs| slugs.into_iter().collect::<HashSet<_>>());
+    let requested = selected_slugs
+        .as_ref()
+        .map(HashSet::len)
+        .unwrap_or_else(|| registry.assets.len());
+    let mut results = Vec::new();
+    let mut embedded = 0usize;
+    let mut changed = 0usize;
+    let mut skipped = 0usize;
+
+    for record in &mut registry.assets {
+        if let Some(slugs) = &selected_slugs {
+            if !slugs.contains(&record.slug) {
+                continue;
+            }
+        }
+
+        let file_path = public_path_to_fs(&state.config, &record.source.path)?;
+        if !file_path.exists() {
+            skipped += 1;
+            results.push(SvgAssetEmbedResult {
+                slug: record.slug.clone(),
+                path: record.source.path.clone(),
+                status: "missing".to_string(),
+                changed: false,
+                message: Some(format!("SVG file was not found at {}", file_path.display())),
+                validation: None,
+            });
+            continue;
+        }
+
+        let svg_text = fs::read_to_string(&file_path)
+            .await
+            .with_context(|| format!("Failed to read {}", file_path.display()))?;
+        let metadata = asset_metadata(record);
+        let generated_svg = embed_sesm_metadata(&svg_text, &metadata)?;
+        let asset_changed = generated_svg != svg_text;
+        let validation = if validate {
+            Some(validate_svg_text(&state.config, &generated_svg).await?)
+        } else {
+            None
+        };
+
+        if asset_changed {
+            changed += 1;
+        }
+
+        if asset_changed && !dry_run {
+            fs::write(&file_path, &generated_svg)
+                .await
+                .with_context(|| format!("Failed to write {}", file_path.display()))?;
+            record.source.content_hash = Some(sha256_hex(generated_svg.as_bytes()));
+            record.sesm = Some(metadata);
+            record.dimensions = extract_svg_dimensions(&generated_svg);
+            embedded += 1;
+        } else if !asset_changed {
+            skipped += 1;
+        }
+
+        results.push(SvgAssetEmbedResult {
+            slug: record.slug.clone(),
+            path: record.source.path.clone(),
+            status: if dry_run {
+                "dry-run".to_string()
+            } else if asset_changed {
+                "embedded".to_string()
+            } else {
+                "unchanged".to_string()
+            },
+            changed: asset_changed,
+            message: None,
+            validation,
+        });
+    }
+
+    if !dry_run {
+        registry.last_updated = "2026-07-15".to_string();
+        write_svg_asset_registry(&state.config, &registry).await?;
+    }
+
+    Ok(Json(SvgAssetEmbedResponse {
+        registry_path: state.config.svg_asset_registry_path.display().to_string(),
+        dry_run,
+        requested,
+        embedded,
+        changed,
+        skipped,
+        wrote_assets: !dry_run,
+        results,
+    }))
+}
+
 fn build_router(state: AppState) -> Router {
     Router::new()
         .route("/api/health", get(health))
@@ -740,6 +1375,9 @@ fn build_router(state: AppState) -> Router {
         .route("/api/svg-lab/validate", post(svg_lab_validate))
         .route("/api/svg-lab/generate", post(svg_lab_generate))
         .route("/api/svg-lab/examples", get(svg_lab_example_list))
+        .route("/api/svg-assets/registry", get(svg_asset_registry))
+        .route("/api/svg-assets/scan", post(svg_asset_scan))
+        .route("/api/svg-assets/embed", post(svg_asset_embed))
         .layer(DefaultBodyLimit::max(REQUEST_BODY_MAX_BYTES))
         .layer(CorsLayer::permissive())
         .layer(TraceLayer::new_for_http())
@@ -774,6 +1412,7 @@ async fn main() -> Result<()> {
         bind = %config.bind,
         data_root = %config.data_root.display(),
         command_schema_path = %config.command_schema_path.display(),
+        svg_asset_registry_path = %config.svg_asset_registry_path.display(),
         sesm_root = %config.sesm_root.display(),
         sesm_validator = %config.sesm_validator.display(),
         sesm_schema = %config.sesm_schema.display(),

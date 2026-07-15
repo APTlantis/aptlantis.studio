@@ -12,6 +12,9 @@ Rust microservice host for Aptlantis Studio. This is the first container-ready s
 | `GET /api/svg-lab/examples`        | Serves SESM fixture SVGs from the mounted SESM standards directory.                 |
 | `POST /api/svg-lab/validate`       | Validates SVG text with the SESM safe-profile validator.                            |
 | `POST /api/svg-lab/generate`       | Embeds SESM metadata, validates the generated SVG, and returns a line diff summary. |
+| `GET /api/svg-assets/registry`     | Returns the public SVG asset registry from the mounted data directory.              |
+| `POST /api/svg-assets/scan`        | Scans public SVG roots and updates the registry with paths, dimensions, and hashes. |
+| `POST /api/svg-assets/embed`       | Embeds registry-backed SESM metadata into SVG files; defaults to dry-run mode.      |
 
 ## Local Run
 
@@ -29,6 +32,7 @@ Useful environment variables:
 | `APTLANTIS_BIND`                | `0.0.0.0:8989`                                   | Host and port for the API.                     |
 | `APTLANTIS_DATA_ROOT`           | `/app/data`                                      | Root for mounted Studio public data in Docker. |
 | `APTLANTIS_COMMAND_SCHEMA_PATH` | `/app/data/command-schemas/command-schemas.json` | Command Builder schema catalog path.           |
+| `APTLANTIS_SVG_ASSET_REGISTRY`  | `/app/data/data/svg-assets/registry.json`        | Public SVG asset registry path.                |
 | `APTLANTIS_SESM_ROOT`           | `/app/sesm`                                      | Mounted SESM standards directory.              |
 | `APTLANTIS_SESM_VALIDATOR`      | `/app/sesm/Validate-SESM-Safe.py`                | SESM validator script path.                    |
 | `APTLANTIS_SESM_SCHEMA`         | `/app/sesm/svg_asset.schema.json`                | SESM SVG schema path.                          |
@@ -42,7 +46,21 @@ Useful environment variables:
 cd aptlantis.studio/services/aptlantis-services
 docker build -t aptlantis/aptlantis-services:local -t aptlantis/aptlantis-services:latest .
 docker push aptlantis/aptlantis-services:latest
-docker run --rm -p 127.0.0.1:8989:8989 -v ${PWD}/../../public:/app/data:ro -v D:/.library/aptlantis_core/SESM:/app/sesm:ro aptlantis/aptlantis-services:local
+docker run --rm -p 127.0.0.1:8989:8989 -v ${PWD}/../../public:/app/data -v D:/.library/aptlantis_core/SESM:/app/sesm:ro aptlantis/aptlantis-services:local
+```
+
+Mount `/app/data` read-write when using `POST /api/svg-assets/scan` or `POST /api/svg-assets/embed` with `dryRun: false`; read-only is fine for health, schema reads, SVG Lab validation, and dry runs.
+
+Example registry workflow:
+
+```powershell
+curl.exe -X POST http://127.0.0.1:8989/api/svg-assets/scan `
+  -H "Content-Type: application/json" `
+  -d "{\"roots\":[\"/logos\"],\"writeRegistry\":true}"
+
+curl.exe -X POST http://127.0.0.1:8989/api/svg-assets/embed `
+  -H "Content-Type: application/json" `
+  -d "{\"slugs\":[\"aptlantis-studio-logo\"],\"dryRun\":true}"
 ```
 
 For the Fedora host, use `docker-compose.example.yml` as the service block to merge into the existing Caddy and Cloudflared stack. The example assumes an external Docker network named `aptlantis-edge`.

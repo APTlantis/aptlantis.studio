@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aptlantis.studio/schemas/svg-asset.schema.json",
+  "title": "Aptlantis Studio SVG Asset Metadata",
+  "type": "object",
+  "required": ["type", "asset_type", "slug", "source"],
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "asset",
+      "description": "Top-level discriminator for generic assets."
+    },
+    "asset_type": {
+      "type": "string",
+      "const": "svg",
+      "description": "Asset subtype identifier."
+    },
+    "slug": {
+      "type": "string",
+      "description": "Stable, URL-safe identifier, such as aptlantis-logo or dnf-filecabinet-logo."
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable asset title."
+    },
+    "source": {
+      "type": "object",
+      "description": "Public SVG source material.",
+      "required": ["format", "path"],
+      "properties": {
+        "format": {
+          "type": "string",
+          "const": "svg"
+        },
+        "path": {
+          "type": "string",
+          "description": "Public-root relative path, such as /logos/aptlantis-studio-logo.svg."
+        },
+        "publicUrl": {
+          "type": "string",
+          "description": "Crawler-facing URL path for the served SVG."
+        },
+        "content_hash": {
+          "type": "string",
+          "description": "Hash of the served SVG content, prefixed with the algorithm name."
+        }
+      },
+      "additionalProperties": false
+    },
+    "sesm": {
+      "type": "object",
+      "description": "Semantic extraction from <metadata id=\"sesm\"> or registry-authored metadata. Structure intentionally unconstrained.",
+      "additionalProperties": true
+    },
+    "dimensions": {
+      "type": "object",
+      "description": "Parsed SVG dimensions if available.",
+      "properties": {
+        "width": {
+          "type": "string",
+          "description": "SVG width attribute."
+        },
+        "height": {
+          "type": "string",
+          "description": "SVG height attribute."
+        },
+        "viewBox": {
+          "type": "string",
+          "description": "SVG viewBox attribute."
+        }
+      },
+      "additionalProperties": false
+    },
+    "roles": {
+      "type": "array",
+      "description": "Functional roles of this SVG within Aptlantis Studio.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "logo",
+          "icon",
+          "branding",
+          "diagram",
+          "illustration",
+          "ui",
+          "other"
+        ]
+      }
+    },
+    "debug": {
+      "type": "object",
+      "description": "Import and pipeline provenance.",
+      "properties": {
+        "imported_by": {
+          "type": "string",
+          "description": "Importer or pipeline identifier."
+        },
+        "imported_at": {
+          "type": "string",
+          "description": "Import timestamp. May be ISO 8601 or an operator timestamp."
+        },
+        "source_collection": {
+          "type": "string",
+          "description": "Historical collection name if this asset came from an older database-backed version."
+        },
+        "source_id": {
+          "type": "string",
+          "description": "Historical external identifier if applicable."
+        }
+      },
+      "additionalProperties": true
+    },
+    "ai": {
+      "type": "object",
+      "description": "Optional AI-derived annotations.",
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

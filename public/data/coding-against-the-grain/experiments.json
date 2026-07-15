@@ -1,18 +1,10 @@
 {
   "id": "coding-against-the-grain-experiments",
   "title": "Coding Against The Grain Experiments",
-  "description": "Public catalog seed for unusual programming experiments, constrained systems, esolang notes, terminal tools, and wrong-tool teaching examples.",
+  "description": "Public catalog seed for unusual programming experiments, constrained systems, esolang notes, and wrong-tool teaching examples.",
   "lastUpdated": "2026-07-15",
   "source": "Aptlantis Studio curated section notes",
   "items": [
-    {
-      "id": "ascii-art-generator",
-      "title": "ASCII Art Generator",
-      "constraint": "Terminal text and Figlet fonts",
-      "proves": "Typography can become an interface primitive when the output is meant for terminals, READMEs, and old-console aesthetics.",
-      "status": "live tool",
-      "medium": "terminal text"
-    },
     {
       "id": "css-only-tic-tac-toe",
       "title": "CSS-only Tic Tac Toe",
@@ -62,6 +54,30 @@
       "medium": "esolang"
     },
     {
+      "id": "lolcode-syntax-note",
+      "title": "LOLCODE Syntax Note",
+      "constraint": "Readable joke syntax with real control structures",
+      "proves": "A language can be silly on the surface and still expose ordinary parser, variable, and flow-control concerns.",
+      "status": "field note",
+      "medium": "esolang"
+    },
+    {
+      "id": "whitespace-token-map",
+      "title": "Whitespace Token Map",
+      "constraint": "Only spaces, tabs, and linefeeds are meaningful",
+      "proves": "Invisible syntax makes tokenization and instruction boundaries impossible to ignore.",
+      "status": "catalog idea",
+      "medium": "esolang"
+    },
+    {
+      "id": "piet-image-execution",
+      "title": "Piet Image Execution",
+      "constraint": "Program logic encoded as color blocks",
+      "proves": "A visual medium can become executable when color, adjacency, and movement rules define the runtime.",
+      "status": "catalog idea",
+      "medium": "esolang"
+    },
+    {
       "id": "css-state-machine",
       "title": "CSS State Machine",
       "constraint": "Checkboxes, radio inputs, and selectors",
@@ -70,36 +86,12 @@
       "medium": "CSS"
     },
     {
-      "id": "markdown-terminal-document",
-      "title": "Markdown Terminal Document",
-      "constraint": "Plain text that reads like an interface",
-      "proves": "Documentation can become a navigable tool when headings, tables, code blocks, and badges are treated as UI primitives.",
-      "status": "live pattern",
-      "medium": "Markdown"
-    },
-    {
       "id": "powerpoint-adventure",
       "title": "PowerPoint Adventure",
       "constraint": "Slides, links, triggers, and animations",
       "proves": "Presentation software can model branching interaction when slides become rooms and links become transitions.",
       "status": "catalog idea",
       "medium": "presentation"
-    },
-    {
-      "id": "shell-progress-theater",
-      "title": "Shell Progress Theater",
-      "constraint": "ANSI escapes and streaming terminal output",
-      "proves": "A command-line script can feel like an instrument panel when progress, warnings, and artifacts are rendered deliberately.",
-      "status": "field note",
-      "medium": "shell"
-    },
-    {
-      "id": "json-to-ascii-dashboard",
-      "title": "JSON to ASCII Dashboard",
-      "constraint": "Structured data rendered as fixed-width text",
-      "proves": "A manifest can become readable evidence when rows, boxes, and status marks expose the important fields.",
-      "status": "tool idea",
-      "medium": "JSON"
     }
   ]
 }

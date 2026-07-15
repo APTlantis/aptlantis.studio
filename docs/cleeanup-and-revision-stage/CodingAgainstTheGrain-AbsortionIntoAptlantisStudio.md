@@ -1,73 +1,59 @@
-# Coding Against The Grain Ingestion
+# Coding Against The Grain Absorption
 
-“Coding Weird Stuff” is fun, but **Coding Against The Grain** is much stronger. It has a better thesis, it sounds intentional, and it fits the Aptlantis teaching-studio framing way better.
+## Current Direction
 
-The legacy page already has the seed of the right thing: unusual programming as a playground. The rebrand can turn it from “here are quirky examples” into:
+**Coding Against The Grain** should become the Aptlantis home for esolang notes, constrained-language literacy, and field explanations about programming systems that make ordinary assumptions visible.
 
-> **A lab for learning programming constraints by deliberately using the wrong tool beautifully.**
+This is no longer planned as a generator or transformation-tool section.
 
-That is a much stronger concept.
+Remove from the section plan:
 
-## Suggested structure
-
-I’d absolutely borrow the project-detail tab pattern from ChatArchive. Something like:
-
-### **Coding Against The Grain**
-
-The landing / overview tab.
-
-This should explain the philosophy:
-
-- weird platforms
-- constrained environments
-- esolangs
-- “wrong tool” experiments
-- code as puzzle, artifact, and teaching device
-- practical lessons hiding inside impractical builds
-
-This tab can keep the card grid of examples, but I’d make it feel more curated and less like a list of novelty links.
-
-Possible intro line:
-
-> Experiments in writing useful, playful, or surprisingly capable software where it was never expected to exist.
-
-### **Generators**
-
-This is where Figlet belongs.
-
-I’d group tools like:
-
-- ASCII / Figlet generator
-- ANSI terminal banner generator
+- Figlet / ASCII generator
+- ANSI banner generator
 - pseudo-terminal card generator
-- code comment banner generator
-- README badge/banner text generator
+- README banner generator
 - retro loading screen generator
-- table-to-ASCII formatter
+- JSON-to-ASCII dashboard tools
+- Markdown-to-terminal transformation tools
+- image-to-character mosaic tools
 
-These are practical enough to use, but still playful enough to belong.
+Those ideas can exist elsewhere later if they become real projects, but they should not define this page.
 
-### **Transformers**
+## Section Thesis
 
-This could be adjacent to generators but more “input becomes strange output.”
+Coding Against The Grain is about what strange programming environments teach:
 
-Examples:
+- how memory can be modeled with almost nothing,
+- how control flow can become spatial,
+- how syntax can deliberately resist comfort,
+- how state hides inside documents, selectors, cells, and stacks,
+- and how constraints make normal programming concepts easier to inspect.
 
-- text → ASCII art
-- JSON → weird table / terminal view
-- Markdown → terminal document
-- CSS box → ASCII box drawing
-- CSV → fixed-width terminal report
-- image → character mosaic, eventually
-- code block → “ancient terminal printout” style
+The section should be playful, but it should still read like Aptlantis: structured, evidence-aware, and honest about what is a note, a demo, a future idea, or a working artifact.
 
-This would fit your broader Aptlantis thing too because you already like structured data, exports, manifests, and format conversion.
+## Suggested Structure
 
-### **Esolang Index**
+```text
+Overview | Esolang Index | Concepts | Field Notes
+```
 
-This is where the resource/wiki idea starts.
+Avoid `Generators`, `Transformers`, and broad `Tools` tabs for now.
 
-Cards for languages or environments:
+## Overview
+
+The overview should explain the point:
+
+> Creative programming where the medium fights back.
+
+It should frame the page as a teaching catalog, not a toy shelf.
+
+Keep the wider constraint-driven programming thesis, but let esolangs become the lead example set instead of terminal art or generated outputs.
+
+## Esolang Index
+
+This should become the main growth surface.
+
+Starter entries:
 
 - Brainfuck
 - Befunge
@@ -77,156 +63,54 @@ Cards for languages or environments:
 - INTERCAL
 - Whitespace
 - Malbolge
-- QBasic oddities
-- COBOL experiments
-- SQL-as-programming
-- CSS-only logic
-- Excel/VBA abuse
-- PowerPoint games
-- Regex engines
+- FALSE
+- Chef
+- Ook!
 
-Each card could have:
+Each entry should eventually carry:
 
-| Field             | Example                             |
-| ----------------- | ----------------------------------- |
-| Difficulty        | approachable / weird / cursed       |
-| Best for learning | state, stacks, parsing, constraints |
-| Runtime model     | tape, grid, cells, text, slides     |
-| Project ideas     | calculator, game, renderer, parser  |
-| Resources         | guide, wiki, examples               |
+| Field             | Purpose                                                  |
+| ----------------- | -------------------------------------------------------- |
+| Difficulty        | Reader-facing complexity label.                          |
+| Runtime model     | Tape, stack, grid, text, image, whitespace, or dialogue. |
+| Best for learning | The concept the language exposes clearly.                |
+| Project ideas     | Small interpreters, visualizers, examples, or notes.     |
+| Evidence          | Links, screenshots, sample programs, or local outputs.   |
 
-### **Concepts**
+## Concepts
 
-This is the teaching tab.
-
-Instead of being language-specific, this explains ideas across weird programming:
+The concepts section should explain ideas across weird programming systems:
 
 - Turing tarpit
-- constraint programming
-- cellular logic
-- stack machines
 - tape machines
+- stack machines
+- two-dimensional control flow
+- cellular logic
+- finite-state machines
+- parser abuse
+- quines
 - code golf
 - self-modifying code
-- quines
-- parser abuse
-- finite-state machines
 - computation in unexpected media
-- “when a format becomes a runtime”
 
-This tab could become quietly excellent because it makes the weird stuff educational, not just novelty.
+This section is where the weird material becomes educational rather than only novel.
 
-### **Q/A + Notes**
+## Field Notes
 
-A Stack Overflow-ish mini knowledge base could be really good here.
+Field notes should be curated Q/A-style explanations:
 
-Not necessarily a real forum at first. More like curated entries:
+- What makes something an esolang?
+- Why is Brainfuck technically complete?
+- How does Befunge make control flow spatial?
+- Why do constraints improve normal programming skill?
+- When does a data format start acting like a runtime?
 
-- “How do you store state in CSS-only games?”
-- “Why is Brainfuck technically complete?”
-- “Can SQL raytrace?”
-- “How do Excel games work?”
-- “What makes something an esolang?”
-- “Why do weird constraints improve normal programming skill?”
+These notes can carry more personality than the project catalog, but should still be grounded in concrete examples.
 
-This is also where your voice can come through more than on the project catalog pages.
+## Implementation Notes
 
-## Page personality
-
-I’d let this area be a little more playful than the main portfolio, but not totally visually separate.
-
-The purple gradient in the legacy page is fine as a temporary marker, but for the rebrand I’d probably bring it back into the Aptlantis design system:
-
-- same dark graph-paper page background
-- same panel/card language
-- more accent color freedom inside modules
-- terminal greens, purples, amber, cyan
-- “lab” modules instead of standard project cards
-
-So it still feels like Aptlantis, but slightly more mischievous.
-
-## Name hierarchy
-
-I’d avoid making the whole page feel like a random “fun stuff” corner. The name already gives it a strong thesis.
-
-Maybe:
-
-**Coding Against The Grain**
-_Unusual programming labs, esolang notes, and constraint-driven experiments._
-
-Or:
-
-**Coding Against The Grain**
-_Creative programming where the medium fights back._
-
-That second one has bite.
-
-## How I’d adapt the tabs visually
-
-From the ChatArchive screenshot, the tab structure works because it makes the project page feel serious and navigable. For this section, I’d use the same mechanics but slightly different labels:
-
-```text
-Overview | Generators | Transformers | Esolangs | Concepts | Field Notes
-```
-
-Or, a little more Aptlantis-flavored:
-
-```text
-Overview | Tools | Transformations | Language Index | Concepts | Notes & Q/A
-```
-
-I think **Tools** may be better than splitting generators/transformers too early unless you have several of each. You could start with:
-
-```text
-Overview | Tools | Esolang Index | Concepts | Notes
-```
-
-Then split Tools later once it gets crowded.
-
-## What to keep from the old page
-
-Definitely keep the Figlet thing. It belongs perfectly. I’d just reframe it as the first “tool card” rather than the main attraction.
-
-The “Against the Grain” card grid is also worth keeping, but I’d make each item feel like a catalog entry with a consistent purpose:
-
-```text
-Title
-Medium / constraint
-What it proves
-Try / read / inspect
-```
-
-For example:
-
-**CSS-only Tic Tac Toe**
-Constraint: no JavaScript
-What it proves: state can be modeled through selectors, inputs, and document structure.
-
-**SQL Raytracer**
-Constraint: relational queries only
-What it proves: declarative systems can still express procedural-looking computation.
-
-**Tetris in Excel**
-Constraint: spreadsheet cells and macros
-What it proves: grids are secretly runtimes.
-
-## My strongest recommendation
-
-Make the section less about “weird languages” and more about **constraint-driven programming**.
-
-That gives it a wider range:
-
-- esolangs
-- office apps
-- CSS
-- SQL
-- regex
-- shell abuse
-- terminal art
-- weird UI experiments
-- old languages
-- intentionally limited tools
-
-That is much richer than only esolangs.
-
-The rebranded page could become one of the most memorable parts of the site because it shows a different side of the same core Aptlantis personality: structured, archival, systems-minded — but willing to play with the edges of what counts as software.
+- Remove the live Figlet generator from the Coding Against The Grain page.
+- Remove generator/transformation entries from the public section catalog.
+- Keep the page public-data backed through `/data/coding-against-the-grain/experiments.json`.
+- Preserve the old `/coding-weird-stuff` compatibility route.
+- Do not add this section to Linux Genealogy or other unrelated navigation decisions.

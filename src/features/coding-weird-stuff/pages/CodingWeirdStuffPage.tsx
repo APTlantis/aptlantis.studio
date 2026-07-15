@@ -1,12 +1,6 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import MetaTags from "../../../components/MetaTags";
-
-const AsciiGenerator = lazy(() =>
-  import("../components/AsciiGenerator").then((mod) => ({
-    default: mod.default,
-  })),
-);
 
 interface Experiment {
   id: string;
@@ -28,12 +22,12 @@ interface ExperimentCatalog {
 
 const fallbackExperiments: Experiment[] = [
   {
-    id: "ascii-art-generator",
-    title: "ASCII Art Generator",
-    constraint: "Terminal text and Figlet fonts",
+    id: "brainfuck-tape-visualizer",
+    title: "Brainfuck Tape Visualizer",
+    constraint: "Eight commands and a memory tape",
     proves:
-      "Typography can become an interface primitive when the output is meant for terminals, READMEs, and old-console aesthetics.",
-    status: "live tool",
+      "A minimal language can make memory, pointers, loops, and input/output easier to see than a feature-rich runtime.",
+    status: "catalog idea",
   },
   {
     id: "css-only-tic-tac-toe",
@@ -65,9 +59,9 @@ const concepts = [
   "constraint-driven programming",
   "state in hostile media",
   "formats as runtimes",
-  "terminal presentation",
   "esolang literacy",
   "deliberate wrong-tool design",
+  "spatial control flow",
 ];
 
 const notes = [
@@ -94,13 +88,13 @@ const structuredData = {
   name: "Coding Against The Grain",
   url: "https://aptlantis.studio/coding-against-the-grain",
   description:
-    "Aptlantis Studio lab for unusual programming, constrained systems, esolang notes, terminal tools, and wrong-tool experiments.",
+    "Aptlantis Studio lab for unusual programming, constrained systems, esolang notes, and wrong-tool experiments.",
 };
 
 const CodingWeirdStuffPage = () => {
   const title = "Coding Against The Grain";
   const description =
-    "Unusual programming labs, esolang notes, terminal tools, and constraint-driven experiments for learning how software behaves when the medium fights back.";
+    "Unusual programming labs, esolang notes, and constraint-driven experiments for learning how software behaves when the medium fights back.";
   const [catalog, setCatalog] = useState<ExperimentCatalog | null>(null);
   const [catalogError, setCatalogError] = useState<string | null>(null);
 
@@ -145,15 +139,15 @@ const CodingWeirdStuffPage = () => {
             </h1>
             <p className="atl-subtitle mt-5 max-w-3xl text-base">
               Creative programming where the medium fights back. This section
-              collects tools, notes, and experiments that use constrained or
-              unexpected systems to teach how computation, state, and interfaces
-              really work.
+              collects notes and experiments that use constrained or unexpected
+              systems to teach how computation, state, and interfaces really
+              work.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
               <span className="atl-tag atl-tag-verified px-3 py-2">
                 Constraint-driven
               </span>
-              <span className="atl-tag px-3 py-2">Terminal tools</span>
+              <span className="atl-tag px-3 py-2">Language oddities</span>
               <span className="atl-tag px-3 py-2">Esolang notes</span>
             </div>
           </div>
@@ -167,15 +161,15 @@ const CodingWeirdStuffPage = () => {
                 </p>
               </div>
               <div className="atl-card-soft p-3">
-                <p className="font-semibold text-atl-archive">First tool</p>
+                <p className="font-semibold text-atl-archive">Primary focus</p>
                 <p className="mt-1 text-atl-frost">
-                  ASCII / Figlet generator reframed as a lab instrument.
+                  Esolang literacy, constrained runtimes, and field notes.
                 </p>
               </div>
               <div className="atl-card-soft p-3">
                 <p className="font-semibold text-atl-archive">Next layer</p>
                 <p className="mt-1 text-atl-frost">
-                  Language index, concepts, and field notes can grow here.
+                  Language index, concepts, and field notes grow here.
                 </p>
               </div>
             </div>
@@ -271,38 +265,44 @@ const CodingWeirdStuffPage = () => {
       </section>
 
       <section className="atl-panel mt-8 p-5">
-        <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+        <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="atl-eyebrow">Lab instrument</p>
+            <p className="atl-eyebrow">Esolang index direction</p>
             <h2 className="atl-title mt-2 text-3xl font-black">
-              ASCII / Figlet Generator
+              Strange languages as inspection tools.
             </h2>
+            <p className="atl-subtitle mt-4">
+              The next buildout should catalog languages by what they expose:
+              tapes, stacks, grids, whitespace, image pixels, dialogue, and
+              deliberately uncomfortable syntax.
+            </p>
           </div>
-          <p className="max-w-xl text-sm text-atl-frost">
-            The first tool stays because it is practical, playful, and aligned
-            with the site’s terminal/evidence language.
-          </p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {[
+              "Brainfuck / tape memory",
+              "Befunge / spatial control",
+              "LOLCODE / syntax theater",
+              "Whitespace / invisible tokens",
+              "Piet / image execution",
+              "INTERCAL / hostile language design",
+            ].map((item) => (
+              <div key={item} className="atl-card-soft p-3 text-sm">
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
-        <Suspense
-          fallback={
-            <div className="atl-card-soft p-4 text-center text-atl-silver">
-              Loading ASCII generator...
-            </div>
-          }
-        >
-          <AsciiGenerator />
-        </Suspense>
       </section>
 
       <section className="mt-8 grid gap-6 lg:grid-cols-[320px_1fr]">
         <aside className="atl-card p-5">
           <p className="atl-eyebrow">Next buildout</p>
           <h2 className="atl-title mt-3 text-2xl font-black">
-            Tools, language index, concepts, notes.
+            Language index, concepts, notes.
           </h2>
           <p className="atl-subtitle mt-4 text-sm">
             This page can grow into tabs later. For now, it establishes the
-            section thesis and keeps the existing tool available.
+            section thesis and public catalog direction.
           </p>
           <Link className="atl-button mt-5 px-4 py-2 text-sm" to="/contact">
             Suggest an experiment

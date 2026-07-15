@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aptlantis.studio/schemas/svg-asset-registry.schema.json",
+  "title": "Aptlantis Studio SVG Asset Registry",
+  "type": "object",
+  "required": ["id", "title", "version", "lastUpdated", "assets"],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "description": "Date or operator timestamp for the most recent registry update."
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "$ref": "/schemas/svg-asset.schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

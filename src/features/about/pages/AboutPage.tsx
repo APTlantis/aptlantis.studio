@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import MetaTags from "../../../components/MetaTags";
+import SesmHeroImage from "../../../components/SesmHeroImage";
 
 const pillars = [
   {
@@ -113,25 +114,12 @@ const AboutPage = () => {
 
       <header className="atl-panel atl-ornament overflow-hidden">
         <div className="grid gap-0 lg:grid-cols-[1fr_320px]">
-          <div className="p-6 sm:p-8">
-            <p className="atl-eyebrow">Aptlantis / About</p>
-            <h1 className="atl-title atl-gradient-text atl-text-balance mt-4 text-4xl font-black sm:text-5xl">
-              Project truth, organized for inspection.
-            </h1>
-            <p className="atl-subtitle mt-5 max-w-3xl text-base">
-              Aptlantis Studio is the public explanation layer for Aptlantis
-              projects. It connects tools, standards, screenshots, metadata, and
-              release posture so a visitor can understand what exists, what is
-              proven, and what still needs work.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-2">
-              <span className="atl-tag atl-tag-verified px-3 py-2">
-                Evidence first
-              </span>
-              <span className="atl-tag px-3 py-2">Public metadata</span>
-              <span className="atl-tag px-3 py-2">Operator notes</span>
-            </div>
-          </div>
+          <SesmHeroImage
+            src="/logos/aptlantis-about-hero-logo.svg"
+            alt="Aptlantis About hero artwork describing project truth organized for inspection."
+            title="Project truth, organized for inspection."
+            description="Aptlantis Studio is the public explanation layer for Aptlantis projects, standards, screenshots, metadata, and release posture."
+          />
           <aside className="border-t border-atl-ridge/60 bg-atl-void/40 p-6 lg:border-l lg:border-t-0">
             <p className="atl-eyebrow">Current focus</p>
             <div className="mt-4 space-y-3 text-sm">
