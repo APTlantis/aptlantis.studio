@@ -66,15 +66,15 @@ public/
 
 ## Legacy Data Removal Targets
 
-| File or area                                              | Action                                                                       |
-| --------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| `src/features/distributions/data/aptlantis.distros.json`  | Remove with distribution feature.                                            |
-| `src/features/distributions/data/aptlantis.torrents.json` | Remove with distribution feature.                                            |
-| `public/data/mirror-status.json`                          | Remove after SyncStatus context is retired or repurposed.                    |
-| `public/data/aptlantis.dashboard_data.json`               | Audit and remove if no current page consumes it.                             |
-| `public/schemas/aptlantis.dashboard_data.json`            | Audit with dashboard data; likely legacy.                                    |
-| `public/data/about_page.schema_completed.json`            | Replace with current About content or remove if page becomes authored React. |
-| `public/data/about_page.schema.json`                      | Remove if About page no longer fetches JSON.                                 |
+| File or area                                              | Action                                                    |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| `src/features/distributions/data/aptlantis.distros.json`  | Remove with distribution feature.                         |
+| `src/features/distributions/data/aptlantis.torrents.json` | Remove with distribution feature.                         |
+| `public/data/mirror-status.json`                          | Remove after SyncStatus context is retired or repurposed. |
+| `public/data/aptlantis.dashboard_data.json`               | Audit and remove if no current page consumes it.          |
+| `public/schemas/aptlantis.dashboard_data.json`            | Audit with dashboard data; likely legacy.                 |
+| `public/data/about_page.schema_completed.json`            | Removed after About became an authored React page.        |
+| `public/data/about_page.schema.json`                      | Removed after About stopped fetching public JSON.         |
 
 ## Route Cleanup
 
