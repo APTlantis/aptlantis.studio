@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Aptlantis Organization Mark</title>
+  <desc id="desc">A blue-slate island tower mark for the Aptlantis organization, framed by archive rings and metadata ticks.</desc>
+  <metadata id="sesm"><![CDATA[
+{
+  "title": "Aptlantis Organization Mark",
+  "role": "organization-logo",
+  "project": "Aptlantis Studio",
+  "author": "Aptlantis",
+  "license": "Proprietary project identity asset",
+  "tags": ["aptlantis", "organization", "studio", "metadata", "archive"],
+  "accessibility": {
+    "summary": "Circular Aptlantis organization mark with an island tower, archive rings, ocean lines, and blue-slate metadata accents."
+  },
+  "version": "0.1.0",
+  "sesm_version": "0.2",
+  "provenance": {
+    "source": "Hand-authored SVG inspired by the Aptlantis blue-slate island logo",
+    "generated_by": "Codex",
+    "created_for": "Aptlantis project teaching studio"
+  }
+}
+  ]]></metadata>
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#1d6f92"/>
+      <stop offset="58%" stop-color="#10263b"/>
+      <stop offset="100%" stop-color="#07131f"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="145" y1="80" x2="370" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e8f2f6"/>
+      <stop offset="42%" stop-color="#8fa5af"/>
+      <stop offset="100%" stop-color="#243849"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="132" y1="138" x2="390" y2="390" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8ee8ff"/>
+      <stop offset="100%" stop-color="#1f9fc4"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="64" fill="#050b12"/>
+  <circle cx="256" cy="256" r="220" fill="url(#sky)" stroke="#315067" stroke-width="4"/>
+  <circle cx="256" cy="256" r="202" fill="none" stroke="#9fb4bd" stroke-width="6"/>
+  <circle cx="256" cy="256" r="184" fill="none" stroke="#1f9fc4" stroke-width="2" opacity=".65"/>
+  <g fill="none" stroke="#46657a" stroke-width="2" opacity=".75">
+    <path d="M77 256h70M365 256h70M256 77v66M256 371v64"/>
+    <path d="M128 128l50 50M384 128l-50 50M128 384l50-50M384 384l-50-50"/>
+    <circle cx="256" cy="256" r="146" stroke-dasharray="3 13"/>
+    <circle cx="256" cy="256" r="116" stroke-dasharray="2 11"/>
+  </g>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M113 336c36-18 55-18 92 0s67 18 103 0 55-18 91 0" fill="none" stroke="url(#cyan)" stroke-width="10"/>
+    <path d="M108 360c38-16 59-16 98 0s62 16 100 0 59-16 98 0" fill="none" stroke="#d6f6ff" stroke-width="5" opacity=".88"/>
+    <path d="M133 387h246" stroke="#87b6c8" stroke-width="5"/>
+    <path d="M164 387l92-221 92 221z" fill="#0a1a29" stroke="url(#metal)" stroke-width="8"/>
+    <path d="M203 387l53-158 53 158z" fill="#10263b" stroke="#7aaabd" stroke-width="5"/>
+    <path d="M224 387V268h64v119" fill="#06111d" stroke="#b7c7cf" stroke-width="5"/>
+    <path d="M241 387v-76h30v76" fill="#132f45" stroke="#7fdcff" stroke-width="4"/>
+    <path d="M217 258h78M204 289h104M190 323h132M176 357h160" stroke="#7aaabd" stroke-width="5"/>
+    <path d="M256 126l-36 79h72z" fill="#dcecf2" stroke="#263b4b" stroke-width="5"/>
+    <path d="M256 126v79" stroke="#7fdcff" stroke-width="4"/>
+    <circle cx="256" cy="256" r="14" fill="#7fdcff" filter="url(#glow)"/>
+  </g>
+  <g fill="#7fdcff" opacity=".9">
+    <circle cx="256" cy="55" r="7"/>
+    <circle cx="256" cy="457" r="7"/>
+    <circle cx="55" cy="256" r="7"/>
+    <circle cx="457" cy="256" r="7"/>
+  </g>
+  <g fill="none" stroke="#d6f6ff" stroke-width="3" opacity=".82">
+    <path d="M154 116h34v15h-19v19h-15z"/>
+    <path d="M358 116h-34v15h19v19h15z"/>
+    <path d="M154 396h34v-15h-19v-19h-15z"/>
+    <path d="M358 396h-34v-15h19v-19h15z"/>
+  </g>
+</svg>

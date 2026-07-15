@@ -34,27 +34,27 @@ const LinuxGenealogyPage = () => {
       <MetaTags
         title="Linux Distribution Genealogy | APTlantis"
         description="An interactive exploration of Linux distribution relationships and history."
-        canonicalUrl="https://aptlantis.net/linux-geneology"
+        canonicalUrl="https://aptlantis.studio/linux-geneology"
         ogTitle="Linux Distribution Genealogy"
         ogDescription="Explore the lineage and relationships of Linux distributions on APTlantis."
         structuredData={[
           {
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://aptlantis.net/linux-geneology",
+            "@id": "https://aptlantis.studio/linux-geneology",
             name: "Linux Distribution Genealogy",
             description:
               "Interactive timeline visualization of Linux distribution relationships from 1991-2020+",
-            url: "https://aptlantis.net/linux-geneology",
+            url: "https://aptlantis.studio/linux-geneology",
             inLanguage: "en-US",
             isPartOf: {
               "@type": "WebSite",
               name: "Aptlantis",
-              url: "https://aptlantis.net",
+              url: "https://aptlantis.studio",
             },
             about: {
               "@type": "Dataset",
-              "@id": "https://aptlantis.net/data/linux-geneology.json",
+              "@id": "https://aptlantis.studio/data/linux-geneology.json",
               name: "Linux Distribution Genealogy Dataset",
               description:
                 "Hierarchical genealogical data for major Linux distributions spanning 1991-2020+",
@@ -74,7 +74,8 @@ const LinuxGenealogyPage = () => {
               },
               distribution: {
                 "@type": "DataDownload",
-                contentUrl: "https://aptlantis.net/data/linux-geneology.json",
+                contentUrl:
+                  "https://aptlantis.studio/data/linux-geneology.json",
                 encodingFormat: "application/json",
               },
             },
@@ -97,7 +98,7 @@ const LinuxGenealogyPage = () => {
                   "@type": "ListItem",
                   position: 1,
                   name: "Home",
-                  item: "https://aptlantis.net/",
+                  item: "https://aptlantis.studio/",
                 },
                 {
                   "@type": "ListItem",

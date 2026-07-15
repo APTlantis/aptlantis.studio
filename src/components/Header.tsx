@@ -45,7 +45,7 @@ const Header = () => {
             <Link to="/" className="flex items-center">
               <div className="w-12 h-12 relative mr-3">
                 <img
-                  src="/logos/aptlantis-island-logo.png"
+                  src="/logos/aptlantis-organization-mark.png"
                   width={48}
                   height={48}
                   alt="Aptlantis Logo"

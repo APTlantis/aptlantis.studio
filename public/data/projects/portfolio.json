@@ -82,7 +82,7 @@
     "csharp": 1,
     "msix": 1,
     "schema-driven": 2,
-    "toml": 1,
+    "toml": 2,
     "command-generation": 1,
     "wizard": 1,
     "release-evidence": 2,
@@ -98,9 +98,7 @@
     "typescript": 1,
     "vite": 1,
     "structured-data": 1,
-    "workflow": 1,
-    "visual-builder": 1,
-    "json-schema": 1
+    "visual-builder": 1
   },
   "topPriorities": [
     {
@@ -109,7 +107,7 @@
       "completion": 85,
       "status": "active",
       "governanceGroup": "DRS",
-      "next": "Run and record pnpm build, workflow smoke tests, and relevant Tauri checks from the current D:\\DRS\\Structra source."
+      "next": "Run and record pnpm build and relevant Tauri checks from the current D:\\DRS\\Structra source after the scope reduction lands."
     },
     {
       "id": "chatarchive",
@@ -279,8 +277,13 @@
       "repoUrl": "",
       "cloneCommand": "",
       "manifestPath": "D:\\.library\\aptlantis_core\\WGS\\WGS.manifest.toml",
-      "logoSrc": "/svg/apt-toml-logo.svg",
-      "screenshots": [],
+      "logoSrc": "/logos/dnf-cityhall-logo.svg",
+      "screenshots": [
+        {
+          "src": "/projects/cityhall/cityhall-identity-board.png",
+          "caption": "CityHall visual identity board for the standards hub concept: governance, standardization, guidance, and the WGS/PPS/CTS/DRS framework family. This is brand/explainer evidence, not a release-verification artifact."
+        }
+      ],
       "video": null,
       "helpOutput": "CityHall groups WGS, AAMHS, CTS, DRS, NeonInk, PPS, SESM, WDS plus the Blanks resource kit.\n\nResource summary:\n- 8 active standards\n- 34 template/resource references\n- 9 validator entrypoints\n- 14 curated framework relationships\n\nStart with WGS for placement, PPS for intent, then route to CTS, DRS, WDS, AAMHS, NeonInk, or SESM based on the artifact being produced.",
       "commandWizardSchema": null,
@@ -916,8 +919,12 @@
       "repoUrl": "https://github.com/APTlantis/Clone-Cratesio",
       "cloneCommand": "git clone https://github.com/APTlantis/Clone-Cratesio",
       "manifestPath": "D:\\CTS\\CloneCratesio\\CloneCratesio.manifest.toml",
-      "logoSrc": "/svg/apt-rust-logo.svg",
+      "logoSrc": "/logos/dnf-clonecratesio-logo.svg",
       "screenshots": [
+        {
+          "src": "/projects/clonecratesio/clonecratesio-identity-board.png",
+          "caption": "CloneCratesio visual identity board showing the mirror, multiplex, and preserve framing around the crates.io registry mirror. This is concept evidence for project identity, not command-output proof."
+        },
         {
           "src": "/projects/clonecratesio/crates-mirror.png",
           "caption": "Bundle output and manifest evidence from a CloneCratesio run."
@@ -1057,7 +1064,7 @@
       "repoUrl": "https://github.com/APTlantis/ChatArchive",
       "cloneCommand": "git clone https://github.com/APTlantis/ChatArchive",
       "manifestPath": "D:\\DRS\\Chat\\Chat.manifest.toml",
-      "logoSrc": "/svg/apt-typescript-logo.svg",
+      "logoSrc": "/logos/dnf-chatarchive-logo.svg",
       "screenshots": [
         {
           "src": "/projects/chatarchive/chatarchive-dashboard-code.png",
@@ -1195,8 +1202,12 @@
       "repoUrl": "https://github.com/APTlantis/FileCabinet",
       "cloneCommand": "git clone https://github.com/APTlantis/FileCabinet",
       "manifestPath": "D:\\DRS\\FileCabinet\\FileCabinet.manifest.toml",
-      "logoSrc": "/svg/apt-csharp-logo.svg",
+      "logoSrc": "/logos/dnf-filecabinet-logo.svg",
       "screenshots": [
+        {
+          "src": "/projects/filecabinet/filecabinet-identity-board.png",
+          "caption": "FileCabinet visual identity board emphasizing retained artifacts, preservation, integrity, and verification. This is project identity evidence; release verification remains governed by the manifest and release-evidence fields."
+        },
         {
           "src": "/projects/filecabinet/filecabinet-dashboard.png",
           "caption": "FileCabinet dashboard showing a live vault with ingest controls, retained size, item counts, recent activity, filtered catalog rows, category navigation, integrity hash status, and vault-health actions."
@@ -1302,7 +1313,7 @@
       "repoUrl": "https://github.com/APTlantis/Archive-Hasher",
       "cloneCommand": "git clone https://github.com/APTlantis/Archive-Hasher.git",
       "manifestPath": "D:\\CTS\\ArchiveHasher\\ArchiveHasher.manifest.toml",
-      "logoSrc": "/svg/apt-powershell-logo.svg",
+      "logoSrc": "/logos/dnf-archivehasher-logo.svg",
       "screenshots": [],
       "video": null,
       "helpOutput": "",
@@ -1554,7 +1565,7 @@
       "repoUrl": "",
       "cloneCommand": "",
       "manifestPath": "D:\\DRS\\ChromeArchivalPlugin\\ChromeArchivalPlugin.manifest.toml",
-      "logoSrc": "/svg/apt-node-logo.svg",
+      "logoSrc": "/logos/dnf-achivalplugin-logo.svg",
       "screenshots": [
         {
           "src": "/projects/chromearchivalplugin/metadata-json.png",
@@ -1569,8 +1580,8 @@
       "id": "structra",
       "name": "Structra",
       "sourcePath": "D:\\DRS\\Structra",
-      "summary": "Tauri desktop application for visual structured-data building and workflow assembly. It turns field models and workflow steps into exportable JSON, YAML, TOML, XML, JSON Schema, and CI-style workflow shapes.",
-      "ecosystemRole": "Development tool for architecture planning, structured data modeling, and workflow design; the studio version demonstrates the same visual-model-to-machine-output concept in a browser-safe teaching lab.",
+      "summary": "Tauri desktop application for visual structured-data building. It turns field and object models into exportable JSON and TOML structured data, with the studio route showing a reduced browser-safe version of that core idea.",
+      "ecosystemRole": "Development tool for local structured data modeling; the studio version demonstrates the same visual-model-to-machine-output concept without presenting workflow automation or schema-authoring as current scope.",
       "status": "active",
       "lifecycle": "active-core",
       "governanceGroup": "DRS",
@@ -1584,36 +1595,26 @@
       "capabilities": [
         "visual structured data building",
         "nested field and object modeling",
-        "live export to JSON, YAML, TOML, XML, and JSON Schema",
-        "JSON and JSON Schema import workflows",
-        "workflow dependency modeling",
-        "workflow export to portable YAML, GitHub Actions, and GitLab CI shapes",
+        "live export previews for JSON and TOML",
+        "binding-path validation for modeled fields",
         "template support and project save/load flows",
-        "structured data validation"
+        "structured data validation focused on field paths and example values"
       ],
       "interfaces": [
         "React desktop UI packaged through Tauri",
         "visual field builder and structure canvas",
-        "workflow graph and step inspector",
         "Tauri Rust backend commands for transform and validation paths",
-        "browser teaching lab at /structra-lab",
-        "workflow smoke script in scripts/workflow-smoke.mjs"
+        "browser teaching lab at /structra-lab"
       ],
       "produces": [
-        "structured data values in JSON, YAML, TOML, and XML",
-        "JSON Schema-style outputs",
-        "workflow YAML definitions",
-        "GitHub Actions and GitLab CI workflow shapes",
+        "structured data values in JSON and TOML",
         "Structra project files",
         "Tauri desktop application bundles when packaging is run"
       ],
       "consumes": [
         "visual field definitions",
         "binding paths and example values",
-        "JSON value imports",
-        "JSON Schema imports",
-        "workflow YAML imports",
-        "operator-authored workflow steps and dependencies"
+        "operator-authored example values"
       ],
       "dependsOn": [
         "Node.js",
@@ -1628,35 +1629,34 @@
       ],
       "usedBy": [
         "Aptlantis Studio Structra Lab teaching surface",
-        "Aptlantis structured-data and workflow planning processes"
+        "Aptlantis structured-data planning processes"
       ],
       "missingPieces": [
         "Current build, test, packaging, and release posture were not executed during the 2026-07-08 governance metadata pass.",
         "README still contains stale legacy source-path context and should be reconciled with D:\\DRS\\Structra.",
         "Release artifact verification is not recorded in the current studio evidence snapshot.",
-        "SESM SVG project mark and workflow diagram assets still need to be created."
+        "SESM metadata has not yet been embedded in the Structra SVG project mark."
       ],
       "nextSteps": [
-        "Run and record pnpm build, workflow smoke tests, and relevant Tauri checks from the current D:\\DRS\\Structra source.",
+        "Run and record pnpm build and relevant Tauri checks from the current D:\\DRS\\Structra source after the scope reduction lands.",
         "Reconcile README and project docs so paths and release posture match the current checkout.",
-        "Capture current desktop screenshots for the field builder, workflow graph, export panel, and validation states.",
-        "Create SESM-embedded SVG assets for Structra project mark, workflow graph, and visual-model-to-output diagram.",
-        "Decide whether the browser Structra Lab should export SESM metadata for generated diagrams."
+        "Capture current desktop screenshots for the field builder, export panel, and validation states.",
+        "Create SESM-embedded SVG metadata for the Structra project mark when the broader logo metadata pass happens.",
+        "Decide whether imports belong in the first reduced desktop scope or should remain deferred."
       ],
       "potentialImprovements": [
         "Add automated tests for transformation and validation flows.",
         "Improve packaging and installer automation evidence.",
-        "Expand workflow target adapters only when real operator workflows need them.",
+        "Add import support only after the core JSON/TOML output path is reliable.",
         "Improve accessibility and responsive behavior in the desktop UI.",
-        "Add advanced usage notes for imports, schemas, and workflow dependencies."
+        "Add advanced usage notes for structured data modeling once the reduced desktop scope stabilizes."
       ],
       "documentationOutputs": [
         "README.md",
         "Project-README.md",
         "Structra.manifest.toml",
         "Structra-AI-EVALUATION.json",
-        "docs/release-notes-v1.0.0.md",
-        "scripts/workflow-smoke.mjs"
+        "docs/release-notes-v1.0.0.md"
       ],
       "tags": [
         "drs",
@@ -1668,19 +1668,18 @@
         "vite",
         "schema-driven",
         "structured-data",
-        "workflow",
+        "toml",
         "visual-builder",
-        "local-first",
-        "json-schema"
+        "local-first"
       ],
       "repoUrl": "",
       "cloneCommand": "git clone D:\\DRS\\Structra",
       "manifestPath": "D:\\DRS\\Structra\\Structra.manifest.toml",
-      "logoSrc": "/svg/apt-react-logo.svg",
+      "logoSrc": "/logos/dnf-structra-logo.svg",
       "screenshots": [
         {
           "src": "/projects/structra/Structra-Builder.png",
-          "caption": "Structra desktop builder view showing the visual structure authoring surface for fields and workflow assembly."
+          "caption": "Structra desktop builder view showing the visual structure authoring surface for fields and object paths."
         },
         {
           "src": "/projects/structra/Structra-StructureView.png",
@@ -1696,7 +1695,7 @@
         }
       ],
       "video": null,
-      "helpOutput": "pnpm install\npnpm build\npnpm test:workflow\npnpm tauri build",
+      "helpOutput": "pnpm install\npnpm build\npnpm tauri build",
       "commandWizardSchema": null
     }
   ]

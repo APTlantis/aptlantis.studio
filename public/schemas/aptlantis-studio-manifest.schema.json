@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aptlantis.studio/schemas/aptlantis-studio-manifest.schema.json",
+  "title": "Aptlantis Studio Public Manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "description",
+    "version",
+    "lastUpdated",
+    "siteUrl",
+    "schemaUrl",
+    "crawlerPolicy",
+    "datasets",
+    "schemas",
+    "evidenceAssetGroups"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date"
+    },
+    "siteUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "schemaUrl": {
+      "type": "string"
+    },
+    "crawlerPolicy": {
+      "type": "object",
+      "required": ["summary", "allowedUses", "restrictions"],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "allowedUses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "restrictions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "datasets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/publicEntry"
+      }
+    },
+    "schemas": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/publicEntry"
+      }
+    },
+    "evidenceAssetGroups": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/publicEntry"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "publicEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "description",
+        "url",
+        "kind",
+        "status",
+        "source",
+        "updateCadence",
+        "lastUpdated",
+        "license",
+        "crawlerUse"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "schemaUrl": {
+          "type": ["string", "null"]
+        },
+        "kind": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["curated", "generated", "legacy", "draft", "deprecated"]
+        },
+        "source": {
+          "type": "string"
+        },
+        "updateCadence": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date"
+        },
+        "license": {
+          "type": "string"
+        },
+        "crawlerUse": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

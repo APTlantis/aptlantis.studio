@@ -2,45 +2,34 @@ import React, { useState, useEffect, useCallback } from "react";
 import { useScreensaver } from "../context/ScreensaverContext";
 import figlet from "../utils/figletConfig";
 
-// Define the distro tips
-const DISTRO_TIPS = [
-  "Tip: Use 'rsync -avz --progress' to see transfer progress in real-time",
-  "Tip: Alpine Linux uses only 130MB of RAM and 700MB of storage",
-  "Tip: Arch Linux follows a rolling release model for continuous updates",
-  "Tip: Debian is one of the oldest and most respected Linux distributions",
-  "Tip: Gentoo allows you to compile packages with custom optimizations",
-  "Tip: Rocky Linux is a drop-in replacement for CentOS",
-  "Tip: FreeBSD is not Linux, but a descendant of the original Berkeley Unix",
-  "Tip: Use 'apt-get clean' to free up disk space by clearing package cache",
-  "Tip: KDE Neon combines the latest KDE software with Ubuntu LTS stability",
-  "Tip: Linux Mint is designed to work 'out of the box' with multimedia support",
-  "Tip: Void Linux uses the runit init system instead of systemd",
-  "Tip: Kali Linux includes over 600 penetration testing tools",
-  "Tip: Use 'dd if=/dev/zero of=/dev/null bs=1M count=1000' to benchmark disk speed",
-  "Tip: Fedora often introduces new technologies later adopted by other distributions",
-  "Tip: Use 'htop' for a more user-friendly alternative to 'top'",
-  "Tip: The 'find' command can locate files based on size, date, and permissions",
-  "Tip: Use 'ssh-copy-id user@host' to easily copy your SSH key to a server",
-  "Tip: APTlantis mirrors are updated every 6 hours for freshness",
-  "Tip: Use 'curl wttr.in' to get a weather forecast in your terminal",
-  "Tip: The 'ncdu' tool helps you find what's taking up disk space",
+const PROJECT_TIPS = [
+  "Tip: Every strong project page should show what evidence exists and what is still missing",
+  "Tip: Public JSON belongs in /data when crawlers should be able to index it",
+  "Tip: A manifest is more useful when it names source, schema, status, and update cadence",
+  "Tip: Release claims should point at hashes, manifests, screenshots, or notes",
+  "Tip: Project pages should teach operation, output, and trust posture",
+  "Tip: Screenshots are evidence when their captions explain what they prove",
+  "Tip: Missing pieces should stay visible instead of being hidden behind polish",
+  "Tip: Coding Against The Grain turns strange constraints into teaching tools",
+  "Tip: SESM metadata should distinguish parseability from security guarantees",
+  "Tip: A compact evidence grid beats a vague paragraph when artifacts exist",
 ];
 
 // ASCII banners to cycle through
-const BANNERS = ["APTlantis", "MIRROR READY", "rsync -avz --cool"];
+const BANNERS = ["APTlantis", "EVIDENCE READY", "manifest.json"];
 
-// Simulated file paths for the scanning effect
+// Simulated project evidence paths for the scanning effect
 const FILE_PATHS = [
-  "/var/www/mirrors/debian/pool/main/a/apache2/apache2_2.4.57-2_amd64.deb",
-  "/var/www/mirrors/ubuntu/pool/universe/z/zsh/zsh_5.9-4ubuntu1_amd64.deb",
-  "/var/www/mirrors/fedora/releases/38/Everything/x86_64/os/Packages/k/kernel-6.2.9-300.fc38.x86_64.rpm",
-  "/var/www/mirrors/archlinux/pool/packages/linux-6.3.1.arch1-1-x86_64.pkg.tar.zst",
-  "/var/www/mirrors/gentoo/distfiles/openssl-3.0.8.tar.gz",
-  "/var/www/mirrors/alpine/v3.18/main/x86_64/busybox-1.36.0-r0.apk",
-  "/var/www/mirrors/opensuse/distribution/leap/15.5/repo/oss/x86_64/zypper-1.14.56-150500.1.3.x86_64.rpm",
-  "/var/www/mirrors/rockylinux/8/BaseOS/x86_64/os/Packages/b/bash-4.4.20-4.el8.x86_64.rpm",
-  "/var/www/mirrors/freebsd/releases/amd64/13.2-RELEASE/base.txz",
-  "/var/www/mirrors/kali/pool/main/m/metasploit-framework/metasploit-framework_6.3.4-0kali1_all.deb",
+  "/data/manifest.json",
+  "/data/projects/portfolio.json",
+  "/data/projects/cityhall-frameworks.json",
+  "/projects/chatarchive/chatarchive-dashboard-code.png",
+  "/projects/clonecratesio/CloneCrates.mp4",
+  "/projects/filecabinet/filecabinet-dashboard.png",
+  "/projects/structra/Structra-Builder.png",
+  "/schemas/aptlantis-studio-manifest.schema.json",
+  "/robots.txt",
+  "/sitemap.xml",
 ];
 
 // Simulated hash values
@@ -113,7 +102,7 @@ const Screensaver: React.FC = () => {
     if (!isActive) return;
 
     const tipInterval = setInterval(() => {
-      setCurrentTipIndex((prevIndex) => (prevIndex + 1) % DISTRO_TIPS.length);
+      setCurrentTipIndex((prevIndex) => (prevIndex + 1) % PROJECT_TIPS.length);
     }, 5000); // Change tip every 5 seconds
 
     return () => clearInterval(tipInterval);
@@ -189,7 +178,7 @@ const Screensaver: React.FC = () => {
         {asciiBanner}
       </div>
 
-      {/* Distro tip */}
+      {/* Project tip */}
       <div
         className="text-green-400 text-xl mb-12"
         style={{
@@ -197,7 +186,7 @@ const Screensaver: React.FC = () => {
           textShadow: "0 0 3px rgba(0, 255, 0, 0.5)",
         }}
       >
-        {DISTRO_TIPS[currentTipIndex]}
+        {PROJECT_TIPS[currentTipIndex]}
       </div>
 
       {/* File scanning simulation */}

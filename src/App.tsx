@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import { HomePage } from "./features/home";
 import LoadingSpinner from "./components/LoadingSpinner";
 import ErrorBoundary from "./components/ErrorBoundary";
-import { SyncStatusProvider } from "./context/SyncStatusContext";
 import { ToastProvider } from "./hooks/useToast";
 import { ThemeProvider } from "./context/ThemeContext";
 import { ScreensaverProvider } from "./context/ScreensaverContext";
@@ -49,20 +48,6 @@ const IRCServerPage = lazy(() =>
     default: module.IRCServerPage,
   })),
 );
-const VolunteerPage = lazy(() =>
-  import("./features/volunteer").then((module) => ({
-    default: module.VolunteerPage,
-  })),
-);
-const MuseumPage = lazy(() =>
-  import("./features/museum").then((module) => ({
-    default: module.MuseumPage,
-  })),
-);
-/* Terry Videos temporarily hidden from UI */
-// const TerryDavisVideosPage = lazy(() =>
-//   import('./features/terry-davis-videos').then(module => ({ default: module.TerryDavisVideosPage }))
-// );
 const CodingWeirdStuffPage = lazy(() =>
   import("./features/coding-weird-stuff").then((module) => ({
     default: module.CodingWeirdStuffPage,
@@ -79,55 +64,46 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider>
         <ToastProvider>
-          <SyncStatusProvider>
-            <ScreensaverProvider>
-              <Router>
-                <div className="atl-shell flex min-h-screen flex-col text-atl-archive">
-                  <Header />
-                  <main className="flex-grow">
-                    <ErrorBoundary>
-                      <Suspense fallback={<LoadingSpinner />}>
-                        <Routes>
-                          <Route path="/" element={<HomePage />} />
-                          <Route path="/about" element={<AboutPage />} />
-                          <Route path="/contact" element={<ContactPage />} />
-                          <Route
-                            path="/volunteer"
-                            element={<VolunteerPage />}
-                          />
-                          <Route path="/terms" element={<TermsPage />} />
-                          <Route path="/privacy" element={<PrivacyPage />} />
-                          <Route
-                            path="/project/:id"
-                            element={<ProjectDetailPage />}
-                          />
-                          <Route path="/svg-lab" element={<SVGLabPage />} />
-                          <Route
-                            path="/structra-lab"
-                            element={<StructraLabPage />}
-                          />
-                          <Route path="/irc" element={<IRCServerPage />} />
-                          <Route path="/museum" element={<MuseumPage />} />
-                          {/* Route hidden as requested */}
-                          {/* <Route path="/terry-videos" element={<TerryDavisVideosPage />} /> */}
-                          <Route
-                            path="/coding-weird-stuff"
-                            element={<CodingWeirdStuffPage />}
-                          />
-                          <Route
-                            path="/linux-geneology"
-                            element={<LinuxGenealogyPage />}
-                          />
-                        </Routes>
-                      </Suspense>
-                    </ErrorBoundary>
-                  </main>
-                  <Footer />
-                  <Screensaver />
-                </div>
-              </Router>
-            </ScreensaverProvider>
-          </SyncStatusProvider>
+          <ScreensaverProvider>
+            <Router>
+              <div className="atl-shell flex min-h-screen flex-col text-atl-archive">
+                <Header />
+                <main className="flex-grow">
+                  <ErrorBoundary>
+                    <Suspense fallback={<LoadingSpinner />}>
+                      <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/about" element={<AboutPage />} />
+                        <Route path="/contact" element={<ContactPage />} />
+                        <Route path="/terms" element={<TermsPage />} />
+                        <Route path="/privacy" element={<PrivacyPage />} />
+                        <Route
+                          path="/project/:id"
+                          element={<ProjectDetailPage />}
+                        />
+                        <Route path="/svg-lab" element={<SVGLabPage />} />
+                        <Route
+                          path="/structra-lab"
+                          element={<StructraLabPage />}
+                        />
+                        <Route path="/irc" element={<IRCServerPage />} />
+                        <Route
+                          path="/coding-weird-stuff"
+                          element={<CodingWeirdStuffPage />}
+                        />
+                        <Route
+                          path="/linux-geneology"
+                          element={<LinuxGenealogyPage />}
+                        />
+                      </Routes>
+                    </Suspense>
+                  </ErrorBoundary>
+                </main>
+                <Footer />
+                <Screensaver />
+              </div>
+            </Router>
+          </ScreensaverProvider>
         </ToastProvider>
       </ThemeProvider>
     </ErrorBoundary>

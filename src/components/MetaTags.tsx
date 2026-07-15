@@ -26,18 +26,18 @@ interface MetaTagsProps {
  * @returns JSX.Element
  */
 const MetaTags = ({
-  title = "APTlantis - High-Speed Linux Mirrors, ISOs, and Open-Source Tools",
-  description = "APTlantis is a blazing-fast Linux mirror hub hosting full repositories, ISOs, and open-source packages for the global FOSS community. Built for speed.",
-  keywords = "APTlantis, Linux mirrors, Linux ISOs, open-source downloads, Debian mirror, Fedora mirror, Arch mirror, Linux repos, FOSS archive, open source hosting",
-  canonicalUrl = "https://aptlantis.net/",
-  ogTitle = "APTlantis - High-Speed Linux Mirrors & ISOs",
-  ogDescription = "APTlantis provides lightning-fast access to Linux repos, ISO downloads, and open-source archives.",
-  ogImage = "https://aptlantis.net/logos/aptlantis-usb.jpeg",
-  ogImageAlt = "APTlantis Logo and Banner",
-  twitterTitle = "APTlantis - High-Speed Linux Mirrors & ISOs",
-  twitterDescription = "Blazing-fast Linux mirror hub hosting full repositories, ISOs, and open-source packages.",
-  twitterImage = "https://aptlantis.net/logos/aptlantis-usb.jpeg",
-  twitterImageAlt = "APTlantis Logo and Banner",
+  title = "Aptlantis Studio - Project Teaching Studio and Evidence Catalog",
+  description = "Aptlantis Studio is an evidence-led project portfolio for Aptlantis tools, standards, release posture, screenshots, structured metadata, and operator-facing project notes.",
+  keywords = "Aptlantis Studio, project portfolio, evidence catalog, release evidence, structured metadata, SESM, CityHall, FileCabinet, CloneCratesio, Structra",
+  canonicalUrl = "https://aptlantis.studio/",
+  ogTitle = "Aptlantis Studio - Project Teaching Studio",
+  ogDescription = "Evidence-led project pages, standards maps, screenshots, manifests, and operator notes for the Aptlantis ecosystem.",
+  ogImage = "https://aptlantis.studio/logos/aptlantis-organization-board.png",
+  ogImageAlt = "Aptlantis organization identity board with blue-slate island tower and metallic wordmark",
+  twitterTitle = "Aptlantis Studio - Project Teaching Studio",
+  twitterDescription = "Evidence-led project pages, standards maps, screenshots, manifests, and operator notes for the Aptlantis ecosystem.",
+  twitterImage = "https://aptlantis.studio/logos/aptlantis-organization-board.png",
+  twitterImageAlt = "Aptlantis organization identity board with blue-slate island tower and metallic wordmark",
   structuredData,
 }: MetaTagsProps) => {
   // Update the document title when the component mounts or updates

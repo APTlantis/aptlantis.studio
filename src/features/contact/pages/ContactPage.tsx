@@ -38,12 +38,12 @@ const ContactPage = () => {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     name: metaTitle,
-    url: "https://aptlantis.net/contact",
+    url: "https://aptlantis.studio/contact",
     description: metaDescription,
     mainEntity: {
       "@type": "Organization",
       name: "APTlantis",
-      url: "https://aptlantis.net",
+      url: "https://aptlantis.studio",
       contactPoint: {
         "@type": "ContactPoint",
         contactType: "customer support",
@@ -119,7 +119,7 @@ const ContactPage = () => {
       <MetaTags
         title={metaTitle}
         description={metaDescription}
-        canonicalUrl="https://aptlantis.net/contact"
+        canonicalUrl="https://aptlantis.studio/contact"
         ogTitle={metaTitle}
         ogDescription={metaDescription}
         structuredData={structuredData}

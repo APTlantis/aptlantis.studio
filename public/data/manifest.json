@@ -1,0 +1,97 @@
+{
+  "id": "aptlantis-studio-public-manifest",
+  "title": "Aptlantis Studio Public Data Manifest",
+  "description": "Crawler-friendly catalog of public Aptlantis Studio datasets, schemas, and evidence asset groups.",
+  "version": "0.1.0",
+  "lastUpdated": "2026-07-15",
+  "siteUrl": "https://aptlantis.studio",
+  "schemaUrl": "/schemas/aptlantis-studio-manifest.schema.json",
+  "crawlerPolicy": {
+    "summary": "Aptlantis Studio welcomes search indexing, archival capture, AI crawler indexing, and public metadata inspection for the files listed here.",
+    "allowedUses": [
+      "search indexing",
+      "archival snapshots",
+      "research indexing",
+      "metadata extraction",
+      "schema inspection"
+    ],
+    "restrictions": [
+      "Do not treat this manifest as a security audit.",
+      "Do not infer release verification unless a listed evidence artifact explicitly records it.",
+      "Do not republish private data if it is accidentally discovered outside these public paths."
+    ]
+  },
+  "datasets": [
+    {
+      "id": "project-portfolio",
+      "title": "Project Portfolio",
+      "description": "Main Aptlantis project catalog used by the portfolio dashboard and project detail pages.",
+      "url": "/data/projects/portfolio.json",
+      "schemaUrl": null,
+      "kind": "project-catalog",
+      "status": "curated",
+      "source": "Aptlantis Studio curated project records",
+      "updateCadence": "as-needed",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Index project titles, summaries, tags, public evidence paths, and stated missing pieces."
+    },
+    {
+      "id": "cityhall-frameworks",
+      "title": "CityHall Frameworks",
+      "description": "Structured framework relationship data for CityHall and Aptlantis governance explanations.",
+      "url": "/data/projects/cityhall-frameworks.json",
+      "schemaUrl": null,
+      "kind": "standards-catalog",
+      "status": "curated",
+      "source": "Aptlantis Studio curated standards records",
+      "updateCadence": "as-needed",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Index framework names, relationships, summaries, and public governance context."
+    }
+  ],
+  "schemas": [
+    {
+      "id": "public-manifest-schema",
+      "title": "Aptlantis Studio Manifest Schema",
+      "description": "JSON Schema for this public data manifest.",
+      "url": "/schemas/aptlantis-studio-manifest.schema.json",
+      "kind": "json-schema",
+      "status": "draft",
+      "source": "Aptlantis Studio cleanup stage",
+      "updateCadence": "with manifest changes",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Use to validate or interpret /data/manifest.json."
+    }
+  ],
+  "evidenceAssetGroups": [
+    {
+      "id": "project-media",
+      "title": "Project Media Evidence",
+      "description": "Project-specific screenshots, videos, captions, and visual evidence assets.",
+      "url": "/projects/",
+      "kind": "media-assets",
+      "status": "curated",
+      "source": "Aptlantis Studio public project evidence folders",
+      "updateCadence": "as-needed",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Index public screenshots and videos only with surrounding project context."
+    },
+    {
+      "id": "identity-assets",
+      "title": "Identity And Logo Assets",
+      "description": "Public Aptlantis and project logo assets used by the site.",
+      "url": "/logos/",
+      "kind": "identity-assets",
+      "status": "curated",
+      "source": "Aptlantis Studio visual asset set",
+      "updateCadence": "as-needed",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Use for link previews, project identity context, and visual cataloging."
+    }
+  ]
+}

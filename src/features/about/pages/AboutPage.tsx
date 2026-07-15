@@ -50,12 +50,12 @@ const AboutPage = () => {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: metaTitle,
-    url: "https://aptlantis.net/about",
+    url: "https://aptlantis.studio/about",
     description: metaDescription,
     mainEntity: {
       "@type": "Organization",
       name: "APTlantis",
-      url: "https://aptlantis.net",
+      url: "https://aptlantis.studio",
       contactPoint: data?.contact
         ? {
             "@type": "ContactPoint",
@@ -92,7 +92,7 @@ const AboutPage = () => {
         <MetaTags
           title={metaTitle}
           description={metaDescription}
-          canonicalUrl="https://aptlantis.net/about"
+          canonicalUrl="https://aptlantis.studio/about"
           ogTitle={metaTitle}
           ogDescription={metaDescription}
           structuredData={structuredData}
@@ -114,7 +114,7 @@ const AboutPage = () => {
         <MetaTags
           title={metaTitle}
           description={metaDescription}
-          canonicalUrl="https://aptlantis.net/about"
+          canonicalUrl="https://aptlantis.studio/about"
           ogTitle={metaTitle}
           ogDescription={metaDescription}
           structuredData={structuredData}
@@ -130,7 +130,7 @@ const AboutPage = () => {
       <MetaTags
         title={metaTitle}
         description={metaDescription}
-        canonicalUrl="https://aptlantis.net/about"
+        canonicalUrl="https://aptlantis.studio/about"
         ogTitle={metaTitle}
         ogDescription={metaDescription}
         structuredData={structuredData}

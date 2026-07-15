@@ -15,10 +15,6 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm">
-            {/* Museum link hidden until functionality is working */}
-            {/* <Link to="/museum" className="text-gray-300 hover:text-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#0a0a0a] rounded-md transition-colors">
-              Museum
-            </Link> */}
             <Link
               to="/terms"
               className="rounded-md text-atl-silver transition-colors hover:text-atl-archive focus:outline-none focus:ring-2 focus:ring-atl-silver focus:ring-offset-2 focus:ring-offset-atl-void"
