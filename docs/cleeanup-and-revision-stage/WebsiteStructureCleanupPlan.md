@@ -20,7 +20,7 @@ The site should become easier to maintain, easier to crawl, and easier to trust.
 | Feature directory                 | Decision                        | Notes                                                                                                                            |
 | --------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `src/features/about`              | Keep and rewrite                | Current content is legacy mirror-era copy. Reframe around project catalog, standards, evidence, and teaching studio identity.    |
-| `src/features/coding-weird-stuff` | Keep and rebrand                | Rename public concept to **Coding Against The Grain**. Keep the Figlet / ASCII tool as an early lab instrument.                  |
+| `src/features/coding-weird-stuff` | Kept and rebranded              | Public concept is now **Coding Against The Grain**. The old route remains compatible and the Figlet / ASCII tool is retained.    |
 | `src/features/contact`            | Kept and expanded               | Now routes project corrections, metadata issues, collaboration notes, and sensitive concerns through the current studio framing. |
 | `src/features/distributions`      | Remove                          | Legacy Linux distribution, ISO, torrent, and mirror tooling does not match the current portfolio mission.                        |
 | `src/features/irc`                | Quarantine                      | Keep until a final content decision is made. Do not expand during the cleanup pass.                                              |
@@ -98,6 +98,7 @@ Keep these routes during this cleanup stage:
 /svg-lab
 /structra-lab
 /irc
+/coding-against-the-grain
 /coding-weird-stuff
 /linux-geneology
 ```
@@ -106,7 +107,7 @@ Later route migrations:
 
 | Current route         | Future route                | Compatibility                                                          |
 | --------------------- | --------------------------- | ---------------------------------------------------------------------- |
-| `/coding-weird-stuff` | `/coding-against-the-grain` | Add redirect or alias before changing external links.                  |
+| `/coding-weird-stuff` | `/coding-against-the-grain` | New route added; old route remains as a compatibility alias.           |
 | `/linux-geneology`    | `/linux-genealogy`          | Add redirect or alias because current spelling may already be indexed. |
 
 ## Metadata And Crawler Goals

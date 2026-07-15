@@ -1,0 +1,105 @@
+{
+  "id": "coding-against-the-grain-experiments",
+  "title": "Coding Against The Grain Experiments",
+  "description": "Public catalog seed for unusual programming experiments, constrained systems, esolang notes, terminal tools, and wrong-tool teaching examples.",
+  "lastUpdated": "2026-07-15",
+  "source": "Aptlantis Studio curated section notes",
+  "items": [
+    {
+      "id": "ascii-art-generator",
+      "title": "ASCII Art Generator",
+      "constraint": "Terminal text and Figlet fonts",
+      "proves": "Typography can become an interface primitive when the output is meant for terminals, READMEs, and old-console aesthetics.",
+      "status": "live tool",
+      "medium": "terminal text"
+    },
+    {
+      "id": "css-only-tic-tac-toe",
+      "title": "CSS-only Tic Tac Toe",
+      "constraint": "No JavaScript state",
+      "proves": "Inputs, selectors, and document structure can model simple interaction when the medium is treated as a runtime.",
+      "status": "catalog idea",
+      "medium": "CSS"
+    },
+    {
+      "id": "sql-raytracer",
+      "title": "SQL Raytracer",
+      "constraint": "Relational queries only",
+      "proves": "Declarative systems can express surprisingly procedural-looking computation when the problem is reframed.",
+      "status": "field note",
+      "medium": "SQL"
+    },
+    {
+      "id": "spreadsheet-games",
+      "title": "Spreadsheet Games",
+      "constraint": "Cells, formulas, and macros",
+      "proves": "A grid can become a display surface, state store, and control layer when the rows and columns are treated as machinery.",
+      "status": "catalog idea",
+      "medium": "spreadsheet"
+    },
+    {
+      "id": "regex-parser-games",
+      "title": "Regex Parser Games",
+      "constraint": "Pattern matching as control flow",
+      "proves": "A recognizer can start behaving like a tiny runtime when state is encoded in text and capture groups.",
+      "status": "field note",
+      "medium": "regular expressions"
+    },
+    {
+      "id": "brainfuck-visualizer",
+      "title": "Brainfuck Tape Visualizer",
+      "constraint": "Eight commands and a memory tape",
+      "proves": "A minimal language can make memory, pointers, loops, and input/output easier to see than a feature-rich runtime.",
+      "status": "catalog idea",
+      "medium": "esolang"
+    },
+    {
+      "id": "befunge-map-runner",
+      "title": "Befunge Map Runner",
+      "constraint": "Two-dimensional instruction flow",
+      "proves": "Program counters do not have to move through text linearly; control flow can be spatial.",
+      "status": "catalog idea",
+      "medium": "esolang"
+    },
+    {
+      "id": "css-state-machine",
+      "title": "CSS State Machine",
+      "constraint": "Checkboxes, radio inputs, and selectors",
+      "proves": "Declarative presentation rules can preserve and reveal state when the document structure carries the model.",
+      "status": "concept note",
+      "medium": "CSS"
+    },
+    {
+      "id": "markdown-terminal-document",
+      "title": "Markdown Terminal Document",
+      "constraint": "Plain text that reads like an interface",
+      "proves": "Documentation can become a navigable tool when headings, tables, code blocks, and badges are treated as UI primitives.",
+      "status": "live pattern",
+      "medium": "Markdown"
+    },
+    {
+      "id": "powerpoint-adventure",
+      "title": "PowerPoint Adventure",
+      "constraint": "Slides, links, triggers, and animations",
+      "proves": "Presentation software can model branching interaction when slides become rooms and links become transitions.",
+      "status": "catalog idea",
+      "medium": "presentation"
+    },
+    {
+      "id": "shell-progress-theater",
+      "title": "Shell Progress Theater",
+      "constraint": "ANSI escapes and streaming terminal output",
+      "proves": "A command-line script can feel like an instrument panel when progress, warnings, and artifacts are rendered deliberately.",
+      "status": "field note",
+      "medium": "shell"
+    },
+    {
+      "id": "json-to-ascii-dashboard",
+      "title": "JSON to ASCII Dashboard",
+      "constraint": "Structured data rendered as fixed-width text",
+      "proves": "A manifest can become readable evidence when rows, boxes, and status marks expose the important fields.",
+      "status": "tool idea",
+      "medium": "JSON"
+    }
+  ]
+}

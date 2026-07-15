@@ -1432,7 +1432,7 @@
       "repoUrl": "",
       "cloneCommand": "",
       "manifestPath": "D:\\DRS\\CommandWizard\\CommandWizard.manifest.toml",
-      "logoSrc": "/svg/apt-qbasic-logo.svg",
+      "logoSrc": "/logos/dnf-commandwizard-logo.svg",
       "screenshots": [
         {
           "src": "/projects/commandwizard/schema-editor.png",

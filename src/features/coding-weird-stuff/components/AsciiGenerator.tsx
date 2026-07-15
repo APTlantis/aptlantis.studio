@@ -38,7 +38,6 @@ interface FigletInstance {
   loadFont: (name: string, callback: FigletLoadFontCallback) => void;
 }
 
-// This component will be loaded dynamically with next/dynamic to avoid SSR issues with figlet
 const AsciiGenerator: React.FC = () => {
   const [text, setText] = useState("Hello World");
   const [font, setFont] = useState("Standard");
@@ -584,15 +583,15 @@ const AsciiGenerator: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-100 dark:bg-[#1a1a1a] p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-semibold mb-4 text-cyan-600 dark:text-cyan-400">
-        ASCII Art Generator
+    <div className="atl-card p-5">
+      <h2 className="atl-title mb-4 text-2xl font-black">
+        Terminal Banner Generator
       </h2>
 
       <div className="mb-4">
         <label
           htmlFor="text-input"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+          className="mb-1 block text-sm font-medium text-atl-silver"
         >
           Enter Text
         </label>
@@ -601,7 +600,7 @@ const AsciiGenerator: React.FC = () => {
           type="text"
           value={text}
           onChange={handleTextChange}
-          className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 bg-white dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100"
+          className="w-full rounded-md border border-atl-ridge bg-atl-void/60 px-3 py-2 text-atl-archive shadow-sm focus:border-atl-silver focus:outline-none focus:ring-2 focus:ring-atl-silver"
           placeholder="Type something..."
         />
       </div>
@@ -609,18 +608,18 @@ const AsciiGenerator: React.FC = () => {
       <div className="mb-4">
         <label
           htmlFor="font-select"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+          className="mb-1 block text-sm font-medium text-atl-silver"
         >
           Select Font
         </label>
         <Select value={font} onValueChange={handleFontChange}>
           <SelectTrigger
             id="font-select"
-            className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 bg-white dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100"
+            className="w-full rounded-md border border-atl-ridge bg-atl-void/60 px-3 py-2 text-atl-archive shadow-sm focus:border-atl-silver focus:outline-none focus:ring-2 focus:ring-atl-silver"
           >
             <SelectValue placeholder="Select a font" />
           </SelectTrigger>
-          <SelectContent className="max-h-80 overflow-y-auto bg-white dark:bg-[#0a0a0a] border border-gray-300 dark:border-gray-700 rounded-md shadow-md">
+          <SelectContent className="max-h-80 overflow-y-auto rounded-md border border-atl-ridge bg-atl-void text-atl-archive shadow-md">
             <SelectGroup>
               {/* Show only the most common fonts first */}
               {["Standard", "Slant", "Block", "Shadow", "Doom"].map(
@@ -628,14 +627,14 @@ const AsciiGenerator: React.FC = () => {
                   <SelectItem
                     key={fontName}
                     value={fontName}
-                    className="px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
+                    className="cursor-pointer px-3 py-2 hover:bg-atl-abyss"
                   >
                     {fontName}
                   </SelectItem>
                 ),
               )}
               {/* Show a separator */}
-              <div className="h-px bg-gray-200 dark:bg-gray-700 my-1" />
+              <div className="my-1 h-px bg-atl-ridge" />
               {/* Show the rest of the fonts */}
               {fonts
                 .filter(
@@ -648,7 +647,7 @@ const AsciiGenerator: React.FC = () => {
                   <SelectItem
                     key={fontName}
                     value={fontName}
-                    className="px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
+                    className="cursor-pointer px-3 py-2 hover:bg-atl-abyss"
                   >
                     {fontName}
                   </SelectItem>
@@ -661,30 +660,42 @@ const AsciiGenerator: React.FC = () => {
       <div className="mb-4">
         <h3
           id="terminal-style-heading"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+          className="mb-1 block text-sm font-medium text-atl-silver"
         >
           Terminal Style
         </h3>
         <div
-          className="flex space-x-2"
+          className="flex flex-wrap gap-2"
           role="group"
           aria-labelledby="terminal-style-heading"
         >
           <button
             onClick={() => handleStyleChange("green")}
-            className={`px-3 py-1 rounded-md ${style === "green" ? "bg-green-500 text-white" : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"}`}
+            className={`rounded-md border px-3 py-1 text-sm ${
+              style === "green"
+                ? "border-green-300 bg-green-500/20 text-green-200"
+                : "border-atl-ridge bg-atl-void/60 text-atl-silver"
+            }`}
           >
             CRT Green
           </button>
           <button
             onClick={() => handleStyleChange("amber")}
-            className={`px-3 py-1 rounded-md ${style === "amber" ? "bg-amber-500 text-white" : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"}`}
+            className={`rounded-md border px-3 py-1 text-sm ${
+              style === "amber"
+                ? "border-amber-300 bg-amber-500/20 text-amber-200"
+                : "border-atl-ridge bg-atl-void/60 text-atl-silver"
+            }`}
           >
             DOS Amber
           </button>
           <button
             onClick={() => handleStyleChange("purple")}
-            className={`px-3 py-1 rounded-md ${style === "purple" ? "bg-purple-500 text-white" : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"}`}
+            className={`rounded-md border px-3 py-1 text-sm ${
+              style === "purple"
+                ? "border-purple-300 bg-purple-500/20 text-purple-200"
+                : "border-atl-ridge bg-atl-void/60 text-atl-silver"
+            }`}
           >
             Glitch Purple
           </button>
@@ -694,7 +705,7 @@ const AsciiGenerator: React.FC = () => {
       <div className="mb-4">
         <h3
           id="ascii-output-heading"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+          className="mb-1 block text-sm font-medium text-atl-silver"
         >
           ASCII Output
         </h3>
@@ -719,7 +730,7 @@ const AsciiGenerator: React.FC = () => {
         <button
           onClick={handleDownload}
           disabled={!output}
-          className="px-4 py-2 bg-cyan-600 hover:bg-cyan-700 text-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="atl-button px-4 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-50"
         >
           Download as .txt
         </button>

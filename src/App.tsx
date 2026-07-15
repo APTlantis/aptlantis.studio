@@ -88,6 +88,10 @@ function App() {
                         />
                         <Route path="/irc" element={<IRCServerPage />} />
                         <Route
+                          path="/coding-against-the-grain"
+                          element={<CodingWeirdStuffPage />}
+                        />
+                        <Route
                           path="/coding-weird-stuff"
                           element={<CodingWeirdStuffPage />}
                         />

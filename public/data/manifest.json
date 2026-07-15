@@ -49,6 +49,20 @@
       "lastUpdated": "2026-07-15",
       "license": "Site content license pending",
       "crawlerUse": "Index framework names, relationships, summaries, and public governance context."
+    },
+    {
+      "id": "coding-against-the-grain-experiments",
+      "title": "Coding Against The Grain Experiments",
+      "description": "Catalog seed for unusual programming experiments, constrained systems, esolang notes, terminal tools, and wrong-tool teaching examples.",
+      "url": "/data/coding-against-the-grain/experiments.json",
+      "schemaUrl": null,
+      "kind": "section-catalog",
+      "status": "curated",
+      "source": "Aptlantis Studio curated section notes",
+      "updateCadence": "as-needed",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Index experiment titles, constraints, media, status, and teaching purpose."
     }
   ],
   "schemas": [
