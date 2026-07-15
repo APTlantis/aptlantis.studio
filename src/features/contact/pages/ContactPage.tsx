@@ -2,12 +2,11 @@ import type React from "react";
 import { useState } from "react";
 import MetaTags from "../../../components/MetaTags";
 
-// Category options matching the incoming-message schema's classified_category enum
 type MessageCategory =
-  | "support"
-  | "contribution"
-  | "bug-report"
   | "general"
+  | "bug-report"
+  | "contribution"
+  | "support"
   | "other";
 
 interface ContactFormData {
@@ -16,6 +15,36 @@ interface ContactFormData {
   category: MessageCategory;
   message: string;
 }
+
+const contactLanes = [
+  {
+    title: "Project corrections",
+    body: "Use this for stale project descriptions, wrong status labels, missing evidence, broken links, or screenshots that no longer prove the current behavior.",
+    category: "bug-report" as MessageCategory,
+  },
+  {
+    title: "Metadata and manifests",
+    body: "Report schema drift, public JSON issues, crawler manifest gaps, sitemap errors, or confusing public asset paths.",
+    category: "support" as MessageCategory,
+  },
+  {
+    title: "Collaboration notes",
+    body: "Send context for project writeups, standards alignment, examples, screenshots, or documentation that would improve the teaching surface.",
+    category: "contribution" as MessageCategory,
+  },
+  {
+    title: "Sensitive concerns",
+    body: "Use minimal detail first. Do not paste secrets, private exports, keys, tokens, or personal data into the form.",
+    category: "other" as MessageCategory,
+  },
+];
+
+const includeItems = [
+  "The page URL or public data file involved.",
+  "What looks wrong, stale, missing, or risky.",
+  "What evidence would make the correction trustworthy.",
+  "Whether the issue affects one project or the site structure.",
+];
 
 const ContactPage = () => {
   const [formData, setFormData] = useState<ContactFormData>({
@@ -31,9 +60,9 @@ const ContactPage = () => {
     message: string;
   } | null>(null);
 
-  const metaTitle = "Contact APTlantis";
+  const metaTitle = "Contact Aptlantis";
   const metaDescription =
-    "Get in touch with APTlantis to report issues, contribute, or request support for mirrors, torrents, and datasets.";
+    "Contact Aptlantis Studio about project corrections, public metadata, evidence gaps, collaboration notes, or sensitive site concerns.";
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
@@ -42,32 +71,34 @@ const ContactPage = () => {
     description: metaDescription,
     mainEntity: {
       "@type": "Organization",
-      name: "APTlantis",
+      name: "Aptlantis",
       url: "https://aptlantis.studio",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "customer support",
-        email: "hschumannhome@gmail.com",
-        areaServed: "Global",
-        availableLanguage: ["en"],
-      },
     },
   };
 
   const handleChange = (
-    e: React.ChangeEvent<
+    event: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     >,
   ) => {
-    const { name, value } = e.target;
+    const { name, value } = event.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const chooseLane = (category: MessageCategory, title: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      category,
+      message: prev.message || `${title}:\n\n`,
+    }));
+    setSubmitResult(null);
+  };
+
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
     setIsSubmitting(true);
     setSubmitResult(null);
 
@@ -88,7 +119,6 @@ const ContactPage = () => {
           message: result.message,
         });
 
-        // Reset form
         setFormData({
           name: "",
           email: "",
@@ -103,7 +133,7 @@ const ContactPage = () => {
             "There was an error sending your message. Please try again later.",
         });
       }
-    } catch (error) {
+    } catch {
       setSubmitResult({
         success: false,
         message:
@@ -117,80 +147,124 @@ const ContactPage = () => {
   return (
     <div className="atl-container py-12">
       <MetaTags
-        title={metaTitle}
+        title={`${metaTitle} | Aptlantis`}
         description={metaDescription}
         canonicalUrl="https://aptlantis.studio/contact"
         ogTitle={metaTitle}
         ogDescription={metaDescription}
         structuredData={structuredData}
       />
-      <h1 className="atl-title mb-6 text-3xl font-bold">Contact Us</h1>
 
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <div className="atl-card p-5">
-          <h2 className="mb-3 text-2xl font-semibold text-atl-archive">
-            Get in Touch
-          </h2>
-          <p className="atl-subtitle mb-6">
-            Have questions about our mirrors? Want to report an issue? Or just
-            want to say hello? Fill out the form and we&apos;ll get back to you
-            as soon as possible.
-          </p>
-
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-lg font-medium mb-2">Email</h3>
-              <p className="text-atl-archive">contact@aptlantis.com</p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium mb-2">IRC</h3>
-              <p className="text-atl-archive">#ComingSoon</p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium mb-2">Codeberg</h3>
-              <p className="text-atl-archive">codeberg.org/aptlantis</p>
-            </div>
+      <header className="atl-panel atl-ornament overflow-hidden">
+        <div className="grid gap-0 lg:grid-cols-[1fr_330px]">
+          <div className="p-6 sm:p-8">
+            <p className="atl-eyebrow">Aptlantis / Contact</p>
+            <h1 className="atl-title atl-gradient-text atl-text-balance mt-4 text-4xl font-black sm:text-5xl">
+              Route corrections with evidence.
+            </h1>
+            <p className="atl-subtitle mt-5 max-w-3xl">
+              Use this page for project corrections, metadata issues, missing
+              evidence, public asset concerns, and collaboration notes. The most
+              useful messages point to a specific page or artifact and explain
+              what would make it more accurate.
+            </p>
           </div>
+          <aside className="border-t border-atl-ridge/60 bg-atl-void/40 p-6 lg:border-l lg:border-t-0">
+            <p className="atl-eyebrow">Do not send</p>
+            <ul className="mt-4 space-y-3 text-sm text-atl-silver">
+              <li className="atl-card-soft p-3">API keys or passwords</li>
+              <li className="atl-card-soft p-3">Private exports or logs</li>
+              <li className="atl-card-soft p-3">Personal data from archives</li>
+              <li className="atl-card-soft p-3">Unredacted secrets</li>
+            </ul>
+          </aside>
         </div>
+      </header>
 
-        <div className="atl-card p-5">
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-1">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full rounded-md border border-atl-ridge bg-atl-void/60 p-2 text-atl-archive focus:outline-none focus:ring-2 focus:ring-atl-silver"
-              />
+      <section className="mt-8 grid gap-4 md:grid-cols-2">
+        {contactLanes.map((lane) => (
+          <article key={lane.title} className="atl-card p-5">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h2 className="text-xl font-bold text-atl-archive">
+                  {lane.title}
+                </h2>
+                <p className="atl-subtitle mt-3 text-sm">{lane.body}</p>
+              </div>
+              <button
+                type="button"
+                className="atl-button-ghost shrink-0 px-3 py-2 text-sm"
+                onClick={() => chooseLane(lane.category, lane.title)}
+              >
+                Use lane
+              </button>
             </div>
+          </article>
+        ))}
+      </section>
 
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-1">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full rounded-md border border-atl-ridge bg-atl-void/60 p-2 text-atl-archive focus:outline-none focus:ring-2 focus:ring-atl-silver"
-              />
+      <section className="mt-8 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+        <aside className="atl-card p-5">
+          <p className="atl-eyebrow">Useful message shape</p>
+          <h2 className="atl-title mt-3 text-3xl font-black">
+            Give the page something concrete to fix.
+          </h2>
+          <ul className="mt-5 space-y-3">
+            {includeItems.map((item) => (
+              <li
+                key={item}
+                className="atl-card-soft p-3 text-sm text-atl-silver"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </aside>
+
+        <section className="atl-card p-5">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label
+                  htmlFor="name"
+                  className="mb-1 block text-sm font-medium"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full rounded-md border border-atl-ridge bg-atl-void/60 p-2 text-atl-archive focus:outline-none focus:ring-2 focus:ring-atl-silver"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="email"
+                  className="mb-1 block text-sm font-medium"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full rounded-md border border-atl-ridge bg-atl-void/60 p-2 text-atl-archive focus:outline-none focus:ring-2 focus:ring-atl-silver"
+                />
+              </div>
             </div>
 
             <div>
               <label
                 htmlFor="category"
-                className="block text-sm font-medium mb-1"
+                className="mb-1 block text-sm font-medium"
               >
                 Category
               </label>
@@ -202,18 +276,20 @@ const ContactPage = () => {
                 required
                 className="w-full rounded-md border border-atl-ridge bg-atl-void/60 p-2 text-atl-archive focus:outline-none focus:ring-2 focus:ring-atl-silver"
               >
-                <option value="general">General Inquiry</option>
-                <option value="support">Support Request</option>
-                <option value="bug-report">Bug Report</option>
-                <option value="contribution">Contribution</option>
-                <option value="other">Other</option>
+                <option value="general">General context</option>
+                <option value="bug-report">Correction or broken page</option>
+                <option value="support">Metadata or manifest issue</option>
+                <option value="contribution">
+                  Collaboration or contribution
+                </option>
+                <option value="other">Sensitive or other concern</option>
               </select>
             </div>
 
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm font-medium mb-1"
+                className="mb-1 block text-sm font-medium"
               >
                 Message
               </label>
@@ -223,7 +299,7 @@ const ContactPage = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                rows={5}
+                rows={8}
                 className="w-full rounded-md border border-atl-ridge bg-atl-void/60 p-2 text-atl-archive focus:outline-none focus:ring-2 focus:ring-atl-silver"
               />
             </div>
@@ -238,14 +314,18 @@ const ContactPage = () => {
 
             {submitResult && (
               <div
-                className={`p-3 rounded-md ${submitResult.success ? "bg-green-500/20 text-green-400" : "bg-red-500/20 text-red-400"}`}
+                className={`rounded-md p-3 ${
+                  submitResult.success
+                    ? "bg-green-500/20 text-green-300"
+                    : "bg-red-500/20 text-red-300"
+                }`}
               >
                 {submitResult.message}
               </div>
             )}
           </form>
-        </div>
-      </div>
+        </section>
+      </section>
     </div>
   );
 };

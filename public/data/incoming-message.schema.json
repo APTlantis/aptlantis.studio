@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://aptlantis.net/schemas/incoming-message.schema.json",
+  "$id": "https://aptlantis.studio/data/incoming-message.schema.json",
   "title": "APTlantis Incoming Message",
   "type": "object",
 
@@ -80,7 +80,7 @@
         "spam_score": { "type": "number" },
         "classified_category": {
           "type": "string",
-          "enum": ["support", "contribution", "bug-report", "general", "other"]
+          "enum": ["general", "bug-report", "contribution", "support", "other"]
         },
         "processing_status": {
           "type": "string",

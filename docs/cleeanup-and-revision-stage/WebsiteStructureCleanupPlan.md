@@ -17,22 +17,22 @@ The site should become easier to maintain, easier to crawl, and easier to trust.
 
 ## Feature Decisions
 
-| Feature directory                 | Decision                        | Notes                                                                                                                                |
-| --------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| `src/features/about`              | Keep and rewrite                | Current content is legacy mirror-era copy. Reframe around project catalog, standards, evidence, and teaching studio identity.        |
-| `src/features/coding-weird-stuff` | Keep and rebrand                | Rename public concept to **Coding Against The Grain**. Keep the Figlet / ASCII tool as an early lab instrument.                      |
-| `src/features/contact`            | Keep and expand                 | Should become a practical contact surface for project questions, metadata corrections, security/contact channels, and collaboration. |
-| `src/features/distributions`      | Remove                          | Legacy Linux distribution, ISO, torrent, and mirror tooling does not match the current portfolio mission.                            |
-| `src/features/irc`                | Quarantine                      | Keep until a final content decision is made. Do not expand during the cleanup pass.                                                  |
-| `src/features/legal`              | Keep and rewrite                | Replace mirror-service assumptions with project catalog, public metadata, and portfolio language.                                    |
-| `src/features/linux-geneology`    | Keep, then absorb expanded data | Keep for now, but plan a spelling-compatible migration to `linux-genealogy` later.                                                   |
-| `src/features/museum`             | Remove                          | Legacy distro museum surface depends on removed distribution data.                                                                   |
-| `src/features/onboarding`         | Remove                          | Legacy page outside the current public project catalog direction.                                                                    |
-| `src/features/projects`           | Keep as core                    | Project records and detail pages are the main site product.                                                                          |
-| `src/features/structra-lab`       | Keep                            | Fits the teaching studio and standards demonstration role.                                                                           |
-| `src/features/svg-lab`            | Keep                            | Fits visual metadata, SESM, and safe-profile demonstration goals.                                                                    |
-| `src/features/terry-davis-videos` | Remove                          | Hidden legacy page. Remove from the app cleanup path.                                                                                |
-| `src/features/volunteer`          | Remove                          | Legacy mirror volunteer surface. Future collaboration copy belongs under Contact or About.                                           |
+| Feature directory                 | Decision                        | Notes                                                                                                                            |
+| --------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `src/features/about`              | Keep and rewrite                | Current content is legacy mirror-era copy. Reframe around project catalog, standards, evidence, and teaching studio identity.    |
+| `src/features/coding-weird-stuff` | Keep and rebrand                | Rename public concept to **Coding Against The Grain**. Keep the Figlet / ASCII tool as an early lab instrument.                  |
+| `src/features/contact`            | Kept and expanded               | Now routes project corrections, metadata issues, collaboration notes, and sensitive concerns through the current studio framing. |
+| `src/features/distributions`      | Remove                          | Legacy Linux distribution, ISO, torrent, and mirror tooling does not match the current portfolio mission.                        |
+| `src/features/irc`                | Quarantine                      | Keep until a final content decision is made. Do not expand during the cleanup pass.                                              |
+| `src/features/legal`              | Kept and rewritten              | Terms and Privacy now describe the project catalog, public metadata, crawler posture, contact submissions, and operational logs. |
+| `src/features/linux-geneology`    | Keep, then absorb expanded data | Keep for now, but plan a spelling-compatible migration to `linux-genealogy` later.                                               |
+| `src/features/museum`             | Remove                          | Legacy distro museum surface depends on removed distribution data.                                                               |
+| `src/features/onboarding`         | Remove                          | Legacy page outside the current public project catalog direction.                                                                |
+| `src/features/projects`           | Keep as core                    | Project records and detail pages are the main site product.                                                                      |
+| `src/features/structra-lab`       | Keep                            | Fits the teaching studio and standards demonstration role.                                                                       |
+| `src/features/svg-lab`            | Keep                            | Fits visual metadata, SESM, and safe-profile demonstration goals.                                                                |
+| `src/features/terry-davis-videos` | Remove                          | Hidden legacy page. Remove from the app cleanup path.                                                                            |
+| `src/features/volunteer`          | Remove                          | Legacy mirror volunteer surface. Future collaboration copy belongs under Contact or About.                                       |
 
 ## Public Data Structure
 

@@ -14,6 +14,46 @@ Treat the background, color system, spacing rhythm, and evidence styling as bran
 
 The outer frame should always feel like Aptlantis: dark, compact, technical, cyan-accented, and evidence-first. The inner module should change shape based on what the content needs to prove or teach.
 
+## Canonical Page Frame
+
+The About page revision is the first approved example of the canonical page frame for core explanatory pages.
+
+Use this pattern when a page needs to explain a concept, policy, standard, or project family without becoming a generic landing page:
+
+```text
+Hero panel:
+  Eyebrow
+  Large direct thesis
+  Short current-purpose paragraph
+  Compact tags
+  Optional right-side focus rail
+
+Three-pillar summary:
+  Mission | System | Longevity
+
+Split console:
+  Explanation | Evidence map / manifest / artifact list
+
+Operating principles:
+  Two-column compact cards
+
+Dossier / FAQ:
+  Stacked cards with concrete questions
+```
+
+### Approved use
+
+- About page
+- Legal / privacy summaries
+- Contact routing overview
+- Standards pages
+- Public metadata and crawler policy pages
+- Project family explainers
+
+### Rule
+
+Keep the frame, but vary the content module. Do not force every page to use the exact same sections. The canonical part is the reading rhythm: thesis, summary, proof or structure, operating rules, then specific questions or next actions.
+
 ## 1. Dossier Stack
 
 **Best for:** About sections, project overviews, FAQs, standards explanations, evidence summaries.

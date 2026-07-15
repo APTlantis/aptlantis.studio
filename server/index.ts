@@ -327,16 +327,15 @@ app.post("/api/contact", async (req: Request, res: Response) => {
     const { name, email, category, message, turnstileToken } = req.body;
 
     // Validate required fields
-    if (!name || !email || !category || !message || !turnstileToken) {
+    if (!name || !email || !category || !message) {
       return res.status(400).json({
         success: false,
         message: "All fields are required",
       });
     }
 
-    // Verify Turnstile token
-    const isValidToken = await verifyTurnstileToken(turnstileToken);
-    if (!isValidToken) {
+    // Verify Turnstile when a frontend token is provided.
+    if (turnstileToken && !(await verifyTurnstileToken(turnstileToken))) {
       return res.status(400).json({
         success: false,
         message: "Invalid verification token. Please try again.",
