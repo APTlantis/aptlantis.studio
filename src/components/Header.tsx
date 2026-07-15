@@ -11,7 +11,9 @@ const Header = () => {
     { label: "Standards", to: "/project/cityhall" },
     { label: "SVG Lab", to: "/svg-lab" },
     { label: "Structra Lab", to: "/structra-lab" },
+    { label: "Against The Grain", to: "/coding-against-the-grain" },
     { label: "About", to: "/about" },
+    { label: "Contact", to: "/contact" },
   ];
 
   const toggleMenu = () => {
@@ -65,7 +67,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav
-            className="hidden md:flex items-center space-x-6 text-sm"
+            className="hidden items-center space-x-4 text-sm lg:flex xl:space-x-6"
             aria-label="Main Navigation"
           >
             {navItems.map((item) => (
@@ -91,7 +93,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center lg:hidden">
             <button
               id="mobile-menu-button"
               onClick={toggleMenu}
@@ -113,7 +115,7 @@ const Header = () => {
         {isMenuOpen && (
           <nav
             id="mobile-menu"
-            className="mt-4 animate-fadeIn border-t border-atl-ridge py-4 md:hidden"
+            className="mt-4 animate-fadeIn border-t border-atl-ridge py-4 lg:hidden"
             aria-label="Mobile Navigation"
           >
             <div className="flex flex-col space-y-4">

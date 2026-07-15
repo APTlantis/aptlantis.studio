@@ -13,6 +13,7 @@
     "services:check": "cargo check --manifest-path services/aptlantis-services/Cargo.toml",
     "services:docker": "docker build -t aptlantis/aptlantis-services:local -t aptlantis/aptlantis-services:latest services/aptlantis-services",
     "services:docker:push": "docker push aptlantis/aptlantis-services:latest",
+    "generate:linux-genealogy-svg": "node scripts/generate-linux-genealogy-svg.mjs",
     "lint": "eslint --dir src --fix",
     "lint:strict": "eslint --max-warnings=0 src",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",

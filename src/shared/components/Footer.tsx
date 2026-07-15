@@ -26,6 +26,12 @@ const Footer = () => {
               Contact
             </Link>
             <Link
+              to="/coding-against-the-grain"
+              className="text-gray-300 hover:text-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#0a0a0a] rounded-md transition-colors"
+            >
+              Coding Against The Grain
+            </Link>
+            <Link
               to="/terms"
               className="text-gray-300 hover:text-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#0a0a0a] rounded-md transition-colors"
             >

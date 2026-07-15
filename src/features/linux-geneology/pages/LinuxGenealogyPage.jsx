@@ -2,14 +2,58 @@ import React, { useEffect, useState } from "react";
 import MetaTags from "../../../components/MetaTags";
 import TabsGenealogyView from "../components/TabsGenealogyView";
 import D3TreeVisualization from "../components/D3TreeVisualization";
-import linuxGenealogyData from "../data/linux-geneology.json";
+
+const DATASET_URL = "/data/linux-genealogy/linux-genealogy-expanded.json";
+
+const normalizeGenealogyDataset = (payload) => {
+  if (Array.isArray(payload)) {
+    return payload[0] ?? null;
+  }
+
+  return payload;
+};
 
 const LinuxGenealogyPage = () => {
   const [data, setData] = useState(null);
+  const [loadState, setLoadState] = useState("loading");
   const [viewMode, setViewMode] = useState("graph");
 
   useEffect(() => {
-    setData(linuxGenealogyData);
+    let isMounted = true;
+
+    const loadDataset = async () => {
+      try {
+        const response = await fetch(DATASET_URL);
+
+        if (!response.ok) {
+          throw new Error(`Dataset request failed: ${response.status}`);
+        }
+
+        const payload = await response.json();
+        const normalized = normalizeGenealogyDataset(payload);
+
+        if (!normalized?.name) {
+          throw new Error("Dataset did not include a root distribution node.");
+        }
+
+        if (isMounted) {
+          setData(normalized);
+          setLoadState("ready");
+        }
+      } catch (error) {
+        console.error("Unable to load Linux genealogy dataset", error);
+
+        if (isMounted) {
+          setLoadState("error");
+        }
+      }
+    };
+
+    loadDataset();
+
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   const generateColorLegend = () => {
@@ -33,28 +77,29 @@ const LinuxGenealogyPage = () => {
     <div className="flex flex-col h-screen">
       <MetaTags
         title="Linux Distribution Genealogy | APTlantis"
-        description="An interactive exploration of Linux distribution relationships and history."
-        canonicalUrl="https://aptlantis.studio/linux-geneology"
+        description="An interactive, public JSON-backed exploration of Linux distribution relationships and history."
+        canonicalUrl="https://aptlantis.studio/linux-genealogy"
         ogTitle="Linux Distribution Genealogy"
-        ogDescription="Explore the lineage and relationships of Linux distributions on APTlantis."
+        ogDescription="Explore a public Linux distribution genealogy dataset and timeline visualization on Aptlantis Studio."
         structuredData={[
           {
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://aptlantis.studio/linux-geneology",
+            "@id": "https://aptlantis.studio/linux-genealogy",
             name: "Linux Distribution Genealogy",
             description:
               "Interactive timeline visualization of Linux distribution relationships from 1991-2020+",
-            url: "https://aptlantis.studio/linux-geneology",
+            url: "https://aptlantis.studio/linux-genealogy",
             inLanguage: "en-US",
             isPartOf: {
               "@type": "WebSite",
-              name: "Aptlantis",
+              name: "Aptlantis Studio",
               url: "https://aptlantis.studio",
             },
             about: {
               "@type": "Dataset",
-              "@id": "https://aptlantis.studio/data/linux-geneology.json",
+              "@id":
+                "https://aptlantis.studio/data/linux-genealogy/linux-genealogy-expanded.json",
               name: "Linux Distribution Genealogy Dataset",
               description:
                 "Hierarchical genealogical data for major Linux distributions spanning 1991-2020+",
@@ -70,12 +115,12 @@ const LinuxGenealogyPage = () => {
               ],
               creator: {
                 "@type": "Organization",
-                name: "Aptlantis",
+                name: "Aptlantis Studio",
               },
               distribution: {
                 "@type": "DataDownload",
                 contentUrl:
-                  "https://aptlantis.studio/data/linux-geneology.json",
+                  "https://aptlantis.studio/data/linux-genealogy/linux-genealogy-expanded.json",
                 encodingFormat: "application/json",
               },
             },
@@ -88,7 +133,7 @@ const LinuxGenealogyPage = () => {
               artform: "Digital Interactive",
               creator: {
                 "@type": "Organization",
-                name: "Aptlantis",
+                name: "Aptlantis Studio",
               },
             },
             breadcrumb: {
@@ -115,8 +160,8 @@ const LinuxGenealogyPage = () => {
           <div>
             <h1 className="text-2xl font-bold">Linux Distribution Genealogy</h1>
             <p className="text-sm mt-1">
-              An interactive exploration of Linux distribution relationships and
-              history
+              Public JSON-backed genealogy data for Linux distribution
+              relationships and history
             </p>
           </div>
           <div className="flex gap-2 bg-gray-700 rounded-lg p-1">
@@ -152,15 +197,19 @@ const LinuxGenealogyPage = () => {
         )}
       </div>
       <div className="flex-grow bg-gray-900 overflow-hidden">
-        {data ? (
+        {loadState === "ready" && data ? (
           viewMode === "graph" ? (
             <D3TreeVisualization data={data} />
           ) : (
             <TabsGenealogyView data={data} />
           )
+        ) : loadState === "error" ? (
+          <div className="flex h-full items-center justify-center px-6 text-center text-white">
+            The public Linux genealogy dataset could not be loaded.
+          </div>
         ) : (
           <div className="flex items-center justify-center h-full text-white">
-            Loading...
+            Loading public genealogy dataset...
           </div>
         )}
       </div>

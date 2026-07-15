@@ -68,6 +68,12 @@ const Header = () => {
               About
             </Link>
             <Link
+              to="/coding-against-the-grain"
+              className="text-gray-300 hover:text-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#0a0a0a] rounded-md transition-colors"
+            >
+              Against The Grain
+            </Link>
+            <Link
               to="/contact"
               className="text-gray-300 hover:text-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#0a0a0a] rounded-md transition-colors"
             >
@@ -117,6 +123,14 @@ const Header = () => {
                 tabIndex={isMenuOpen ? 0 : -1}
               >
                 About
+              </Link>
+              <Link
+                to="/coding-against-the-grain"
+                className="text-gray-300 hover:text-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#0a0a0a] rounded-md transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+                tabIndex={isMenuOpen ? 0 : -1}
+              >
+                Against The Grain
               </Link>
               <Link
                 to="/contact"

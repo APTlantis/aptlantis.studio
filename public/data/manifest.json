@@ -63,6 +63,20 @@
       "lastUpdated": "2026-07-15",
       "license": "Site content license pending",
       "crawlerUse": "Index experiment titles, constraints, media, status, and teaching purpose."
+    },
+    {
+      "id": "linux-genealogy-expanded",
+      "title": "Linux Genealogy Expanded Dataset",
+      "description": "Hierarchical Linux distribution genealogy dataset used by the interactive Linux Genealogy page.",
+      "url": "/data/linux-genealogy/linux-genealogy-expanded.json",
+      "schemaUrl": null,
+      "kind": "genealogy-dataset",
+      "status": "curated",
+      "source": "Aptlantis Studio LinuxMapper expanded dataset",
+      "updateCadence": "as-needed",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Index distribution names, parent-child relationships, years, tags, and public genealogy facts."
     }
   ],
   "schemas": [
@@ -78,6 +92,19 @@
       "lastUpdated": "2026-07-15",
       "license": "Site content license pending",
       "crawlerUse": "Use to validate or interpret /data/manifest.json."
+    },
+    {
+      "id": "incoming-message-schema",
+      "title": "Incoming Message Schema",
+      "description": "JSON Schema describing the internal shape of contact and email intake records.",
+      "url": "/schemas/incoming-message.schema.json",
+      "kind": "json-schema",
+      "status": "draft",
+      "source": "Aptlantis Studio contact intake model",
+      "updateCadence": "with contact workflow changes",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Use to understand the intended public schema for contact intake records. Do not infer that submitted private messages are public data."
     }
   ],
   "evidenceAssetGroups": [
@@ -106,6 +133,58 @@
       "lastUpdated": "2026-07-15",
       "license": "Site content license pending",
       "crawlerUse": "Use for link previews, project identity context, and visual cataloging."
+    },
+    {
+      "id": "site-opengraph-card",
+      "title": "Site OpenGraph Card",
+      "description": "Primary social preview image for Aptlantis Studio link previews.",
+      "url": "/logos/og/aptlantis-studio-opengraph.png",
+      "kind": "opengraph-image",
+      "status": "curated",
+      "source": "Aptlantis Studio visual asset set",
+      "updateCadence": "as-needed",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Use as the primary preview image for Aptlantis Studio pages when page-specific images are unavailable."
+    },
+    {
+      "id": "linux-genealogy-generated-map",
+      "title": "Linux Genealogy Generated SVG Map",
+      "description": "Static radial SVG visualization generated from the public Linux genealogy JSON dataset.",
+      "url": "/data/linux-genealogy/linux-genealogy-map.svg",
+      "kind": "generated-svg-map",
+      "status": "generated",
+      "source": "/data/linux-genealogy/linux-genealogy-expanded.json",
+      "updateCadence": "regenerate when the Linux genealogy dataset changes",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Index as a visual map of the public Linux genealogy dataset. Use the JSON dataset as the canonical machine-readable source."
+    },
+    {
+      "id": "linux-genealogy-map-node-coordinates",
+      "title": "Linux Genealogy Map Node Coordinates",
+      "description": "Generated coordinate map used to place clickable node overlays on the static Linux genealogy SVG.",
+      "url": "/data/linux-genealogy/linux-genealogy-map-nodes.json",
+      "kind": "generated-map-coordinates",
+      "status": "generated",
+      "source": "/data/linux-genealogy/linux-genealogy-expanded.json",
+      "updateCadence": "regenerate when the Linux genealogy dataset changes",
+      "lastUpdated": "2026-07-15",
+      "license": "Site content license pending",
+      "crawlerUse": "Use as supporting coordinate metadata for the generated SVG map. The expanded JSON remains the canonical dataset."
+    },
+    {
+      "id": "aptlantis-studio-pgp-public-key",
+      "title": "Aptlantis Studio PGP Public Key",
+      "description": "Public PGP key advertised from security.txt for encrypted contact or verification workflows.",
+      "url": "/.well-known/aptlantis.studio_0x0BE88A1564D5B232_public.asc",
+      "kind": "security-contact-key",
+      "status": "public",
+      "source": "Aptlantis Studio security metadata",
+      "updateCadence": "on-key-change",
+      "lastUpdated": "2026-07-15",
+      "license": "Public key material",
+      "crawlerUse": "Index as public security/contact metadata. Do not infer code-signing or release verification from this key alone."
     }
   ]
 }

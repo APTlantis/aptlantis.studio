@@ -32,12 +32,12 @@ const MetaTags = ({
   canonicalUrl = "https://aptlantis.studio/",
   ogTitle = "Aptlantis Studio - Project Teaching Studio",
   ogDescription = "Evidence-led project pages, standards maps, screenshots, manifests, and operator notes for the Aptlantis ecosystem.",
-  ogImage = "https://aptlantis.studio/logos/aptlantis-organization-board.png",
-  ogImageAlt = "Aptlantis organization identity board with blue-slate island tower and metallic wordmark",
+  ogImage = "https://aptlantis.studio/logos/og/aptlantis-studio-opengraph.png",
+  ogImageAlt = "Aptlantis Studio OpenGraph card with project teaching studio identity, Deep Structure Clear Insight tagline, and evidence-led catalog symbols",
   twitterTitle = "Aptlantis Studio - Project Teaching Studio",
   twitterDescription = "Evidence-led project pages, standards maps, screenshots, manifests, and operator notes for the Aptlantis ecosystem.",
-  twitterImage = "https://aptlantis.studio/logos/aptlantis-organization-board.png",
-  twitterImageAlt = "Aptlantis organization identity board with blue-slate island tower and metallic wordmark",
+  twitterImage = "https://aptlantis.studio/logos/og/aptlantis-studio-opengraph.png",
+  twitterImageAlt = "Aptlantis Studio OpenGraph card with project teaching studio identity, Deep Structure Clear Insight tagline, and evidence-led catalog symbols",
   structuredData,
 }: MetaTagsProps) => {
   // Update the document title when the component mounts or updates

@@ -1,385 +1,388 @@
-import React, { useEffect, useRef, useState } from "react";
-import * as d3 from "d3";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 
 interface Distribution {
   name: string;
   year: number;
-  color: string;
+  color?: string;
   tags?: string[];
   facts?: string[];
   philosophy?: string[];
-  technical?: any;
-  community?: any;
+  technical?: Record<string, unknown>;
+  community?: Record<string, unknown>;
   plan?: string;
   children?: Distribution[];
 }
 
-interface D3TreeVisualizationProps {
-  data: Distribution;
-  width?: number;
-  height?: number;
+interface NodePosition {
+  id: string;
+  name: string;
+  year: number | null;
+  depth: number;
+  x: number;
+  y: number;
+  radius: number;
+  hasChildren: boolean;
+  childCount: number;
 }
 
-const D3TreeVisualization: React.FC<D3TreeVisualizationProps> = ({
-  data,
-  width = 1400,
-  height = 800,
-}) => {
-  const svgRef = useRef<SVGSVGElement>(null);
+interface NodeMap {
+  width: number;
+  height: number;
+  nodes: NodePosition[];
+}
+
+interface D3TreeVisualizationProps {
+  data: Distribution;
+}
+
+const MAP_URL = "/data/linux-genealogy/linux-genealogy-map.svg";
+const NODE_MAP_URL = "/data/linux-genealogy/linux-genealogy-map-nodes.json";
+const DATASET_URL = "/data/linux-genealogy/linux-genealogy-expanded.json";
+
+const getStats = (node: Distribution, depth = 0) => {
+  let count = 1;
+  let maxDepth = depth;
+  let minYear = node.year || Infinity;
+  let maxYear = node.year || -Infinity;
+
+  node.children?.forEach((child) => {
+    const childStats = getStats(child, depth + 1);
+    count += childStats.count;
+    maxDepth = Math.max(maxDepth, childStats.maxDepth);
+    minYear = Math.min(minYear, childStats.minYear);
+    maxYear = Math.max(maxYear, childStats.maxYear);
+  });
+
+  return {
+    count,
+    maxDepth,
+    minYear: Number.isFinite(minYear) ? minYear : 1991,
+    maxYear: Number.isFinite(maxYear) ? maxYear : 2024,
+  };
+};
+
+const flattenDistributions = (
+  node: Distribution,
+  map = new Map<string, Distribution>(),
+) => {
+  const key = getDistributionKey(node.name, node.year);
+  map.set(key, node);
+  node.children?.forEach((child) => flattenDistributions(child, map));
+  return map;
+};
+
+const getDistributionKey = (name: string, year?: number | null) =>
+  `${name.toLowerCase()}::${year ?? ""}`;
+
+const D3TreeVisualization: React.FC<D3TreeVisualizationProps> = ({ data }) => {
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const [zoom, setZoom] = useState(0.58);
+  const [nodeMap, setNodeMap] = useState<NodeMap | null>(null);
   const [selectedNode, setSelectedNode] = useState<Distribution | null>(null);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [zoomLevel, setZoomLevel] = useState(1);
+  const [hoveredNode, setHoveredNode] = useState<NodePosition | null>(null);
+  const stats = useMemo(() => getStats(data), [data]);
+  const distributionIndex = useMemo(() => flattenDistributions(data), [data]);
+  const mapSize = nodeMap?.width ?? 3600;
+  const renderedSize = Math.round(mapSize * zoom);
+  const scale = renderedSize / mapSize;
 
   useEffect(() => {
-    if (!svgRef.current || !data) return;
+    let isMounted = true;
 
-    // Clear previous visualization
-    d3.select(svgRef.current).selectAll("*").remove();
-
-    const margin = { top: 40, right: 120, bottom: 40, left: 120 };
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.top - margin.bottom;
-
-    // Create SVG
-    const svg = d3
-      .select(svgRef.current)
-      .attr("width", width)
-      .attr("height", height);
-
-    // Create container group for zooming
-    const g = svg
-      .append("g")
-      .attr("transform", `translate(${margin.left},${margin.top})`);
-
-    // Create hierarchy
-    const root = d3.hierarchy(data);
-
-    // CONTEXT: Calculate min and max years for timeline scaling
-    // Machine-readable note: This traverses all nodes to find temporal bounds.
-    // Used to create linear time scale (1991-2020+) for x-axis positioning.
-    let minYear = Infinity;
-    let maxYear = -Infinity;
-    root.each((node) => {
-      if (node.data.year) {
-        minYear = Math.min(minYear, node.data.year);
-        maxYear = Math.max(maxYear, node.data.year);
-      }
-    });
-
-    // CONTEXT: Create tree layout with horizontal orientation
-    // DESIGN DECISION: Horizontal (not vertical) emphasizes timeline progression.
-    // d3.tree() provides automatic vertical spacing for distribution families.
-    const treeLayout = d3.tree<Distribution>().size([innerHeight, innerWidth]);
-
-    const treeData = treeLayout(root);
-
-    // CRITICAL: Adjust x positions based on year (timeline)
-    // Machine-readable note: Overrides d3.tree() x-positions with chronological positioning.
-    // This transforms hierarchical layout into timeline-based visualization.
-    const xScale = d3
-      .scaleLinear()
-      .domain([minYear, maxYear])
-      .range([0, innerWidth]);
-
-    // Update node positions to be timeline-based
-    treeData.each((node: any) => {
-      node.y = xScale(node.data.year);
-    });
-
-    // Add links (connections between nodes)
-    g.selectAll(".link")
-      .data(treeData.links())
-      .enter()
-      .append("path")
-      .attr("class", "link")
-      .attr("d", (d: any) => {
-        return `M${d.source.y},${d.source.x}
-                C${(d.source.y + d.target.y) / 2},${d.source.x}
-                 ${(d.source.y + d.target.y) / 2},${d.target.x}
-                 ${d.target.y},${d.target.x}`;
+    fetch(NODE_MAP_URL)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Node map request failed: ${response.status}`);
+        }
+        return response.json();
       })
-      .style("fill", "none")
-      .style("stroke", (d: any) => d.target.data.color || "#999")
-      .style("stroke-width", 2)
-      .style("stroke-opacity", 0.5);
-
-    // Add nodes
-    const node = g
-      .selectAll(".node")
-      .data(treeData.descendants())
-      .enter()
-      .append("g")
-      .attr("class", "node")
-      .attr("transform", (d: any) => `translate(${d.y},${d.x})`)
-      .style("cursor", "pointer")
-      .on("click", (event, d: any) => {
-        event.stopPropagation();
-        setSelectedNode(d.data);
+      .then((payload: NodeMap) => {
+        if (isMounted) {
+          setNodeMap(payload);
+        }
       })
-      .on("mouseover", function () {
-        // Highlight on hover
-        d3.select(this)
-          .select("circle")
-          .transition()
-          .duration(200)
-          .attr("r", 14)
-          .style("stroke-width", 4);
-      })
-      .on("mouseout", function () {
-        d3.select(this)
-          .select("circle")
-          .transition()
-          .duration(200)
-          .attr("r", 10)
-          .style("stroke-width", 3);
+      .catch((error) => {
+        console.error("Unable to load Linux genealogy node map", error);
       });
 
-    // Add circles for nodes
-    node
-      .append("circle")
-      .attr("r", 10)
-      .style("fill", (d: any) => d.data.color || "#999")
-      .style("stroke", "#fff")
-      .style("stroke-width", 3);
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
-    // Add text labels
-    node
-      .append("text")
-      .attr("dy", ".35em")
-      .attr("x", (d: any) => (d.children ? -15 : 15))
-      .style("text-anchor", (d: any) => (d.children ? "end" : "start"))
-      .style("fill", "#fff")
-      .style("font-size", "12px")
-      .style("font-weight", "bold")
-      .style("text-shadow", "0 1px 2px rgba(0,0,0,0.8)")
-      .text((d: any) => `${d.data.name} (${d.data.year})`);
+  const recenter = () => {
+    const viewport = viewportRef.current;
+    if (!viewport) return;
 
-    // Add year axis
-    const yearAxis = d3.axisBottom(xScale).ticks(10).tickFormat(d3.format("d"));
+    viewport.scrollLeft = Math.max(
+      (viewport.scrollWidth - viewport.clientWidth) / 2,
+      0,
+    );
+    viewport.scrollTop = Math.max(
+      (viewport.scrollHeight - viewport.clientHeight) / 2,
+      0,
+    );
+  };
 
-    g.append("g")
-      .attr("class", "year-axis")
-      .attr("transform", `translate(0,${innerHeight + 20})`)
-      .call(yearAxis)
-      .selectAll("text")
-      .style("fill", "#999")
-      .style("font-size", "11px");
-
-    // Add zoom behavior
-    const zoom = d3
-      .zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.5, 3])
-      .on("zoom", (event) => {
-        g.attr(
-          "transform",
-          `translate(${margin.left + event.transform.x},${margin.top + event.transform.y}) scale(${event.transform.k})`,
-        );
-        setZoomLevel(event.transform.k);
-      });
-
-    svg.call(zoom as any);
-
-    // Filter functionality
-    if (searchTerm) {
-      node.style("opacity", (d: any) => {
-        const matches =
-          d.data.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          d.data.tags?.some((tag: string) =>
-            tag.toLowerCase().includes(searchTerm.toLowerCase()),
-          );
-        return matches ? 1 : 0.2;
-      });
+  const selectPosition = (node: NodePosition) => {
+    const distribution = distributionIndex.get(
+      getDistributionKey(node.name, node.year),
+    );
+    if (distribution) {
+      setSelectedNode(distribution);
     }
-  }, [data, width, height, searchTerm]);
+  };
 
   return (
-    <div className="flex gap-4 h-full">
-      {/* Main visualization */}
-      <div className="flex-grow relative bg-gray-900 rounded-lg overflow-hidden">
-        {/* Controls overlay */}
-        <div className="absolute top-4 left-4 z-10 bg-gray-800/90 backdrop-blur rounded-lg p-3 shadow-lg">
-          <div className="flex flex-col gap-2">
-            <input
-              type="text"
-              placeholder="Search distributions..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="px-3 py-1.5 bg-gray-700 text-white rounded text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <div className="text-xs text-gray-400">
-              Zoom: {(zoomLevel * 100).toFixed(0)}%
+    <div className="flex h-full min-h-[720px] overflow-hidden rounded-lg border border-atl-border/70 bg-[#07111c]">
+      <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-atl-border/70 bg-[#101c2a] px-4 py-3">
+          <div>
+            <div className="text-xs uppercase tracking-[0.22em] text-atl-muted">
+              Static SVG System Map
             </div>
+            <div className="mt-1 text-sm text-atl-archive">
+              Generated map with clickable node overlays for distribution
+              details.
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-3">
+            <label className="flex items-center gap-2 text-xs text-atl-muted">
+              Zoom
+              <input
+                type="range"
+                min="0.35"
+                max="1.25"
+                step="0.05"
+                value={zoom}
+                onChange={(event) => setZoom(Number(event.target.value))}
+                className="w-36 accent-atl-cyan"
+              />
+              <span className="w-10 text-right text-atl-archive">
+                {Math.round(zoom * 100)}%
+              </span>
+            </label>
+            <button
+              type="button"
+              onClick={recenter}
+              className="rounded border border-atl-border/70 px-3 py-2 text-xs font-semibold text-atl-archive hover:border-atl-cyan hover:text-white"
+            >
+              Center
+            </button>
+            <a
+              href={MAP_URL}
+              className="rounded border border-atl-border/70 px-3 py-2 text-xs font-semibold text-atl-archive hover:border-atl-cyan hover:text-white"
+            >
+              Open SVG
+            </a>
+            <a
+              href={DATASET_URL}
+              className="rounded border border-atl-border/70 px-3 py-2 text-xs font-semibold text-atl-archive hover:border-atl-cyan hover:text-white"
+            >
+              JSON
+            </a>
           </div>
         </div>
 
-        {/* Instructions */}
-        <div className="absolute bottom-4 left-4 z-10 bg-gray-800/90 backdrop-blur rounded-lg p-3 shadow-lg text-xs text-gray-300 max-w-xs">
-          <div className="font-semibold mb-1">Controls:</div>
-          <ul className="space-y-0.5 text-gray-400">
-            <li>• Click nodes for details</li>
-            <li>• Scroll to zoom</li>
-            <li>• Drag to pan</li>
-            <li>• Search to filter</li>
-          </ul>
+        <div className="grid grid-cols-2 gap-2 border-b border-atl-border/70 bg-[#0c1723] px-4 py-2 text-xs text-atl-muted sm:grid-cols-4">
+          <span>
+            Nodes: <strong className="text-atl-archive">{stats.count}</strong>
+          </span>
+          <span>
+            Years:{" "}
+            <strong className="text-atl-archive">
+              {stats.minYear}-{stats.maxYear}
+            </strong>
+          </span>
+          <span>
+            Depth:{" "}
+            <strong className="text-atl-archive">{stats.maxDepth}</strong>
+          </span>
+          <span>
+            Hotspots:{" "}
+            <strong className="text-atl-archive">
+              {nodeMap?.nodes.length ?? "loading"}
+            </strong>
+          </span>
         </div>
 
-        <svg ref={svgRef} className="w-full h-full" />
+        <div ref={viewportRef} className="min-h-0 flex-1 overflow-auto">
+          <div
+            className="relative mx-auto my-8"
+            style={{ width: renderedSize, height: renderedSize }}
+          >
+            <img
+              src={MAP_URL}
+              alt="Radial Linux distribution genealogy map generated from the public Aptlantis Studio dataset"
+              className="block max-w-none select-none"
+              style={{ width: renderedSize, height: renderedSize }}
+              draggable={false}
+              onLoad={recenter}
+            />
+
+            {nodeMap?.nodes.map((node) => {
+              const diameter = Math.max(22, (node.radius + 7) * 2 * scale);
+              const left = node.x * scale - diameter / 2;
+              const top = node.y * scale - diameter / 2;
+
+              return (
+                <button
+                  key={`${node.name}-${node.year}-${node.depth}`}
+                  type="button"
+                  aria-label={`View ${node.name} distribution details`}
+                  title={`${node.name}${node.year ? ` (${node.year})` : ""}`}
+                  onClick={() => selectPosition(node)}
+                  onMouseEnter={() => setHoveredNode(node)}
+                  onMouseLeave={() => setHoveredNode(null)}
+                  className="absolute rounded-full border border-transparent bg-transparent transition hover:border-atl-cyan/80 hover:bg-atl-cyan/15 focus:border-atl-cyan focus:bg-atl-cyan/20 focus:outline-none"
+                  style={{
+                    left,
+                    top,
+                    width: diameter,
+                    height: diameter,
+                  }}
+                />
+              );
+            })}
+
+            {hoveredNode && (
+              <div
+                className="pointer-events-none absolute z-10 rounded border border-atl-border/70 bg-[#101c2a]/95 px-2 py-1 text-xs font-semibold text-atl-archive shadow-lg"
+                style={{
+                  left: hoveredNode.x * scale + 12,
+                  top: hoveredNode.y * scale - 12,
+                }}
+              >
+                {hoveredNode.name}
+                {hoveredNode.year ? ` (${hoveredNode.year})` : ""}
+              </div>
+            )}
+          </div>
+        </div>
       </div>
 
-      {/* Details panel */}
       {selectedNode && (
-        <div className="w-80 bg-gray-800 rounded-lg p-4 overflow-y-auto max-h-full">
-          <div className="flex items-center justify-between mb-3">
-            <h3 className="text-xl font-bold text-white">
-              {selectedNode.name}
-            </h3>
-            <button
-              onClick={() => setSelectedNode(null)}
-              className="text-gray-400 hover:text-white"
-            >
-              ✕
-            </button>
-          </div>
-
-          <div className="space-y-3">
-            {/* Year and color indicator */}
-            <div className="flex items-center gap-2">
-              <div
-                className="w-4 h-4 rounded"
-                style={{ backgroundColor: selectedNode.color }}
-              />
-              <span className="text-gray-300 text-sm font-semibold">
-                {selectedNode.year}
-              </span>
-            </div>
-
-            {/* Tags */}
-            {selectedNode.tags && selectedNode.tags.length > 0 && (
-              <div>
-                <div className="text-xs text-gray-400 mb-1">Tags</div>
-                <div className="flex flex-wrap gap-1">
-                  {selectedNode.tags.map((tag, i) => (
-                    <span
-                      key={i}
-                      className="px-2 py-0.5 bg-gray-700 text-gray-300 rounded text-xs"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Facts */}
-            {selectedNode.facts && selectedNode.facts.length > 0 && (
-              <div>
-                <div className="text-xs text-gray-400 mb-1 font-semibold">
-                  Facts
-                </div>
-                <ul className="text-sm text-gray-300 space-y-1">
-                  {selectedNode.facts.map((fact, i) => (
-                    <li key={i} className="text-xs leading-relaxed">
-                      • {fact}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {/* Philosophy */}
-            {selectedNode.philosophy && selectedNode.philosophy.length > 0 && (
-              <div>
-                <div className="text-xs text-gray-400 mb-1 font-semibold">
-                  Philosophy
-                </div>
-                <ul className="text-sm text-gray-300 space-y-1">
-                  {selectedNode.philosophy.map((item, i) => (
-                    <li key={i} className="text-xs leading-relaxed">
-                      • {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {/* Technical details */}
-            {selectedNode.technical && (
-              <div>
-                <div className="text-xs text-gray-400 mb-1 font-semibold">
-                  Technical
-                </div>
-                <div className="text-xs text-gray-300 space-y-1">
-                  {Object.entries(selectedNode.technical).map(
-                    ([key, value]) => (
-                      <div key={key}>
-                        <span className="text-gray-400">{key}:</span>{" "}
-                        {Array.isArray(value)
-                          ? value.join(", ")
-                          : String(value)}
-                      </div>
-                    ),
-                  )}
-                </div>
-              </div>
-            )}
-
-            {/* Community */}
-            {selectedNode.community && (
-              <div>
-                <div className="text-xs text-gray-400 mb-1 font-semibold">
-                  Community
-                </div>
-                <div className="text-xs text-gray-300 space-y-1">
-                  {Object.entries(selectedNode.community).map(
-                    ([key, value]) => (
-                      <div key={key}>
-                        <span className="text-gray-400">{key}:</span>{" "}
-                        {typeof value === "string" &&
-                        value.startsWith("http") ? (
-                          <a
-                            href={value}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-400 hover:text-blue-300"
-                          >
-                            {value}
-                          </a>
-                        ) : (
-                          String(value)
-                        )}
-                      </div>
-                    ),
-                  )}
-                </div>
-              </div>
-            )}
-
-            {/* Plan */}
-            {selectedNode.plan && (
-              <div>
-                <div className="text-xs text-gray-400 mb-1 font-semibold">
-                  Mission
-                </div>
-                <p className="text-xs text-gray-300 leading-relaxed">
-                  {selectedNode.plan}
-                </p>
-              </div>
-            )}
-
-            {/* Children count */}
-            {selectedNode.children && selectedNode.children.length > 0 && (
-              <div className="pt-2 border-t border-gray-700">
-                <div className="text-xs text-gray-400">
-                  {selectedNode.children.length} child distribution
-                  {selectedNode.children.length > 1 ? "s" : ""}
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
+        <DistributionPanel
+          distribution={selectedNode}
+          onClose={() => setSelectedNode(null)}
+        />
       )}
     </div>
   );
 };
+
+const DistributionPanel = ({
+  distribution,
+  onClose,
+}: {
+  distribution: Distribution;
+  onClose: () => void;
+}) => (
+  <aside className="w-80 shrink-0 overflow-y-auto border-l border-atl-border/70 bg-[#101c2a] p-4">
+    <div className="mb-3 flex items-start justify-between gap-3">
+      <div>
+        <h3 className="text-xl font-bold text-white">{distribution.name}</h3>
+        <p className="text-sm text-atl-muted">{distribution.year}</p>
+      </div>
+      <button
+        type="button"
+        onClick={onClose}
+        className="rounded border border-atl-border/70 px-2 py-1 text-xs text-atl-muted hover:border-atl-cyan hover:text-white"
+      >
+        Close
+      </button>
+    </div>
+
+    <div className="space-y-4">
+      {distribution.tags && distribution.tags.length > 0 && (
+        <div>
+          <div className="mb-2 text-xs uppercase tracking-[0.18em] text-atl-muted">
+            Tags
+          </div>
+          <div className="flex flex-wrap gap-1">
+            {distribution.tags.map((tag) => (
+              <span
+                key={tag}
+                className="rounded-full border border-atl-border/70 px-2 py-0.5 text-xs text-atl-archive"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {distribution.facts && distribution.facts.length > 0 && (
+        <TextList title="Facts" items={distribution.facts} />
+      )}
+
+      {distribution.philosophy && distribution.philosophy.length > 0 && (
+        <TextList title="Philosophy" items={distribution.philosophy} />
+      )}
+
+      {distribution.technical && (
+        <ObjectDetail title="Technical" value={distribution.technical} />
+      )}
+
+      {distribution.community && (
+        <ObjectDetail title="Community" value={distribution.community} />
+      )}
+
+      {distribution.plan && (
+        <div>
+          <div className="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-atl-muted">
+            Mission
+          </div>
+          <p className="text-xs leading-relaxed text-atl-archive">
+            {distribution.plan}
+          </p>
+        </div>
+      )}
+
+      {distribution.children && distribution.children.length > 0 && (
+        <div className="border-t border-atl-border/70 pt-3 text-xs text-atl-muted">
+          {distribution.children.length} child distribution
+          {distribution.children.length > 1 ? "s" : ""}
+        </div>
+      )}
+    </div>
+  </aside>
+);
+
+const TextList = ({ title, items }: { title: string; items: string[] }) => (
+  <div>
+    <div className="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-atl-muted">
+      {title}
+    </div>
+    <ul className="space-y-1 text-xs leading-relaxed text-atl-archive">
+      {items.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  </div>
+);
+
+const ObjectDetail = ({
+  title,
+  value,
+}: {
+  title: string;
+  value: Record<string, unknown>;
+}) => (
+  <div>
+    <div className="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-atl-muted">
+      {title}
+    </div>
+    <div className="space-y-1 text-xs text-atl-archive">
+      {Object.entries(value).map(([key, detail]) => (
+        <div key={key}>
+          <span className="text-atl-muted">{key.replace(/_/g, " ")}:</span>{" "}
+          {Array.isArray(detail) ? detail.join(", ") : String(detail)}
+        </div>
+      ))}
+    </div>
+  </div>
+);
 
 export default D3TreeVisualization;

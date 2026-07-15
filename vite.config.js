@@ -12,7 +12,7 @@ export default defineConfig({
   },
   server: {
     watch: {
-      ignored: ["**/prism-components/**", "**/public/prism-components/**"],
+      ignored: ["**/services/**/target/**"],
     },
     proxy: {
       "/api": {

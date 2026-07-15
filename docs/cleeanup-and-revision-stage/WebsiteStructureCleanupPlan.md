@@ -17,22 +17,22 @@ The site should become easier to maintain, easier to crawl, and easier to trust.
 
 ## Feature Decisions
 
-| Feature directory                 | Decision                        | Notes                                                                                                                            |
-| --------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `src/features/about`              | Keep and rewrite                | Current content is legacy mirror-era copy. Reframe around project catalog, standards, evidence, and teaching studio identity.    |
-| `src/features/coding-weird-stuff` | Kept and rebranded              | Public concept is now **Coding Against The Grain**. The old route remains compatible and the Figlet / ASCII tool is retained.    |
-| `src/features/contact`            | Kept and expanded               | Now routes project corrections, metadata issues, collaboration notes, and sensitive concerns through the current studio framing. |
-| `src/features/distributions`      | Remove                          | Legacy Linux distribution, ISO, torrent, and mirror tooling does not match the current portfolio mission.                        |
-| `src/features/irc`                | Quarantine                      | Keep until a final content decision is made. Do not expand during the cleanup pass.                                              |
-| `src/features/legal`              | Kept and rewritten              | Terms and Privacy now describe the project catalog, public metadata, crawler posture, contact submissions, and operational logs. |
-| `src/features/linux-geneology`    | Keep, then absorb expanded data | Keep for now, but plan a spelling-compatible migration to `linux-genealogy` later.                                               |
-| `src/features/museum`             | Remove                          | Legacy distro museum surface depends on removed distribution data.                                                               |
-| `src/features/onboarding`         | Remove                          | Legacy page outside the current public project catalog direction.                                                                |
-| `src/features/projects`           | Keep as core                    | Project records and detail pages are the main site product.                                                                      |
-| `src/features/structra-lab`       | Keep                            | Fits the teaching studio and standards demonstration role.                                                                       |
-| `src/features/svg-lab`            | Keep                            | Fits visual metadata, SESM, and safe-profile demonstration goals.                                                                |
-| `src/features/terry-davis-videos` | Remove                          | Hidden legacy page. Remove from the app cleanup path.                                                                            |
-| `src/features/volunteer`          | Remove                          | Legacy mirror volunteer surface. Future collaboration copy belongs under Contact or About.                                       |
+| Feature directory                 | Decision                        | Notes                                                                                                                                       |
+| --------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/features/about`              | Kept and rewritten              | Authored React page now uses the canonical page frame and no longer fetches legacy public JSON.                                             |
+| `src/features/coding-weird-stuff` | Kept and rebranded              | Public concept is now **Coding Against The Grain**. The old route remains compatible and the Figlet / ASCII tool is retained.               |
+| `src/features/contact`            | Kept and expanded               | Now routes project corrections, metadata issues, collaboration notes, and sensitive concerns through the current studio framing.            |
+| `src/features/distributions`      | Removed                         | Legacy Linux distribution, ISO, torrent, and mirror tooling were deleted from the live feature tree.                                        |
+| `src/features/irc`                | Quarantine                      | Keep until a final content decision is made. Do not expand during the cleanup pass.                                                         |
+| `src/features/legal`              | Kept and rewritten              | Terms and Privacy now describe the project catalog, public metadata, crawler posture, contact submissions, and operational logs.            |
+| `src/features/linux-geneology`    | Kept with corrected route alias | Expanded public dataset now loads from `/data/linux-genealogy/`; `/linux-genealogy` is canonical and `/linux-geneology` remains compatible. |
+| `src/features/museum`             | Removed                         | Legacy distro museum surface depended on removed distribution data.                                                                         |
+| `src/features/onboarding`         | Removed                         | Legacy page outside the current public project catalog direction.                                                                           |
+| `src/features/projects`           | Keep as core                    | Project records and detail pages are the main site product.                                                                                 |
+| `src/features/structra-lab`       | Keep                            | Fits the teaching studio and standards demonstration role.                                                                                  |
+| `src/features/svg-lab`            | Keep                            | Fits visual metadata, SESM, and safe-profile demonstration goals.                                                                           |
+| `src/features/terry-davis-videos` | Removed                         | Hidden legacy page removed from the app cleanup path.                                                                                       |
+| `src/features/volunteer`          | Removed                         | Legacy mirror volunteer surface removed; collaboration copy now belongs under Contact or About.                                             |
 
 ## Public Data Structure
 
@@ -44,12 +44,22 @@ Use this structure for crawlable records:
 public/
   data/
     manifest.json
+    linux-genealogy/
+      linux-genealogy-expanded.json
+      linux-genealogy-map.svg
+      linux-genealogy-map-nodes.json
     projects/
       portfolio.json
       cityhall-frameworks.json
   schemas/
     aptlantis-studio-manifest.schema.json
+    incoming-message.schema.json
   logos/
+    og/
+      aptlantis-studio-opengraph.png
+  .well-known/
+    security.txt
+    aptlantis.studio_0x0BE88A1564D5B232_public.asc
   projects/
   robots.txt
   sitemap.xml
@@ -63,18 +73,31 @@ public/
 - App-only implementation data may stay under `src/features/<feature>/data`, but should not be fetched from arbitrary paths.
 - Loaders should use one stable endpoint per domain, such as `/data/projects/portfolio.json`.
 - Generated data should declare its source and update cadence in `public/data/manifest.json`.
+- Slow-changing visualizations may be generated into static public SVG assets, with source data kept beside them.
+
+## Public Directory Audit
+
+| Public file or directory                   | Decision                  | Notes                                                                                                              |
+| ------------------------------------------ | ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `public/data/quickLinks.json`              | Removed                   | Stale distro-era quick links with empty URLs. Current quick-link logic, if needed, belongs in authored app data.   |
+| `public/data/incoming-message.schema.json` | Moved to `public/schemas` | It is a schema, not a dataset. The public ID now matches `/schemas/incoming-message.schema.json`.                  |
+| `public/framework-structure`               | Removed                   | Legacy design-export bundle duplicated logo/image assets and prompt files; it was not referenced by live app code. |
+| `public/prism-components`                  | Removed                   | The live app loads `/prism.js` and `/prism.css`; individual component files were unused public bulk.               |
+| `public/prism.js` and `public/prism.css`   | Keep as support assets    | Loaded by `index.html` for project code-block highlighting. Not listed as high-value crawl targets.                |
+| `public/command-schemas`                   | Keep                      | Still loaded by the project portfolio loader for CommandWizard schema examples.                                    |
+| `public/theme`                             | Keep narrowly             | Home currently references `/theme/aptlantis-blue-slate-banner.png`; revisit unused theme images later.             |
 
 ## Legacy Data Removal Targets
 
-| File or area                                              | Action                                                    |
-| --------------------------------------------------------- | --------------------------------------------------------- |
-| `src/features/distributions/data/aptlantis.distros.json`  | Remove with distribution feature.                         |
-| `src/features/distributions/data/aptlantis.torrents.json` | Remove with distribution feature.                         |
-| `public/data/mirror-status.json`                          | Remove after SyncStatus context is retired or repurposed. |
-| `public/data/aptlantis.dashboard_data.json`               | Audit and remove if no current page consumes it.          |
-| `public/schemas/aptlantis.dashboard_data.json`            | Audit with dashboard data; likely legacy.                 |
-| `public/data/about_page.schema_completed.json`            | Removed after About became an authored React page.        |
-| `public/data/about_page.schema.json`                      | Removed after About stopped fetching public JSON.         |
+| File or area                                              | Action                                             |
+| --------------------------------------------------------- | -------------------------------------------------- |
+| `src/features/distributions/data/aptlantis.distros.json`  | Removed with distribution feature.                 |
+| `src/features/distributions/data/aptlantis.torrents.json` | Removed with distribution feature.                 |
+| `public/data/mirror-status.json`                          | Removed after SyncStatus context was retired.      |
+| `public/data/aptlantis.dashboard_data.json`               | Removed because no current page consumed it.       |
+| `public/schemas/aptlantis.dashboard_data.json`            | Removed with legacy dashboard data.                |
+| `public/data/about_page.schema_completed.json`            | Removed after About became an authored React page. |
+| `public/data/about_page.schema.json`                      | Removed after About stopped fetching public JSON.  |
 
 ## Route Cleanup
 
@@ -100,15 +123,16 @@ Keep these routes during this cleanup stage:
 /irc
 /coding-against-the-grain
 /coding-weird-stuff
+/linux-genealogy
 /linux-geneology
 ```
 
-Later route migrations:
+Compatibility route aliases:
 
-| Current route         | Future route                | Compatibility                                                          |
-| --------------------- | --------------------------- | ---------------------------------------------------------------------- |
-| `/coding-weird-stuff` | `/coding-against-the-grain` | New route added; old route remains as a compatibility alias.           |
-| `/linux-geneology`    | `/linux-genealogy`          | Add redirect or alias because current spelling may already be indexed. |
+| Current route         | Future route                | Compatibility                                                             |
+| --------------------- | --------------------------- | ------------------------------------------------------------------------- |
+| `/coding-weird-stuff` | `/coding-against-the-grain` | New route added; old route remains as a compatibility alias.              |
+| `/linux-geneology`    | `/linux-genealogy`          | New corrected route added; old spelling remains as a compatibility alias. |
 
 ## Metadata And Crawler Goals
 
@@ -133,7 +157,7 @@ Required publication assets:
 5. Retire or repurpose mirror-era global status contexts and screensaver copy.
 6. Rewrite About, Legal, and Contact.
 7. Rebrand Coding Weird Stuff to Coding Against The Grain.
-8. Absorb expanded Linux genealogy data and plan spelling-compatible route migration.
+8. Absorb expanded Linux genealogy data and add spelling-compatible route migration.
 9. Run `pnpm format:check`, `pnpm lint:strict`, and `pnpm build`.
 
 ## Verification Checklist

@@ -1,5 +1,6 @@
-Contact: mailto:contact@aptlantis.net
-Policy: https://aptlantis.net/about
-Expires: 2026-12-31T23:59:59Z
+Contact: https://aptlantis.studio/contact
+Encryption: https://aptlantis.studio/.well-known/aptlantis.studio_0x0BE88A1564D5B232_public.asc
+Policy: https://aptlantis.studio/privacy
+Expires: 2027-07-15T00:00:00Z
 Preferred-Languages: en
-Canonical: https://aptlantis.net/.well-known/security.txt
+Canonical: https://aptlantis.studio/.well-known/security.txt

@@ -16,6 +16,18 @@ const Footer = () => {
 
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm">
             <Link
+              to="/coding-against-the-grain"
+              className="rounded-md text-atl-silver transition-colors hover:text-atl-archive focus:outline-none focus:ring-2 focus:ring-atl-silver focus:ring-offset-2 focus:ring-offset-atl-void"
+            >
+              Coding Against The Grain
+            </Link>
+            <Link
+              to="/contact"
+              className="rounded-md text-atl-silver transition-colors hover:text-atl-archive focus:outline-none focus:ring-2 focus:ring-atl-silver focus:ring-offset-2 focus:ring-offset-atl-void"
+            >
+              Contact
+            </Link>
+            <Link
               to="/terms"
               className="rounded-md text-atl-silver transition-colors hover:text-atl-archive focus:outline-none focus:ring-2 focus:ring-atl-silver focus:ring-offset-2 focus:ring-offset-atl-void"
             >

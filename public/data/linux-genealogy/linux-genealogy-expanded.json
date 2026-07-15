@@ -1,0 +1,1642 @@
+[
+  {
+    "name": "Linux Kernel",
+    "year": 1991,
+    "color": "#6666FF",
+    "tags": ["origin", "Torvalds"],
+    "facts": [
+      "Created by Linus Torvalds while he was a student at the University of Helsinki",
+      "Initially developed as a free alternative to the MINIX operating system",
+      "First announced on August 25, 1991, in a Usenet posting",
+      "Version 1.0 was released in March 1994, supporting only single-processor i386 systems"
+    ],
+    "children": [
+      {
+        "name": "Clear Linux",
+        "year": 2015,
+        "color": "#00AEEF",
+        "tags": ["Intel", "performance", "container"],
+        "facts": [
+          "Developed by Intel specifically optimized for Intel hardware",
+          "Designed for high performance in cloud and container environments",
+          "Uses a unique bundle-based package management system",
+          "Implements aggressive performance optimizations and security mitigations"
+        ]
+      },
+      {
+        "name": "Solus",
+        "year": 2015,
+        "color": "#5294E2",
+        "tags": ["independent", "desktop-focused", "mirrored"],
+        "facts": [
+          "Originally started as SolusOS (Debian-based) but was later rebuilt from scratch",
+          "Developed the Budgie desktop environment, which is now also available on other distributions",
+          "Uses the eopkg package management system derived from PiSi",
+          "Follows a curated rolling release model that balances stability and up-to-date software"
+        ]
+      },
+      {
+        "name": "SUSE Linux",
+        "year": 1994,
+        "color": "#73BA25",
+        "tags": ["enterprise", "German"],
+        "facts": [
+          "Originally a German translation of Slackware",
+          "Became the first distribution with a YaST graphical installer",
+          "Split into openSUSE (community) and SUSE Linux Enterprise (commercial) in 2005"
+        ],
+        "children": [
+          {
+            "name": "openSUSE",
+            "year": 2005,
+            "color": "#73BA25",
+            "tags": ["community", "YaST"],
+            "facts": [
+              "Community-driven version of SUSE Linux",
+              "Offers both Leap (regular release) and Tumbleweed (rolling release) versions",
+              "Known for its powerful YaST configuration tool and KDE integration"
+            ],
+            "children": [
+              {
+                "name": "GeckoLinux",
+                "year": 2015,
+                "color": "#73BA25",
+                "tags": ["openSUSE-spin", "polished", "desktop"],
+                "facts": [
+                  "Polished spins of openSUSE Leap and Tumbleweed with better out-of-the-box desktop experience",
+                  "Adds multimedia codecs and proprietary drivers that openSUSE omits for licensing reasons",
+                  "Available in multiple desktop editions including GNOME, Plasma, Xfce, Cinnamon, and Budgie",
+                  "Name is a playful reference to the Gecko lizard, complementing openSUSE's chameleon mascot"
+                ],
+                "children": []
+              },
+              {
+                "name": "openSUSE Aeon",
+                "year": 2023,
+                "color": "#73BA25",
+                "tags": ["openSUSE", "immutable", "GNOME"],
+                "facts": [
+                  "Immutable GNOME desktop spin from openSUSE",
+                  "Built around transactional updates for a more stable desktop base"
+                ],
+                "children": []
+              },
+              {
+                "name": "openSUSE Kalpa",
+                "year": 2023,
+                "color": "#73BA25",
+                "tags": ["openSUSE", "immutable", "KDE"],
+                "facts": [
+                  "Immutable KDE Plasma desktop spin from openSUSE",
+                  "Shares the transactional base model used by Aeon"
+                ],
+                "children": []
+              },
+              {
+                "name": "openSUSE Slowroll",
+                "year": 2024,
+                "color": "#73BA25",
+                "tags": ["openSUSE", "rolling", "community"],
+                "facts": [
+                  "openSUSE flavor that moves more slowly than Tumbleweed",
+                  "Aims to offer a rolling model with slightly more conservative pacing"
+                ],
+                "children": []
+              },
+              {
+                "name": "openSUSE Leap",
+                "year": 2015,
+                "color": "#73BA25",
+                "tags": ["openSUSE", "stable", "community"],
+                "facts": [
+                  "Stable openSUSE release line built for reliability and predictable updates",
+                  "Shares its heritage with SUSE Linux Enterprise and the wider openSUSE ecosystem"
+                ],
+                "children": []
+              },
+              {
+                "name": "openSUSE Tumbleweed",
+                "year": 2008,
+                "color": "#73BA25",
+                "tags": ["openSUSE", "rolling", "community"],
+                "facts": [
+                  "Rolling openSUSE release line with continuously updated packages",
+                  "Built for users who want the latest tested kernels, desktops, and drivers"
+                ],
+                "children": []
+              },
+              {
+                "name": "openSUSE MicroOS",
+                "year": 2020,
+                "color": "#73BA25",
+                "tags": ["openSUSE", "immutable", "server"],
+                "facts": [
+                  "Immutable openSUSE system designed for container workloads and automated administration",
+                  "Uses transactional updates and rollback-friendly snapshots"
+                ],
+                "children": []
+              },
+              {
+                "name": "openSUSE Leap Micro",
+                "year": 2022,
+                "color": "#73BA25",
+                "tags": ["openSUSE", "micro", "server"],
+                "facts": [
+                  "Lightweight immutable server OS built for containerized and virtualized workloads",
+                  "Community version based on SUSE Linux Enterprise Micro technologies"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slackware",
+        "year": 1993,
+        "color": "#888888",
+        "tags": ["base", "classic"],
+        "facts": [
+          "One of the oldest Linux distributions still in active development",
+          "Known for its simplicity and UNIX-like design philosophy"
+        ],
+        "children": [
+          {
+            "name": "Slax",
+            "year": 2003,
+            "color": "#AAAAAA",
+            "tags": ["lightweight"],
+            "facts": [
+              "Designed to run from USB drives or CD-ROMs without installation",
+              "Uses a modular approach allowing easy customization"
+            ]
+          },
+          {
+            "name": "Salix",
+            "year": 2009,
+            "color": "#BBBBBB",
+            "tags": ["user-friendly"],
+            "facts": [
+              "Fully compatible with Slackware but more user-friendly",
+              "Follows a 'one application per task' philosophy to reduce bloat"
+            ]
+          },
+          {
+            "name": "Zenwalk",
+            "year": 2004,
+            "color": "#0055AA",
+            "tags": ["lightweight", "desktop"],
+            "facts": [
+              "Aims to be a modern, fast, and lightweight Slackware-based distribution",
+              "Optimized for desktop usage with a single application per task approach"
+            ]
+          },
+          {
+            "name": "VectorLinux",
+            "year": 2000,
+            "color": "#556B2F",
+            "tags": ["lightweight", "desktop", "Canadian"],
+            "facts": [
+              "Canadian Slackware-based distribution focused on fast performance on modest hardware",
+              "One of the earlier distros to offer a polished desktop experience on Slackware foundations",
+              "Developed by Robert Lange and Ladislav Bodnar (co-founder of DistroWatch)",
+              "Went through several iterations and is notable in Slackware community history"
+            ],
+            "children": []
+          },
+          {
+            "name": "Absolute Linux",
+            "year": 2003,
+            "color": "#708090",
+            "tags": ["lightweight", "IceWM", "complete"],
+            "facts": [
+              "Aims to be a complete, ready-to-use Slackware-based desktop distribution out of the box",
+              "Ships with IceWM as its default window manager for a fast, low-resource experience",
+              "Includes all the tools needed for daily use without requiring post-install configuration",
+              "Popular with users who appreciate Slackware's design but want a more ready-to-use setup"
+            ],
+            "children": []
+          },
+          {
+            "name": "Parted Magic",
+            "year": 2007,
+            "color": "#FF6600",
+            "tags": [
+              "rescue",
+              "partitioning",
+              "Slackware-based",
+              "commercial",
+              "live-CD"
+            ],
+            "facts": [
+              "Created by Patrick Verner; one of the very few Slackware-based distributions to achieve widespread practical use outside the Slackware community",
+              "Designed as a live CD/USB bootable toolkit for disk partitioning, cloning, data recovery, and secure erasing — no installation required",
+              "In 2013 it became one of the rare open-source-based projects to successfully transition to a commercial pay-for-download model, still sold today",
+              "The name blends GNU Parted and the defunct PartitionMagic; the irony is that it outlived and outperformed the proprietary tool it was named after"
+            ],
+            "children": []
+          },
+          {
+            "name": "Slackel",
+            "year": 2012,
+            "color": "#4f46e5",
+            "tags": ["Slackware", "desktop", "lightweight"],
+            "facts": [
+              "Slackware-based distribution with a desktop-oriented focus",
+              "Known for lightweight desktop options such as MATE, KDE, and Openbox"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Debian",
+        "year": 1993,
+        "color": "#CC0000",
+        "tags": ["base", "community"],
+        "facts": [
+          "Known for its commitment to free software principles",
+          "Uses one of the most comprehensive package management systems (APT)"
+        ],
+        "children": [
+          {
+            "name": "Deepin",
+            "year": 2011,
+            "color": "#1C1C1C",
+            "tags": ["desktop", "China"],
+            "facts": [
+              "Developed in China with a focus on elegant design and user experience",
+              "Features the Deepin Desktop Environment (DDE)",
+              "Known for its custom applications and polished look"
+            ]
+          },
+          {
+            "name": "Parrot OS",
+            "year": 2013,
+            "color": "#1F2937",
+            "tags": ["security", "forensics"],
+            "facts": [
+              "Designed for security experts, developers, and privacy-conscious users",
+              "Includes tools for penetration testing, forensics, and development",
+              "Lightweight and based on Debian"
+            ]
+          },
+          {
+            "name": "Ubuntu",
+            "year": 2004,
+            "color": "#DD4814",
+            "tags": ["popular", "user-friendly"],
+            "facts": [
+              "Named after the African philosophy of 'Ubuntu' meaning 'humanity to others'",
+              "Releases new versions every 6 months with Long Term Support (LTS) versions every 2 years"
+            ],
+            "children": [
+              {
+                "name": "Linux Mint",
+                "year": 2006,
+                "color": "#87cf3e",
+                "tags": ["mirrored", "Ubuntu-based"],
+                "facts": [
+                  "Known for its Cinnamon desktop environment, which preserves a traditional desktop experience",
+                  "Focuses on out-of-the-box usability with pre-installed codecs and drivers",
+                  "Consistently ranked as one of the most popular Linux distributions for desktop users"
+                ],
+                "children": [
+                  {
+                    "name": "Feren OS",
+                    "year": 2017,
+                    "color": "#00A4FF",
+                    "tags": ["mirrored", "user-friendly", "Windows-like"],
+                    "facts": [
+                      "Based on Linux Mint/Ubuntu with a focus on providing a familiar experience for Windows users",
+                      "Features a customized KDE Plasma desktop environment with a Windows-like layout",
+                      "Includes a theme manager for easy customization of the desktop appearance",
+                      "Comes with a migration tool to help users transition from Windows"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Zorin OS",
+                "year": 2009,
+                "color": "#66CCFF",
+                "tags": ["polished", "beginner"],
+                "facts": [
+                  "Designed to look and feel familiar to Windows users transitioning to Linux",
+                  "Offers a unique 'Zorin Appearance' app to switch between different desktop layouts",
+                  "Available in free Core edition and paid Pro edition with additional features"
+                ]
+              },
+              {
+                "name": "Elementary OS",
+                "year": 2011,
+                "color": "#64BAFF",
+                "tags": ["design", "macOS-like"],
+                "facts": [
+                  "Known for its macOS-inspired design and user interface",
+                  "Developed its own desktop environment called Pantheon",
+                  "Focuses on a 'pay-what-you-want' funding model for sustainable open source development"
+                ]
+              },
+              {
+                "name": "Pop!_OS",
+                "year": 2017,
+                "color": "#48B9C7",
+                "tags": ["System76", "developer-focused"],
+                "facts": [
+                  "Developed by computer manufacturer System76",
+                  "Optimized for graphics and compute workflows with specialized support for NVIDIA GPUs",
+                  "Features unique window tiling and keyboard navigation system"
+                ]
+              },
+              {
+                "name": "Kubuntu",
+                "year": 2005,
+                "color": "#0079C1",
+                "tags": ["KDE", "official-flavor"],
+                "facts": [
+                  "Official Ubuntu flavor featuring the KDE Plasma desktop environment",
+                  "Combines Ubuntu's infrastructure with KDE's applications and technologies",
+                  "Offers a more customizable desktop experience compared to standard Ubuntu"
+                ]
+              },
+              {
+                "name": "Lubuntu",
+                "year": 2009,
+                "color": "#0068C8",
+                "tags": ["lightweight", "LXQt", "official-flavor"],
+                "facts": [
+                  "Official Ubuntu flavor featuring the lightweight LXQt desktop environment",
+                  "Designed for older computers with limited resources",
+                  "Focuses on speed and energy-efficiency while maintaining usability"
+                ]
+              },
+              {
+                "name": "Xubuntu",
+                "year": 2006,
+                "color": "#0044AA",
+                "tags": ["Xfce", "balanced", "official-flavor"],
+                "facts": [
+                  "Official Ubuntu flavor featuring the Xfce desktop environment",
+                  "Balances performance and features for a responsive system",
+                  "Provides a traditional desktop experience with modern capabilities"
+                ]
+              },
+              {
+                "name": "Ubuntu MATE",
+                "year": 2015,
+                "color": "#87A556",
+                "tags": ["MATE", "traditional", "official-flavor"],
+                "facts": [
+                  "Official Ubuntu flavor featuring the MATE desktop environment",
+                  "Continues the traditional GNOME 2 desktop experience",
+                  "Focuses on usability and performance while maintaining familiarity"
+                ]
+              },
+              {
+                "name": "Ubuntu Budgie",
+                "year": 2017,
+                "color": "#6F8A91",
+                "tags": ["Budgie", "modern", "official-flavor"],
+                "facts": [
+                  "Official Ubuntu flavor featuring the Budgie desktop environment",
+                  "Provides a modern, simplified desktop experience",
+                  "Developed in collaboration with the Solus project"
+                ]
+              },
+              {
+                "name": "KDE Neon",
+                "year": 2016,
+                "color": "#1D99F3",
+                "tags": ["KDE", "latest-plasma"],
+                "facts": [
+                  "Combines an Ubuntu LTS base with the latest KDE Plasma desktop",
+                  "Developed by KDE to showcase the latest KDE technologies",
+                  "Not an official Ubuntu flavor but uses Ubuntu as its foundation"
+                ]
+              },
+              {
+                "name": "Ubuntu Studio",
+                "year": 2007,
+                "color": "#0F4C81",
+                "tags": ["multimedia", "creative", "official-flavor"],
+                "facts": [
+                  "Official Ubuntu flavor focused on multimedia creation",
+                  "Includes specialized audio, video, and graphics applications",
+                  "Features a low-latency kernel optimized for audio production"
+                ]
+              },
+              {
+                "name": "Ubuntu Kylin",
+                "year": 2013,
+                "color": "#FF4500",
+                "tags": ["Chinese", "official-flavor", "localized"],
+                "facts": [
+                  "Official Ubuntu flavor developed in partnership with the Chinese government and CSIP",
+                  "Designed specifically for Chinese users with localized software, fonts, and input methods",
+                  "Ships with UKUI (Ubuntu Kylin User Interface), a custom desktop resembling Windows",
+                  "Pre-installed with Chinese-specific apps like WPS Office, Sogou input method, and Youdao Dictionary"
+                ],
+                "children": []
+              },
+              {
+                "name": "Bodhi Linux",
+                "year": 2011,
+                "color": "#8B7355",
+                "tags": ["minimalist", "Enlightenment", "lightweight"],
+                "facts": [
+                  "Named after the Buddhist term for 'awakening'; ships with the Moksha (formerly Enlightenment) desktop",
+                  "Provides an extremely lightweight base and lets users install only what they need",
+                  "The Moksha desktop uses very little RAM while still providing a visually distinctive experience",
+                  "Comes in a legacy edition for computers as old as those with 500MHz processors"
+                ],
+                "children": []
+              },
+              {
+                "name": "Linux Lite",
+                "year": 2012,
+                "color": "#FFD700",
+                "tags": ["Windows-migrants", "beginner", "lightweight"],
+                "facts": [
+                  "Explicitly designed to help Windows XP and Windows 7 users transition to Linux",
+                  "Ships with a Windows-style Xfce layout and familiar applications like LibreOffice and VLC",
+                  "Includes a 'Lite Welcome' app and 'Lite Software' tool to ease new users into Linux",
+                  "Maintains long-term support releases aligned with Ubuntu LTS cycles"
+                ],
+                "children": []
+              },
+              {
+                "name": "Peppermint OS",
+                "year": 2010,
+                "color": "#FF3333",
+                "tags": ["cloud-hybrid", "lightweight", "web-apps"],
+                "facts": [
+                  "Pioneered a hybrid desktop/cloud model using web apps integrated via SSB (Site Specific Browsers)",
+                  "Extremely lightweight and fast, designed for older hardware with internet-centric workflows",
+                  "After its original lead developer passed away in 2023, the community continued the project",
+                  "Uses a customized XFCE/LXQt environment with ICE for seamless web app integration"
+                ],
+                "children": []
+              },
+              {
+                "name": "Regolith Linux",
+                "year": 2019,
+                "color": "#2E4057",
+                "tags": ["tiling-WM", "i3", "keyboard-driven"],
+                "facts": [
+                  "Combines Ubuntu's stability with the i3 tiling window manager for a keyboard-driven workflow",
+                  "Designed for developers who want minimal mouse usage and maximum screen real estate",
+                  "Uses Regolith's own configuration layer to make i3 more approachable for new tiling WM users",
+                  "Inspired by the 'distraction-free' computing philosophy popular in developer communities"
+                ],
+                "children": []
+              },
+              {
+                "name": "Nitrux",
+                "year": 2019,
+                "color": "#00B4D8",
+                "tags": ["AppImage", "immutable", "NX-Desktop"],
+                "facts": [
+                  "Pioneered a desktop Linux distribution built around AppImage as the primary application format",
+                  "Ships with NX Desktop, a custom KDE Plasma configuration with a macOS-inspired aesthetic",
+                  "Adopts an immutable root filesystem model for increased system integrity",
+                  "Developed by Urubu Computers; known for striking visual design and a forward-thinking philosophy"
+                ],
+                "children": []
+              },
+              {
+                "name": "Pear OS",
+                "year": 2011,
+                "color": "#7DC242",
+                "tags": ["macOS-like", "French", "GNOME", "discontinued"],
+                "facts": [
+                  "Created by French developer David Tavares; heavily themed to resemble Apple's Mac OS X with a custom dock and GNOME 3 shell",
+                  "Went through eight releases between 2011 and 2013, building a cult following among users who wanted macOS aesthetics on Linux",
+                  "In 2014 Tavares sold the project to an undisclosed company and it vanished entirely — one of Linux's more mysterious endings",
+                  "The concept was later independently revived as pearOS by a Romanian developer, rebuilt on Arch Linux with KDE Plasma"
+                ],
+                "children": []
+              },
+              {
+                "name": "Ubuntu Unity",
+                "year": 2022,
+                "color": "#e95420",
+                "tags": ["Ubuntu", "Unity", "desktop"],
+                "facts": [
+                  "Ubuntu flavor centered on the Unity desktop environment",
+                  "Revives the Unity experience for modern Ubuntu releases"
+                ],
+                "children": []
+              },
+              {
+                "name": "Ubuntu Cinnamon",
+                "year": 2020,
+                "color": "#e67e22",
+                "tags": ["Ubuntu", "Cinnamon", "desktop"],
+                "facts": [
+                  "Ubuntu flavor that ships with the Cinnamon desktop",
+                  "Combines Ubuntu packaging with a Cinnamon-centric workflow"
+                ],
+                "children": []
+              },
+              {
+                "name": "Edubuntu",
+                "year": 2023,
+                "color": "#5c6bc0",
+                "tags": ["Ubuntu", "education", "classroom"],
+                "facts": [
+                  "Ubuntu flavor aimed at education and classroom use",
+                  "Includes software and defaults intended for students and teachers"
+                ],
+                "children": []
+              },
+              {
+                "name": "TUXEDO OS",
+                "year": 2021,
+                "color": "#1f2937",
+                "tags": ["Ubuntu", "KDE", "vendor"],
+                "facts": [
+                  "TUXEDO Computers operating system built on the latest Ubuntu LTS base",
+                  "Uses KDE Plasma and ships with TUXEDO-specific hardware support and tools"
+                ],
+                "children": []
+              },
+              {
+                "name": "Voyager 24.04 LTS",
+                "year": 2024,
+                "color": "#ff8c00",
+                "tags": ["Ubuntu", "GNOME", "Xfce"],
+                "facts": [
+                  "Ubuntu-based edition built around GNOME and Xfce desktop experiences",
+                  "Uses Ubuntu Noble as the base for the 24.04 LTS generation"
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Devuan",
+            "year": 2014,
+            "color": "#660000",
+            "tags": ["systemd-free", "Debian fork"],
+            "facts": [
+              "Created as a fork of Debian to avoid the systemd init system",
+              "Named as a play on 'Debian' with 'dev' replacing 'deb' (developers taking back control)",
+              "Focuses on init system freedom and choice"
+            ]
+          },
+          {
+            "name": "MX Linux",
+            "year": 2014,
+            "color": "#000000",
+            "tags": ["lightweight", "user-friendly"],
+            "facts": [
+              "Collaboration between the antiX and former MEPIS Linux communities",
+              "Combines lightweight efficiency with elegant and user-friendly design",
+              "Consistently ranked as one of the most popular distributions on DistroWatch"
+            ]
+          },
+          {
+            "name": "Raspberry Pi OS",
+            "year": 2012,
+            "color": "#C51A4A",
+            "tags": ["ARM", "educational", "IoT"],
+            "facts": [
+              "Formerly known as Raspbian, optimized for Raspberry Pi hardware",
+              "Designed for educational purposes and IoT projects",
+              "Based on Debian with modifications for ARM architecture",
+              "Developed by the Raspberry Pi Foundation to support their hardware platform"
+            ]
+          },
+          {
+            "name": "KNOPPIX",
+            "year": 2000,
+            "color": "#009B77",
+            "tags": ["live-CD", "pioneering", "bootable"],
+            "facts": [
+              "Created by Klaus Knopper; one of the first Linux distros designed to boot entirely from CD without installation",
+              "Pioneered the 'live distribution' concept that influenced dozens of later projects",
+              "Featured advanced hardware auto-detection that was revolutionary for its era",
+              "Used by system administrators worldwide as a rescue and diagnostic tool"
+            ],
+            "children": [
+              {
+                "name": "KANOTIX",
+                "year": 2003,
+                "color": "#CC6600",
+                "tags": [
+                  "Debian-sid",
+                  "live-CD",
+                  "hardware-detection",
+                  "German"
+                ],
+                "facts": [
+                  "Created by Jörg 'Kano' Schirottke as a fork of KNOPPIX focused on hardware detection and Debian Sid packages",
+                  "Bridged the gap between KNOPPIX's legendary hardware detection and a full rolling-release Debian Sid desktop",
+                  "Introduced many users to the concept of running Debian Unstable as a daily driver for the first time",
+                  "The direct ancestor of sidux; when KANOTIX development slowed, the sidux project was born from its community"
+                ],
+                "children": [
+                  {
+                    "name": "sidux",
+                    "year": 2006,
+                    "color": "#AA3300",
+                    "tags": [
+                      "Debian-sid",
+                      "rolling-release",
+                      "live-CD",
+                      "German"
+                    ],
+                    "facts": [
+                      "Forked from KANOTIX with a singular focus: making Debian Sid safe and usable as a daily desktop",
+                      "The name is a portmanteau of 'sid' (Debian's unstable branch codename) and 'ux' for Unix",
+                      "Built a passionate community of power users who wanted bleeding-edge software with Debian's package depth",
+                      "Development stalled and was effectively taken over and renamed to aptosid in 2010"
+                    ],
+                    "children": [
+                      {
+                        "name": "aptosid",
+                        "year": 2010,
+                        "color": "#882200",
+                        "tags": [
+                          "Debian-sid",
+                          "rolling-release",
+                          "sidux-successor"
+                        ],
+                        "facts": [
+                          "Renamed from sidux after a community dispute; 'aptos' is Greek for 'apt' or 'fitting', referencing the APT package manager",
+                          "Continued the mission of making Debian Sid accessible, with improved scripts for safe upgrades",
+                          "Community tensions around openness and governance led a group of users to fork it as siduction in 2011",
+                          "Ceased releasing ISOs around 2013, with the community having largely migrated to siduction"
+                        ],
+                        "children": [
+                          {
+                            "name": "siduction",
+                            "year": 2011,
+                            "color": "#661111",
+                            "tags": [
+                              "Debian-sid",
+                              "rolling-release",
+                              "community-driven",
+                              "still-active"
+                            ],
+                            "facts": [
+                              "Name is a pun on 'sid' (Debian Unstable) and 'seduction' — the seductive appeal of always-current software",
+                              "Forked from aptosid specifically to create a more open, community-governed project that gives back to Debian upstream",
+                              "One of the few actively maintained Debian Sid-based distributions, still releasing snapshots as of 2022+",
+                              "Represents the end of a five-generation chain: Debian → KNOPPIX → KANOTIX → sidux → aptosid → siduction"
+                            ],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "antiX",
+            "year": 2007,
+            "color": "#CC3333",
+            "tags": ["systemd-free", "lightweight", "elderly-hardware"],
+            "facts": [
+              "Named after the Greek island Antiparos; built for old and resource-constrained hardware",
+              "Uses SysVinit or runit instead of systemd, making it a popular choice for systemd skeptics",
+              "Serves as the base and co-parent of MX Linux alongside the former MEPIS community",
+              "Can run with as little as 256MB RAM and boots quickly on decade-old hardware"
+            ],
+            "children": []
+          },
+          {
+            "name": "Trisquel",
+            "year": 2004,
+            "color": "#7B3F00",
+            "tags": ["fully-free", "FSF-endorsed", "privacy"],
+            "facts": [
+              "One of very few distributions endorsed by the Free Software Foundation as containing zero proprietary software",
+              "Developed in Spain and named after a Celtic triskelion symbol",
+              "Richard Stallman's personal distribution of choice for daily use",
+              "Removes all non-free firmware and blobs from the Linux kernel"
+            ],
+            "children": []
+          },
+          {
+            "name": "PureOS",
+            "year": 2014,
+            "color": "#5C3317",
+            "tags": ["privacy", "FSF-endorsed", "Purism"],
+            "facts": [
+              "Developed by Purism, the company behind the Librem privacy-focused laptops and Librem 5 phone",
+              "FSF-endorsed as a fully free distribution with no proprietary blobs",
+              "Default OS for Purism hardware; also ships on the Librem 5 smartphone",
+              "Focuses on security, privacy, and digital rights by design"
+            ],
+            "children": []
+          },
+          {
+            "name": "BackTrack",
+            "year": 2006,
+            "color": "#1A1A2E",
+            "tags": ["security", "penetration-testing", "legacy"],
+            "facts": [
+              "Merged two older security distros — Whax and Auditor Security Collection — into one powerful toolkit",
+              "Became the go-to penetration testing distribution for a generation of security professionals",
+              "Discontinued in 2013 when Offensive Security rebuilt it from scratch as Kali Linux",
+              "Popularized security-focused Linux distributions and inspired many successors"
+            ],
+            "children": [
+              {
+                "name": "Kali Linux",
+                "year": 2013,
+                "color": "#0A3C5A",
+                "tags": ["security", "penetration-testing"],
+                "facts": [
+                  "Developed by Offensive Security as a successor to BackTrack",
+                  "Includes hundreds of pre-installed tools for security testing and digital forensics",
+                  "Used extensively by cybersecurity professionals and ethical hackers"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Whonix",
+            "year": 2012,
+            "color": "#4B0082",
+            "tags": ["privacy", "anonymity", "Tor", "VM"],
+            "facts": [
+              "Designed to run entirely inside virtual machines, isolating the user's identity from the OS",
+              "Uses two VMs: a 'Gateway' that routes all traffic through Tor, and a 'Workstation' for user activity",
+              "Even a compromised application cannot leak the user's real IP address due to the VM isolation model",
+              "Endorsed by privacy researchers and journalists working in hostile environments"
+            ],
+            "children": []
+          },
+          {
+            "name": "LMDE",
+            "year": 2010,
+            "color": "#6DBF6D",
+            "tags": ["Linux Mint", "Debian-direct", "insurance"],
+            "facts": [
+              "Linux Mint Debian Edition — a version of Linux Mint built directly on Debian rather than Ubuntu",
+              "Serves as an 'insurance project' for Linux Mint in case Ubuntu ever becomes unsuitable as a base",
+              "Provides the familiar Linux Mint experience with a more upstream Debian foundation",
+              "Uses the Cinnamon desktop and ships with the same tools as regular Linux Mint"
+            ],
+            "children": []
+          },
+          {
+            "name": "Snowlinux",
+            "year": 2011,
+            "color": "#A8D8EA",
+            "tags": [
+              "German",
+              "desktop",
+              "Debian-based",
+              "discontinued",
+              "dual-base"
+            ],
+            "facts": [
+              "German distribution by Lars Torben Kremer, released in both a Debian-stable edition and a separate Ubuntu-based edition simultaneously",
+              "Offered multiple desktop environments including GNOME 2, KDE, MATE, Cinnamon, Xfce, and even Enlightenment E17",
+              "Unusual for maintaining two completely separate editions with different bases rather than choosing one upstream",
+              "Active only from 2011 to 2013; its server popularity overwhelmed its infrastructure, a victim of its own unexpected success"
+            ],
+            "children": []
+          },
+          {
+            "name": "CrunchBang",
+            "year": 2008,
+            "color": "#333333",
+            "tags": [
+              "Openbox",
+              "minimalist",
+              "discontinued",
+              "influential",
+              "Ubuntu-then-Debian"
+            ],
+            "facts": [
+              "Created by Philip Newborough (corenominal) in the UK; early versions from 2008–2010 were Ubuntu-based before switching to Debian Stable in 2011",
+              "Built entirely around the Openbox window manager with Conky for desktop monitoring — no full desktop environment, just a razor-sharp minimal setup",
+              "Its name '#!' (hash-bang) is a Unix shebang — the two characters that begin executable scripts — a perfect emblem of its hacker aesthetic",
+              "Newborough discontinued it in 2015 saying users would be better off with vanilla Debian; the community emphatically disagreed, spawning multiple successors"
+            ],
+            "children": [
+              {
+                "name": "BunsenLabs",
+                "year": 2015,
+                "color": "#555555",
+                "tags": [
+                  "Openbox",
+                  "CrunchBang-successor",
+                  "minimalist",
+                  "still-active"
+                ],
+                "facts": [
+                  "Community-organized successor to CrunchBang, started by former CrunchBang forum moderators within days of Newborough's discontinuation announcement",
+                  "CrunchBang's own domain redirected to BunsenLabs for two weeks in 2015, effectively passing the torch publicly",
+                  "Named after Robert Bunsen, the chemist — continuing CrunchBang's tradition of scientific/elemental release codenames",
+                  "Still actively maintained as of 2025, tracking Debian Stable releases; one of the longest-lived community rescue projects in Linux history"
+                ],
+                "children": []
+              },
+              {
+                "name": "CrunchBang++",
+                "year": 2015,
+                "color": "#222222",
+                "tags": [
+                  "Openbox",
+                  "CrunchBang-successor",
+                  "ultra-minimalist",
+                  "still-active"
+                ],
+                "facts": [
+                  "Parallel community successor to CrunchBang launched in April 2015, hewing more closely to the original's stark monochrome aesthetic than BunsenLabs",
+                  "Name written as '#!++' — the original hash-bang plus a C++ increment operator — a double nod to its Unix and programming roots",
+                  "Keeps AbiWord and Gnumeric rather than upgrading to heavier apps, preserving CrunchBang's philosophy of 'use the lightest tool that works'",
+                  "Still actively released as of 2025, tracking Debian Stable; both CB++ and BunsenLabs continue to coexist as distinct takes on the same legacy"
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Q4OS",
+            "year": 2014,
+            "color": "#003366",
+            "tags": ["Debian", "lightweight", "desktop"],
+            "facts": [
+              "Desktop-oriented operating system based on Debian Linux",
+              "Focuses on getting a productive, low-overhead system quickly"
+            ],
+            "children": []
+          },
+          {
+            "name": "SparkyLinux",
+            "year": 2012,
+            "color": "#a0a0a0",
+            "tags": ["Debian", "rolling", "customizable"],
+            "facts": [
+              "Fast and lightweight distribution based on Debian GNU/Linux",
+              "Offers stable and semi-rolling editions with a variety of desktop choices"
+            ],
+            "children": []
+          },
+          {
+            "name": "SolydXK",
+            "year": 2012,
+            "color": "#6a5acd",
+            "tags": ["Debian", "desktop", "KDE/Xfce"],
+            "facts": [
+              "Community Linux distribution derived from Debian",
+              "Focused on a polished desktop experience with KDE and Xfce variants"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Red Hat Linux",
+        "year": 1994,
+        "color": "#990000",
+        "tags": ["commercial", "enterprise"],
+        "facts": [
+          "One of the first commercially successful Linux companies",
+          "Evolved into Red Hat Enterprise Linux (RHEL), a paid enterprise distribution with long-term support",
+          "Red Hat was acquired by IBM in 2019 for $34 billion, one of the largest software acquisitions in history"
+        ],
+        "children": [
+          {
+            "name": "Red Hat Enterprise Linux",
+            "year": 2000,
+            "color": "#EE0000",
+            "tags": ["enterprise", "commercial", "long-lifecycle"],
+            "facts": [
+              "Commercial, enterprise-grade Linux distribution with professional support",
+              "Features long lifecycles and stability for business environments",
+              "Serves as the foundation for many other enterprise Linux distributions"
+            ]
+          },
+          {
+            "name": "Fedora",
+            "year": 2003,
+            "color": "#294172",
+            "tags": ["cutting-edge", "community"],
+            "facts": [
+              "Serves as the upstream testing ground for Red Hat Enterprise Linux",
+              "Known for adopting new technologies early, like Wayland and systemd",
+              "Sponsored by Red Hat but developed by a community of volunteers",
+              "Releases new versions approximately every 6 months"
+            ],
+            "children": [
+              {
+                "name": "Bazzite",
+                "year": 2023,
+                "color": "#6B21A8",
+                "tags": [
+                  "gaming",
+                  "immutable",
+                  "SteamOS-alternative",
+                  "atomic"
+                ],
+                "facts": [
+                  "Built on Fedora Atomic (formerly Silverblue) with a focus on gaming as a SteamOS alternative for PCs",
+                  "Ships with the latest drivers, Wayland, HDR support, and gaming optimizations out of the box",
+                  "Uses rpm-ostree for atomic system updates that can be rolled back if something breaks",
+                  "Rapidly gained popularity as an alternative to Windows for gaming on regular PC hardware"
+                ],
+                "children": []
+              },
+              {
+                "name": "Fedora Silverblue",
+                "year": 2018,
+                "color": "#294172",
+                "tags": ["immutable", "atomic", "Flatpak", "developer"],
+                "facts": [
+                  "Fedora's flagship immutable desktop variant using rpm-ostree for atomic OS updates",
+                  "Applications are installed via Flatpak, keeping the base OS read-only and consistent",
+                  "Inspired the broader 'immutable Linux desktop' movement including uBlue and Bazzite",
+                  "Designed for developers who want a stable, reproducible base while experimenting with containers"
+                ],
+                "children": []
+              },
+              {
+                "name": "Fedora Workstation",
+                "year": 2003,
+                "color": "#294172",
+                "tags": ["Fedora", "desktop", "GNOME"],
+                "facts": [
+                  "Fedora’s flagship desktop edition, designed for laptops and desktop computers",
+                  "Ships with GNOME and a curated set of tools for developers and makers"
+                ],
+                "children": []
+              },
+              {
+                "name": "Fedora Server",
+                "year": 2003,
+                "color": "#294172",
+                "tags": ["Fedora", "server", "official"],
+                "facts": [
+                  "Official Fedora server distribution aimed at datacenter and infrastructure workloads",
+                  "Offers a flexible server base with modern platform technologies"
+                ],
+                "children": []
+              },
+              {
+                "name": "Fedora IoT",
+                "year": 2019,
+                "color": "#294172",
+                "tags": ["Fedora", "IoT", "immutable"],
+                "facts": [
+                  "Fedora edition focused on IoT and embedded workloads",
+                  "Uses image-based and container-friendly workflows for device deployments"
+                ],
+                "children": []
+              },
+              {
+                "name": "Fedora Kinoite",
+                "year": 2021,
+                "color": "#294172",
+                "tags": ["Fedora", "KDE", "immutable"],
+                "facts": [
+                  "Immutable Fedora desktop edition centered on KDE Plasma",
+                  "Shares the atomic desktop model with Fedora Silverblue while targeting KDE users"
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "CentOS",
+            "year": 2004,
+            "color": "#444444",
+            "tags": ["clone", "server"],
+            "facts": [
+              "Originally a community rebuild of Red Hat Enterprise Linux source code",
+              "In 2020, shifted to CentOS Stream, which serves as the upstream for RHEL rather than a downstream clone",
+              "The original CentOS project was acquired by Red Hat in 2014"
+            ]
+          },
+          {
+            "name": "CentOS Stream",
+            "year": 2019,
+            "color": "#262577",
+            "tags": ["rolling", "upstream-RHEL", "community"],
+            "facts": [
+              "Rolling preview of Red Hat Enterprise Linux with a community focus",
+              "Serves as the upstream development platform for future RHEL releases",
+              "Provides a middle ground between Fedora and RHEL in terms of stability and cutting-edge features"
+            ]
+          },
+          {
+            "name": "Rocky Linux",
+            "year": 2021,
+            "color": "#10B981",
+            "tags": ["RHEL-compatible", "community"],
+            "facts": [
+              "Created by Gregory Kurtzer, the original founder of CentOS",
+              "Developed in response to the CentOS project's shift to CentOS Stream",
+              "Aims to be a 100% bug-for-bug compatible with Red Hat Enterprise Linux"
+            ]
+          },
+          {
+            "name": "AlmaLinux",
+            "year": 2021,
+            "color": "#F0F0F0",
+            "tags": ["RHEL-compatible", "CloudLinux"],
+            "facts": [
+              "Developed by CloudLinux as a response to the CentOS Stream shift",
+              "Designed as a stable, production-ready drop-in replacement for CentOS",
+              "Governed by a non-profit organization with community involvement"
+            ]
+          },
+          {
+            "name": "Scientific Linux",
+            "year": 2004,
+            "color": "#003366",
+            "tags": ["RHEL-clone", "CERN", "Fermilab", "research"],
+            "facts": [
+              "Joint project between CERN and Fermilab to provide a stable platform for high-energy physics research",
+              "A binary-compatible rebuild of Red Hat Enterprise Linux with scientific software pre-installed",
+              "Used on thousands of machines at particle accelerator facilities worldwide",
+              "Discontinued in 2019 as Rocky Linux and AlmaLinux emerged as successors after CentOS's pivot"
+            ],
+            "children": []
+          },
+          {
+            "name": "Oracle Linux",
+            "year": 2006,
+            "color": "#FF0000",
+            "tags": ["RHEL-clone", "enterprise", "Oracle"],
+            "facts": [
+              "Oracle's binary-compatible rebuild of Red Hat Enterprise Linux, offered free to download",
+              "Includes Oracle's 'Unbreakable Enterprise Kernel' (UEK), a heavily patched alternative kernel",
+              "Controversially positioned as a cheaper alternative to RHEL with Oracle support contracts",
+              "Widely used in Oracle Database environments and Oracle Cloud Infrastructure"
+            ],
+            "children": []
+          },
+          {
+            "name": "Nobara Linux",
+            "year": 2022,
+            "color": "#294172",
+            "tags": ["Fedora", "gaming", "desktop"],
+            "facts": [
+              "Fedora-based distribution tuned for gaming and desktop use",
+              "Maintained by GloriousEggroll to reduce post-install tweaking"
+            ],
+            "children": []
+          },
+          {
+            "name": "Ultramarine Linux",
+            "year": 2020,
+            "color": "#5b7cfa",
+            "tags": ["Fedora", "desktop", "community"],
+            "facts": [
+              "Fedora-based distribution focused on a ready-to-use desktop experience",
+              "Ships with opinionated defaults and a community-oriented workflow"
+            ],
+            "children": []
+          },
+          {
+            "name": "Bluefin",
+            "year": 2023,
+            "color": "#0ea5e9",
+            "tags": ["Fedora", "immutable", "desktop"],
+            "facts": [
+              "Universal Blue desktop image built on Fedora",
+              "Targets a polished workstation experience with immutable foundations"
+            ],
+            "children": []
+          },
+          {
+            "name": "Aurora",
+            "year": 2024,
+            "color": "#8b5cf6",
+            "tags": ["Fedora", "developer", "immutable"],
+            "facts": [
+              "Universal Blue desktop image built on Fedora",
+              "Targets developer workflows while keeping the same immutable base model"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Gentoo Linux",
+        "year": 2002,
+        "color": "#54487A",
+        "tags": ["source-based", "customizable"],
+        "facts": [
+          "Known for its source-based package management system called Portage",
+          "Allows users to optimize software for their specific hardware",
+          "Named after the fast-swimming Gentoo penguin species",
+          "Emphasizes user choice and control over the system"
+        ],
+        "children": [
+          {
+            "name": "Calculate Linux",
+            "year": 2007,
+            "color": "#696D71",
+            "tags": ["desktop", "Russian"],
+            "facts": [
+              "Gentoo-based distribution developed in Russia",
+              "Designed for easy installation and use in corporate environments",
+              "Provides ready-to-use desktop and server solutions"
+            ]
+          },
+          {
+            "name": "Funtoo Linux",
+            "year": 2008,
+            "color": "#6C5D9E",
+            "tags": ["performance", "server"],
+            "facts": [
+              "Created by Daniel Robbins, the original founder of Gentoo",
+              "Focuses on performance improvements and new features",
+              "Uses Git for its Portage tree instead of rsync"
+            ]
+          },
+          {
+            "name": "Sabayon Linux",
+            "year": 2005,
+            "color": "#F5D300",
+            "tags": ["user-friendly", "pre-configured"],
+            "facts": [
+              "Aims to provide an easy-to-use, out-of-the-box Gentoo experience",
+              "Offers binary package support for faster installation",
+              "Focuses on multimedia and gaming support"
+            ]
+          },
+          {
+            "name": "ChromeOS",
+            "year": 2011,
+            "color": "#4285F4",
+            "tags": [
+              "Google",
+              "Chromebook",
+              "web-centric",
+              "massive-install-base"
+            ],
+            "facts": [
+              "Google's operating system for Chromebooks, built on a Gentoo Linux foundation",
+              "By sheer number of active devices, ChromeOS may be the most widely deployed Linux-based desktop OS",
+              "Designed around the Chrome browser with all apps running as web apps or Android apps",
+              "ChromiumOS is the open-source version; ChromeOS adds Google's proprietary services on top"
+            ],
+            "children": []
+          },
+          {
+            "name": "Pentoo",
+            "year": 2005,
+            "color": "#2D4739",
+            "tags": ["security", "penetration-testing", "Gentoo-based"],
+            "facts": [
+              "Security-focused Gentoo-based live distribution for penetration testing",
+              "One of the few security distributions not based on Debian, taking advantage of Gentoo's optimized builds",
+              "Ships as a live CD/USB that can also be installed to disk",
+              "Focused on WiFi auditing, exploits, and forensics with a Gentoo philosophy of optimization"
+            ],
+            "children": []
+          },
+          {
+            "name": "Redcore Linux",
+            "year": 2014,
+            "color": "#4f8f57",
+            "tags": ["Gentoo", "binary", "desktop"],
+            "facts": [
+              "Gentoo-based distribution that adds binary packages for convenience",
+              "Aims to make the Gentoo base more approachable for desktop users"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "NixOS",
+        "year": 2003,
+        "color": "#5277C3",
+        "tags": ["declarative", "reproducible"],
+        "facts": [
+          "Uses the Nix package manager with a purely functional deployment model",
+          "Allows for reliable system upgrades and rollbacks",
+          "Enables multiple versions of packages to coexist on the same system",
+          "Configuration is described in a declarative language"
+        ],
+        "children": [
+          {
+            "name": "home-manager",
+            "year": 2017,
+            "color": "#7EBAE4",
+            "tags": ["user-environment", "dotfiles"],
+            "facts": [
+              "Not a full distribution but a tool to manage user environments using Nix",
+              "Allows declarative configuration of user dotfiles and packages",
+              "Can be used on any Linux distribution with Nix installed"
+            ]
+          },
+          {
+            "name": "Guix System",
+            "year": 2013,
+            "color": "#FF6347",
+            "tags": ["GNU", "declarative", "fully-free", "functional"],
+            "facts": [
+              "GNU's take on functional/declarative package management; a spiritual sibling to NixOS",
+              "Uses GNU Guile (a Scheme dialect) for system configuration instead of NixOS's Nix language",
+              "FSF-endorsed as a fully free distribution with no proprietary software or firmware",
+              "Supports transactional upgrades, rollbacks, and per-user package environments like Nix"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Void Linux",
+        "year": 2008,
+        "color": "#478061",
+        "tags": ["independent", "rolling-release", "musl"],
+        "facts": [
+          "Independent distribution not based on any other Linux distribution",
+          "Offers choice between musl libc and glibc",
+          "Uses the XBPS package manager and runit init system instead of systemd",
+          "Features a rolling release model with a focus on stability"
+        ],
+        "children": []
+      },
+      {
+        "name": "Alpine Linux",
+        "year": 2005,
+        "color": "#0D597F",
+        "tags": ["security", "lightweight", "container"],
+        "facts": [
+          "Designed to be small, simple, and secure",
+          "Uses musl libc and busybox instead of GNU components",
+          "Extremely popular as a base for Docker containers",
+          "Uses OpenRC as its init system instead of systemd"
+        ],
+        "children": [
+          {
+            "name": "postmarketOS",
+            "year": 2017,
+            "color": "#7BC31F",
+            "tags": ["mobile", "phones"],
+            "facts": [
+              "Aims to give smartphones a longer life by bringing Linux to them",
+              "Based on Alpine Linux with modifications for mobile devices",
+              "Supports a wide range of old and new mobile devices"
+            ]
+          },
+          {
+            "name": "GL.iNet OpenWrt",
+            "year": 2014,
+            "color": "#00AA44",
+            "tags": ["router", "embedded", "networking", "OpenWrt"],
+            "facts": [
+              "GL.iNet produces travel routers running OpenWrt, a Linux distribution derived from Alpine concepts for embedded networking",
+              "OpenWrt itself originated as a Linksys WRT54G firmware hack in 2004, becoming a full embedded Linux project",
+              "Runs on devices with as little as 4MB flash and 16MB RAM",
+              "Powers millions of home routers, access points, and embedded networking devices worldwide"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Arch Linux",
+        "year": 2002,
+        "color": "#1793D1",
+        "tags": ["independent", "rolling-release"],
+        "facts": [
+          "Famous for its 'Keep It Simple, Stupid' (KISS) philosophy and minimalist approach",
+          "Uses a rolling release model where packages are continuously updated rather than in major version releases",
+          "Designed for users who want full control over their system configuration"
+        ],
+        "children": [
+          {
+            "name": "Manjaro",
+            "year": 2011,
+            "color": "#35BF5C",
+            "tags": ["user-friendly", "mirrored"],
+            "facts": [
+              "Makes Arch Linux more accessible with a user-friendly installer and pre-configured desktop environments",
+              "Holds packages for additional testing before release, unlike Arch's immediate updates"
+            ]
+          },
+          {
+            "name": "EndeavourOS",
+            "year": 2019,
+            "color": "#800080",
+            "tags": ["community", "lightweight"],
+            "facts": [
+              "Created as a spiritual successor to Antergos (another user-friendly Arch-based distro)",
+              "Aims to be closer to vanilla Arch while still providing an easy installation process"
+            ]
+          },
+          {
+            "name": "ArcoLinux",
+            "year": 2017,
+            "color": "#6C93D6",
+            "tags": ["educational", "multiple-desktops"],
+            "facts": [
+              "Educational Arch-based distribution with multiple desktop options",
+              "Focuses on teaching users about Arch Linux through a learning path",
+              "Offers several editions with different levels of pre-configuration"
+            ]
+          },
+          {
+            "name": "Garuda Linux",
+            "year": 2020,
+            "color": "#E95420",
+            "tags": ["gaming", "performance", "user-friendly"],
+            "facts": [
+              "Focuses on performance, gaming, and visual appeal",
+              "Ships with Btrfs filesystem and advanced snapshots by default",
+              "Offers several desktop environments and a rolling release model"
+            ]
+          },
+          {
+            "name": "BlackArch",
+            "year": 2012,
+            "color": "#1A1A1A",
+            "tags": ["security", "penetration-testing", "massive-repo"],
+            "facts": [
+              "Provides a massive repository of over 2,800 security and penetration testing tools on top of Arch",
+              "Can be installed as a standalone distro or added as a repository overlay to an existing Arch install",
+              "Maintained by a community of security researchers and ethical hackers",
+              "Known for having one of the most comprehensive collections of security tools of any distribution"
+            ],
+            "children": []
+          },
+          {
+            "name": "SteamOS 3",
+            "year": 2022,
+            "color": "#1B2838",
+            "tags": ["Valve", "gaming", "Steam Deck", "immutable"],
+            "facts": [
+              "Valve's third-generation SteamOS, rebuilt on Arch Linux for the Steam Deck handheld console",
+              "Uses an A/B partition scheme for atomic updates that can be rolled back instantly",
+              "Runs Windows games via Proton, a compatibility layer built on Wine and DXVK",
+              "SteamOS 1 and 2 were Debian-based; the move to Arch in v3 was a significant architectural shift"
+            ],
+            "children": []
+          },
+          {
+            "name": "CachyOS",
+            "year": 2021,
+            "color": "#00D4FF",
+            "tags": ["performance", "gaming", "optimized-kernel"],
+            "facts": [
+              "Arch-based distribution focused on extreme performance through custom-compiled packages",
+              "Offers several optimized kernels including the CachyOS kernel with BORE and other schedulers",
+              "Uses x86-64-v3 and x86-64-v4 instruction sets for measurably faster binaries on modern CPUs",
+              "Popular in the Linux gaming community for competitive performance against Windows"
+            ],
+            "children": []
+          },
+          {
+            "name": "pearOS",
+            "year": 2022,
+            "color": "#7DC242",
+            "tags": ["macOS-like", "Romanian", "KDE", "Pear-revival"],
+            "facts": [
+              "A spiritual revival of the original Pear OS concept, independently created by Romanian developer Alexandru Bălan",
+              "Unlike the Ubuntu-based original, pearOS is built on Arch Linux with a heavily customized KDE Plasma desktop mimicking macOS",
+              "Features a working global menu bar, a pear logo replacing the Apple menu, and a rolling-release model via Arch",
+              "Demonstrates how a concept — macOS aesthetics on Linux — can independently re-emerge years later on a completely different technical foundation"
+            ],
+            "children": []
+          },
+          {
+            "name": "OBRevenge",
+            "year": 2015,
+            "color": "#2E3440",
+            "tags": ["Openbox", "lightweight", "discontinued", "Arch-based"],
+            "facts": [
+              "Created by Jody James; 'OB' stands for Openbox, the ultra-lightweight window manager at the distro's core",
+              "Stood out among Arch-based distros by using the full AUR unlike Manjaro, while still offering an easy graphical installer via Calamares",
+              "Shipped with custom in-house tools for graphics drivers, GRUB configuration, codec installation, and panel switching",
+              "Development ended in 2017 when Jody pivoted to the Zen Installer project, a universal Arch installer that outlived OBRevenge itself"
+            ],
+            "children": []
+          },
+          {
+            "name": "ArchLabs",
+            "year": 2017,
+            "color": "#1A1A2E",
+            "tags": ["Openbox", "i3wm", "minimalist", "Arch-based"],
+            "facts": [
+              "Arch-based minimalist distribution centered on Openbox and later i3wm, inspired by the CrunchBang aesthetic applied to Arch",
+              "Developed with community input from OBRevenge circles, including contribution from Jody James of OBRevenge",
+              "Known for its striking dark theming and the 'al-hello' post-install configuration script for customizing the environment",
+              "Represents the philosophical cross-pollination between the CrunchBang/Openbox minimalist world and the Arch rolling-release world"
+            ],
+            "children": []
+          },
+          {
+            "name": "Artix Linux",
+            "year": 2017,
+            "color": "#1abc9c",
+            "tags": ["Arch", "OpenRC", "runit"],
+            "facts": [
+              "Arch-derived distribution that avoids systemd",
+              "Offers OpenRC and runit init choices for users who want alternatives to systemd"
+            ],
+            "children": []
+          },
+          {
+            "name": "Parabola GNU/Linux-libre",
+            "year": 2009,
+            "color": "#111111",
+            "tags": ["Arch", "libre", "FSF"],
+            "facts": [
+              "Arch-based distribution that removes nonfree software",
+              "Recognized by the Free Software Foundation as a fully free system"
+            ],
+            "children": []
+          },
+          {
+            "name": "Archcraft",
+            "year": 2020,
+            "color": "#1793D1",
+            "tags": ["Arch", "desktop", "rolling"],
+            "facts": [
+              "Arch-based distribution focused on a polished desktop experience",
+              "Emphasizes lightweight window managers and pre-tuned visuals"
+            ],
+            "children": []
+          },
+          {
+            "name": "RebornOS",
+            "year": 2018,
+            "color": "#1793D1",
+            "tags": ["Arch", "rolling", "customizable"],
+            "facts": [
+              "Arch-based rolling release distribution with a large selection of desktops and window managers",
+              "Designed to make Arch Linux more approachable without hiding its core flexibility"
+            ],
+            "children": []
+          },
+          {
+            "name": "blendOS",
+            "year": 2022,
+            "color": "#f97316",
+            "tags": ["Arch", "immutable", "declarative"],
+            "facts": [
+              "Arch Linux variant that is immutable, declarative, and atomic",
+              "Supports multiple desktop tracks and containerized distro integration"
+            ],
+            "children": []
+          },
+          {
+            "name": "ChimeraOS",
+            "year": 2020,
+            "color": "#111827",
+            "tags": ["Arch", "gaming", "console"],
+            "facts": [
+              "Gaming-focused operating system built to provide a couch gaming experience",
+              "Boots directly into a controller-first Steam Big Picture style interface"
+            ],
+            "children": []
+          },
+          {
+            "name": "ALCI",
+            "year": 2020,
+            "color": "#0ea5e9",
+            "tags": ["Arch", "installer", "GUI"],
+            "facts": [
+              "Arch Linux Calamares Installer project aimed at simplifying Arch installation",
+              "Provides graphical installation workflows with Arch-like flexibility"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Puppy Linux",
+        "year": 2003,
+        "color": "#FFCC00",
+        "tags": ["ultra-lightweight", "live-CD", "RAM"],
+        "facts": [
+          "Designed to run entirely in RAM for speed and responsiveness",
+          "Can run from USB drives or CD-ROMs without installation",
+          "Extremely small footprint, often under 300MB",
+          "Includes a variety of applications despite its small size"
+        ],
+        "children": []
+      },
+      {
+        "name": "Porteus",
+        "year": 2011,
+        "color": "#00AEEF",
+        "tags": ["modular", "live", "Slackware-based"],
+        "facts": [
+          "Modular Slackware-based live distribution",
+          "Designed to be fast, portable, and lightweight",
+          "Uses a modular approach allowing easy customization",
+          "Can be booted from various media including USB, CD, or hard drive"
+        ],
+        "children": []
+      },
+      {
+        "name": "Tiny Core Linux",
+        "year": 2009,
+        "color": "#FF6600",
+        "tags": ["minimal", "modular", "embedded"],
+        "facts": [
+          "One of the smallest Linux distributions with a graphical interface",
+          "Core system is only about 16MB in size",
+          "Based on a modular design where users add only what they need",
+          "Designed to run entirely in RAM for speed and minimal disk usage"
+        ],
+        "children": []
+      },
+      {
+        "name": "Tails",
+        "year": 2009,
+        "color": "#56347C",
+        "tags": ["privacy", "security", "anonymity", "Tor"],
+        "facts": [
+          "The Amnesic Incognito Live System designed for privacy and anonymity",
+          "Routes all internet traffic through the Tor network",
+          "Leaves no digital footprint on the host computer",
+          "Designed to be booted as a live system from USB or DVD"
+        ],
+        "children": []
+      },
+      {
+        "name": "Qubes OS",
+        "year": 2012,
+        "color": "#3874D8",
+        "tags": ["security", "compartmentalization", "virtualization"],
+        "facts": [
+          "Security-focused desktop operating system that uses virtualization for compartmentalization",
+          "Isolates different activities in separate virtual machines (qubes)",
+          "Endorsed by privacy advocates including Edward Snowden",
+          "Implements the principle of security by isolation"
+        ],
+        "children": []
+      },
+      {
+        "name": "Hannah Montana Linux",
+        "year": 2010,
+        "color": "#FF69B4",
+        "tags": ["joke", "Ubuntu-based", "oddball", "meme"],
+        "facts": [
+          "A real, functional Ubuntu-based distribution with a Hannah Montana theme — pink desktop, Hannah wallpapers, and custom icons",
+          "Created as a whimsical project that became a beloved internet meme in Linux communities",
+          "Demonstrated that even frivolous theming projects could attract community attention and real users",
+          "Now preserved as a piece of Linux culture history; the ISO is still circulated nostalgically"
+        ],
+        "children": []
+      },
+      {
+        "name": "Linux From Scratch",
+        "year": 1999,
+        "color": "#F5F5DC",
+        "tags": ["educational", "manual-build", "no-packages", "conceptual"],
+        "facts": [
+          "Not a distribution but a book and project teaching users to build a Linux system entirely from source code",
+          "Created by Gerard Beekmans as a learning exercise; the 'LFS Book' has been continuously updated since 1999",
+          "Completing LFS gives deep understanding of every component that makes up a Linux system",
+          "Beyond LFS (BLFS) extends the project with a full desktop and application stack built from source"
+        ],
+        "children": []
+      },
+      {
+        "name": "SteamOS 1",
+        "year": 2013,
+        "color": "#1B2838",
+        "tags": ["Valve", "gaming", "living-room", "Debian-based", "legacy"],
+        "facts": [
+          "Valve's first SteamOS, Debian-based, designed for living-room gaming on Steam Machines",
+          "Launched alongside Valve's Steam Machine hardware initiative which was ultimately discontinued",
+          "Ran Steam in Big Picture mode by default with a custom compositor for TV use",
+          "Demonstrated Valve's long-term commitment to Linux gaming despite the hardware line's commercial failure"
+        ],
+        "children": []
+      },
+      {
+        "name": "KaOS",
+        "year": 2013,
+        "color": "#007acc",
+        "tags": ["independent", "Qt", "KDE"],
+        "facts": [
+          "Independent distribution focused on Qt and KDE software",
+          "Built from scratch rather than derived from another general-purpose distro"
+        ],
+        "children": []
+      },
+      {
+        "name": "Bedrock Linux",
+        "year": 2012,
+        "color": "#6b7280",
+        "tags": ["independent", "meta-distro", "mix-and-match"],
+        "facts": [
+          "Meta distribution that lets users mix and match components from multiple Linux distributions",
+          "Designed to integrate strata from different distros into one cohesive system"
+        ],
+        "children": []
+      }
+    ]
+  }
+]

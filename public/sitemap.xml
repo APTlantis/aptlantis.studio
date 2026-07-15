@@ -37,8 +37,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aptlantis.studio/linux-geneology</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://aptlantis.studio/linux-genealogy</loc>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -123,6 +123,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://aptlantis.studio/schemas/incoming-message.schema.json</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://aptlantis.studio/data/projects/cityhall-frameworks.json</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -133,6 +139,36 @@
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aptlantis.studio/data/linux-genealogy/linux-genealogy-expanded.json</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aptlantis.studio/data/linux-genealogy/linux-genealogy-map.svg</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aptlantis.studio/data/linux-genealogy/linux-genealogy-map-nodes.json</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://aptlantis.studio/.well-known/security.txt</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://aptlantis.studio/.well-known/aptlantis.studio_0x0BE88A1564D5B232_public.asc</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://aptlantis.studio/logos/aptlantis-organization.svg</loc>
@@ -149,6 +185,12 @@
   <url>
     <loc>https://aptlantis.studio/logos/aptlantis-organization-board.png</loc>
     <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://aptlantis.studio/logos/og/aptlantis-studio-opengraph.png</loc>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

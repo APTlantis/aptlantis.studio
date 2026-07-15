@@ -96,6 +96,10 @@ function App() {
                           element={<CodingWeirdStuffPage />}
                         />
                         <Route
+                          path="/linux-genealogy"
+                          element={<LinuxGenealogyPage />}
+                        />
+                        <Route
                           path="/linux-geneology"
                           element={<LinuxGenealogyPage />}
                         />
