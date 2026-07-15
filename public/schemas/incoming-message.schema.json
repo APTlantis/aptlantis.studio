@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aptlantis.studio/schemas/incoming-message.schema.json",
+  "title": "APTlantis Incoming Message",
+  "type": "object",
+
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier assigned upon ingestion."
+    },
+
+    "source": {
+      "type": "string",
+      "enum": ["email", "web"],
+      "description": "Transport method used to deliver the message."
+    },
+
+    "received_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the message was received by the system."
+    },
+
+    "sender": {
+      "type": "object",
+      "description": "Information about the sender.",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "ip_address": { "type": "string", "format": "ipv4" },
+        "user_agent": { "type": "string" }
+      }
+    },
+
+    "subject": {
+      "type": "string",
+      "description": "Subject line (for email) or form subject (for web)."
+    },
+
+    "body": {
+      "type": "string",
+      "description": "Raw message body content (plain text)."
+    },
+
+    "html_body": {
+      "type": ["string", "null"],
+      "description": "Optional HTML body (emails only)."
+    },
+
+    "attachments": {
+      "type": "array",
+      "description": "Metadata for included attachments.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "filename": { "type": "string" },
+          "mime_type": { "type": "string" },
+          "size_bytes": { "type": "integer" },
+          "hashes": {
+            "type": "object",
+            "properties": {
+              "blake3": { "type": "string" },
+              "sha256": { "type": "string" }
+            }
+          },
+          "storage_path": {
+            "type": "string",
+            "description": "Filesystem path where the attachment is stored."
+          }
+        },
+        "required": ["filename", "mime_type", "size_bytes"]
+      }
+    },
+
+    "metadata": {
+      "type": "object",
+      "description": "System-generated metadata.",
+      "properties": {
+        "spam_score": { "type": "number" },
+        "classified_category": {
+          "type": "string",
+          "enum": ["general", "bug-report", "contribution", "support", "other"]
+        },
+        "processing_status": {
+          "type": "string",
+          "enum": ["received", "processed", "archived", "error"]
+        },
+        "ai": {
+          "type": "object",
+          "description": "Optional AI-generated metadata.",
+          "properties": {
+            "summary": { "type": "string" },
+            "detected_topics": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "semantic_vector_id": { "type": "string" }
+          }
+        }
+      }
+    }
+  },
+
+  "required": ["id", "source", "received_at", "sender", "subject", "body"]
+}

@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="3600" height="3600" viewBox="0 0 3600 3600" role="img" aria-labelledby="title desc">
+<title id="title">Linux Distribution Genealogy Map</title>
+<desc id="desc">Radial static map generated from the public Aptlantis Studio Linux genealogy JSON dataset. It contains 132 distributions across 6 relationship levels.</desc>
+<defs>
+  <radialGradient id="bg" cx="50%" cy="50%" r="58%">
+    <stop offset="0%" stop-color="#13283a" />
+    <stop offset="55%" stop-color="#0b1724" />
+    <stop offset="100%" stop-color="#050b13" />
+  </radialGradient>
+  <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="5" result="blur" />
+    <feMerge>
+      <feMergeNode in="blur" />
+      <feMergeNode in="SourceGraphic" />
+    </feMerge>
+  </filter>
+</defs>
+<rect width="3600" height="3600" fill="url(#bg)" />
+<g opacity="0.45">
+<circle cx="1800" cy="1800" r="250" fill="none" stroke="#203040" stroke-width="1" stroke-dasharray="6 18" opacity="0.5" />
+<circle cx="1800" cy="1800" r="528" fill="none" stroke="#203040" stroke-width="1" stroke-dasharray="6 18" opacity="0.5" />
+<circle cx="1800" cy="1800" r="806" fill="none" stroke="#203040" stroke-width="1" stroke-dasharray="6 18" opacity="0.5" />
+<circle cx="1800" cy="1800" r="1084" fill="none" stroke="#203040" stroke-width="1" stroke-dasharray="6 18" opacity="0.5" />
+<circle cx="1800" cy="1800" r="1362" fill="none" stroke="#203040" stroke-width="1" stroke-dasharray="6 18" opacity="0.5" />
+<circle cx="1800" cy="1800" r="1540" fill="none" stroke="#203040" stroke-width="1" stroke-dasharray="6 18" opacity="0.5" />
+</g>
+<g font-family="Inter, Segoe UI, Arial, sans-serif">
+  <text x="120" y="145" fill="#f3fbff" font-size="54" font-weight="800">Linux Distribution Genealogy</text>
+  <text x="120" y="205" fill="#94b6c6" font-size="24" letter-spacing="4">PUBLIC JSON DATASET | 132 NODES | 6 LEVELS</text>
+  <text x="120" y="3480" fill="#6f8fa0" font-size="20">Generated from /data/linux-genealogy/linux-genealogy-expanded.json</text>
+</g>
+<g filter="url(#soft-glow)">
+<path d="M 1800.0 1800.0 Q 1803.5 1675.0 1806.9 1550.1" fill="none" stroke="#00AEEF" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1810.4 1675.4 1820.8 1550.9" fill="none" stroke="#5294E2" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1840.9 1681.9 1881.9 1563.8" fill="none" stroke="#73BA25" stroke-width="2.2" opacity="0.62" />
+<path d="M 1881.9 1563.8 Q 1927.4 1432.4 1972.9 1301.1" fill="none" stroke="#73BA25" stroke-width="2.2" opacity="0.62" />
+<path d="M 1972.9 1301.1 Q 1913.2 1142.7 1936.8 1005.7" fill="none" stroke="#73BA25" stroke-width="1.2" opacity="0.36" />
+<path d="M 1972.9 1301.1 Q 1943.7 1148.7 1973.6 1012.9" fill="none" stroke="#73BA25" stroke-width="1.2" opacity="0.36" />
+<path d="M 1972.9 1301.1 Q 1973.9 1156.1 2010.1 1021.9" fill="none" stroke="#73BA25" stroke-width="1.2" opacity="0.36" />
+<path d="M 1972.9 1301.1 Q 2003.7 1164.9 2046.1 1032.5" fill="none" stroke="#73BA25" stroke-width="1.2" opacity="0.36" />
+<path d="M 1972.9 1301.1 Q 2033.0 1175.0 2081.6 1044.8" fill="none" stroke="#73BA25" stroke-width="1.2" opacity="0.36" />
+<path d="M 1972.9 1301.1 Q 2061.9 1186.6 2116.5 1058.7" fill="none" stroke="#73BA25" stroke-width="1.2" opacity="0.36" />
+<path d="M 1972.9 1301.1 Q 2090.2 1199.4 2150.7 1074.3" fill="none" stroke="#73BA25" stroke-width="1.2" opacity="0.36" />
+<path d="M 1972.9 1301.1 Q 2117.9 1213.6 2184.1 1091.4" fill="none" stroke="#73BA25" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1885.3 1708.6 1970.5 1617.2" fill="none" stroke="#888888" stroke-width="2.2" opacity="0.62" />
+<path d="M 1970.5 1617.2 Q 2021.3 1480.1 2100.4 1365.8" fill="none" stroke="#AAAAAA" stroke-width="1.2" opacity="0.36" />
+<path d="M 1970.5 1617.2 Q 2036.6 1491.2 2121.1 1380.9" fill="none" stroke="#BBBBBB" stroke-width="1.2" opacity="0.36" />
+<path d="M 1970.5 1617.2 Q 2051.3 1503.0 2141.0 1396.9" fill="none" stroke="#0055AA" stroke-width="1.2" opacity="0.36" />
+<path d="M 1970.5 1617.2 Q 2065.3 1515.5 2160.2 1413.9" fill="none" stroke="#556B2F" stroke-width="1.2" opacity="0.36" />
+<path d="M 1970.5 1617.2 Q 2078.8 1528.7 2178.4 1431.8" fill="none" stroke="#708090" stroke-width="1.2" opacity="0.36" />
+<path d="M 1970.5 1617.2 Q 2091.6 1542.6 2195.8 1450.6" fill="none" stroke="#FF6600" stroke-width="1.2" opacity="0.36" />
+<path d="M 1970.5 1617.2 Q 2103.8 1557.0 2212.3 1470.1" fill="none" stroke="#4f46e5" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1908.8 1861.5 2017.7 1923.0" fill="none" stroke="#CC0000" stroke-width="2.2" opacity="0.62" />
+<path d="M 2017.7 1923.0 Q 2126.8 1589.0 2243.6 1513.6" fill="none" stroke="#1C1C1C" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 2137.8 1607.1 2258.5 1538.1" fill="none" stroke="#1F2937" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 2185.5 1851.8 2323.3 1870.4" fill="none" stroke="#DD4814" stroke-width="2.2" opacity="0.62" />
+<path d="M 2323.3 1870.4 Q 2399.4 1507.4 2524.3 1446.5" fill="none" stroke="#87cf3e" stroke-width="2.2" opacity="0.62" />
+<path d="M 2524.3 1446.5 Q 2649.2 1385.5 2774.2 1324.5" fill="none" stroke="#00A4FF" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2414.2 1539.9 2542.2 1485.7" fill="none" stroke="#66CCFF" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2427.2 1573.0 2557.9 1525.7" fill="none" stroke="#64BAFF" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2438.4 1606.9 2571.5 1566.6" fill="none" stroke="#48B9C7" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2447.8 1641.2 2582.8 1608.1" fill="none" stroke="#0079C1" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2455.4 1676.0 2592.0 1650.2" fill="none" stroke="#0068C8" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2461.1 1711.2 2598.8 1692.7" fill="none" stroke="#0044AA" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2464.9 1746.7 2603.4 1735.5" fill="none" stroke="#87A556" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2466.8 1782.2 2605.7 1778.5" fill="none" stroke="#6F8A91" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2466.8 1817.9 2605.7 1821.6" fill="none" stroke="#1D99F3" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2464.9 1853.4 2603.4 1864.6" fill="none" stroke="#0F4C81" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2461.1 1888.9 2598.8 1907.4" fill="none" stroke="#FF4500" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2455.4 1924.1 2591.9 1949.9" fill="none" stroke="#8B7355" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2447.8 1958.9 2582.8 1992.0" fill="none" stroke="#FFD700" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2438.4 1993.2 2571.4 2033.5" fill="none" stroke="#FF3333" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2427.2 2027.1 2557.9 2074.4" fill="none" stroke="#2E4057" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2414.1 2060.2 2542.1 2114.5" fill="none" stroke="#00B4D8" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2399.4 2092.6 2524.3 2153.6" fill="none" stroke="#7DC242" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2382.9 2124.2 2504.4 2191.8" fill="none" stroke="#e95420" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2364.7 2154.9 2482.4 2228.9" fill="none" stroke="#e67e22" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2345.0 2184.6 2458.6 2264.7" fill="none" stroke="#5c6bc0" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2323.7 2213.1 2432.8 2299.2" fill="none" stroke="#1f2937" stroke-width="1.2" opacity="0.36" />
+<path d="M 2323.3 1870.4 Q 2300.9 2240.5 2405.2 2332.3" fill="none" stroke="#ff8c00" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 2074.8 2075.3 2173.0 2173.7" fill="none" stroke="#660000" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 2059.5 2089.8 2152.2 2193.4" fill="none" stroke="#000000" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 2043.3 2103.5 2130.3 2212.0" fill="none" stroke="#C51A4A" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 2026.5 2116.3 2107.4 2229.3" fill="none" stroke="#009B77" stroke-width="2.2" opacity="0.62" />
+<path d="M 2107.4 2229.3 Q 2188.3 2342.3 2269.2 2455.3" fill="none" stroke="#CC6600" stroke-width="2.2" opacity="0.62" />
+<path d="M 2269.2 2455.3 Q 2350.1 2568.3 2431.1 2681.4" fill="none" stroke="#AA3300" stroke-width="2.2" opacity="0.62" />
+<path d="M 2431.1 2681.4 Q 2512.0 2794.4 2592.9 2907.4" fill="none" stroke="#882200" stroke-width="2.2" opacity="0.62" />
+<path d="M 2592.9 2907.4 Q 2644.7 2979.8 2696.5 3052.1" fill="none" stroke="#661111" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 2008.9 2128.1 2083.6 2245.4" fill="none" stroke="#CC3333" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 1990.8 2139.0 2059.0 2260.1" fill="none" stroke="#7B3F00" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 1972.1 2148.9 2033.6 2273.5" fill="none" stroke="#5C3317" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 1952.9 2157.7 2007.5 2285.5" fill="none" stroke="#1A1A2E" stroke-width="2.2" opacity="0.62" />
+<path d="M 2007.5 2285.5 Q 2062.1 2413.3 2116.7 2541.2" fill="none" stroke="#0A3C5A" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 1933.2 2165.5 1980.8 2296.1" fill="none" stroke="#4B0082" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 1913.1 2172.2 1953.6 2305.2" fill="none" stroke="#6DBF6D" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 1892.7 2177.8 1925.9 2312.8" fill="none" stroke="#A8D8EA" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 1861.6 2184.1 1883.7 2321.3" fill="none" stroke="#333333" stroke-width="2.2" opacity="0.62" />
+<path d="M 1883.7 2321.3 Q 1920.0 2456.1 1944.9 2592.9" fill="none" stroke="#555555" stroke-width="1.2" opacity="0.36" />
+<path d="M 1883.7 2321.3 Q 1891.4 2460.7 1910.4 2598.4" fill="none" stroke="#222222" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 1830.1 2187.8 1840.9 2326.4" fill="none" stroke="#003366" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 1809.0 2188.9 1812.2 2327.9" fill="none" stroke="#a0a0a0" stroke-width="1.2" opacity="0.36" />
+<path d="M 2017.7 1923.0 Q 1787.9 2188.8 1783.5 2327.7" fill="none" stroke="#6a5acd" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1734.0 1906.2 1668.0 2012.3" fill="none" stroke="#990000" stroke-width="2.2" opacity="0.62" />
+<path d="M 1668.0 2012.3 Q 1747.7 2185.5 1729.1 2323.2" fill="none" stroke="#EE0000" stroke-width="1.2" opacity="0.36" />
+<path d="M 1668.0 2012.3 Q 1678.0 2169.4 1634.4 2301.4" fill="none" stroke="#294172" stroke-width="2.2" opacity="0.62" />
+<path d="M 1634.4 2301.4 Q 1669.7 2454.2 1642.6 2590.5" fill="none" stroke="#6B21A8" stroke-width="1.2" opacity="0.36" />
+<path d="M 1634.4 2301.4 Q 1637.9 2447.0 1604.1 2581.8" fill="none" stroke="#294172" stroke-width="1.2" opacity="0.36" />
+<path d="M 1634.4 2301.4 Q 1606.4 2438.3 1566.0 2571.3" fill="none" stroke="#294172" stroke-width="1.2" opacity="0.36" />
+<path d="M 1634.4 2301.4 Q 1575.3 2428.0 1528.5 2558.9" fill="none" stroke="#294172" stroke-width="1.2" opacity="0.36" />
+<path d="M 1634.4 2301.4 Q 1544.8 2416.3 1491.7 2544.7" fill="none" stroke="#294172" stroke-width="1.2" opacity="0.36" />
+<path d="M 1634.4 2301.4 Q 1515.0 2403.0 1455.6 2528.7" fill="none" stroke="#294172" stroke-width="1.2" opacity="0.36" />
+<path d="M 1668.0 2012.3 Q 1612.4 2140.7 1545.3 2262.5" fill="none" stroke="#444444" stroke-width="1.2" opacity="0.36" />
+<path d="M 1668.0 2012.3 Q 1594.7 2130.4 1521.3 2248.5" fill="none" stroke="#262577" stroke-width="1.2" opacity="0.36" />
+<path d="M 1668.0 2012.3 Q 1577.6 2119.1 1498.1 2233.2" fill="none" stroke="#10B981" stroke-width="1.2" opacity="0.36" />
+<path d="M 1668.0 2012.3 Q 1561.1 2107.0 1475.7 2216.7" fill="none" stroke="#F0F0F0" stroke-width="1.2" opacity="0.36" />
+<path d="M 1668.0 2012.3 Q 1545.3 2094.0 1454.2 2199.0" fill="none" stroke="#003366" stroke-width="1.2" opacity="0.36" />
+<path d="M 1668.0 2012.3 Q 1530.1 2080.2 1433.7 2180.3" fill="none" stroke="#FF0000" stroke-width="1.2" opacity="0.36" />
+<path d="M 1668.0 2012.3 Q 1515.8 2065.6 1414.2 2160.5" fill="none" stroke="#294172" stroke-width="1.2" opacity="0.36" />
+<path d="M 1668.0 2012.3 Q 1502.2 2050.2 1395.8 2139.7" fill="none" stroke="#5b7cfa" stroke-width="1.2" opacity="0.36" />
+<path d="M 1668.0 2012.3 Q 1489.4 2034.2 1378.4 2117.9" fill="none" stroke="#0ea5e9" stroke-width="1.2" opacity="0.36" />
+<path d="M 1668.0 2012.3 Q 1477.5 2017.5 1362.3 2095.3" fill="none" stroke="#8b5cf6" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1683.7 1845.8 1567.4 1891.6" fill="none" stroke="#54487A" stroke-width="2.2" opacity="0.62" />
+<path d="M 1567.4 1891.6 Q 1457.4 1984.3 1335.0 2050.1" fill="none" stroke="#696D71" stroke-width="1.2" opacity="0.36" />
+<path d="M 1567.4 1891.6 Q 1449.1 1967.9 1323.7 2027.9" fill="none" stroke="#6C5D9E" stroke-width="1.2" opacity="0.36" />
+<path d="M 1567.4 1891.6 Q 1441.5 1951.1 1313.5 2005.1" fill="none" stroke="#F5D300" stroke-width="1.2" opacity="0.36" />
+<path d="M 1567.4 1891.6 Q 1434.8 1934.0 1304.3 1981.9" fill="none" stroke="#4285F4" stroke-width="1.2" opacity="0.36" />
+<path d="M 1567.4 1891.6 Q 1428.9 1916.6 1296.3 1958.3" fill="none" stroke="#2D4739" stroke-width="1.2" opacity="0.36" />
+<path d="M 1567.4 1891.6 Q 1423.8 1898.9 1289.4 1934.3" fill="none" stroke="#4f8f57" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1676.5 1819.0 1552.9 1838.1" fill="none" stroke="#5277C3" stroke-width="2.2" opacity="0.62" />
+<path d="M 1552.9 1838.1 Q 1416.5 1865.1 1279.5 1888.4" fill="none" stroke="#7EBAE4" stroke-width="1.2" opacity="0.36" />
+<path d="M 1552.9 1838.1 Q 1414.7 1853.4 1277.0 1872.4" fill="none" stroke="#FF6347" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1675.3 1808.7 1550.6 1817.4" fill="none" stroke="#478061" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1675.0 1798.3 1550.0 1796.5" fill="none" stroke="#0D597F" stroke-width="2.2" opacity="0.62" />
+<path d="M 1550.0 1796.5 Q 1411.0 1800.5 1272.0 1800.7" fill="none" stroke="#7BC31F" stroke-width="1.2" opacity="0.36" />
+<path d="M 1550.0 1796.5 Q 1411.2 1788.6 1272.2 1784.6" fill="none" stroke="#00AA44" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1692.9 1735.5 1585.8 1671.0" fill="none" stroke="#1793D1" stroke-width="2.2" opacity="0.62" />
+<path d="M 1585.8 1671.0 Q 1413.8 1753.1 1275.9 1736.4" fill="none" stroke="#35BF5C" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1416.8 1732.8 1279.9 1708.9" fill="none" stroke="#800080" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1420.9 1712.8 1285.4 1681.6" fill="none" stroke="#6C93D6" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1426.0 1692.9 1292.4 1654.7" fill="none" stroke="#E95420" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1432.2 1673.4 1300.7 1628.2" fill="none" stroke="#1A1A1A" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1439.4 1654.2 1310.5 1602.1" fill="none" stroke="#1B2838" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1447.5 1635.4 1321.6 1576.6" fill="none" stroke="#00D4FF" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1456.7 1617.1 1334.0 1551.8" fill="none" stroke="#7DC242" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1466.8 1599.3 1347.7 1527.6" fill="none" stroke="#2E3440" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1477.8 1582.0 1362.7 1504.1" fill="none" stroke="#1A1A2E" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1489.7 1565.4 1378.9 1481.5" fill="none" stroke="#1abc9c" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1502.5 1549.4 1396.2 1459.8" fill="none" stroke="#111111" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1516.1 1534.1 1414.7 1439.0" fill="none" stroke="#1793D1" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1530.5 1519.5 1434.2 1419.2" fill="none" stroke="#1793D1" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1545.6 1505.7 1454.8 1400.5" fill="none" stroke="#f97316" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1561.5 1492.7 1476.3 1382.9" fill="none" stroke="#111827" stroke-width="1.2" opacity="0.36" />
+<path d="M 1585.8 1671.0 Q 1578.0 1480.6 1498.7 1366.4" fill="none" stroke="#0ea5e9" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1737.0 1692.0 1674.0 1584.1" fill="none" stroke="#FFCC00" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1743.1 1688.7 1686.2 1577.4" fill="none" stroke="#00AEEF" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1749.4 1685.7 1698.7 1571.4" fill="none" stroke="#FF6600" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1755.8 1683.1 1711.6 1566.2" fill="none" stroke="#56347C" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1762.4 1680.8 1724.7 1561.6" fill="none" stroke="#3874D8" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1769.0 1678.9 1738.1 1557.8" fill="none" stroke="#FF69B4" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1775.8 1677.4 1751.7 1554.7" fill="none" stroke="#F5F5DC" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1782.7 1676.2 1765.4 1552.4" fill="none" stroke="#1B2838" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1789.6 1675.4 1779.2 1550.9" fill="none" stroke="#007acc" stroke-width="1.2" opacity="0.36" />
+<path d="M 1800.0 1800.0 Q 1796.5 1675.0 1793.1 1550.1" fill="none" stroke="#6b7280" stroke-width="1.2" opacity="0.36" />
+</g>
+<g font-family="Inter, Segoe UI, Arial, sans-serif">
+<g id="node-linux-kernel">
+  <circle cx="1800.0" cy="1800.0" r="24" fill="#6666FF" stroke="#f4fbff" stroke-width="5" />
+  <text x="1800.0" y="1842.0" text-anchor="middle" dominant-baseline="middle" fill="#f2fbff" font-size="38" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="8" stroke-linejoin="round">Linux Kernel (1991)</text>
+</g>
+<g id="node-clear-linux">
+  <circle cx="1806.9" cy="1550.1" r="5.5" fill="#00AEEF" stroke="#f4fbff" stroke-width="2" />
+  <text x="1807.6" y="1526.6" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Clear Linux (2015)</text>
+</g>
+<g id="node-solus">
+  <circle cx="1820.8" cy="1550.9" r="5.5" fill="#5294E2" stroke="#f4fbff" stroke-width="2" />
+  <text x="1822.8" y="1527.5" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Solus (2015)</text>
+</g>
+<g id="node-suse-linux">
+  <circle cx="1881.9" cy="1563.8" r="14.8" fill="#73BA25" stroke="#f4fbff" stroke-width="2" />
+  <text x="1892.6" y="1532.8" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">SUSE Linux (1994)</text>
+</g>
+<g id="node-opensuse">
+  <circle cx="1972.9" cy="1301.1" r="13.6" fill="#73BA25" stroke="#f4fbff" stroke-width="2" />
+  <text x="1983.2" y="1271.3" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">openSUSE (2005)</text>
+</g>
+<g id="node-geckolinux">
+  <circle cx="1936.8" cy="1005.7" r="5.5" fill="#73BA25" stroke="#f4fbff" stroke-width="2" />
+  <text x="1940.8" y="982.5" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">GeckoLinux (2015)</text>
+</g>
+<g id="node-opensuse-aeon">
+  <circle cx="1973.6" cy="1012.9" r="5.5" fill="#73BA25" stroke="#f4fbff" stroke-width="2" />
+  <text x="1978.7" y="990.0" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">openSUSE Aeon (2023)</text>
+</g>
+<g id="node-opensuse-kalpa">
+  <circle cx="2010.1" cy="1021.9" r="5.5" fill="#73BA25" stroke="#f4fbff" stroke-width="2" />
+  <text x="2016.2" y="999.2" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">openSUSE Kalpa (2023)</text>
+</g>
+<g id="node-opensuse-slowroll">
+  <circle cx="2046.1" cy="1032.5" r="5.5" fill="#73BA25" stroke="#f4fbff" stroke-width="2" />
+  <text x="2053.3" y="1010.1" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">openSUSE Slowroll (2024)</text>
+</g>
+<g id="node-opensuse-leap">
+  <circle cx="2081.6" cy="1044.8" r="5.5" fill="#73BA25" stroke="#f4fbff" stroke-width="2" />
+  <text x="2089.8" y="1022.8" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">openSUSE Leap (2015)</text>
+</g>
+<g id="node-opensuse-tumbleweed">
+  <circle cx="2116.5" cy="1058.7" r="5.5" fill="#73BA25" stroke="#f4fbff" stroke-width="2" />
+  <text x="2125.7" y="1037.1" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">openSUSE Tumbleweed (2008)</text>
+</g>
+<g id="node-opensuse-microos">
+  <circle cx="2150.7" cy="1074.3" r="5.5" fill="#73BA25" stroke="#f4fbff" stroke-width="2" />
+  <text x="2160.9" y="1053.1" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">openSUSE MicroOS (2020)</text>
+</g>
+<g id="node-opensuse-leap-micro">
+  <circle cx="2184.1" cy="1091.4" r="5.5" fill="#73BA25" stroke="#f4fbff" stroke-width="2" />
+  <text x="2195.3" y="1070.7" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">openSUSE Leap Micro (2022)</text>
+</g>
+<g id="node-slackware">
+  <circle cx="1970.5" cy="1617.2" r="14.8" fill="#888888" stroke="#f4fbff" stroke-width="2" />
+  <text x="1992.9" y="1593.2" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Slackware (1993)</text>
+</g>
+<g id="node-slax">
+  <circle cx="2100.4" cy="1365.8" r="5.5" fill="#AAAAAA" stroke="#f4fbff" stroke-width="2" />
+  <text x="2113.8" y="1346.5" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Slax (2003)</text>
+</g>
+<g id="node-salix">
+  <circle cx="2121.1" cy="1380.9" r="5.5" fill="#BBBBBB" stroke="#f4fbff" stroke-width="2" />
+  <text x="2135.4" y="1362.2" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Salix (2009)</text>
+</g>
+<g id="node-zenwalk">
+  <circle cx="2141.0" cy="1396.9" r="5.5" fill="#0055AA" stroke="#f4fbff" stroke-width="2" />
+  <text x="2156.2" y="1379.0" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Zenwalk (2004)</text>
+</g>
+<g id="node-vectorlinux">
+  <circle cx="2160.2" cy="1413.9" r="5.5" fill="#556B2F" stroke="#f4fbff" stroke-width="2" />
+  <text x="2176.2" y="1396.7" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">VectorLinux (2000)</text>
+</g>
+<g id="node-absolute-linux">
+  <circle cx="2178.4" cy="1431.8" r="5.5" fill="#708090" stroke="#f4fbff" stroke-width="2" />
+  <text x="2195.3" y="1415.4" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Absolute Linux (2003)</text>
+</g>
+<g id="node-parted-magic">
+  <circle cx="2195.8" cy="1450.6" r="5.5" fill="#FF6600" stroke="#f4fbff" stroke-width="2" />
+  <text x="2213.4" y="1435.0" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Parted Magic (2007)</text>
+</g>
+<g id="node-slackel">
+  <circle cx="2212.3" cy="1470.1" r="5.5" fill="#4f46e5" stroke="#f4fbff" stroke-width="2" />
+  <text x="2230.6" y="1455.5" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Slackel (2012)</text>
+</g>
+<g id="node-debian">
+  <circle cx="2017.7" cy="1923.0" r="14.8" fill="#CC0000" stroke="#f4fbff" stroke-width="2" />
+  <text x="2046.2" y="1939.1" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Debian (1993)</text>
+</g>
+<g id="node-deepin">
+  <circle cx="2243.6" cy="1513.6" r="5.5" fill="#1C1C1C" stroke="#f4fbff" stroke-width="2" />
+  <text x="2263.3" y="1500.8" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Deepin (2011)</text>
+</g>
+<g id="node-parrot-os">
+  <circle cx="2258.5" cy="1538.1" r="5.5" fill="#1F2937" stroke="#f4fbff" stroke-width="2" />
+  <text x="2278.9" y="1526.5" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Parrot OS (2013)</text>
+</g>
+<g id="node-ubuntu">
+  <circle cx="2323.3" cy="1870.4" r="13.6" fill="#DD4814" stroke="#f4fbff" stroke-width="2" />
+  <text x="2354.6" y="1874.6" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Ubuntu (2004)</text>
+</g>
+<g id="node-linux-mint">
+  <circle cx="2524.3" cy="1446.5" r="12.4" fill="#87cf3e" stroke="#f4fbff" stroke-width="2" />
+  <text x="2551.7" y="1433.1" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Linux Mint (2006)</text>
+</g>
+<g id="node-feren-os">
+  <circle cx="2774.2" cy="1324.5" r="5.5" fill="#00A4FF" stroke="#f4fbff" stroke-width="2" />
+  <text x="2795.3" y="1314.2" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="0.82" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Feren OS (2017)</text>
+</g>
+<g id="node-zorin-os">
+  <circle cx="2542.2" cy="1485.7" r="5.5" fill="#66CCFF" stroke="#f4fbff" stroke-width="2" />
+  <text x="2563.8" y="1476.5" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Zorin OS (2009)</text>
+</g>
+<g id="node-elementary-os">
+  <circle cx="2557.9" cy="1525.7" r="5.5" fill="#64BAFF" stroke="#f4fbff" stroke-width="2" />
+  <text x="2580.0" y="1517.7" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Elementary OS (2011)</text>
+</g>
+<g id="node-pop-os">
+  <circle cx="2571.5" cy="1566.6" r="5.5" fill="#48B9C7" stroke="#f4fbff" stroke-width="2" />
+  <text x="2594.0" y="1559.8" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Pop!_OS (2017)</text>
+</g>
+<g id="node-kubuntu">
+  <circle cx="2582.8" cy="1608.1" r="5.5" fill="#0079C1" stroke="#f4fbff" stroke-width="2" />
+  <text x="2605.7" y="1602.5" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Kubuntu (2005)</text>
+</g>
+<g id="node-lubuntu">
+  <circle cx="2592.0" cy="1650.2" r="5.5" fill="#0068C8" stroke="#f4fbff" stroke-width="2" />
+  <text x="2615.1" y="1645.9" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Lubuntu (2009)</text>
+</g>
+<g id="node-xubuntu">
+  <circle cx="2598.8" cy="1692.7" r="5.5" fill="#0044AA" stroke="#f4fbff" stroke-width="2" />
+  <text x="2622.1" y="1689.6" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Xubuntu (2006)</text>
+</g>
+<g id="node-ubuntu-mate">
+  <circle cx="2603.4" cy="1735.5" r="5.5" fill="#87A556" stroke="#f4fbff" stroke-width="2" />
+  <text x="2626.8" y="1733.7" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Ubuntu MATE (2015)</text>
+</g>
+<g id="node-ubuntu-budgie">
+  <circle cx="2605.7" cy="1778.5" r="5.5" fill="#6F8A91" stroke="#f4fbff" stroke-width="2" />
+  <text x="2629.2" y="1777.9" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Ubuntu Budgie (2017)</text>
+</g>
+<g id="node-kde-neon">
+  <circle cx="2605.7" cy="1821.6" r="5.5" fill="#1D99F3" stroke="#f4fbff" stroke-width="2" />
+  <text x="2629.2" y="1822.2" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">KDE Neon (2016)</text>
+</g>
+<g id="node-ubuntu-studio">
+  <circle cx="2603.4" cy="1864.6" r="5.5" fill="#0F4C81" stroke="#f4fbff" stroke-width="2" />
+  <text x="2626.8" y="1866.5" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Ubuntu Studio (2007)</text>
+</g>
+<g id="node-ubuntu-kylin">
+  <circle cx="2598.8" cy="1907.4" r="5.5" fill="#FF4500" stroke="#f4fbff" stroke-width="2" />
+  <text x="2622.1" y="1910.5" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Ubuntu Kylin (2013)</text>
+</g>
+<g id="node-bodhi-linux">
+  <circle cx="2591.9" cy="1949.9" r="5.5" fill="#8B7355" stroke="#f4fbff" stroke-width="2" />
+  <text x="2615.0" y="1954.3" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Bodhi Linux (2011)</text>
+</g>
+<g id="node-linux-lite">
+  <circle cx="2582.8" cy="1992.0" r="5.5" fill="#FFD700" stroke="#f4fbff" stroke-width="2" />
+  <text x="2605.6" y="1997.6" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Linux Lite (2012)</text>
+</g>
+<g id="node-peppermint-os">
+  <circle cx="2571.4" cy="2033.5" r="5.5" fill="#FF3333" stroke="#f4fbff" stroke-width="2" />
+  <text x="2593.9" y="2040.3" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Peppermint OS (2010)</text>
+</g>
+<g id="node-regolith-linux">
+  <circle cx="2557.9" cy="2074.4" r="5.5" fill="#2E4057" stroke="#f4fbff" stroke-width="2" />
+  <text x="2580.0" y="2082.4" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Regolith Linux (2019)</text>
+</g>
+<g id="node-nitrux">
+  <circle cx="2542.1" cy="2114.5" r="5.5" fill="#00B4D8" stroke="#f4fbff" stroke-width="2" />
+  <text x="2563.8" y="2123.6" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Nitrux (2019)</text>
+</g>
+<g id="node-pear-os">
+  <circle cx="2524.3" cy="2153.6" r="5.5" fill="#7DC242" stroke="#f4fbff" stroke-width="2" />
+  <text x="2545.4" y="2163.9" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Pear OS (2011)</text>
+</g>
+<g id="node-ubuntu-unity">
+  <circle cx="2504.4" cy="2191.8" r="5.5" fill="#e95420" stroke="#f4fbff" stroke-width="2" />
+  <text x="2524.9" y="2203.2" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Ubuntu Unity (2022)</text>
+</g>
+<g id="node-ubuntu-cinnamon">
+  <circle cx="2482.4" cy="2228.9" r="5.5" fill="#e67e22" stroke="#f4fbff" stroke-width="2" />
+  <text x="2502.3" y="2241.4" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Ubuntu Cinnamon (2020)</text>
+</g>
+<g id="node-edubuntu">
+  <circle cx="2458.6" cy="2264.7" r="5.5" fill="#5c6bc0" stroke="#f4fbff" stroke-width="2" />
+  <text x="2477.8" y="2278.2" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Edubuntu (2023)</text>
+</g>
+<g id="node-tuxedo-os">
+  <circle cx="2432.8" cy="2299.2" r="5.5" fill="#1f2937" stroke="#f4fbff" stroke-width="2" />
+  <text x="2451.3" y="2313.8" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">TUXEDO OS (2021)</text>
+</g>
+<g id="node-voyager-24-04-lts">
+  <circle cx="2405.2" cy="2332.3" r="5.5" fill="#ff8c00" stroke="#f4fbff" stroke-width="2" />
+  <text x="2422.9" y="2347.8" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Voyager 24.04 LTS (2024)</text>
+</g>
+<g id="node-devuan">
+  <circle cx="2173.0" cy="2173.7" r="5.5" fill="#660000" stroke="#f4fbff" stroke-width="2" />
+  <text x="2189.6" y="2190.3" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Devuan (2014)</text>
+</g>
+<g id="node-mx-linux">
+  <circle cx="2152.2" cy="2193.4" r="5.5" fill="#000000" stroke="#f4fbff" stroke-width="2" />
+  <text x="2167.8" y="2210.9" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">MX Linux (2014)</text>
+</g>
+<g id="node-raspberry-pi-os">
+  <circle cx="2130.3" cy="2212.0" r="5.5" fill="#C51A4A" stroke="#f4fbff" stroke-width="2" />
+  <text x="2145.0" y="2230.3" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Raspberry Pi OS (2012)</text>
+</g>
+<g id="node-knoppix">
+  <circle cx="2107.4" cy="2229.3" r="13.6" fill="#009B77" stroke="#f4fbff" stroke-width="2" />
+  <text x="2125.8" y="2255.0" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">KNOPPIX (2000)</text>
+</g>
+<g id="node-kanotix">
+  <circle cx="2269.2" cy="2455.3" r="12.4" fill="#CC6600" stroke="#f4fbff" stroke-width="2" />
+  <text x="2286.9" y="2480.1" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">KANOTIX (2003)</text>
+</g>
+<g id="node-sidux">
+  <circle cx="2431.1" cy="2681.4" r="11.2" fill="#AA3300" stroke="#f4fbff" stroke-width="2" />
+  <text x="2448.1" y="2705.1" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">sidux (2006)</text>
+</g>
+<g id="node-aptosid">
+  <circle cx="2592.9" cy="2907.4" r="10" fill="#882200" stroke="#f4fbff" stroke-width="2" />
+  <text x="2609.2" y="2930.2" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">aptosid (2010)</text>
+</g>
+<g id="node-siduction">
+  <circle cx="2696.5" cy="3052.1" r="5.5" fill="#661111" stroke="#f4fbff" stroke-width="2" />
+  <text x="2710.2" y="3071.2" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="0.82" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">siduction (2011)</text>
+</g>
+<g id="node-antix">
+  <circle cx="2083.6" cy="2245.4" r="5.5" fill="#CC3333" stroke="#f4fbff" stroke-width="2" />
+  <text x="2096.2" y="2265.2" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">antiX (2007)</text>
+</g>
+<g id="node-trisquel">
+  <circle cx="2059.0" cy="2260.1" r="5.5" fill="#7B3F00" stroke="#f4fbff" stroke-width="2" />
+  <text x="2070.5" y="2280.6" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Trisquel (2004)</text>
+</g>
+<g id="node-pureos">
+  <circle cx="2033.6" cy="2273.5" r="5.5" fill="#5C3317" stroke="#f4fbff" stroke-width="2" />
+  <text x="2044.0" y="2294.6" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">PureOS (2014)</text>
+</g>
+<g id="node-backtrack">
+  <circle cx="2007.5" cy="2285.5" r="13.6" fill="#1A1A2E" stroke="#f4fbff" stroke-width="2" />
+  <text x="2019.9" y="2314.6" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">BackTrack (2006)</text>
+</g>
+<g id="node-kali-linux">
+  <circle cx="2116.7" cy="2541.2" r="5.5" fill="#0A3C5A" stroke="#f4fbff" stroke-width="2" />
+  <text x="2126.0" y="2562.8" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Kali Linux (2013)</text>
+</g>
+<g id="node-whonix">
+  <circle cx="1980.8" cy="2296.1" r="5.5" fill="#4B0082" stroke="#f4fbff" stroke-width="2" />
+  <text x="1988.8" y="2318.2" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Whonix (2012)</text>
+</g>
+<g id="node-lmde">
+  <circle cx="1953.6" cy="2305.2" r="5.5" fill="#6DBF6D" stroke="#f4fbff" stroke-width="2" />
+  <text x="1960.4" y="2327.7" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">LMDE (2010)</text>
+</g>
+<g id="node-snowlinux">
+  <circle cx="1925.9" cy="2312.8" r="5.5" fill="#A8D8EA" stroke="#f4fbff" stroke-width="2" />
+  <text x="1931.5" y="2335.6" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Snowlinux (2011)</text>
+</g>
+<g id="node-crunchbang">
+  <circle cx="1883.7" cy="2321.3" r="13.6" fill="#333333" stroke="#f4fbff" stroke-width="2" />
+  <text x="1888.7" y="2352.5" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">CrunchBang (2008)</text>
+</g>
+<g id="node-bunsenlabs">
+  <circle cx="1944.9" cy="2592.9" r="5.5" fill="#555555" stroke="#f4fbff" stroke-width="2" />
+  <text x="1949.2" y="2616.0" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">BunsenLabs (2015)</text>
+</g>
+<g id="node-crunchbang-">
+  <circle cx="1910.4" cy="2598.4" r="5.5" fill="#222222" stroke="#f4fbff" stroke-width="2" />
+  <text x="1913.6" y="2621.7" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">CrunchBang++ (2015)</text>
+</g>
+<g id="node-q4os">
+  <circle cx="1840.9" cy="2326.4" r="5.5" fill="#003366" stroke="#f4fbff" stroke-width="2" />
+  <text x="1842.7" y="2349.8" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Q4OS (2014)</text>
+</g>
+<g id="node-sparkylinux">
+  <circle cx="1812.2" cy="2327.9" r="5.5" fill="#a0a0a0" stroke="#f4fbff" stroke-width="2" />
+  <text x="1812.8" y="2351.4" text-anchor="start" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">SparkyLinux (2012)</text>
+</g>
+<g id="node-solydxk">
+  <circle cx="1783.5" cy="2327.7" r="5.5" fill="#6a5acd" stroke="#f4fbff" stroke-width="2" />
+  <text x="1782.8" y="2351.2" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">SolydXK (2012)</text>
+</g>
+<g id="node-red-hat-linux">
+  <circle cx="1668.0" cy="2012.3" r="14.8" fill="#990000" stroke="#f4fbff" stroke-width="2" />
+  <text x="1650.7" y="2040.2" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Red Hat Linux (1994)</text>
+</g>
+<g id="node-red-hat-enterprise-linux">
+  <circle cx="1729.1" cy="2323.2" r="5.5" fill="#EE0000" stroke="#f4fbff" stroke-width="2" />
+  <text x="1725.9" y="2346.5" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Red Hat Enterprise Linux (2000)</text>
+</g>
+<g id="node-fedora">
+  <circle cx="1634.4" cy="2301.4" r="13.6" fill="#294172" stroke="#f4fbff" stroke-width="2" />
+  <text x="1624.5" y="2331.4" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Fedora (2003)</text>
+</g>
+<g id="node-bazzite">
+  <circle cx="1642.6" cy="2590.5" r="5.5" fill="#6B21A8" stroke="#f4fbff" stroke-width="2" />
+  <text x="1638.0" y="2613.5" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Bazzite (2023)</text>
+</g>
+<g id="node-fedora-silverblue">
+  <circle cx="1604.1" cy="2581.8" r="5.5" fill="#294172" stroke="#f4fbff" stroke-width="2" />
+  <text x="1598.3" y="2604.6" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Fedora Silverblue (2018)</text>
+</g>
+<g id="node-fedora-workstation">
+  <circle cx="1566.0" cy="2571.3" r="5.5" fill="#294172" stroke="#f4fbff" stroke-width="2" />
+  <text x="1559.2" y="2593.8" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Fedora Workstation (2003)</text>
+</g>
+<g id="node-fedora-server">
+  <circle cx="1528.5" cy="2558.9" r="5.5" fill="#294172" stroke="#f4fbff" stroke-width="2" />
+  <text x="1520.6" y="2581.0" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Fedora Server (2003)</text>
+</g>
+<g id="node-fedora-iot">
+  <circle cx="1491.7" cy="2544.7" r="5.5" fill="#294172" stroke="#f4fbff" stroke-width="2" />
+  <text x="1482.7" y="2566.4" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Fedora IoT (2019)</text>
+</g>
+<g id="node-fedora-kinoite">
+  <circle cx="1455.6" cy="2528.7" r="5.5" fill="#294172" stroke="#f4fbff" stroke-width="2" />
+  <text x="1445.5" y="2549.9" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Fedora Kinoite (2021)</text>
+</g>
+<g id="node-centos">
+  <circle cx="1545.3" cy="2262.5" r="5.5" fill="#444444" stroke="#f4fbff" stroke-width="2" />
+  <text x="1534.0" y="2283.1" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">CentOS (2004)</text>
+</g>
+<g id="node-centos-stream">
+  <circle cx="1521.3" cy="2248.5" r="5.5" fill="#262577" stroke="#f4fbff" stroke-width="2" />
+  <text x="1508.9" y="2268.4" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">CentOS Stream (2019)</text>
+</g>
+<g id="node-rocky-linux">
+  <circle cx="1498.1" cy="2233.2" r="5.5" fill="#10B981" stroke="#f4fbff" stroke-width="2" />
+  <text x="1484.7" y="2252.4" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Rocky Linux (2021)</text>
+</g>
+<g id="node-almalinux">
+  <circle cx="1475.7" cy="2216.7" r="5.5" fill="#F0F0F0" stroke="#f4fbff" stroke-width="2" />
+  <text x="1461.3" y="2235.2" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">AlmaLinux (2021)</text>
+</g>
+<g id="node-scientific-linux">
+  <circle cx="1454.2" cy="2199.0" r="5.5" fill="#003366" stroke="#f4fbff" stroke-width="2" />
+  <text x="1438.8" y="2216.8" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Scientific Linux (2004)</text>
+</g>
+<g id="node-oracle-linux">
+  <circle cx="1433.7" cy="2180.3" r="5.5" fill="#FF0000" stroke="#f4fbff" stroke-width="2" />
+  <text x="1417.4" y="2197.2" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Oracle Linux (2006)</text>
+</g>
+<g id="node-nobara-linux">
+  <circle cx="1414.2" cy="2160.5" r="5.5" fill="#294172" stroke="#f4fbff" stroke-width="2" />
+  <text x="1397.0" y="2176.5" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Nobara Linux (2022)</text>
+</g>
+<g id="node-ultramarine-linux">
+  <circle cx="1395.8" cy="2139.7" r="5.5" fill="#5b7cfa" stroke="#f4fbff" stroke-width="2" />
+  <text x="1377.8" y="2154.8" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Ultramarine Linux (2020)</text>
+</g>
+<g id="node-bluefin">
+  <circle cx="1378.4" cy="2117.9" r="5.5" fill="#0ea5e9" stroke="#f4fbff" stroke-width="2" />
+  <text x="1359.7" y="2132.1" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Bluefin (2023)</text>
+</g>
+<g id="node-aurora">
+  <circle cx="1362.3" cy="2095.3" r="5.5" fill="#8b5cf6" stroke="#f4fbff" stroke-width="2" />
+  <text x="1342.8" y="2108.4" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Aurora (2024)</text>
+</g>
+<g id="node-gentoo-linux">
+  <circle cx="1567.4" cy="1891.6" r="14.8" fill="#54487A" stroke="#f4fbff" stroke-width="2" />
+  <text x="1536.9" y="1903.7" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Gentoo Linux (2002)</text>
+</g>
+<g id="node-calculate-linux">
+  <circle cx="1335.0" cy="2050.1" r="5.5" fill="#696D71" stroke="#f4fbff" stroke-width="2" />
+  <text x="1314.3" y="2061.3" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Calculate Linux (2007)</text>
+</g>
+<g id="node-funtoo-linux">
+  <circle cx="1323.7" cy="2027.9" r="5.5" fill="#6C5D9E" stroke="#f4fbff" stroke-width="2" />
+  <text x="1302.5" y="2038.0" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Funtoo Linux (2008)</text>
+</g>
+<g id="node-sabayon-linux">
+  <circle cx="1313.5" cy="2005.1" r="5.5" fill="#F5D300" stroke="#f4fbff" stroke-width="2" />
+  <text x="1291.8" y="2014.2" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Sabayon Linux (2005)</text>
+</g>
+<g id="node-chromeos">
+  <circle cx="1304.3" cy="1981.9" r="5.5" fill="#4285F4" stroke="#f4fbff" stroke-width="2" />
+  <text x="1282.3" y="1990.0" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">ChromeOS (2011)</text>
+</g>
+<g id="node-pentoo">
+  <circle cx="1296.3" cy="1958.3" r="5.5" fill="#2D4739" stroke="#f4fbff" stroke-width="2" />
+  <text x="1273.9" y="1965.3" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Pentoo (2005)</text>
+</g>
+<g id="node-redcore-linux">
+  <circle cx="1289.4" cy="1934.3" r="5.5" fill="#4f8f57" stroke="#f4fbff" stroke-width="2" />
+  <text x="1266.6" y="1940.3" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Redcore Linux (2014)</text>
+</g>
+<g id="node-nixos">
+  <circle cx="1552.9" cy="1838.1" r="14.8" fill="#5277C3" stroke="#f4fbff" stroke-width="2" />
+  <text x="1520.5" y="1843.1" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">NixOS (2003)</text>
+</g>
+<g id="node-home-manager">
+  <circle cx="1279.5" cy="1888.4" r="5.5" fill="#7EBAE4" stroke="#f4fbff" stroke-width="2" />
+  <text x="1256.3" y="1892.3" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">home-manager (2017)</text>
+</g>
+<g id="node-guix-system">
+  <circle cx="1277.0" cy="1872.4" r="5.5" fill="#FF6347" stroke="#f4fbff" stroke-width="2" />
+  <text x="1253.7" y="1875.7" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Guix System (2013)</text>
+</g>
+<g id="node-void-linux">
+  <circle cx="1550.6" cy="1817.4" r="5.5" fill="#478061" stroke="#f4fbff" stroke-width="2" />
+  <text x="1527.2" y="1819.0" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Void Linux (2008)</text>
+</g>
+<g id="node-alpine-linux">
+  <circle cx="1550.0" cy="1796.5" r="14.8" fill="#0D597F" stroke="#f4fbff" stroke-width="2" />
+  <text x="1517.2" y="1796.1" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Alpine Linux (2005)</text>
+</g>
+<g id="node-postmarketos">
+  <circle cx="1272.0" cy="1800.7" r="5.5" fill="#7BC31F" stroke="#f4fbff" stroke-width="2" />
+  <text x="1248.5" y="1800.8" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">postmarketOS (2017)</text>
+</g>
+<g id="node-gl-inet-openwrt">
+  <circle cx="1272.2" cy="1784.6" r="5.5" fill="#00AA44" stroke="#f4fbff" stroke-width="2" />
+  <text x="1248.7" y="1783.9" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">GL.iNet OpenWrt (2014)</text>
+</g>
+<g id="node-arch-linux">
+  <circle cx="1585.8" cy="1671.0" r="14.8" fill="#1793D1" stroke="#f4fbff" stroke-width="2" />
+  <text x="1557.8" y="1654.1" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="21" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Arch Linux (2002)</text>
+</g>
+<g id="node-manjaro">
+  <circle cx="1275.9" cy="1736.4" r="5.5" fill="#35BF5C" stroke="#f4fbff" stroke-width="2" />
+  <text x="1252.5" y="1733.5" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Manjaro (2011)</text>
+</g>
+<g id="node-endeavouros">
+  <circle cx="1279.9" cy="1708.9" r="5.5" fill="#800080" stroke="#f4fbff" stroke-width="2" />
+  <text x="1256.8" y="1704.8" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">EndeavourOS (2019)</text>
+</g>
+<g id="node-arcolinux">
+  <circle cx="1285.4" cy="1681.6" r="5.5" fill="#6C93D6" stroke="#f4fbff" stroke-width="2" />
+  <text x="1262.5" y="1676.3" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">ArcoLinux (2017)</text>
+</g>
+<g id="node-garuda-linux">
+  <circle cx="1292.4" cy="1654.7" r="5.5" fill="#E95420" stroke="#f4fbff" stroke-width="2" />
+  <text x="1269.8" y="1648.2" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Garuda Linux (2020)</text>
+</g>
+<g id="node-blackarch">
+  <circle cx="1300.7" cy="1628.2" r="5.5" fill="#1A1A1A" stroke="#f4fbff" stroke-width="2" />
+  <text x="1278.5" y="1620.5" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">BlackArch (2012)</text>
+</g>
+<g id="node-steamos-3">
+  <circle cx="1310.5" cy="1602.1" r="5.5" fill="#1B2838" stroke="#f4fbff" stroke-width="2" />
+  <text x="1288.7" y="1593.3" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">SteamOS 3 (2022)</text>
+</g>
+<g id="node-cachyos">
+  <circle cx="1321.6" cy="1576.6" r="5.5" fill="#00D4FF" stroke="#f4fbff" stroke-width="2" />
+  <text x="1300.3" y="1566.7" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">CachyOS (2021)</text>
+</g>
+<g id="node-pearos">
+  <circle cx="1334.0" cy="1551.8" r="5.5" fill="#7DC242" stroke="#f4fbff" stroke-width="2" />
+  <text x="1313.3" y="1540.7" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">pearOS (2022)</text>
+</g>
+<g id="node-obrevenge">
+  <circle cx="1347.7" cy="1527.6" r="5.5" fill="#2E3440" stroke="#f4fbff" stroke-width="2" />
+  <text x="1327.6" y="1515.4" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">OBRevenge (2015)</text>
+</g>
+<g id="node-archlabs">
+  <circle cx="1362.7" cy="1504.1" r="5.5" fill="#1A1A2E" stroke="#f4fbff" stroke-width="2" />
+  <text x="1343.2" y="1491.0" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">ArchLabs (2017)</text>
+</g>
+<g id="node-artix-linux">
+  <circle cx="1378.9" cy="1481.5" r="5.5" fill="#1abc9c" stroke="#f4fbff" stroke-width="2" />
+  <text x="1360.1" y="1467.4" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Artix Linux (2017)</text>
+</g>
+<g id="node-parabola-gnu-linux-libre">
+  <circle cx="1396.2" cy="1459.8" r="5.5" fill="#111111" stroke="#f4fbff" stroke-width="2" />
+  <text x="1378.2" y="1444.7" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Parabola GNU/Linux-libre (2009)</text>
+</g>
+<g id="node-archcraft">
+  <circle cx="1414.7" cy="1439.0" r="5.5" fill="#1793D1" stroke="#f4fbff" stroke-width="2" />
+  <text x="1397.5" y="1423.0" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Archcraft (2020)</text>
+</g>
+<g id="node-rebornos">
+  <circle cx="1434.2" cy="1419.2" r="5.5" fill="#1793D1" stroke="#f4fbff" stroke-width="2" />
+  <text x="1417.9" y="1402.3" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">RebornOS (2018)</text>
+</g>
+<g id="node-blendos">
+  <circle cx="1454.8" cy="1400.5" r="5.5" fill="#f97316" stroke="#f4fbff" stroke-width="2" />
+  <text x="1439.4" y="1382.7" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">blendOS (2022)</text>
+</g>
+<g id="node-chimeraos">
+  <circle cx="1476.3" cy="1382.9" r="5.5" fill="#111827" stroke="#f4fbff" stroke-width="2" />
+  <text x="1461.9" y="1364.3" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">ChimeraOS (2020)</text>
+</g>
+<g id="node-alci">
+  <circle cx="1498.7" cy="1366.4" r="5.5" fill="#0ea5e9" stroke="#f4fbff" stroke-width="2" />
+  <text x="1485.3" y="1347.1" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="500" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">ALCI (2020)</text>
+</g>
+<g id="node-puppy-linux">
+  <circle cx="1674.0" cy="1584.1" r="5.5" fill="#FFCC00" stroke="#f4fbff" stroke-width="2" />
+  <text x="1662.2" y="1563.8" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Puppy Linux (2003)</text>
+</g>
+<g id="node-porteus">
+  <circle cx="1686.2" cy="1577.4" r="5.5" fill="#00AEEF" stroke="#f4fbff" stroke-width="2" />
+  <text x="1675.5" y="1556.5" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Porteus (2011)</text>
+</g>
+<g id="node-tiny-core-linux">
+  <circle cx="1698.7" cy="1571.4" r="5.5" fill="#FF6600" stroke="#f4fbff" stroke-width="2" />
+  <text x="1689.2" y="1549.9" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Tiny Core Linux (2009)</text>
+</g>
+<g id="node-tails">
+  <circle cx="1711.6" cy="1566.2" r="5.5" fill="#56347C" stroke="#f4fbff" stroke-width="2" />
+  <text x="1703.3" y="1544.2" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Tails (2009)</text>
+</g>
+<g id="node-qubes-os">
+  <circle cx="1724.7" cy="1561.6" r="5.5" fill="#3874D8" stroke="#f4fbff" stroke-width="2" />
+  <text x="1717.7" y="1539.2" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Qubes OS (2012)</text>
+</g>
+<g id="node-hannah-montana-linux">
+  <circle cx="1738.1" cy="1557.8" r="5.5" fill="#FF69B4" stroke="#f4fbff" stroke-width="2" />
+  <text x="1732.3" y="1535.0" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Hannah Montana Linux (2010)</text>
+</g>
+<g id="node-linux-from-scratch">
+  <circle cx="1751.7" cy="1554.7" r="5.5" fill="#F5F5DC" stroke="#f4fbff" stroke-width="2" />
+  <text x="1747.1" y="1531.7" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Linux From Scratch (1999)</text>
+</g>
+<g id="node-steamos-1">
+  <circle cx="1765.4" cy="1552.4" r="5.5" fill="#1B2838" stroke="#f4fbff" stroke-width="2" />
+  <text x="1762.1" y="1529.1" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">SteamOS 1 (2013)</text>
+</g>
+<g id="node-kaos">
+  <circle cx="1779.2" cy="1550.9" r="5.5" fill="#007acc" stroke="#f4fbff" stroke-width="2" />
+  <text x="1777.2" y="1527.5" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">KaOS (2013)</text>
+</g>
+<g id="node-bedrock-linux">
+  <circle cx="1793.1" cy="1550.1" r="5.5" fill="#6b7280" stroke="#f4fbff" stroke-width="2" />
+  <text x="1792.4" y="1526.6" text-anchor="end" dominant-baseline="middle" fill="#f2fbff" font-size="13" font-weight="700" opacity="1" paint-order="stroke" stroke="#07111c" stroke-width="4" stroke-linejoin="round">Bedrock Linux (2012)</text>
+</g>
+</g>
+</svg>
