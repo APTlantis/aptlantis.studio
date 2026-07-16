@@ -1,0 +1,15 @@
+{
+  "issuer": "https://aptlantis.studio",
+  "service_documentation": "https://aptlantis.studio/auth.md",
+  "grant_types_supported": [],
+  "response_types_supported": [],
+  "scopes_supported": [],
+  "registration_endpoint": null,
+  "agent_auth": {
+    "status": "not_available",
+    "register_uri": null,
+    "identity_types_supported": [],
+    "credential_types_supported": [],
+    "notes": "Aptlantis Studio does not currently operate a public OAuth or agent registration flow."
+  }
+}

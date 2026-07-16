@@ -26,6 +26,8 @@ Allow: /
 
 Sitemap: https://aptlantis.studio/sitemap.xml
 
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
 User-agent: Googlebot
 Allow: /
 

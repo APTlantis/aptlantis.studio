@@ -1,0 +1,27 @@
+{
+  "serverInfo": {
+    "name": "Aptlantis Studio public discovery",
+    "version": "0.1.0"
+  },
+  "transport": {
+    "type": "none",
+    "endpoint": null
+  },
+  "capabilities": {
+    "tools": [],
+    "resources": [
+      {
+        "name": "public-manifest",
+        "url": "https://aptlantis.studio/data/manifest.json",
+        "description": "Crawler-friendly catalog of public Aptlantis Studio datasets, schemas, and evidence asset groups."
+      },
+      {
+        "name": "project-portfolio",
+        "url": "https://aptlantis.studio/data/projects/portfolio.json",
+        "description": "Main Aptlantis project catalog used by the portfolio dashboard and project detail pages."
+      }
+    ]
+  },
+  "status": "resource_card_only",
+  "notes": "No public MCP transport endpoint is currently exposed. This card advertises public resources only."
+}

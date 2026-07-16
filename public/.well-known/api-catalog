@@ -1,0 +1,46 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://aptlantis.studio/",
+      "describedby": [
+        {
+          "href": "https://aptlantis.studio/data/manifest.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://aptlantis.studio/auth.md",
+          "type": "text/markdown"
+        }
+      ],
+      "service-desc": [
+        {
+          "href": "https://aptlantis.studio/.well-known/agent-skills/index.json",
+          "type": "application/json"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://aptlantis.studio/api/health",
+          "type": "application/json"
+        }
+      ]
+    },
+    {
+      "anchor": "https://aptlantis.studio/data/manifest.json",
+      "describedby": [
+        {
+          "href": "https://aptlantis.studio/schemas/aptlantis-studio-manifest.schema.json",
+          "type": "application/schema+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://aptlantis.studio/index.md",
+          "type": "text/markdown"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "status": "not_required",
+  "origin": "https://aptlantis.studio",
+  "generated": "2026-07-15",
+  "keys": [],
+  "signature_algorithms_supported": [],
+  "documentation": "https://aptlantis.studio/auth.md",
+  "notes": "Aptlantis Studio does not currently require Web Bot Auth request signing for public crawlable resources."
+}

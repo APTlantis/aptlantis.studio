@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agentskills.io/schemas/agent-skills-index-v0.2.json",
+  "generated": "2026-07-15",
+  "skills": [
+    {
+      "name": "Aptlantis Studio Public Catalog",
+      "type": "documentation",
+      "description": "Orient agents around Aptlantis Studio public project records, evidence assets, schemas, and crawler-facing metadata.",
+      "url": "https://aptlantis.studio/.well-known/agent-skills/aptlantis-public-catalog.skill.md",
+      "sha256": "686e2301aa30932938baa812a90eab2cf69560161827de27d8450c8e65902791"
+    }
+  ]
+}

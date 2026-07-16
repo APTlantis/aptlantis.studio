@@ -2,6 +2,8 @@
 
 Rust microservice host for Aptlantis Studio. This is the first container-ready service that can sit behind the Fedora server's existing Caddy and Cloudflared containers.
 
+For the broader service map, operational boundaries, and workflow index, see `docs/rust-backend-services-guide.md`.
+
 ## Current Endpoints
 
 | Route                              | Purpose                                                                             |

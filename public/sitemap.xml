@@ -165,6 +165,36 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://aptlantis.studio/.well-known/api-catalog</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://aptlantis.studio/.well-known/agent-skills/index.json</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://aptlantis.studio/.well-known/mcp/server-card.json</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://aptlantis.studio/auth.md</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://aptlantis.studio/index.md</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://aptlantis.studio/.well-known/aptlantis.studio_0x0BE88A1564D5B232_public.asc</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>yearly</changefreq>

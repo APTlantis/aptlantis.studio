@@ -1,0 +1,8 @@
+{
+  "servers": [
+    {
+      "name": "Aptlantis Studio public discovery",
+      "url": "https://aptlantis.studio/.well-known/mcp/server-card.json"
+    }
+  ]
+}
