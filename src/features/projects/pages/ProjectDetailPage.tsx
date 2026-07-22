@@ -154,7 +154,6 @@ const projectTeachingTabs: Record<string, ProjectTeachingTab[]> = {
     { id: "usage", label: "Usage" },
     { id: "visualizations", label: "Visualizations" },
     { id: "downloads-templates", label: "Downloads / Templates" },
-    { id: "standards-map", label: "Standards Map" },
   ],
   structra: [
     { id: "overview", label: "Overview" },
@@ -535,7 +534,9 @@ const ChatArchiveUsage = ({ project }: { project: ProjectRecord }) => {
 };
 
 const ProjectMap = ({ project }: { project: ProjectRecord }) => {
-  const chart = `flowchart LR
+  const chart = project.frameworkSuite
+    ? project.frameworkSuite.mermaid.operatingModel
+    : `flowchart LR
     Project["${project.name}"]
     Group["${project.governanceGroup}"]
     Inputs["Inputs"]
@@ -545,10 +546,13 @@ const ProjectMap = ({ project }: { project: ProjectRecord }) => {
     Inputs --> Project
     Project --> Outputs
     Project --> Next`;
+  const title = project.frameworkSuite
+    ? "Standards Operating Map"
+    : "Project Map";
 
   return (
     <section className="atl-card p-5">
-      <h2 className="mb-4 text-2xl font-bold text-atl-archive">Project Map</h2>
+      <h2 className="mb-4 text-2xl font-bold text-atl-archive">{title}</h2>
       <CodeBlock code={chart} language="mermaid" />
     </section>
   );
@@ -1404,7 +1408,7 @@ const ProjectDetailPage = () => {
                 </figcaption>
               </figure>
             )}
-            {project.screenshots.length > 0 ? (
+            {!project.frameworkSuite && project.screenshots.length > 0 ? (
               <div className="grid gap-4 md:grid-cols-2">
                 {project.screenshots.map((screenshot) => (
                   <figure
@@ -1633,50 +1637,6 @@ const ProjectDetailPage = () => {
               Downloads And Templates
             </h2>
             <FrameworkDownloads project={project} />
-          </div>
-        )}
-
-        {activeTab === "standards-map" && (
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-atl-archive">
-              Standards Map
-            </h2>
-            {project.frameworkSuite ? (
-              <>
-                <FrameworkForceGraph project={project} />
-                <section className="grid gap-4 lg:grid-cols-3">
-                  <div className="atl-card p-5">
-                    <h3 className="mb-3 text-lg font-bold text-atl-archive">
-                      Operating Model
-                    </h3>
-                    <CodeBlock
-                      code={project.frameworkSuite.mermaid.operatingModel}
-                      language="mermaid"
-                    />
-                  </div>
-                  <div className="atl-card p-5">
-                    <h3 className="mb-3 text-lg font-bold text-atl-archive">
-                      Adoption Flow
-                    </h3>
-                    <CodeBlock
-                      code={project.frameworkSuite.mermaid.adoptionFlow}
-                      language="mermaid"
-                    />
-                  </div>
-                  <div className="atl-card p-5">
-                    <h3 className="mb-3 text-lg font-bold text-atl-archive">
-                      Artifact Chain
-                    </h3>
-                    <CodeBlock
-                      code={project.frameworkSuite.mermaid.artifactChain}
-                      language="mermaid"
-                    />
-                  </div>
-                </section>
-              </>
-            ) : (
-              <ProjectMap project={project} />
-            )}
           </div>
         )}
       </main>

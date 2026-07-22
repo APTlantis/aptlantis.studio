@@ -35,7 +35,7 @@ The site welcomes search indexing, archival capture, AI crawler indexing, public
 - `/project/clone-cratesio`
 - `/project/chatarchive`
 - `/project/filecabinet`
-- `/project/archivehasher`
+- `/project/codenote`
 - `/project/commandwizard`
 - `/project/chromearchivalplugin`
 - `/project/structra`

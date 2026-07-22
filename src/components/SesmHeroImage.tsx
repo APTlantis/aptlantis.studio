@@ -14,8 +14,8 @@ const SesmHeroImage = ({
   aspect = "classic",
 }: SesmHeroImageProps) => (
   <div
-    className={`mx-auto w-full p-2 sm:p-3 ${
-      aspect === "wide" ? "max-w-[980px]" : "max-w-[680px]"
+    className={`mx-auto w-full ${
+      aspect === "wide" ? "max-w-[860px]" : "max-w-[620px]"
     }`}
   >
     <div className="overflow-hidden rounded-[8px] border border-atl-ridge/70 bg-atl-void/70 shadow-[0_0_24px_rgba(95,165,196,0.12)]">
@@ -23,7 +23,9 @@ const SesmHeroImage = ({
         src={src}
         alt={alt}
         className={`block w-full object-cover ${
-          aspect === "wide" ? "aspect-[1672/941]" : "aspect-[1448/1086]"
+          aspect === "wide"
+            ? "aspect-[1672/941] max-h-[460px]"
+            : "aspect-[1448/1086] max-h-[500px]"
         }`}
         loading="eager"
         decoding="async"

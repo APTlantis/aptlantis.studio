@@ -5,6 +5,7 @@
     "D:\\.library\\aptlantis_core\\CTS\\CTS.manifest.toml",
     "D:\\.library\\aptlantis_core\\DRS\\DRS.manifest.toml",
     "D:\\.library\\aptlantis_core\\NeonInk\\NeonInk.manifest.toml",
+    "D:\\.library\\aptlantis_core\\blue.slate",
     "D:\\.library\\aptlantis_core\\PPS\\PPS.manifest.toml",
     "D:\\.library\\aptlantis_core\\SESM\\SESM.manifest.toml",
     "D:\\.library\\aptlantis_core\\WDS\\WDS.manifest.toml"
@@ -227,6 +228,26 @@
       "color": "#fb7185"
     },
     {
+      "id": "blue-slate",
+      "title": "Blue Slate",
+      "abbreviation": "Blue Slate",
+      "status": "active",
+      "maturity": "starter-pack",
+      "version": "unversioned",
+      "description": "Shared Aptlantis interface token and starter-pack profile for dark blue-slate application surfaces, including reusable styling resources consumed by desktop and web projects.",
+      "scope": "Design tokens, starter-pack resources, app chrome, dark-surface defaults, and reusable implementation guidance for Aptlantis UI work.",
+      "sourcePath": "D:\\.library\\aptlantis_core\\blue.slate",
+      "specification": "blue.slate",
+      "schema": "",
+      "templates": [],
+      "examples": [],
+      "validators": [],
+      "adopterArtifacts": [],
+      "readFirst": ["blue.slate"],
+      "layer": "visual and semantic layer",
+      "color": "#60a5fa"
+    },
+    {
       "id": "pps",
       "title": "Project Proposal Standard",
       "abbreviation": "PPS",
@@ -417,6 +438,20 @@
     },
     {
       "source": "neonink",
+      "target": "blue-slate",
+      "type": "profiles",
+      "label": "Blue Slate is a reusable Aptlantis UI profile derived from the visual language layer",
+      "strength": 0.72
+    },
+    {
+      "source": "blue-slate",
+      "target": "drs",
+      "type": "styles",
+      "label": "Blue Slate starter resources support desktop application surfaces",
+      "strength": 0.68
+    },
+    {
+      "source": "neonink",
       "target": "drs",
       "type": "styles",
       "label": "NeonInk gives desktop releases a shared UI language",
@@ -456,11 +491,12 @@
     },
     {
       "title": "Publish a desktop release",
-      "appliesTo": ["DRS", "AAMHS", "NeonInk"],
+      "appliesTo": ["DRS", "AAMHS", "NeonInk", "Blue Slate"],
       "steps": [
         "Use DRS for release notes, installer metadata, verification blocks, and evidence folders.",
         "Use AAMHS when the release also needs richer archive manifests, multi-hash records, or detached signature context.",
-        "Use NeonInk to keep the user-facing surface consistent with Aptlantis visual language."
+        "Use NeonInk to keep the user-facing surface consistent with Aptlantis visual language.",
+        "Use Blue Slate when a desktop or web surface needs the shared dark application chrome and starter-pack resources."
       ]
     },
     {
@@ -483,7 +519,7 @@
     }
   ],
   "mermaid": {
-    "operatingModel": "flowchart LR\n    WGS[\"WGS<br/>workspace spine\"] --> PPS[\"PPS<br/>intent gate\"]\n    PPS --> CTS[\"CTS<br/>command tools\"]\n    PPS --> DRS[\"DRS<br/>desktop releases\"]\n    PPS --> WDS[\"WDS<br/>web surfaces\"]\n    DRS --> AAMHS[\"AAMHS<br/>integrity records\"]\n    CTS --> AAMHS\n    NeonInk[\"NeonInk<br/>visual language\"] --> DRS\n    NeonInk --> WDS\n    SESM[\"SESM<br/>semantic SVG metadata\"] --> NeonInk\n    SESM --> WDS",
+    "operatingModel": "flowchart LR\n    WGS[\"WGS<br/>workspace spine\"] --> PPS[\"PPS<br/>intent gate\"]\n    PPS --> CTS[\"CTS<br/>command tools\"]\n    PPS --> DRS[\"DRS<br/>desktop releases\"]\n    PPS --> WDS[\"WDS<br/>web surfaces\"]\n    DRS --> AAMHS[\"AAMHS<br/>integrity records\"]\n    CTS --> AAMHS\n    NeonInk[\"NeonInk<br/>visual language\"] --> BlueSlate[\"Blue Slate<br/>UI profile\"]\n    BlueSlate --> DRS\n    NeonInk --> WDS\n    SESM[\"SESM<br/>semantic SVG metadata\"] --> NeonInk\n    SESM --> WDS",
     "adoptionFlow": "flowchart TD\n    Idea[\"Project idea or revival\"] --> Proposal[\"PPS proposal\"]\n    Proposal --> Placement[\"WGS placement and manifest\"]\n    Placement --> Class{\"Delivery class\"}\n    Class -->|CLI/tool| CTS[\"CTS contract\"]\n    Class -->|Desktop app| DRS[\"DRS release evidence\"]\n    Class -->|Website/app| WDS[\"WDS deployment record\"]\n    CTS --> Integrity[\"AAMHS when archives are published\"]\n    DRS --> Integrity\n    WDS --> Visual[\"NeonInk + SESM when visual assets carry meaning\"]",
     "artifactChain": "flowchart LR\n    Blanks[\"Blanks starter files\"] --> Manifest[\"Entity manifest\"]\n    Manifest --> ProjectReadme[\"Project-README.md\"]\n    ProjectReadme --> Evidence[\"Evidence docs\"]\n    Evidence --> Validators[\"Validators and checklists\"]\n    Validators --> CityHall[\"CityHall overview\"]"
   }

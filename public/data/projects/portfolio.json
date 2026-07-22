@@ -1,26 +1,25 @@
 {
   "generatedAt": "2026-07-13T04:49:50.260Z",
   "projectCount": 8,
-  "averageCompletion": 88,
+  "averageCompletion": 87,
   "statusCounts": {
-    "active": 3,
+    "active": 4,
     "paused": 2,
     "blocked": 1,
-    "Paused": 1,
-    "Production": 1
+    "Paused": 1
   },
   "governanceCounts": {
     "CityHall": 1,
-    "CTS": 2,
-    "DRS": 5
+    "CTS": 1,
+    "DRS": 6
   },
   "tagCounts": {
     "standards": 1,
     "cityhall": 1,
     "wgs": 1,
     "pps": 1,
-    "cts": 2,
-    "drs": 4,
+    "cts": 1,
+    "drs": 5,
     "wds": 1,
     "aamhs": 2,
     "neonink": 1,
@@ -139,7 +138,7 @@
       "id": "cityhall",
       "name": "CityHall",
       "sourcePath": "D:\\.library\\aptlantis_core",
-      "summary": "Grouped view of the active Aptlantis standards library: WGS, AAMHS, Blanks, CTS, DRS, NeonInk, PPS, SESM, and WDS. It shows how governance, proposals, releases, command contracts, website deployment, archive integrity, design language, and semantic assets fit together.",
+      "summary": "Grouped view of the active Aptlantis standards library: WGS, AAMHS, Blanks, CTS, DRS, NeonInk, Blue Slate, PPS, SESM, and WDS. It shows how governance, proposals, releases, command contracts, website deployment, archive integrity, design language, shared UI profiles, and semantic assets fit together.",
       "ecosystemRole": "Central standards district for the Aptlantis ecosystem while the framework suite is being phased into the visible portfolio.",
       "status": "active",
       "lifecycle": "standards-hub",
@@ -174,7 +173,7 @@
         "zoomed relationship diagrams"
       ],
       "consumes": [
-        "8 standard manifests",
+        "9 standard/resource manifests",
         "Blanks starter templates",
         "README, adoption guide, checklist, schema, example, and validator metadata"
       ],
@@ -183,7 +182,7 @@
         "PPS for project intent and proposal intake",
         "DRS/CTS/WDS for delivery-specific standards",
         "AAMHS for richer integrity records",
-        "NeonInk and SESM for visual and metadata semantics"
+        "NeonInk, Blue Slate, and SESM for visual, UI-profile, and metadata semantics"
       ],
       "usedBy": [
         "Aptlantis project portfolio",
@@ -285,7 +284,7 @@
         }
       ],
       "video": null,
-      "helpOutput": "CityHall groups WGS, AAMHS, CTS, DRS, NeonInk, PPS, SESM, WDS plus the Blanks resource kit.\n\nResource summary:\n- 8 active standards\n- 34 template/resource references\n- 9 validator entrypoints\n- 14 curated framework relationships\n\nStart with WGS for placement, PPS for intent, then route to CTS, DRS, WDS, AAMHS, NeonInk, or SESM based on the artifact being produced.",
+      "helpOutput": "CityHall groups WGS, AAMHS, CTS, DRS, NeonInk, Blue Slate, PPS, SESM, WDS plus the Blanks resource kit.\n\nResource summary:\n- 9 active standards/resources\n- 34 template/resource references\n- 9 validator entrypoints\n- 16 curated framework relationships\n\nStart with WGS for placement, PPS for intent, then route to CTS, DRS, WDS, AAMHS, NeonInk, Blue Slate, or SESM based on the artifact being produced.",
       "commandWizardSchema": null,
       "frameworkSuite": {
         "generatedFrom": [
@@ -294,6 +293,7 @@
           "D:\\.library\\aptlantis_core\\CTS\\CTS.manifest.toml",
           "D:\\.library\\aptlantis_core\\DRS\\DRS.manifest.toml",
           "D:\\.library\\aptlantis_core\\NeonInk\\NeonInk.manifest.toml",
+          "D:\\.library\\aptlantis_core\\blue.slate",
           "D:\\.library\\aptlantis_core\\PPS\\PPS.manifest.toml",
           "D:\\.library\\aptlantis_core\\SESM\\SESM.manifest.toml",
           "D:\\.library\\aptlantis_core\\WDS\\WDS.manifest.toml"
@@ -516,6 +516,26 @@
             "color": "#fb7185"
           },
           {
+            "id": "blue-slate",
+            "title": "Blue Slate",
+            "abbreviation": "Blue Slate",
+            "status": "active",
+            "maturity": "starter-pack",
+            "version": "unversioned",
+            "description": "Shared Aptlantis interface token and starter-pack profile for dark blue-slate application surfaces, including reusable styling resources consumed by desktop and web projects.",
+            "scope": "Design tokens, starter-pack resources, app chrome, dark-surface defaults, and reusable implementation guidance for Aptlantis UI work.",
+            "sourcePath": "D:\\.library\\aptlantis_core\\blue.slate",
+            "specification": "blue.slate",
+            "schema": "",
+            "templates": [],
+            "examples": [],
+            "validators": [],
+            "adopterArtifacts": [],
+            "readFirst": ["blue.slate"],
+            "layer": "visual and semantic layer",
+            "color": "#60a5fa"
+          },
+          {
             "id": "pps",
             "title": "Project Proposal Standard",
             "abbreviation": "PPS",
@@ -710,6 +730,20 @@
           },
           {
             "source": "neonink",
+            "target": "blue-slate",
+            "type": "profiles",
+            "label": "Blue Slate is a reusable Aptlantis UI profile derived from the visual language layer",
+            "strength": 0.72
+          },
+          {
+            "source": "blue-slate",
+            "target": "drs",
+            "type": "styles",
+            "label": "Blue Slate starter resources support desktop application surfaces",
+            "strength": 0.68
+          },
+          {
+            "source": "neonink",
             "target": "drs",
             "type": "styles",
             "label": "NeonInk gives desktop releases a shared UI language",
@@ -749,11 +783,12 @@
           },
           {
             "title": "Publish a desktop release",
-            "appliesTo": ["DRS", "AAMHS", "NeonInk"],
+            "appliesTo": ["DRS", "AAMHS", "NeonInk", "Blue Slate"],
             "steps": [
               "Use DRS for release notes, installer metadata, verification blocks, and evidence folders.",
               "Use AAMHS when the release also needs richer archive manifests, multi-hash records, or detached signature context.",
-              "Use NeonInk to keep the user-facing surface consistent with Aptlantis visual language."
+              "Use NeonInk to keep the user-facing surface consistent with Aptlantis visual language.",
+              "Use Blue Slate when a desktop or web surface needs the shared dark application chrome and starter-pack resources."
             ]
           },
           {
@@ -776,7 +811,7 @@
           }
         ],
         "mermaid": {
-          "operatingModel": "flowchart LR\n    WGS[\"WGS<br/>workspace spine\"] --> PPS[\"PPS<br/>intent gate\"]\n    PPS --> CTS[\"CTS<br/>command tools\"]\n    PPS --> DRS[\"DRS<br/>desktop releases\"]\n    PPS --> WDS[\"WDS<br/>web surfaces\"]\n    DRS --> AAMHS[\"AAMHS<br/>integrity records\"]\n    CTS --> AAMHS\n    NeonInk[\"NeonInk<br/>visual language\"] --> DRS\n    NeonInk --> WDS\n    SESM[\"SESM<br/>semantic SVG metadata\"] --> NeonInk\n    SESM --> WDS",
+          "operatingModel": "flowchart LR\n    WGS[\"WGS<br/>workspace spine\"] --> PPS[\"PPS<br/>intent gate\"]\n    PPS --> CTS[\"CTS<br/>command tools\"]\n    PPS --> DRS[\"DRS<br/>desktop releases\"]\n    PPS --> WDS[\"WDS<br/>web surfaces\"]\n    DRS --> AAMHS[\"AAMHS<br/>integrity records\"]\n    CTS --> AAMHS\n    NeonInk[\"NeonInk<br/>visual language\"] --> BlueSlate[\"Blue Slate<br/>UI profile\"]\n    BlueSlate --> DRS\n    NeonInk --> WDS\n    SESM[\"SESM<br/>semantic SVG metadata\"] --> NeonInk\n    SESM --> WDS",
           "adoptionFlow": "flowchart TD\n    Idea[\"Project idea or revival\"] --> Proposal[\"PPS proposal\"]\n    Proposal --> Placement[\"WGS placement and manifest\"]\n    Placement --> Class{\"Delivery class\"}\n    Class -->|CLI/tool| CTS[\"CTS contract\"]\n    Class -->|Desktop app| DRS[\"DRS release evidence\"]\n    Class -->|Website/app| WDS[\"WDS deployment record\"]\n    CTS --> Integrity[\"AAMHS when archives are published\"]\n    DRS --> Integrity\n    WDS --> Visual[\"NeonInk + SESM when visual assets carry meaning\"]",
           "artifactChain": "flowchart LR\n    Blanks[\"Blanks starter files\"] --> Manifest[\"Entity manifest\"]\n    Manifest --> ProjectReadme[\"Project-README.md\"]\n    ProjectReadme --> Evidence[\"Evidence docs\"]\n    Evidence --> Validators[\"Validators and checklists\"]\n    Validators --> CityHall[\"CityHall overview\"]"
         }
@@ -1222,101 +1257,129 @@
       "commandWizardSchema": null
     },
     {
-      "id": "archivehasher",
-      "name": "ArchiveHasher",
-      "sourcePath": "D:\\CTS\\ArchiveHasher",
-      "summary": "Production Go command suite for AAMHS v2.0 archive publication: archive-hasher creates an 8-algorithm snapshot-hashes.txt manifest, while manifest-signer adds detached PGP and optional post-quantum SLH-DSA signatures without modifying the canonical manifest.",
-      "ecosystemRole": "core dataset-pipeline tool for archive integrity and detached signing",
-      "status": "Production",
-      "lifecycle": "active-core",
-      "governanceGroup": "CTS",
-      "governingStandard": "D:\\.library\\aptlantis_core\\CTS\\Command Tool Standard.md",
-      "completion": 90,
-      "operationalCompleteness": 90,
-      "productCompleteness": 70,
-      "complexity": "High",
-      "strategicRelevance": "High",
+      "id": "codenote",
+      "name": "CodeNote",
+      "sourcePath": "D:\\DRS\\CodeNote",
+      "summary": "Narrow Tauri desktop markdown/text editor with a live preview, full PrismJS highlighting, Mermaid diagram rendering, multi-tab editing, explicit file save/open behavior, and an xterm.js-backed native terminal drawer.",
+      "ecosystemRole": "Small, operator-facing desktop writing and code-note surface that demonstrates the Blue Slate starter-pack contract without adding dashboards, settings screens, cloud sync, or collaboration features.",
+      "status": "active",
+      "lifecycle": "prototype",
+      "governanceGroup": "DRS",
+      "governingStandard": "D:\\.library\\aptlantis_core\\DRS\\Desktop Application Release Standard.md",
+      "completion": 82,
+      "operationalCompleteness": 86,
+      "productCompleteness": 72,
+      "complexity": "Medium",
+      "strategicRelevance": "Medium",
       "maintenanceBurden": "Low",
       "capabilities": [
-        "parallel hashing",
-        "multi-hash suite (8 algorithms)",
-        "snapshot generation",
-        "manifest verification",
-        "PGP detached signing",
-        "post-quantum (SLH-DSA) detached signing",
-        "archive integrity validation"
+        "single-window markdown and text editing",
+        "CodeMirror 6 editor with language auto-detection",
+        "live markdown preview using remark, rehype, and GFM extensions",
+        "full vendored PrismJS 1.30.0 highlighting and plugin bundle",
+        "Mermaid 11 diagram rendering with a blue-slate theme",
+        "multi-tab editing with dirty-state tracking",
+        "Tauri open/save dialogs and explicit save-as behavior",
+        "xterm.js native terminal drawer"
       ],
-      "interfaces": ["CLI: archive-hasher", "CLI: manifest-signer"],
+      "interfaces": [
+        "Tauri 2 desktop window",
+        "CodeMirror editor pane",
+        "Markdown preview pane",
+        "terminal drawer",
+        "tab strip and icon rail"
+      ],
       "produces": [
-        "snapshot-hashes.txt",
-        "PGP detached signature (snapshot-hashes.txt.asc / .sig)",
-        "PQ detached signature (snapshot-hashes.txt.sphincs / .slh-dsa)"
+        "edited markdown, text, and code files saved in place",
+        "rendered markdown preview",
+        "highlighted code blocks",
+        "Mermaid diagram previews",
+        "terminal session output"
       ],
       "consumes": [
-        "archive artifact file",
-        "PGP private key (ASCII-armored)",
-        "PQ private key (OpenSSL SLH-DSA, optional)"
+        "local markdown, text, and source files",
+        "relative image paths from opened markdown files",
+        "local shell/PTY environment"
       ],
       "dependsOn": [
-        "Go 1.26",
-        "GnuPG (for PGP signing)",
-        "liboqs (for SLH-DSA)",
-        "OpenSSL (used for PQ signing invocation)"
+        "Tauri 2",
+        "React 19",
+        "Vite 7",
+        "CodeMirror 6",
+        "unified/remark/rehype",
+        "PrismJS 1.30.0",
+        "Mermaid 11",
+        "xterm.js"
       ],
-      "usedBy": [],
+      "usedBy": [
+        "local Aptlantis note-writing and markdown review workflows",
+        "Blue Slate starter-pack validation examples"
+      ],
       "missingPieces": [
-        "Formal per-command CTS command contracts documenting purpose, invocation, inputs, stdout/stderr behavior, machine-readable mode, and stability notes",
-        "Exit code table that maps implemented exit codes to CTS bands and explains tool-specific codes",
-        "Explicit documentation stating machine-readable output policy (JSON envelope) or a documented --json mode; currently text-first manifests are used but no formal statement exists",
-        "Documented --version / version output behavior for both CLIs",
-        "Release checklist aligned to CTS release blockers (help accuracy, exit-code verification, JSON output rules, destructive command previews)",
-        "Structured error examples and machine-readable error object examples for automation consumers",
-        "Preview / --dry-run support or documented confirmation workflow for destructive behavior (overwrite) — overwrite flag exists but no dry-run/preview mechanism documented"
+        "The main portfolio JSON did not previously contain a review record for CodeNote; this page is constructed from the current README, SPEC.md, package metadata, screenshots, and local manifest path.",
+        "The checked-in codenote.manifest.toml currently reads like a schema/template rather than a filled project manifest, so release and governance claims should stay conservative.",
+        "No release evidence folder, installer verification, hash record, or public release note is represented in this Studio snapshot.",
+        "Build verification is recorded in the CodeNote spec as tsc passing, but the production Vite build was not completed in that source snapshot because of a native Rollup package mismatch."
       ],
       "nextSteps": [
-        "Publish formal command contracts for archive-hasher and manifest-signer that include exit-code tables and machine-readable behavior notes",
-        "Add a documented --version flag and include version in produced manifests (Generated-By already present but explicit CLI version output is needed)",
-        "Either implement a machine-readable output mode (--json) following the CTS JSON envelope or document an explicit 'no JSON' policy in the manifest/docs",
-        "Add a --dry-run or --preview mode for overwrite/destructive operations and document rollback/recovery behavior",
-        "Create a CTS-aligned release checklist and verify help output, exit codes, and example automation runs before releases",
-        "Automate integration tests for signing workflows (PGP and PQ) in CI to validate external dependency behavior"
+        "Replace the schema-like codenote.manifest.toml with a filled project manifest or add a separate manifest instance if the schema file is intentional.",
+        "Run and record current build checks from D:\\DRS\\CodeNote, including TypeScript, Vite production build, and Tauri desktop smoke.",
+        "Add DRS release evidence if CodeNote is going to be published as an installable desktop artifact.",
+        "Decide whether the Blue Slate starter-pack components that are present but unused should remain as reserved contract examples or move into a separate starter-pack reference."
       ],
       "potentialImprovements": [
-        "Provide an optional machine-readable provenance envelope (JSON) alongside snapshot-hashes.txt for automation consumers",
-        "Add resumable/streaming hashing mode for very large archives to reduce memory/IO pressure",
-        "Improve progress reporting with structured progress events sent to stderr (kept separate from stdout manifest output)",
-        "Add audit logging option to record hashing and signing actions for operator audit trails",
-        "Offer platform-agnostic PQ key management examples and scripts for generating SLH-DSA keys with OpenSSL",
-        "Provide prebuilt binaries and checksums in releases to simplify operator installation (manifest shows packaged=true but explicit release assets could be expanded)"
+        "Add screenshot captions tied to specific rendering contracts: markdown, Prism, Mermaid, terminal, and tab lifecycle.",
+        "Add a compact trust model explaining local file access, no cloud sync, no autosave, and terminal boundaries.",
+        "Record a small smoke test for relative image resolution and external-link handling.",
+        "Add release packaging notes once the Tauri bundle path is stable."
       ],
       "documentationOutputs": [
         "README.md",
-        "Help.txt (CLI usage output captured)",
-        "docs/AAMHS v2.0.md",
-        "docs/AAMHS-hashing-v2.0.md",
-        "docs/AAMHS-signing-v2.0.md",
-        "archive-hasher.manifest.toml"
+        "SPEC.md",
+        "codenote.manifest.toml",
+        "package.json",
+        "src/styles/blue-slate.css",
+        "src/components/blue-slate/*"
       ],
       "tags": [
-        "cryptography",
-        "hashing",
-        "archive-integrity",
-        "post-quantum",
-        "cli",
-        "dataset-pipeline",
-        "go",
-        "pgp",
-        "aamhs",
-        "parallel-hashing",
-        "snapshot-manifest"
+        "drs",
+        "desktop-application",
+        "tauri",
+        "rust",
+        "react",
+        "typescript",
+        "vite",
+        "markdown",
+        "mermaid",
+        "prism",
+        "terminal",
+        "blue-slate",
+        "local-first"
       ],
-      "repoUrl": "https://github.com/APTlantis/Archive-Hasher",
-      "cloneCommand": "git clone https://github.com/APTlantis/Archive-Hasher.git",
-      "manifestPath": "D:\\CTS\\ArchiveHasher\\ArchiveHasher.manifest.toml",
-      "logoSrc": "/logos/dnf-archivehasher-logo.svg",
-      "screenshots": [],
+      "repoUrl": "",
+      "cloneCommand": "git clone D:\\DRS\\CodeNote",
+      "manifestPath": "D:\\DRS\\CodeNote\\codenote.manifest.toml",
+      "logoSrc": "/logos/dnf-codenote-logo.svg",
+      "screenshots": [
+        {
+          "src": "/projects/codenote/codenote-editor-preview.png",
+          "caption": "CodeNote editor and preview surface showing the narrow single-window workflow: source text on one side, rendered markdown/code output on the other, without dashboard navigation."
+        },
+        {
+          "src": "/projects/codenote/codenote-mermaid-preview.png",
+          "caption": "Rendering evidence for richer markdown output, including syntax-highlighted code and diagram-oriented preview behavior."
+        },
+        {
+          "src": "/projects/codenote/codenote-terminal-drawer.png",
+          "caption": "Native terminal drawer evidence showing the xterm.js-backed PTY surface docked under the editor workspace."
+        },
+        {
+          "src": "/projects/codenote/codenote-tabs-workspace.png",
+          "caption": "Tab and workspace evidence showing multi-tab editing, dirty-state handling, and the compact Blue Slate application chrome."
+        }
+      ],
       "video": null,
-      "helpOutput": "",
+      "helpOutput": "npm install\nnpm run dev\nnpm run tauri dev\nnpm run build",
       "commandWizardSchema": null
     },
     {

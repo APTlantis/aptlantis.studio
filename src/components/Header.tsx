@@ -45,13 +45,13 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <div className="w-12 h-12 relative mr-3">
+              <div className="relative mr-3 h-12 w-12">
                 <img
-                  src="/logos/aptlantis-organization-mark.png"
+                  src="/logos/aptlantis-studio-logo.svg"
                   width={48}
                   height={48}
                   alt="Aptlantis Logo"
-                  className="h-full w-full rounded-full border border-atl-silver/60 object-cover shadow-lg shadow-atl-bluegray/20 brightness-110 contrast-110"
+                  className="h-full w-full rounded-full border border-atl-silver/60 bg-atl-void object-contain p-1 shadow-lg shadow-atl-bluegray/20 brightness-110 contrast-110"
                 />
               </div>
               <div>

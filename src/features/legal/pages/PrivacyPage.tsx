@@ -66,8 +66,8 @@ const PrivacyPage = () => {
         ogDescription={description}
       />
 
-      <header className="atl-panel atl-ornament overflow-hidden">
-        <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_330px]">
+      <header className="atl-panel atl-ornament overflow-hidden p-3 sm:p-4">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-stretch">
           <SesmHeroImage
             src="/logos/aptlantis-privacy-hero-logo.png"
             alt="Aptlantis Privacy hero artwork about intentional public metadata and private data boundaries."
@@ -75,7 +75,7 @@ const PrivacyPage = () => {
             description="Aptlantis Studio is designed around public project records and crawlable evidence assets without requiring visitors to provide personal data to read the catalog."
             aspect="wide"
           />
-          <aside className="border-t border-atl-ridge/60 bg-atl-void/40 p-6 lg:border-l lg:border-t-0">
+          <aside className="rounded-[8px] border border-atl-ridge/70 bg-atl-void/45 p-5">
             <p className="atl-eyebrow">Policy map</p>
             <div className="mt-4 space-y-3 text-sm">
               {privacyHeroNotes.map((note) => (

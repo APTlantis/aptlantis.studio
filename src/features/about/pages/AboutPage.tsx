@@ -112,15 +112,16 @@ const AboutPage = () => {
         structuredData={structuredData}
       />
 
-      <header className="atl-panel atl-ornament overflow-hidden">
-        <div className="grid gap-0 lg:grid-cols-[1fr_320px]">
+      <header className="atl-panel atl-ornament overflow-hidden p-3 sm:p-4">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-stretch">
           <SesmHeroImage
             src="/logos/aptlantis-about-hero-logo.svg"
             alt="Aptlantis About hero artwork describing project truth organized for inspection."
             title="Project truth, organized for inspection."
             description="Aptlantis Studio is the public explanation layer for Aptlantis projects, standards, screenshots, metadata, and release posture."
+            aspect="wide"
           />
-          <aside className="border-t border-atl-ridge/60 bg-atl-void/40 p-6 lg:border-l lg:border-t-0">
+          <aside className="rounded-[8px] border border-atl-ridge/70 bg-atl-void/45 p-5">
             <p className="atl-eyebrow">Current focus</p>
             <div className="mt-4 space-y-3 text-sm">
               <div className="atl-card-soft p-3">

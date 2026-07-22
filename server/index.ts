@@ -14,6 +14,14 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const EMAIL_HOST = process.env.EMAIL_HOST || "smtppro.zoho.com";
+const EMAIL_PORT = Number(process.env.EMAIL_PORT || 587);
+const EMAIL_SECURE = process.env.EMAIL_SECURE === "true";
+const EMAIL_FROM =
+  process.env.EMAIL_FROM || process.env.EMAIL_USER || "contact@aptlantis.net";
+const EMAIL_TO = process.env.EMAIL_TO || "root@aptlantis.net";
+const EMAIL_USER = process.env.EMAIL_USER || EMAIL_FROM;
+const EMAIL_TIMEOUT_MS = Number(process.env.EMAIL_TIMEOUT_MS || 15_000);
 const SESM_ROOT = process.env.SESM_ROOT || "D:\\.library\\aptlantis_core\\SESM";
 const SESM_VALIDATOR = join(SESM_ROOT, "Validate-SESM-Safe.py");
 const SESM_SCHEMA = join(SESM_ROOT, "svg_asset.schema.json");
@@ -285,16 +293,38 @@ const makeDiff = (before: string, after: string) => {
   };
 };
 
+const escapeHtml = (value: string) =>
+  value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
 // Nodemailer transporter configuration
 const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST,
-  port: Number(process.env.EMAIL_PORT),
-  secure: false, // true for 465, false for other ports
+  host: EMAIL_HOST,
+  port: EMAIL_PORT,
+  secure: EMAIL_SECURE,
+  connectionTimeout: EMAIL_TIMEOUT_MS,
+  greetingTimeout: EMAIL_TIMEOUT_MS,
+  socketTimeout: EMAIL_TIMEOUT_MS,
   auth: {
-    user: process.env.EMAIL_USER,
+    user: EMAIL_USER,
     pass: process.env.EMAIL_PASS,
   },
 });
+
+const sendMailWithTimeout = (mailOptions: nodemailer.SendMailOptions) =>
+  Promise.race([
+    transporter.sendMail(mailOptions),
+    new Promise((_, reject) =>
+      setTimeout(
+        () => reject(new Error("SMTP send timed out.")),
+        EMAIL_TIMEOUT_MS,
+      ),
+    ),
+  ]);
 
 // Verify Cloudflare Turnstile token
 async function verifyTurnstileToken(token: string): Promise<boolean> {
@@ -327,12 +357,21 @@ app.post("/api/contact", async (req: Request, res: Response) => {
     const { name, email, category, message, turnstileToken } = req.body;
 
     // Validate required fields
-    if (!name || !email || !category || !message) {
+    if (
+      [name, email, category, message].some(
+        (field) => typeof field !== "string" || !field.trim(),
+      )
+    ) {
       return res.status(400).json({
         success: false,
         message: "All fields are required",
       });
     }
+
+    const senderName = name.trim();
+    const senderEmail = email.trim();
+    const messageCategory = category.trim();
+    const messageBody = message.trim();
 
     // Verify Turnstile when a frontend token is provided.
     if (turnstileToken && !(await verifyTurnstileToken(turnstileToken))) {
@@ -343,31 +382,36 @@ app.post("/api/contact", async (req: Request, res: Response) => {
     }
 
     // Send email
+    const escapedName = escapeHtml(senderName);
+    const escapedEmail = escapeHtml(senderEmail);
+    const escapedCategory = escapeHtml(messageCategory);
+    const escapedMessage = escapeHtml(messageBody).replace(/\n/g, "<br>");
+
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // Send to same email (contact@aptlantis.net)
-      replyTo: email,
-      subject: `[APTlantis Contact] ${category} - ${name}`,
+      from: EMAIL_FROM,
+      to: EMAIL_TO,
+      replyTo: senderEmail,
+      subject: `[APTlantis Contact] ${messageCategory} - ${senderName}`,
       text: `
-Name: ${name}
-Email: ${email}
-Category: ${category}
+Name: ${senderName}
+Email: ${senderEmail}
+Category: ${messageCategory}
 
 Message:
-${message}
+${messageBody}
       `,
       html: `
 <h2>New Contact Form Submission</h2>
-<p><strong>Name:</strong> ${name}</p>
-<p><strong>Email:</strong> ${email}</p>
-<p><strong>Category:</strong> ${category}</p>
+<p><strong>Name:</strong> ${escapedName}</p>
+<p><strong>Email:</strong> ${escapedEmail}</p>
+<p><strong>Category:</strong> ${escapedCategory}</p>
 <hr>
 <h3>Message:</h3>
-<p>${message.replace(/\n/g, "<br>")}</p>
+<p>${escapedMessage}</p>
       `,
     };
 
-    await transporter.sendMail(mailOptions);
+    await sendMailWithTimeout(mailOptions);
 
     res.json({
       success: true,

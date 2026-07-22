@@ -156,15 +156,16 @@ const ContactPage = () => {
         structuredData={structuredData}
       />
 
-      <header className="atl-panel atl-ornament overflow-hidden">
-        <div className="grid gap-0 lg:grid-cols-[1fr_330px]">
+      <header className="atl-panel atl-ornament overflow-hidden p-3 sm:p-4">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-stretch">
           <SesmHeroImage
             src="/logos/aptlantis-contact-hero-logo.svg"
             alt="Aptlantis Contact hero artwork for routing corrections with evidence."
             title="Route corrections with evidence."
             description="Use this page for project corrections, metadata issues, missing evidence, public asset concerns, and collaboration notes."
+            aspect="wide"
           />
-          <aside className="border-t border-atl-ridge/60 bg-atl-void/40 p-6 lg:border-l lg:border-t-0">
+          <aside className="rounded-[8px] border border-atl-ridge/70 bg-atl-void/45 p-5">
             <p className="atl-eyebrow">Do not send</p>
             <ul className="mt-4 space-y-3 text-sm text-atl-silver">
               <li className="atl-card-soft p-3">API keys or passwords</li>
