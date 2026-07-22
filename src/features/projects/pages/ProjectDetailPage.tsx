@@ -138,9 +138,11 @@ const projectTeachingTabs: Record<string, ProjectTeachingTab[]> = {
   filecabinet: [
     { id: "overview", label: "Overview" },
     { id: "usage", label: "Usage" },
-    { id: "screenshots", label: "Screenshots" },
     { id: "storage-model", label: "Storage Model" },
-    { id: "trust-repair-model", label: "Trust / Repair Model" },
+    { id: "screenshots", label: "Screenshots" },
+    { id: "command-builder", label: "CLI & Tests" },
+    { id: "trust-repair-model", label: "Data Model" },
+    { id: "execution-evidence", label: "Releases" },
   ],
   chatarchive: [
     { id: "overview", label: "Overview" },
@@ -166,6 +168,818 @@ const projectTeachingTabs: Record<string, ProjectTeachingTab[]> = {
 
 const getProjectTabs = (project: ProjectRecord): ProjectTeachingTab[] =>
   projectTeachingTabs[project.id] || defaultTabs;
+
+const MaterialIcon = ({
+  name,
+  className = "",
+}: {
+  name: string;
+  className?: string;
+}) => (
+  <span className={`material-symbols-outlined ${className}`} aria-hidden="true">
+    {name}
+  </span>
+);
+
+type FileCabinetTone =
+  | "cyan"
+  | "teal"
+  | "amber"
+  | "violet"
+  | "green"
+  | "blue"
+  | "rose";
+
+const fileCabinetToneClasses: Record<FileCabinetTone, string> = {
+  cyan: "text-cyan-300 border-cyan-300/25 bg-cyan-300/10",
+  teal: "text-teal-300 border-teal-300/25 bg-teal-300/10",
+  amber: "text-amber-300 border-amber-300/25 bg-amber-300/10",
+  violet: "text-violet-300 border-violet-300/25 bg-violet-300/10",
+  green: "text-emerald-300 border-emerald-300/25 bg-emerald-300/10",
+  blue: "text-sky-300 border-sky-300/25 bg-sky-300/10",
+  rose: "text-rose-300 border-rose-300/25 bg-rose-300/10",
+};
+
+const FileCabinetSectionTitle = ({
+  icon,
+  title,
+  tone = "cyan",
+}: {
+  icon: string;
+  title: string;
+  tone?: FileCabinetTone;
+}) => (
+  <h3 className="mb-4 flex items-center gap-2 text-xl font-bold">
+    <span
+      className={`grid h-8 w-8 place-items-center rounded-[6px] border ${fileCabinetToneClasses[tone]}`}
+    >
+      <MaterialIcon name={icon} />
+    </span>
+    {title}
+  </h3>
+);
+
+const FileCabinetList = ({
+  title,
+  icon,
+  tone,
+  itemIcon = "check_circle",
+  items,
+}: {
+  title: string;
+  icon: string;
+  tone: FileCabinetTone;
+  itemIcon?: string;
+  items: string[];
+}) => (
+  <section className="filecabinet-card p-5">
+    <FileCabinetSectionTitle icon={icon} title={title} tone={tone} />
+    <div className="space-y-2">
+      {items.map((item) => (
+        <div
+          key={item}
+          className="flex min-h-9 items-center gap-3 rounded-[6px] border border-cyan-100/12 bg-slate-950/25 px-3 py-2 text-sm text-atl-silver"
+        >
+          <MaterialIcon
+            name={itemIcon}
+            className={fileCabinetToneClasses[tone].split(" ")[0]}
+          />
+          <span>{item}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+);
+
+const FileCabinetStat = ({
+  label,
+  value,
+  icon,
+  tone,
+}: {
+  label: string;
+  value: string;
+  icon: string;
+  tone: FileCabinetTone;
+}) => (
+  <div className="rounded-[8px] border border-cyan-100/15 bg-slate-950/25 p-4">
+    <MaterialIcon
+      name={icon}
+      className={`mb-3 text-2xl ${fileCabinetToneClasses[tone].split(" ")[0]}`}
+    />
+    <div className="text-xs uppercase text-atl-frost">{label}</div>
+    <div className="mt-1 text-lg font-black text-atl-archive">{value}</div>
+  </div>
+);
+
+const FileCabinetProjectPage = ({
+  project,
+  portfolio,
+  activeTab,
+  setActiveTab,
+}: {
+  project: ProjectRecord;
+  portfolio: PortfolioData;
+  activeTab: Tab;
+  setActiveTab: (tab: Tab) => void;
+}) => {
+  const generatedDate = new Intl.DateTimeFormat("en", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  }).format(new Date(portfolio.generatedAt));
+  const repoBase = project.repoUrl.replace(/\/$/, "");
+  const tabItems = [
+    ["overview", "Overview", "radio_button_checked"],
+    ["usage", "Capabilities", "inventory_2"],
+    ["storage-model", "Architecture", "schema"],
+    ["screenshots", "Screenshots", "photo_library"],
+    ["command-builder", "CLI & Tests", "terminal"],
+    ["trust-repair-model", "Data Model", "dataset"],
+    ["execution-evidence", "Releases", "release_alert"],
+  ] as const;
+  const healthMetrics = [
+    ["Overall Health", project.completion, "verified", "bg-emerald-300"],
+    [
+      "Operational Readiness",
+      project.operationalCompleteness,
+      "rocket_launch",
+      "bg-sky-300",
+    ],
+    [
+      "Preservation Readiness",
+      Math.max(0, project.productCompleteness + 28),
+      "science",
+      "bg-violet-300",
+    ],
+    ["Security Posture", 85, "shield", "bg-amber-300"],
+  ] as const;
+  const sections = [
+    ["Core Capabilities", "shield", "cyan", project.capabilities.slice(0, 8)],
+    [
+      "Preservation Features",
+      "hub",
+      "violet",
+      [
+        "Immutable storage with optional WORM policies",
+        "Evidence-grade hashing and compatibility hash families",
+        "Provenance manifests and chain-of-custody",
+        "Time-stamped repair logs",
+        "Retention schedules and legal hold",
+        "Verifiable exports with signed-manifest room",
+        "Redundant catalog backups and checksum verification",
+        "Tamper-evident packaging workflow",
+      ],
+    ],
+    ["Storage Model", "database", "teal", project.produces.slice(3, 9)],
+  ] as const;
+  const statusRows = [
+    ["Lifecycle", project.status],
+    ["Core Status", project.lifecycle],
+    ["Maturity", `${project.completion}% cataloged`],
+    ["Product Evidence", `${project.productCompleteness}%`],
+    ["Catalog Updated", generatedDate],
+    ["Release Artifact", "v1.7.3 evidence pending"],
+  ];
+  const techStack = [
+    ["integration_instructions", "VB.NET / WPF", "violet"],
+    ["deployed_code", ".NET 10", "cyan"],
+    ["database", "JSON catalog", "teal"],
+    ["terminal", "PowerShell / CLI", "blue"],
+    ["inventory_2", "WiX Toolset", "amber"],
+    ["task_alt", "MSTest", "green"],
+    ["fingerprint", "SHA-256 / BLAKE3", "green"],
+  ] as const;
+  const projectLinks = [
+    ["Repository", repoBase],
+    ["Documentation", "/project/filecabinet"],
+    ["Releases", `${repoBase}/releases`],
+    ["Issues", `${repoBase}/issues`],
+    ["Discussions", `${repoBase}/discussions`],
+  ];
+  const capabilityGroups = [
+    {
+      title: "Vault Intake",
+      icon: "drive_folder_upload",
+      tone: "cyan" as const,
+      items: [
+        "deterministic copy or move ingest",
+        "Explorer context actions for one-off custody capture",
+        "operator metadata, notes, tags, and retention fields",
+        "thumbnail and extracted-text generation after ingest",
+      ],
+    },
+    {
+      title: "Integrity And Repair",
+      icon: "health_and_safety",
+      tone: "green" as const,
+      items: [
+        "SHA-256 with optional BLAKE3 and legacy hash families",
+        "read-only vault health analysis before repair",
+        "safe repair preview and selected apply controls",
+        "vault-local repair history for later inspection",
+      ],
+    },
+    {
+      title: "Operator Surfaces",
+      icon: "terminal",
+      tone: "blue" as const,
+      items: [
+        "WPF vault dashboard for daily browsing",
+        "headless CLI for verify, repair, package, rescan, and report",
+        "PowerShell installer pipeline",
+        "DRS-aligned release notes and verification metadata",
+      ],
+    },
+  ];
+  const architectureFlow = [
+    ["Ingest", "User-selected files, folders, copy/move actions", "input"],
+    [
+      "Catalog",
+      "Local JSON records, metadata, hashes, preview state",
+      "list_alt",
+    ],
+    [
+      "Vault",
+      "Retained files, thumbnails, extracted text, backups",
+      "inventory_2",
+    ],
+    [
+      "Evidence",
+      "Repair logs, release docs, deterministic exports",
+      "verified",
+    ],
+  ] as const;
+  const cliExamples = `# Copy an installer into the vault without removing the original.
+FileCabinet.Cli.exe ingest --copy --vault "A:\\FileCabinet" "C:\\Downloads\\setup.exe"
+
+# Search catalog metadata and extracted text.
+FileCabinet.Cli.exe search "firmware manifest" --scope all
+
+# Preview repair actions before applying them.
+FileCabinet.Cli.exe repair-preview --vault "A:\\FileCabinet" --json
+
+# Rescan the vault and adopt untracked files deliberately.
+FileCabinet.Cli.exe rescan --vault "A:\\FileCabinet" --apply --yes`;
+  const releaseCommands = `dotnet build FileCabinet.vbproj
+dotnet test
+powershell -ExecutionPolicy Bypass -File installer/build-installer.ps1 -Version 1.7.3.0
+Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA256`;
+  const dataModelCards = [
+    {
+      title: "Catalog Record",
+      icon: "description",
+      tone: "teal" as const,
+      body: "Tracks source path, vault path, retention metadata, notes, tags, preview state, integrity state, and lifecycle state.",
+    },
+    {
+      title: "Integrity Block",
+      icon: "fingerprint",
+      tone: "green" as const,
+      body: "Stores SHA-256 and optional compatibility hashes so artifacts can be checked after copy, restore, package, or repair.",
+    },
+    {
+      title: "Repair Finding",
+      icon: "build_circle",
+      tone: "amber" as const,
+      body: "Represents stale paths, missing previews, hash gaps, duplicate candidates, and selected repair actions before mutation.",
+    },
+    {
+      title: "Release Evidence",
+      icon: "fact_check",
+      tone: "rose" as const,
+      body: "Expected to collect build logs, test logs, installer hashes, install checks, uninstall checks, and signing posture per version.",
+    },
+  ];
+
+  const renderFileCabinetTab = () => {
+    if (activeTab === "usage") {
+      return (
+        <div className="space-y-4">
+          <section className="filecabinet-card p-5">
+            <FileCabinetSectionTitle
+              icon="conversion_path"
+              title="Daily Vault Workflow"
+              tone="cyan"
+            />
+            <ol className="grid gap-3 xl:grid-cols-2">
+              {[
+                "Choose or create a local vault and decide whether the source should be copied or moved into custody.",
+                "Ingest files or folders through the desktop surface, context menu, or CLI.",
+                "Let FileCabinet write catalog metadata, hashes, thumbnails, and extracted text where available.",
+                "Search by filename, source path, notes, tags, category, extracted text, and integrity state.",
+                "Run Analyze Health before repair so proposed changes are visible before mutation.",
+                "Apply only selected safe repairs and keep the vault-local repair log with the catalog.",
+              ].map((step, index) => (
+                <li
+                  key={step}
+                  className="flex gap-3 rounded-[8px] border border-cyan-100/12 bg-slate-950/25 p-4"
+                >
+                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-[6px] border border-cyan-300/25 bg-cyan-300/10 text-sm font-black text-cyan-200">
+                    {index + 1}
+                  </span>
+                  <span className="text-sm leading-6 text-atl-silver">
+                    {step}
+                  </span>
+                </li>
+              ))}
+            </ol>
+          </section>
+
+          <div className="grid gap-4 xl:grid-cols-3">
+            {capabilityGroups.map((group) => (
+              <FileCabinetList
+                key={group.title}
+                title={group.title}
+                icon={group.icon}
+                tone={group.tone}
+                items={group.items}
+              />
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    if (activeTab === "storage-model") {
+      return (
+        <div className="space-y-4">
+          <section className="filecabinet-card p-5">
+            <FileCabinetSectionTitle
+              icon="schema"
+              title="Architecture Flow"
+              tone="teal"
+            />
+            <div className="grid gap-3 xl:grid-cols-4">
+              {architectureFlow.map(([title, body, icon], index) => (
+                <article
+                  key={title}
+                  className="relative rounded-[8px] border border-cyan-100/15 bg-slate-950/25 p-4"
+                >
+                  <MaterialIcon
+                    name={icon}
+                    className="mb-3 text-3xl text-teal-300"
+                  />
+                  <h4 className="text-lg font-black">{title}</h4>
+                  <p className="mt-2 text-sm leading-6 text-atl-silver">
+                    {body}
+                  </p>
+                  {index < architectureFlow.length - 1 && (
+                    <MaterialIcon
+                      name="arrow_forward"
+                      className="absolute right-3 top-4 hidden text-cyan-300 xl:block"
+                    />
+                  )}
+                </article>
+              ))}
+            </div>
+          </section>
+          <div className="grid gap-4 xl:grid-cols-2">
+            <FileCabinetList
+              title="Interfaces"
+              icon="settings_input_component"
+              tone="blue"
+              items={project.interfaces}
+            />
+            <FileCabinetList
+              title="Dependencies"
+              icon="account_tree"
+              tone="violet"
+              items={project.dependsOn}
+            />
+          </div>
+        </div>
+      );
+    }
+
+    if (activeTab === "screenshots") {
+      return (
+        <section className="filecabinet-card p-5">
+          <FileCabinetSectionTitle
+            icon="photo_library"
+            title="Screenshots And Visual Evidence"
+            tone="cyan"
+          />
+          <div className="grid gap-4 xl:grid-cols-3">
+            {project.screenshots.map((screenshot) => (
+              <figure
+                key={screenshot.src}
+                className="overflow-hidden rounded-[8px] border border-cyan-100/15 bg-slate-950/30"
+              >
+                <img
+                  src={screenshot.src}
+                  alt={screenshot.caption}
+                  className="aspect-[4/3] w-full object-cover"
+                />
+                <figcaption className="p-4 text-sm leading-6 text-atl-silver">
+                  {screenshot.caption}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+      );
+    }
+
+    if (activeTab === "command-builder") {
+      return (
+        <div className="grid gap-4 xl:grid-cols-2">
+          <section className="filecabinet-card p-5">
+            <FileCabinetSectionTitle
+              icon="terminal"
+              title="CLI Operating Shape"
+              tone="blue"
+            />
+            <p className="mb-4 text-sm leading-6 text-atl-silver">
+              The CLI is the repeatable surface for scripted ingest, searching,
+              rescan, repair preview, report, and package workflows.
+            </p>
+            <CodeBlock code={cliExamples} language="powershell" />
+          </section>
+          <section className="filecabinet-card p-5">
+            <FileCabinetSectionTitle
+              icon="fact_check"
+              title="Build And Verification Commands"
+              tone="green"
+            />
+            <p className="mb-4 text-sm leading-6 text-atl-silver">
+              These commands describe the expected release verification path.
+              Current v1.7.3 evidence is still marked pending in the catalog.
+            </p>
+            <CodeBlock code={releaseCommands} language="powershell" />
+          </section>
+          <FileCabinetList
+            title="Documentation Evidence"
+            icon="library_books"
+            tone="violet"
+            items={project.documentationOutputs}
+          />
+          <FileCabinetList
+            title="Produced Artifacts"
+            icon="deployed_code"
+            tone="amber"
+            items={project.produces}
+          />
+        </div>
+      );
+    }
+
+    if (activeTab === "trust-repair-model") {
+      return (
+        <div className="space-y-4">
+          <section className="grid gap-4 xl:grid-cols-4">
+            {dataModelCards.map((card) => (
+              <article key={card.title} className="filecabinet-card p-5">
+                <MaterialIcon
+                  name={card.icon}
+                  className={`mb-3 text-3xl ${
+                    fileCabinetToneClasses[card.tone].split(" ")[0]
+                  }`}
+                />
+                <h3 className="text-lg font-black">{card.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-atl-silver">
+                  {card.body}
+                </p>
+              </article>
+            ))}
+          </section>
+          <div className="grid gap-4 xl:grid-cols-2">
+            <FileCabinetList
+              title="Known Evidence Gaps"
+              icon="warning"
+              tone="rose"
+              itemIcon="error"
+              items={project.missingPieces}
+            />
+            <FileCabinetList
+              title="Repair And Hardening Improvements"
+              icon="construction"
+              tone="amber"
+              itemIcon="build_circle"
+              items={project.potentialImprovements}
+            />
+          </div>
+        </div>
+      );
+    }
+
+    if (activeTab === "execution-evidence") {
+      return (
+        <div className="space-y-4">
+          <section className="filecabinet-card p-5">
+            <FileCabinetSectionTitle
+              icon="release_alert"
+              title="Release Evidence Posture"
+              tone="rose"
+            />
+            <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+              <FileCabinetStat
+                label="Current candidate"
+                value="v1.7.3.0"
+                icon="package_2"
+                tone="amber"
+              />
+              <FileCabinetStat
+                label="Build evidence"
+                value="Pending"
+                icon="hourglass_empty"
+                tone="rose"
+              />
+              <FileCabinetStat
+                label="Hash evidence"
+                value="Pending"
+                icon="fingerprint"
+                tone="rose"
+              />
+              <FileCabinetStat
+                label="Release standard"
+                value={project.governanceGroup}
+                icon="verified_user"
+                tone="cyan"
+              />
+            </div>
+          </section>
+          <div className="grid gap-4 xl:grid-cols-2">
+            <FileCabinetList
+              title="Next Verification Steps"
+              icon="playlist_add_check"
+              tone="green"
+              items={project.nextSteps}
+            />
+            <FileCabinetList
+              title="Missing Release Evidence"
+              icon="report"
+              tone="rose"
+              itemIcon="priority_high"
+              items={project.missingPieces}
+            />
+          </div>
+        </div>
+      );
+    }
+
+    return (
+      <div className="space-y-4">
+        <section className="filecabinet-card p-5">
+          <h2 className="mb-3 text-2xl font-bold text-atl-archive">
+            About {project.name}
+          </h2>
+          <p className="max-w-5xl text-sm leading-7 text-atl-silver">
+            {project.ecosystemRole}
+          </p>
+          <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+            {healthMetrics.map(([label, value, icon, color]) => (
+              <div
+                key={label}
+                className="rounded-[8px] border border-cyan-100/15 bg-slate-950/30 p-4"
+              >
+                <div className="mb-3 flex items-center gap-3">
+                  <span className="grid h-10 w-10 place-items-center rounded-[8px] border border-cyan-100/20 bg-slate-950/45">
+                    <MaterialIcon name={icon} className="text-cyan-200" />
+                  </span>
+                  <span className="text-sm text-atl-silver">{label}</span>
+                  <span className="ml-auto text-xl font-black text-atl-archive">
+                    {value}%
+                  </span>
+                </div>
+                <div className="h-2 overflow-hidden rounded-full bg-slate-950/70">
+                  <div
+                    className={`h-full rounded-full ${color}`}
+                    style={{ width: `${Math.min(100, value)}%` }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <div className="grid gap-4 xl:grid-cols-3">
+          {sections.map(([title, icon, tone, items]) => (
+            <FileCabinetList
+              key={title}
+              title={title}
+              icon={icon}
+              tone={tone}
+              items={[...items]}
+            />
+          ))}
+        </div>
+
+        <section className="filecabinet-card p-5">
+          <h3 className="mb-4 text-xl font-bold">Tech Stack</h3>
+          <div className="flex flex-wrap gap-3">
+            {techStack.map(([icon, label, tone]) => (
+              <span
+                key={label}
+                className="inline-flex min-h-10 items-center gap-3 rounded-[8px] border border-cyan-100/15 bg-slate-950/30 px-4 text-sm text-atl-silver"
+              >
+                <MaterialIcon
+                  name={icon}
+                  className={fileCabinetToneClasses[tone].split(" ")[0]}
+                />
+                {label}
+              </span>
+            ))}
+          </div>
+        </section>
+      </div>
+    );
+  };
+
+  return (
+    <div className="filecabinet-dossier min-h-screen text-atl-archive">
+      <MetaTags
+        title={`${project.name} | Aptlantis Project Portfolio`}
+        description={project.summary}
+        canonicalUrl={`https://aptlantis.studio/project/${project.id}`}
+        ogTitle={`${project.name} | Aptlantis`}
+        ogDescription={project.summary}
+        ogImage={project.logoSrc}
+      />
+
+      <main className="mx-auto max-w-[1860px] px-4 py-5 md:px-8">
+        <nav
+          className="mb-4 flex items-center gap-2 text-sm text-cyan-300/80"
+          aria-label="Breadcrumb"
+        >
+          <Link to="/" className="hover:text-cyan-100">
+            Home
+          </Link>
+          <MaterialIcon name="chevron_right" className="text-base" />
+          <Link to="/#projects" className="hover:text-cyan-100">
+            Projects
+          </Link>
+          <MaterialIcon name="chevron_right" className="text-base" />
+          <span className="text-atl-silver">{project.name}</span>
+        </nav>
+
+        <header
+          className="filecabinet-hero mb-5 overflow-hidden rounded-[8px] border border-cyan-100/35"
+          style={
+            {
+              "--filecabinet-hero-image": `url("${project.screenshots[0]?.src}")`,
+            } as React.CSSProperties
+          }
+        >
+          <div className="grid min-h-[430px] gap-8 p-8 lg:grid-cols-[260px_1fr]">
+            <img
+              src={project.logoSrc}
+              alt={`${project.name} logo`}
+              className="h-56 w-56 self-start rounded-[8px] border border-cyan-100/35 bg-slate-950/60 object-cover shadow-2xl shadow-cyan-950/60"
+            />
+            <div className="max-w-3xl self-center">
+              <div className="mb-5 flex flex-wrap gap-2">
+                <span className="rounded-[4px] border border-amber-300/50 bg-amber-300/10 px-3 py-1 text-xs font-black uppercase text-amber-200">
+                  {project.status}
+                </span>
+                <span className="rounded-[4px] border border-cyan-300/50 bg-cyan-300/10 px-3 py-1 text-xs font-black uppercase text-cyan-200">
+                  {project.lifecycle}
+                </span>
+                <span className="rounded-[4px] border border-violet-300/50 bg-violet-300/10 px-3 py-1 text-xs font-black uppercase text-violet-200">
+                  Vault
+                </span>
+              </div>
+              <h1 className="atl-title text-5xl font-black md:text-6xl">
+                {project.name}
+              </h1>
+              <p className="mt-5 max-w-3xl text-base leading-7 text-atl-silver">
+                {project.summary}
+              </p>
+              <div className="mt-7 flex flex-wrap gap-3">
+                {project.repoUrl && (
+                  <a
+                    href={project.repoUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex min-h-10 items-center gap-2 rounded-[8px] border border-cyan-300/60 bg-cyan-300/15 px-5 text-sm font-bold text-cyan-100 no-underline"
+                  >
+                    View Project
+                    <MaterialIcon name="open_in_new" />
+                  </a>
+                )}
+                <CopyButton
+                  text={project.cloneCommand}
+                  label="Copy git clone"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid gap-3 border-t border-cyan-100/15 bg-slate-950/35 px-8 py-5 sm:grid-cols-2 lg:grid-cols-5">
+            {[
+              ["Primary Language", "VB.NET", "deployed_code"],
+              ["Platform", "Windows", "window"],
+              ["Catalog Updated", generatedDate, "schedule"],
+              ["Maintainer", "Aptlantis Studio", "groups"],
+              ["Governance", project.governanceGroup, "verified_user"],
+            ].map(([label, value, icon]) => (
+              <div
+                key={label}
+                className="flex items-center gap-3 border-cyan-100/12 lg:border-r"
+              >
+                <MaterialIcon name={icon} className="text-2xl text-cyan-300" />
+                <div>
+                  <div className="text-xs text-atl-frost">{label}</div>
+                  <div className="text-sm font-black text-atl-archive">
+                    {value}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </header>
+
+        <div className="mb-4 flex flex-wrap gap-1 border-b border-cyan-100/15">
+          {tabItems.map(([id, label, icon]) => (
+            <button
+              key={id}
+              type="button"
+              onClick={() => setActiveTab(id)}
+              className={`inline-flex min-h-11 items-center gap-2 border-b-2 px-4 text-sm transition ${
+                activeTab === id
+                  ? "border-cyan-300 text-cyan-100"
+                  : "border-transparent text-atl-frost hover:text-atl-archive"
+              }`}
+            >
+              <MaterialIcon name={icon} />
+              {label}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid gap-5 lg:grid-cols-[1fr_420px]">
+          {renderFileCabinetTab()}
+
+          <aside className="space-y-4">
+            <section className="filecabinet-card p-5">
+              <h2 className="mb-3 text-xl font-bold">Status at a Glance</h2>
+              <dl className="overflow-hidden rounded-[6px] border border-cyan-100/12 text-sm">
+                {statusRows.map(([label, value]) => (
+                  <div
+                    key={label}
+                    className="grid grid-cols-[1fr_1.05fr] border-b border-cyan-100/10 last:border-b-0"
+                  >
+                    <dt className="px-3 py-2 text-atl-frost">{label}</dt>
+                    <dd className="border-l border-cyan-100/10 px-3 py-2 text-right text-atl-archive">
+                      {value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+              <button
+                type="button"
+                onClick={() => setActiveTab("execution-evidence")}
+                className="mt-3 inline-flex min-h-10 w-full items-center justify-center gap-2 rounded-[6px] border border-cyan-300/30 bg-cyan-300/10 text-sm text-cyan-100"
+              >
+                View Execution Evidence
+                <MaterialIcon name="chevron_right" />
+              </button>
+            </section>
+
+            <section className="filecabinet-card p-5">
+              <h2 className="mb-3 text-xl font-bold">Project Links</h2>
+              <div className="space-y-1">
+                {projectLinks.map(([label, url]) => (
+                  <a
+                    key={label}
+                    href={url}
+                    target={url.startsWith("http") ? "_blank" : undefined}
+                    rel={url.startsWith("http") ? "noreferrer" : undefined}
+                    className="grid grid-cols-[115px_1fr_24px] items-center rounded-[6px] border border-transparent px-2 py-2 text-sm text-atl-silver no-underline hover:border-cyan-100/15 hover:bg-slate-950/25"
+                  >
+                    <span>{label}</span>
+                    <span className="truncate text-cyan-300">{url}</span>
+                    <MaterialIcon name="open_in_new" />
+                  </a>
+                ))}
+              </div>
+            </section>
+
+            <section className="filecabinet-card p-5">
+              <h2 className="mb-4 text-xl font-bold">Maintainers</h2>
+              <div className="flex items-center gap-4">
+                <img
+                  src="/logos/aptlantis-organization-mark.png"
+                  alt="Aptlantis mark"
+                  className="h-14 w-14 rounded-full border border-cyan-100/30 object-cover"
+                />
+                <div>
+                  <div className="font-bold">Aptlantis Studio</div>
+                  <Link to="/contact" className="text-sm text-cyan-300">
+                    Contact maintainers
+                  </Link>
+                </div>
+                <span className="ml-auto rounded-[4px] border border-cyan-300/40 px-2 py-1 text-xs text-cyan-200">
+                  LEAD
+                </span>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </main>
+    </div>
+  );
+};
 
 const cloneCratesQuickstart = `$root = "$env:USERPROFILE\\Rust-Crates"
 New-Item -Force -ItemType Directory $root, "$root\\crates.io-index", "$root\\mirror" | Out-Null
@@ -1126,6 +1940,17 @@ const ProjectDetailPage = () => {
           Back to project portfolio
         </Link>
       </div>
+    );
+  }
+
+  if (project.id === "filecabinet") {
+    return (
+      <FileCabinetProjectPage
+        project={project}
+        portfolio={portfolio}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
     );
   }
 

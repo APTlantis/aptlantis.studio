@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/vendor/material-symbols/MaterialSymbolsOutlined.ttf")
+    format("truetype");
+}
+
 :root {
   --color-background: #050913;
   --color-background-secondary: #0b1728;
@@ -121,6 +129,21 @@ body {
 }
 
 @layer components {
+  .material-symbols-outlined {
+    direction: ltr;
+    display: inline-block;
+    font-family: "Material Symbols Outlined";
+    font-feature-settings: "liga";
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+  }
+
   .atl-shell {
     min-height: 100vh;
     background:
@@ -342,6 +365,55 @@ body {
     border: 1px solid;
     border-radius: inherit;
     opacity: 0.38;
+  }
+
+  .filecabinet-dossier {
+    background:
+      linear-gradient(rgb(122 176 204 / 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(122 176 204 / 0.026) 1px, transparent 1px),
+      radial-gradient(
+        circle at 78% 18%,
+        rgb(33 205 220 / 0.12),
+        transparent 34rem
+      ),
+      linear-gradient(180deg, #06111e 0%, #081726 54%, #06101b 100%);
+    background-size:
+      28px 28px,
+      28px 28px,
+      auto,
+      auto;
+  }
+
+  .filecabinet-card {
+    border: 1px solid rgb(95 128 154 / 0.4);
+    border-radius: 8px;
+    background:
+      linear-gradient(180deg, rgb(142 199 222 / 0.07), transparent 44%),
+      rgb(13 29 45 / 0.88);
+    box-shadow:
+      inset 0 1px 0 rgb(229 241 238 / 0.06),
+      0 20px 50px rgb(0 0 0 / 0.18);
+  }
+
+  .filecabinet-hero {
+    background:
+      linear-gradient(
+        90deg,
+        rgb(8 18 31 / 0.96) 0%,
+        rgb(8 18 31 / 0.9) 42%,
+        rgb(8 18 31 / 0.28) 68%
+      ),
+      linear-gradient(180deg, rgb(7 17 30 / 0.28), rgb(7 17 30 / 0.82)),
+      var(--filecabinet-hero-image);
+    background-position:
+      center,
+      center,
+      right center;
+    background-repeat: no-repeat;
+    background-size:
+      cover,
+      cover,
+      min(72%, 900px) auto;
   }
 }
 
