@@ -177,6 +177,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://aptlantis.studio/.well-known/oauth-authorization-server</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://aptlantis.studio/.well-known/oauth-protected-resource</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://aptlantis.studio/.well-known/mcp/server-card.json</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -184,8 +196,14 @@
   </url>
   <url>
     <loc>https://aptlantis.studio/auth.md</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://aptlantis.studio/.well-known/http-message-signatures-directory</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>

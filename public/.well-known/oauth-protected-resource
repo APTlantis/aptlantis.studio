@@ -1,8 +1,8 @@
 {
   "resource": "https://aptlantis.studio",
-  "authorization_servers": [],
+  "authorization_servers": ["https://aptlantis.studio"],
   "scopes_supported": [],
-  "bearer_methods_supported": [],
+  "bearer_methods_supported": ["header"],
   "resource_documentation": "https://aptlantis.studio/auth.md",
   "notes": "No protected public API surface is currently advertised for third-party agents."
 }

@@ -9,6 +9,9 @@ Aptlantis Studio is a public project teaching studio for the Aptlantis ecosystem
 - API catalog: `/.well-known/api-catalog`
 - Agent skills index: `/.well-known/agent-skills/index.json`
 - Auth notes: `/auth.md`
+- OAuth Authorization Server metadata: `/.well-known/oauth-authorization-server`
+- OAuth Protected Resource metadata: `/.well-known/oauth-protected-resource`
+- Web Bot Auth key directory: `/.well-known/http-message-signatures-directory`
 - Security contact metadata: `/.well-known/security.txt`
 
 ## Main Public Data

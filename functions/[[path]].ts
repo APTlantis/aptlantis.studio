@@ -4,6 +4,7 @@ const DISCOVERY_LINKS = [
   '</sitemap.xml>; rel="sitemap"; type="application/xml"',
   '</auth.md>; rel="service-doc"; type="text/markdown"',
   '</.well-known/agent-skills/index.json>; rel="service-desc"; type="application/json"',
+  '</.well-known/http-message-signatures-directory>; rel="key-directory"; type="application/http-message-signatures-directory+json"',
 ].join(", ");
 
 const wantsMarkdown = (request: Request) => {

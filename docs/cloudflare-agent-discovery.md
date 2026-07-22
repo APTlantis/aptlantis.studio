@@ -4,24 +4,26 @@
 
 - Homepage Link headers are declared in `public/_headers`.
 - Homepage Markdown negotiation is implemented for Cloudflare Pages in `functions/[[path]].ts`.
+- Homepage Link headers and Markdown negotiation are also implemented for Vite dev/preview in `vite.config.ts`.
 - The Markdown homepage source is `public/index.md`.
 - Well-known discovery resources live under `public/.well-known/`.
 - Agent registration guidance is published at `public/auth.md`.
+- Web Bot Auth public key discovery is published at `public/.well-known/http-message-signatures-directory`.
 - Content Signals are declared in `public/robots.txt`.
 
 ## DNS-AID Records
 
 DNS for AI Discovery cannot be published from this repository. Add DNS records in Cloudflare DNS for `aptlantis.studio` when DNS-AID is ready to be enabled.
 
-Candidate owner names from the Cloudflare audit:
+Intended public discovery records:
 
-```text
-_index._agents.aptlantis.studio
-_a2a._agents.aptlantis.studio
-_mcp._agents.aptlantis.studio
+```dns
+_index._agents.aptlantis.studio. 3600 IN HTTPS 1 aptlantis.studio. alpn="h2,h3" port=443
+_mcp._agents.aptlantis.studio. 3600 IN HTTPS 1 aptlantis.studio. alpn="h2,h3" port=443
+_a2a._agents.aptlantis.studio. 3600 IN HTTPS 1 aptlantis.studio. alpn="h2,h3" port=443
 ```
 
-Publish SVCB or HTTPS records according to the current DNS-AID draft and sign the public discovery zone with DNSSEC if authenticated discovery is required.
+Enable DNSSEC for the public zone before treating DNS-AID as authenticated discovery.
 
 ## Deployment Caveat
 
@@ -33,4 +35,4 @@ Publish SVCB or HTTPS records according to the current DNS-AID draft and sign th
 
 ## Honest Capability Notes
 
-Aptlantis Studio currently publishes public data, schemas, and documentation. It does not currently advertise a real OAuth enrollment flow, protected public API, Web Bot Auth signing requirement, or MCP transport endpoint.
+Aptlantis Studio currently publishes public data, schemas, documentation, and a Web Bot Auth public key directory. It does not currently advertise a real OAuth enrollment flow, protected public API, active outbound request-signing runtime, or MCP transport endpoint.

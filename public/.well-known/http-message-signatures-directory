@@ -1,9 +1,17 @@
 {
-  "status": "not_required",
   "origin": "https://aptlantis.studio",
-  "generated": "2026-07-15",
-  "keys": [],
-  "signature_algorithms_supported": [],
+  "generated": "2026-07-22",
+  "keys": [
+    {
+      "kty": "OKP",
+      "crv": "Ed25519",
+      "x": "_KsuPY877J2LcY2IRj1blq9F_Q8LK5i2zzhVY8OY5UA",
+      "kid": "a8RwwIjApAIlI9OcpFTE15UERaAvxBEZmmYvp4RpDrU",
+      "alg": "EdDSA",
+      "use": "sig"
+    }
+  ],
+  "signature_algorithms_supported": ["EdDSA"],
   "documentation": "https://aptlantis.studio/auth.md",
-  "notes": "Aptlantis Studio does not currently require Web Bot Auth request signing for public crawlable resources."
+  "notes": "This directory publishes only the public verification key. The matching private signing key is not stored in this public repository and must be installed in an outbound bot or agent runtime before Aptlantis Studio-originated requests can be signed."
 }

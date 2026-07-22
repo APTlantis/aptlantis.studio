@@ -6,10 +6,15 @@
   "scopes_supported": [],
   "registration_endpoint": null,
   "agent_auth": {
-    "status": "not_available",
-    "register_uri": null,
-    "identity_types_supported": [],
-    "credential_types_supported": [],
-    "notes": "Aptlantis Studio does not currently operate a public OAuth or agent registration flow."
+    "skill": "https://isitagentready.com/.well-known/agent-skills/auth-md/SKILL.md",
+    "status": "anonymous_public_access",
+    "register_uri": "https://aptlantis.studio/auth.md#agent-registration",
+    "identity_types_supported": ["anonymous"],
+    "anonymous": {
+      "credential_types_supported": ["none"],
+      "claim_uri": "https://aptlantis.studio/auth.md#anonymous-public-access"
+    },
+    "credential_types_supported": ["none"],
+    "notes": "Aptlantis Studio public catalog and discovery resources do not require pre-registration, OAuth clients, bearer tokens, or API keys. Protected public APIs are not currently advertised."
   }
 }
