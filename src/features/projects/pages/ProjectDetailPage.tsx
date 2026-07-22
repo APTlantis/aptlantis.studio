@@ -22,6 +22,14 @@ import type {
 } from "../types";
 import { CodeBlock } from "../components/CodeBlock";
 import { CommandBuilder } from "../components/CommandBuilder";
+import {
+  DossierProjectShell,
+  DossierList,
+  DossierSectionTitle,
+  DossierStat,
+  MaterialIcon,
+  dossierToneText,
+} from "../components/DossierPrimitives";
 import { CopyButton, ProgressBar, statusTone } from "../components/ProjectBits";
 
 type Tab = string;
@@ -169,109 +177,6 @@ const projectTeachingTabs: Record<string, ProjectTeachingTab[]> = {
 const getProjectTabs = (project: ProjectRecord): ProjectTeachingTab[] =>
   projectTeachingTabs[project.id] || defaultTabs;
 
-const MaterialIcon = ({
-  name,
-  className = "",
-}: {
-  name: string;
-  className?: string;
-}) => (
-  <span className={`material-symbols-outlined ${className}`} aria-hidden="true">
-    {name}
-  </span>
-);
-
-type FileCabinetTone =
-  | "cyan"
-  | "teal"
-  | "amber"
-  | "violet"
-  | "green"
-  | "blue"
-  | "rose";
-
-const fileCabinetToneClasses: Record<FileCabinetTone, string> = {
-  cyan: "text-cyan-300 border-cyan-300/25 bg-cyan-300/10",
-  teal: "text-teal-300 border-teal-300/25 bg-teal-300/10",
-  amber: "text-amber-300 border-amber-300/25 bg-amber-300/10",
-  violet: "text-violet-300 border-violet-300/25 bg-violet-300/10",
-  green: "text-emerald-300 border-emerald-300/25 bg-emerald-300/10",
-  blue: "text-sky-300 border-sky-300/25 bg-sky-300/10",
-  rose: "text-rose-300 border-rose-300/25 bg-rose-300/10",
-};
-
-const FileCabinetSectionTitle = ({
-  icon,
-  title,
-  tone = "cyan",
-}: {
-  icon: string;
-  title: string;
-  tone?: FileCabinetTone;
-}) => (
-  <h3 className="mb-4 flex items-center gap-2 text-xl font-bold">
-    <span
-      className={`grid h-8 w-8 place-items-center rounded-[6px] border ${fileCabinetToneClasses[tone]}`}
-    >
-      <MaterialIcon name={icon} />
-    </span>
-    {title}
-  </h3>
-);
-
-const FileCabinetList = ({
-  title,
-  icon,
-  tone,
-  itemIcon = "check_circle",
-  items,
-}: {
-  title: string;
-  icon: string;
-  tone: FileCabinetTone;
-  itemIcon?: string;
-  items: string[];
-}) => (
-  <section className="filecabinet-card p-5">
-    <FileCabinetSectionTitle icon={icon} title={title} tone={tone} />
-    <div className="space-y-2">
-      {items.map((item) => (
-        <div
-          key={item}
-          className="flex min-h-9 items-center gap-3 rounded-[6px] border border-cyan-100/12 bg-slate-950/25 px-3 py-2 text-sm text-atl-silver"
-        >
-          <MaterialIcon
-            name={itemIcon}
-            className={fileCabinetToneClasses[tone].split(" ")[0]}
-          />
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-  </section>
-);
-
-const FileCabinetStat = ({
-  label,
-  value,
-  icon,
-  tone,
-}: {
-  label: string;
-  value: string;
-  icon: string;
-  tone: FileCabinetTone;
-}) => (
-  <div className="rounded-[8px] border border-cyan-100/15 bg-slate-950/25 p-4">
-    <MaterialIcon
-      name={icon}
-      className={`mb-3 text-2xl ${fileCabinetToneClasses[tone].split(" ")[0]}`}
-    />
-    <div className="text-xs uppercase text-atl-frost">{label}</div>
-    <div className="mt-1 text-lg font-black text-atl-archive">{value}</div>
-  </div>
-);
-
 const FileCabinetProjectPage = ({
   project,
   portfolio,
@@ -290,14 +195,14 @@ const FileCabinetProjectPage = ({
   }).format(new Date(portfolio.generatedAt));
   const repoBase = project.repoUrl.replace(/\/$/, "");
   const tabItems = [
-    ["overview", "Overview", "radio_button_checked"],
-    ["usage", "Capabilities", "inventory_2"],
-    ["storage-model", "Architecture", "schema"],
-    ["screenshots", "Screenshots", "photo_library"],
-    ["command-builder", "CLI & Tests", "terminal"],
-    ["trust-repair-model", "Data Model", "dataset"],
-    ["execution-evidence", "Releases", "release_alert"],
-  ] as const;
+    { id: "overview", label: "Overview", icon: "radio_button_checked" },
+    { id: "usage", label: "Capabilities", icon: "inventory_2" },
+    { id: "storage-model", label: "Architecture", icon: "schema" },
+    { id: "screenshots", label: "Screenshots", icon: "photo_library" },
+    { id: "command-builder", label: "CLI & Tests", icon: "terminal" },
+    { id: "trust-repair-model", label: "Data Model", icon: "dataset" },
+    { id: "execution-evidence", label: "Releases", icon: "release_alert" },
+  ];
   const healthMetrics = [
     ["Overall Health", project.completion, "verified", "bg-emerald-300"],
     [
@@ -351,11 +256,11 @@ const FileCabinetProjectPage = ({
     ["fingerprint", "SHA-256 / BLAKE3", "green"],
   ] as const;
   const projectLinks = [
-    ["Repository", repoBase],
-    ["Documentation", "/project/filecabinet"],
-    ["Releases", `${repoBase}/releases`],
-    ["Issues", `${repoBase}/issues`],
-    ["Discussions", `${repoBase}/discussions`],
+    { label: "Repository", url: repoBase },
+    { label: "Documentation", url: "/project/filecabinet" },
+    { label: "Releases", url: `${repoBase}/releases` },
+    { label: "Issues", url: `${repoBase}/issues` },
+    { label: "Discussions", url: `${repoBase}/discussions` },
   ];
   const capabilityGroups = [
     {
@@ -456,8 +361,8 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
     if (activeTab === "usage") {
       return (
         <div className="space-y-4">
-          <section className="filecabinet-card p-5">
-            <FileCabinetSectionTitle
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
               icon="conversion_path"
               title="Daily Vault Workflow"
               tone="cyan"
@@ -488,7 +393,7 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
 
           <div className="grid gap-4 xl:grid-cols-3">
             {capabilityGroups.map((group) => (
-              <FileCabinetList
+              <DossierList
                 key={group.title}
                 title={group.title}
                 icon={group.icon}
@@ -504,8 +409,8 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
     if (activeTab === "storage-model") {
       return (
         <div className="space-y-4">
-          <section className="filecabinet-card p-5">
-            <FileCabinetSectionTitle
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
               icon="schema"
               title="Architecture Flow"
               tone="teal"
@@ -535,13 +440,13 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
             </div>
           </section>
           <div className="grid gap-4 xl:grid-cols-2">
-            <FileCabinetList
+            <DossierList
               title="Interfaces"
               icon="settings_input_component"
               tone="blue"
               items={project.interfaces}
             />
-            <FileCabinetList
+            <DossierList
               title="Dependencies"
               icon="account_tree"
               tone="violet"
@@ -554,8 +459,8 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
 
     if (activeTab === "screenshots") {
       return (
-        <section className="filecabinet-card p-5">
-          <FileCabinetSectionTitle
+        <section className="dossier-card p-5">
+          <DossierSectionTitle
             icon="photo_library"
             title="Screenshots And Visual Evidence"
             tone="cyan"
@@ -584,8 +489,8 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
     if (activeTab === "command-builder") {
       return (
         <div className="grid gap-4 xl:grid-cols-2">
-          <section className="filecabinet-card p-5">
-            <FileCabinetSectionTitle
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
               icon="terminal"
               title="CLI Operating Shape"
               tone="blue"
@@ -596,8 +501,8 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
             </p>
             <CodeBlock code={cliExamples} language="powershell" />
           </section>
-          <section className="filecabinet-card p-5">
-            <FileCabinetSectionTitle
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
               icon="fact_check"
               title="Build And Verification Commands"
               tone="green"
@@ -608,13 +513,13 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
             </p>
             <CodeBlock code={releaseCommands} language="powershell" />
           </section>
-          <FileCabinetList
+          <DossierList
             title="Documentation Evidence"
             icon="library_books"
             tone="violet"
             items={project.documentationOutputs}
           />
-          <FileCabinetList
+          <DossierList
             title="Produced Artifacts"
             icon="deployed_code"
             tone="amber"
@@ -629,12 +534,10 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
         <div className="space-y-4">
           <section className="grid gap-4 xl:grid-cols-4">
             {dataModelCards.map((card) => (
-              <article key={card.title} className="filecabinet-card p-5">
+              <article key={card.title} className="dossier-card p-5">
                 <MaterialIcon
                   name={card.icon}
-                  className={`mb-3 text-3xl ${
-                    fileCabinetToneClasses[card.tone].split(" ")[0]
-                  }`}
+                  className={`mb-3 text-3xl ${dossierToneText(card.tone)}`}
                 />
                 <h3 className="text-lg font-black">{card.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-atl-silver">
@@ -644,14 +547,14 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
             ))}
           </section>
           <div className="grid gap-4 xl:grid-cols-2">
-            <FileCabinetList
+            <DossierList
               title="Known Evidence Gaps"
               icon="warning"
               tone="rose"
               itemIcon="error"
               items={project.missingPieces}
             />
-            <FileCabinetList
+            <DossierList
               title="Repair And Hardening Improvements"
               icon="construction"
               tone="amber"
@@ -666,32 +569,32 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
     if (activeTab === "execution-evidence") {
       return (
         <div className="space-y-4">
-          <section className="filecabinet-card p-5">
-            <FileCabinetSectionTitle
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
               icon="release_alert"
               title="Release Evidence Posture"
               tone="rose"
             />
             <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
-              <FileCabinetStat
+              <DossierStat
                 label="Current candidate"
                 value="v1.7.3.0"
                 icon="package_2"
                 tone="amber"
               />
-              <FileCabinetStat
+              <DossierStat
                 label="Build evidence"
                 value="Pending"
                 icon="hourglass_empty"
                 tone="rose"
               />
-              <FileCabinetStat
+              <DossierStat
                 label="Hash evidence"
                 value="Pending"
                 icon="fingerprint"
                 tone="rose"
               />
-              <FileCabinetStat
+              <DossierStat
                 label="Release standard"
                 value={project.governanceGroup}
                 icon="verified_user"
@@ -700,13 +603,13 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
             </div>
           </section>
           <div className="grid gap-4 xl:grid-cols-2">
-            <FileCabinetList
+            <DossierList
               title="Next Verification Steps"
               icon="playlist_add_check"
               tone="green"
               items={project.nextSteps}
             />
-            <FileCabinetList
+            <DossierList
               title="Missing Release Evidence"
               icon="report"
               tone="rose"
@@ -720,7 +623,7 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
 
     return (
       <div className="space-y-4">
-        <section className="filecabinet-card p-5">
+        <section className="dossier-card p-5">
           <h2 className="mb-3 text-2xl font-bold text-atl-archive">
             About {project.name}
           </h2>
@@ -755,7 +658,7 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
 
         <div className="grid gap-4 xl:grid-cols-3">
           {sections.map(([title, icon, tone, items]) => (
-            <FileCabinetList
+            <DossierList
               key={title}
               title={title}
               icon={icon}
@@ -765,7 +668,7 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
           ))}
         </div>
 
-        <section className="filecabinet-card p-5">
+        <section className="dossier-card p-5">
           <h3 className="mb-4 text-xl font-bold">Tech Stack</h3>
           <div className="flex flex-wrap gap-3">
             {techStack.map(([icon, label, tone]) => (
@@ -773,10 +676,7 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
                 key={label}
                 className="inline-flex min-h-10 items-center gap-3 rounded-[8px] border border-cyan-100/15 bg-slate-950/30 px-4 text-sm text-atl-silver"
               >
-                <MaterialIcon
-                  name={icon}
-                  className={fileCabinetToneClasses[tone].split(" ")[0]}
-                />
+                <MaterialIcon name={icon} className={dossierToneText(tone)} />
                 {label}
               </span>
             ))}
@@ -787,197 +687,34 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
   };
 
   return (
-    <div className="filecabinet-dossier min-h-screen text-atl-archive">
-      <MetaTags
-        title={`${project.name} | Aptlantis Project Portfolio`}
-        description={project.summary}
-        canonicalUrl={`https://aptlantis.studio/project/${project.id}`}
-        ogTitle={`${project.name} | Aptlantis`}
-        ogDescription={project.summary}
-        ogImage={project.logoSrc}
-      />
-
-      <main className="mx-auto max-w-[1860px] px-4 py-5 md:px-8">
-        <nav
-          className="mb-4 flex items-center gap-2 text-sm text-cyan-300/80"
-          aria-label="Breadcrumb"
-        >
-          <Link to="/" className="hover:text-cyan-100">
-            Home
-          </Link>
-          <MaterialIcon name="chevron_right" className="text-base" />
-          <Link to="/#projects" className="hover:text-cyan-100">
-            Projects
-          </Link>
-          <MaterialIcon name="chevron_right" className="text-base" />
-          <span className="text-atl-silver">{project.name}</span>
-        </nav>
-
-        <header
-          className="filecabinet-hero mb-5 overflow-hidden rounded-[8px] border border-cyan-100/35"
-          style={
-            {
-              "--filecabinet-hero-image": `url("${project.screenshots[0]?.src}")`,
-            } as React.CSSProperties
-          }
-        >
-          <div className="grid min-h-[430px] gap-8 p-8 lg:grid-cols-[260px_1fr]">
-            <img
-              src={project.logoSrc}
-              alt={`${project.name} logo`}
-              className="h-56 w-56 self-start rounded-[8px] border border-cyan-100/35 bg-slate-950/60 object-cover shadow-2xl shadow-cyan-950/60"
-            />
-            <div className="max-w-3xl self-center">
-              <div className="mb-5 flex flex-wrap gap-2">
-                <span className="rounded-[4px] border border-amber-300/50 bg-amber-300/10 px-3 py-1 text-xs font-black uppercase text-amber-200">
-                  {project.status}
-                </span>
-                <span className="rounded-[4px] border border-cyan-300/50 bg-cyan-300/10 px-3 py-1 text-xs font-black uppercase text-cyan-200">
-                  {project.lifecycle}
-                </span>
-                <span className="rounded-[4px] border border-violet-300/50 bg-violet-300/10 px-3 py-1 text-xs font-black uppercase text-violet-200">
-                  Vault
-                </span>
-              </div>
-              <h1 className="atl-title text-5xl font-black md:text-6xl">
-                {project.name}
-              </h1>
-              <p className="mt-5 max-w-3xl text-base leading-7 text-atl-silver">
-                {project.summary}
-              </p>
-              <div className="mt-7 flex flex-wrap gap-3">
-                {project.repoUrl && (
-                  <a
-                    href={project.repoUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex min-h-10 items-center gap-2 rounded-[8px] border border-cyan-300/60 bg-cyan-300/15 px-5 text-sm font-bold text-cyan-100 no-underline"
-                  >
-                    View Project
-                    <MaterialIcon name="open_in_new" />
-                  </a>
-                )}
-                <CopyButton
-                  text={project.cloneCommand}
-                  label="Copy git clone"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="grid gap-3 border-t border-cyan-100/15 bg-slate-950/35 px-8 py-5 sm:grid-cols-2 lg:grid-cols-5">
-            {[
-              ["Primary Language", "VB.NET", "deployed_code"],
-              ["Platform", "Windows", "window"],
-              ["Catalog Updated", generatedDate, "schedule"],
-              ["Maintainer", "Aptlantis Studio", "groups"],
-              ["Governance", project.governanceGroup, "verified_user"],
-            ].map(([label, value, icon]) => (
-              <div
-                key={label}
-                className="flex items-center gap-3 border-cyan-100/12 lg:border-r"
-              >
-                <MaterialIcon name={icon} className="text-2xl text-cyan-300" />
-                <div>
-                  <div className="text-xs text-atl-frost">{label}</div>
-                  <div className="text-sm font-black text-atl-archive">
-                    {value}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </header>
-
-        <div className="mb-4 flex flex-wrap gap-1 border-b border-cyan-100/15">
-          {tabItems.map(([id, label, icon]) => (
-            <button
-              key={id}
-              type="button"
-              onClick={() => setActiveTab(id)}
-              className={`inline-flex min-h-11 items-center gap-2 border-b-2 px-4 text-sm transition ${
-                activeTab === id
-                  ? "border-cyan-300 text-cyan-100"
-                  : "border-transparent text-atl-frost hover:text-atl-archive"
-              }`}
-            >
-              <MaterialIcon name={icon} />
-              {label}
-            </button>
-          ))}
-        </div>
-
-        <div className="grid gap-5 lg:grid-cols-[1fr_420px]">
-          {renderFileCabinetTab()}
-
-          <aside className="space-y-4">
-            <section className="filecabinet-card p-5">
-              <h2 className="mb-3 text-xl font-bold">Status at a Glance</h2>
-              <dl className="overflow-hidden rounded-[6px] border border-cyan-100/12 text-sm">
-                {statusRows.map(([label, value]) => (
-                  <div
-                    key={label}
-                    className="grid grid-cols-[1fr_1.05fr] border-b border-cyan-100/10 last:border-b-0"
-                  >
-                    <dt className="px-3 py-2 text-atl-frost">{label}</dt>
-                    <dd className="border-l border-cyan-100/10 px-3 py-2 text-right text-atl-archive">
-                      {value}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-              <button
-                type="button"
-                onClick={() => setActiveTab("execution-evidence")}
-                className="mt-3 inline-flex min-h-10 w-full items-center justify-center gap-2 rounded-[6px] border border-cyan-300/30 bg-cyan-300/10 text-sm text-cyan-100"
-              >
-                View Execution Evidence
-                <MaterialIcon name="chevron_right" />
-              </button>
-            </section>
-
-            <section className="filecabinet-card p-5">
-              <h2 className="mb-3 text-xl font-bold">Project Links</h2>
-              <div className="space-y-1">
-                {projectLinks.map(([label, url]) => (
-                  <a
-                    key={label}
-                    href={url}
-                    target={url.startsWith("http") ? "_blank" : undefined}
-                    rel={url.startsWith("http") ? "noreferrer" : undefined}
-                    className="grid grid-cols-[115px_1fr_24px] items-center rounded-[6px] border border-transparent px-2 py-2 text-sm text-atl-silver no-underline hover:border-cyan-100/15 hover:bg-slate-950/25"
-                  >
-                    <span>{label}</span>
-                    <span className="truncate text-cyan-300">{url}</span>
-                    <MaterialIcon name="open_in_new" />
-                  </a>
-                ))}
-              </div>
-            </section>
-
-            <section className="filecabinet-card p-5">
-              <h2 className="mb-4 text-xl font-bold">Maintainers</h2>
-              <div className="flex items-center gap-4">
-                <img
-                  src="/logos/aptlantis-organization-mark.png"
-                  alt="Aptlantis mark"
-                  className="h-14 w-14 rounded-full border border-cyan-100/30 object-cover"
-                />
-                <div>
-                  <div className="font-bold">Aptlantis Studio</div>
-                  <Link to="/contact" className="text-sm text-cyan-300">
-                    Contact maintainers
-                  </Link>
-                </div>
-                <span className="ml-auto rounded-[4px] border border-cyan-300/40 px-2 py-1 text-xs text-cyan-200">
-                  LEAD
-                </span>
-              </div>
-            </section>
-          </aside>
-        </div>
-      </main>
-    </div>
+    <DossierProjectShell
+      project={project}
+      activeTab={activeTab}
+      tabs={tabItems}
+      badges={[
+        { label: project.status, tone: "amber" },
+        { label: project.lifecycle, tone: "cyan" },
+        { label: "Vault", tone: "violet" },
+      ]}
+      metadata={[
+        { label: "Primary Language", value: "VB.NET", icon: "deployed_code" },
+        { label: "Platform", value: "Windows", icon: "window" },
+        { label: "Catalog Updated", value: generatedDate, icon: "schedule" },
+        { label: "Maintainer", value: "Aptlantis Studio", icon: "groups" },
+        {
+          label: "Governance",
+          value: project.governanceGroup,
+          icon: "verified_user",
+        },
+      ]}
+      statusRows={statusRows}
+      links={projectLinks}
+      heroImageSrc={project.screenshots[0]?.src || project.logoSrc}
+      evidenceTabId="execution-evidence"
+      onTabChange={setActiveTab}
+    >
+      {renderFileCabinetTab()}
+    </DossierProjectShell>
   );
 };
 

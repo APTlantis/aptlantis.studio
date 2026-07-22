@@ -367,7 +367,7 @@ body {
     opacity: 0.38;
   }
 
-  .filecabinet-dossier {
+  .dossier-shell {
     background:
       linear-gradient(rgb(122 176 204 / 0.035) 1px, transparent 1px),
       linear-gradient(90deg, rgb(122 176 204 / 0.026) 1px, transparent 1px),
@@ -384,7 +384,7 @@ body {
       auto;
   }
 
-  .filecabinet-card {
+  .dossier-card {
     border: 1px solid rgb(95 128 154 / 0.4);
     border-radius: 8px;
     background:
@@ -395,7 +395,7 @@ body {
       0 20px 50px rgb(0 0 0 / 0.18);
   }
 
-  .filecabinet-hero {
+  .dossier-hero {
     background:
       linear-gradient(
         90deg,
@@ -404,7 +404,7 @@ body {
         rgb(8 18 31 / 0.28) 68%
       ),
       linear-gradient(180deg, rgb(7 17 30 / 0.28), rgb(7 17 30 / 0.82)),
-      var(--filecabinet-hero-image);
+      var(--dossier-hero-image);
     background-position:
       center,
       center,
