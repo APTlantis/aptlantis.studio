@@ -123,7 +123,10 @@ const DataList = ({ title, items }: { title: string; items: string[] }) => {
 const defaultTabs: ProjectTeachingTab[] = [
   { id: "overview", label: "Overview" },
   { id: "usage", label: "Usage" },
-  { id: "visualizations", label: "Visualizations" },
+  { id: "storage-model", label: "Architecture" },
+  { id: "screenshots", label: "Screenshots" },
+  { id: "command-builder", label: "Operation" },
+  { id: "execution-evidence", label: "Evidence" },
 ];
 
 const projectTeachingTabs: Record<string, ProjectTeachingTab[]> = {
@@ -714,6 +717,559 @@ Get-FileHash artifacts/installer/FileCabinet-1.7.3.0-win-x64.msi -Algorithm SHA2
       onTabChange={setActiveTab}
     >
       {renderFileCabinetTab()}
+    </DossierProjectShell>
+  );
+};
+
+const dossierTabIcons: Record<string, string> = {
+  overview: "radio_button_checked",
+  usage: "inventory_2",
+  visualizations: "analytics",
+  screenshots: "photo_library",
+  "command-builder": "terminal",
+  "explainer-video": "smart_display",
+  "execution-evidence": "release_alert",
+  "planning-workflow": "conversion_path",
+  "safety-model": "health_and_safety",
+  architecture: "schema",
+  "transaction-diagrams": "account_tree",
+  "storage-model": "database",
+  "trust-repair-model": "verified_user",
+  "downloads-templates": "download",
+  "structra-lab": "data_object",
+};
+
+const projectDossierProfile: Record<
+  string,
+  {
+    type: string;
+    typeTone: "cyan" | "teal" | "amber" | "violet" | "green" | "blue" | "rose";
+    primaryLanguage: string;
+    platform: string;
+  }
+> = {
+  "clone-cratesio": {
+    type: "Registry Mirror",
+    typeTone: "green",
+    primaryLanguage: "Go / Python",
+    platform: "CLI",
+  },
+  chatarchive: {
+    type: "Local Archive",
+    typeTone: "violet",
+    primaryLanguage: "Rust / React",
+    platform: "Tauri",
+  },
+  codenote: {
+    type: "Desktop Editor",
+    typeTone: "blue",
+    primaryLanguage: "Rust / React",
+    platform: "Tauri",
+  },
+  commandwizard: {
+    type: "Command Studio",
+    typeTone: "teal",
+    primaryLanguage: ".NET",
+    platform: "Windows",
+  },
+  chromearchivalplugin: {
+    type: "Browser Extension",
+    typeTone: "amber",
+    primaryLanguage: "JavaScript",
+    platform: "Chrome MV3",
+  },
+  structra: {
+    type: "Structured Data",
+    typeTone: "cyan",
+    primaryLanguage: "Rust / React",
+    platform: "Tauri",
+  },
+};
+
+const ProjectDossierPage = ({
+  project,
+  portfolio,
+  activeTab,
+  setActiveTab,
+}: {
+  project: ProjectRecord;
+  portfolio: PortfolioData;
+  activeTab: Tab;
+  setActiveTab: (tab: Tab) => void;
+}) => {
+  const generatedDate = new Intl.DateTimeFormat("en", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  }).format(new Date(portfolio.generatedAt));
+  const tabs = getProjectTabs(project).map((tab) => ({
+    ...tab,
+    icon: dossierTabIcons[tab.id] || "article",
+  }));
+  const profile = projectDossierProfile[project.id] || {
+    type: project.tags[0] || "Project",
+    typeTone: "cyan" as const,
+    primaryLanguage: project.tags.includes("rust")
+      ? "Rust"
+      : project.tags.includes("go")
+        ? "Go"
+        : project.tags.includes("dotnet")
+          ? ".NET"
+          : "Mixed",
+    platform: project.tags.includes("desktop")
+      ? "Desktop"
+      : project.tags.includes("cli")
+        ? "CLI"
+        : "Public Catalog",
+  };
+  const repoBase = project.repoUrl.replace(/\/$/, "");
+  const projectLinks = [
+    ...(repoBase ? [{ label: "Repository", url: repoBase }] : []),
+    { label: "Project Page", url: `/project/${project.id}` },
+    ...(repoBase
+      ? [
+          { label: "Releases", url: `${repoBase}/releases` },
+          { label: "Issues", url: `${repoBase}/issues` },
+        ]
+      : []),
+  ];
+  const statusRows: Array<[string, string]> = [
+    ["Lifecycle", project.status],
+    ["Core Status", project.lifecycle],
+    ["Governance", project.governanceGroup],
+    ["Completion", `${project.completion}%`],
+    ["Operational", `${project.operationalCompleteness}%`],
+    ["Product Evidence", `${project.productCompleteness}%`],
+    ["Catalog Updated", generatedDate],
+  ];
+
+  const renderGenericUsage = () => {
+    if (project.id === "clone-cratesio") {
+      return <CloneCratesUsage project={project} />;
+    }
+    if (project.id === "chatarchive") {
+      return <ChatArchiveUsage project={project} />;
+    }
+    if (project.frameworkSuite) {
+      return <FrameworkUsage project={project} />;
+    }
+    return (
+      <div className="grid gap-4 xl:grid-cols-2">
+        <DossierList
+          title="Operator Capabilities"
+          icon="inventory_2"
+          tone="cyan"
+          items={project.capabilities.slice(0, 10)}
+        />
+        <DossierList
+          title="Interfaces"
+          icon="settings_input_component"
+          tone="blue"
+          items={project.interfaces.slice(0, 10)}
+        />
+        <DossierList
+          title="Inputs"
+          icon="input"
+          tone="violet"
+          items={project.consumes.slice(0, 10)}
+        />
+        <DossierList
+          title="Outputs"
+          icon="output"
+          tone="teal"
+          items={project.produces.slice(0, 10)}
+        />
+      </div>
+    );
+  };
+
+  const renderDossierTab = () => {
+    if (activeTab === "usage") {
+      return <div className="space-y-4">{renderGenericUsage()}</div>;
+    }
+
+    if (
+      ["storage-model", "architecture", "transaction-diagrams"].includes(
+        activeTab,
+      )
+    ) {
+      return (
+        <div className="space-y-4">
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
+              icon="schema"
+              title="Project Architecture"
+              tone="teal"
+            />
+            <ProjectMap project={project} />
+          </section>
+          <div className="grid gap-4 xl:grid-cols-2">
+            <DossierList
+              title="Dependencies"
+              icon="account_tree"
+              tone="violet"
+              items={project.dependsOn}
+            />
+            <DossierList
+              title="Used By"
+              icon="hub"
+              tone="blue"
+              items={project.usedBy}
+            />
+          </div>
+        </div>
+      );
+    }
+
+    if (activeTab === "screenshots" || activeTab === "visualizations") {
+      return (
+        <section className="dossier-card p-5">
+          <DossierSectionTitle
+            icon={
+              activeTab === "visualizations" ? "analytics" : "photo_library"
+            }
+            title={
+              activeTab === "visualizations"
+                ? "Visual Evidence"
+                : "Screenshots And Visual Evidence"
+            }
+            tone="cyan"
+          />
+          {project.frameworkSuite && activeTab === "visualizations" && (
+            <div className="mb-4 space-y-4">
+              <FrameworkForceGraph project={project} />
+              <div className="grid gap-4 xl:grid-cols-3">
+                <CodeBlock
+                  code={project.frameworkSuite.mermaid.operatingModel}
+                  language="mermaid"
+                />
+                <CodeBlock
+                  code={project.frameworkSuite.mermaid.adoptionFlow}
+                  language="mermaid"
+                />
+                <CodeBlock
+                  code={project.frameworkSuite.mermaid.artifactChain}
+                  language="mermaid"
+                />
+              </div>
+            </div>
+          )}
+          {project.screenshots.length > 0 ? (
+            <div className="grid gap-4 xl:grid-cols-3">
+              {project.screenshots.map((screenshot) => (
+                <figure
+                  key={screenshot.src}
+                  className="overflow-hidden rounded-[8px] border border-cyan-100/15 bg-slate-950/30"
+                >
+                  <img
+                    src={screenshot.src}
+                    alt={screenshot.caption}
+                    className="aspect-[4/3] w-full object-cover"
+                  />
+                  <figcaption className="p-4 text-sm leading-6 text-atl-silver">
+                    {screenshot.caption}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          ) : (
+            <p className="text-sm text-atl-silver">
+              Curated screenshots have not been added for this project yet.
+            </p>
+          )}
+        </section>
+      );
+    }
+
+    if (activeTab === "command-builder") {
+      return (
+        <div className="space-y-4">
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
+              icon="terminal"
+              title="Operation Surface"
+              tone="blue"
+            />
+            <CommandBuilder
+              schemaId={project.commandWizardSchema}
+              fallbackHelp={project.helpOutput}
+            />
+          </section>
+          {project.helpOutput && (
+            <section className="dossier-card p-5">
+              <DossierSectionTitle
+                icon="article"
+                title="Help Output"
+                tone="violet"
+              />
+              <CodeBlock
+                code={project.helpOutput}
+                language="bash"
+                maxHeight="max-h-[540px]"
+              />
+            </section>
+          )}
+        </div>
+      );
+    }
+
+    if (["trust-repair-model", "safety-model"].includes(activeTab)) {
+      return (
+        <div className="grid gap-4 xl:grid-cols-2">
+          <DossierList
+            title="Trust And Safety Capabilities"
+            icon="verified_user"
+            tone="green"
+            items={project.capabilities}
+          />
+          <DossierList
+            title="Known Gaps"
+            icon="warning"
+            tone="rose"
+            itemIcon="error"
+            items={project.missingPieces}
+          />
+          <DossierList
+            title="Potential Improvements"
+            icon="construction"
+            tone="amber"
+            itemIcon="build_circle"
+            items={project.potentialImprovements}
+          />
+        </div>
+      );
+    }
+
+    if (activeTab === "execution-evidence") {
+      return (
+        <div className="space-y-4">
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
+              icon="release_alert"
+              title="Evidence Posture"
+              tone="rose"
+            />
+            <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+              <DossierStat
+                label="Completion"
+                value={`${project.completion}%`}
+                icon="speed"
+                tone="cyan"
+              />
+              <DossierStat
+                label="Operational"
+                value={`${project.operationalCompleteness}%`}
+                icon="settings_suggest"
+                tone="green"
+              />
+              <DossierStat
+                label="Product evidence"
+                value={`${project.productCompleteness}%`}
+                icon="fact_check"
+                tone={project.productCompleteness >= 70 ? "green" : "amber"}
+              />
+              <DossierStat
+                label="Governance"
+                value={project.governanceGroup}
+                icon="policy"
+                tone="violet"
+              />
+            </div>
+          </section>
+          <div className="grid gap-4 xl:grid-cols-2">
+            <DossierList
+              title="Produced Artifacts"
+              icon="deployed_code"
+              tone="teal"
+              items={project.produces}
+            />
+            <DossierList
+              title="Documentation Evidence"
+              icon="library_books"
+              tone="blue"
+              items={project.documentationOutputs}
+            />
+            <DossierList
+              title="Next Verification Steps"
+              icon="playlist_add_check"
+              tone="green"
+              items={project.nextSteps}
+            />
+            <DossierList
+              title="Missing Evidence"
+              icon="report"
+              tone="rose"
+              itemIcon="priority_high"
+              items={project.missingPieces}
+            />
+          </div>
+        </div>
+      );
+    }
+
+    if (activeTab === "structra-lab") {
+      return (
+        <div className="space-y-4">
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
+              icon="data_object"
+              title="Structra Lab"
+              tone="cyan"
+            />
+            <p className="max-w-4xl text-sm leading-7 text-atl-silver">
+              The full Structra project is a Tauri desktop app. The site lab is
+              a smaller browser-safe cousin that demonstrates the core workflow:
+              visual fields and workflow steps become structured JSON, schema,
+              and YAML output.
+            </p>
+            <Link
+              to="/structra-lab"
+              className="mt-4 inline-flex min-h-10 items-center gap-2 rounded-[8px] border border-cyan-300/60 bg-cyan-300/15 px-5 text-sm font-bold text-cyan-100 no-underline"
+            >
+              Open Structra Lab <ExternalLink className="h-4 w-4" />
+            </Link>
+          </section>
+          <div className="grid gap-4 md:grid-cols-3">
+            {[
+              [
+                "Inputs",
+                "Visual field definitions, binding paths, example values, workflow steps, and dependencies.",
+              ],
+              [
+                "Model",
+                "A structured document plus workflow graph that can be validated before export.",
+              ],
+              [
+                "Outputs",
+                "JSON values, JSON Schema-style previews, portable YAML, GitHub Actions, and GitLab CI shapes.",
+              ],
+            ].map(([title, body]) => (
+              <article key={title} className="dossier-card p-5">
+                <h3 className="text-lg font-black text-atl-archive">{title}</h3>
+                <p className="mt-2 text-sm leading-6 text-atl-silver">{body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    return (
+      <div className="space-y-4">
+        <section className="dossier-card p-5">
+          <h2 className="mb-3 text-2xl font-bold text-atl-archive">
+            About {project.name}
+          </h2>
+          <p className="max-w-5xl text-sm leading-7 text-atl-silver">
+            {project.ecosystemRole || project.summary}
+          </p>
+          <div className="mt-5 grid gap-3 md:grid-cols-3">
+            {[
+              ["Overall", project.completion, "speed", "bg-cyan-300"],
+              [
+                "Operational",
+                project.operationalCompleteness,
+                "settings_suggest",
+                "bg-emerald-300",
+              ],
+              [
+                "Product Evidence",
+                project.productCompleteness,
+                "fact_check",
+                "bg-amber-300",
+              ],
+            ].map(([label, value, icon, color]) => (
+              <div
+                key={label}
+                className="rounded-[8px] border border-cyan-100/15 bg-slate-950/30 p-4"
+              >
+                <div className="mb-3 flex items-center gap-3">
+                  <span className="grid h-10 w-10 place-items-center rounded-[8px] border border-cyan-100/20 bg-slate-950/45">
+                    <MaterialIcon
+                      name={String(icon)}
+                      className="text-cyan-200"
+                    />
+                  </span>
+                  <span className="text-sm text-atl-silver">{label}</span>
+                  <span className="ml-auto text-xl font-black text-atl-archive">
+                    {value}%
+                  </span>
+                </div>
+                <div className="h-2 overflow-hidden rounded-full bg-slate-950/70">
+                  <div
+                    className={`h-full rounded-full ${color}`}
+                    style={{ width: `${Math.min(100, Number(value))}%` }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <div className="grid gap-4 xl:grid-cols-3">
+          <DossierList
+            title="Capabilities"
+            icon="inventory_2"
+            tone="cyan"
+            items={project.capabilities.slice(0, 8)}
+          />
+          <DossierList
+            title="Outputs"
+            icon="output"
+            tone="teal"
+            items={project.produces.slice(0, 8)}
+          />
+          <DossierList
+            title="Next Steps"
+            icon="playlist_add_check"
+            tone="amber"
+            items={project.nextSteps.slice(0, 8)}
+          />
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <DossierProjectShell
+      project={project}
+      activeTab={activeTab}
+      tabs={tabs}
+      badges={[
+        {
+          label: project.status,
+          tone: project.status.toLowerCase().includes("blocked")
+            ? "rose"
+            : "amber",
+        },
+        { label: project.lifecycle || "cataloged", tone: "cyan" },
+        { label: profile.type, tone: profile.typeTone },
+      ]}
+      metadata={[
+        {
+          label: "Primary Language",
+          value: profile.primaryLanguage,
+          icon: "deployed_code",
+        },
+        { label: "Platform", value: profile.platform, icon: "apps" },
+        { label: "Catalog Updated", value: generatedDate, icon: "schedule" },
+        { label: "Maintainer", value: "Aptlantis Studio", icon: "groups" },
+        {
+          label: "Governance",
+          value: project.governanceGroup,
+          icon: "verified_user",
+        },
+      ]}
+      statusRows={statusRows}
+      links={projectLinks}
+      heroImageSrc={project.screenshots[0]?.src || project.logoSrc}
+      evidenceTabId={
+        tabs.some((tab) => tab.id === "execution-evidence")
+          ? "execution-evidence"
+          : undefined
+      }
+      onTabChange={setActiveTab}
+    >
+      {renderDossierTab()}
     </DossierProjectShell>
   );
 };
@@ -1683,6 +2239,17 @@ const ProjectDetailPage = () => {
   if (project.id === "filecabinet") {
     return (
       <FileCabinetProjectPage
+        project={project}
+        portfolio={portfolio}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
+    );
+  }
+
+  if (project.id !== "cityhall") {
+    return (
+      <ProjectDossierPage
         project={project}
         portfolio={portfolio}
         activeTab={activeTab}

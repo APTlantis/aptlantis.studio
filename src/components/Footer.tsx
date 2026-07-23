@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="mb-4 md:mb-0">
             <h2 className="text-xl font-bold text-atl-archive">Aptlantis</h2>
             <p className="atl-eyebrow text-[0.62rem]">
-              Atlanta Studio project catalog
+              Aptlantis Studio project catalog
             </p>
           </div>
 
