@@ -1,40 +1,40 @@
 {
   "generatedAt": "2026-07-13T04:49:50.260Z",
-  "projectCount": 9,
-  "averageCompletion": 86,
+  "projectCount": 12,
+  "averageCompletion": 85,
   "statusCounts": {
-    "active": 4,
-    "paused": 2,
+    "active": 6,
+    "paused": 3,
     "blocked": 1,
     "Paused": 1,
     "paused / active": 1
   },
   "governanceCounts": {
     "CityHall": 1,
-    "CTS": 2,
-    "DRS": 6
+    "CTS": 4,
+    "DRS": 7
   },
   "tagCounts": {
     "standards": 1,
     "cityhall": 1,
     "wgs": 1,
     "pps": 1,
-    "cts": 2,
-    "drs": 5,
+    "cts": 5,
+    "drs": 6,
     "wds": 1,
-    "aamhs": 2,
+    "aamhs": 1,
     "neonink": 1,
     "sesm": 1,
     "templates": 1,
     "governance": 1,
     "d3": 1,
-    "mermaid": 2,
+    "mermaid": 3,
     "cratesio": 1,
     "mirror": 1,
-    "go": 2,
-    "python": 2,
-    "cli": 2,
-    "local-first": 6,
+    "go": 1,
+    "python": 4,
+    "cli": 3,
+    "local-first": 7,
     "archive-oriented": 1,
     "prometheus": 1,
     "pprof": 1,
@@ -44,20 +44,20 @@
     "airgap": 1,
     "sidecars": 1,
     "high-performance": 1,
-    "paused": 1,
+    "paused": 2,
     "production": 1,
     "chat": 1,
-    "tauri": 2,
-    "rust": 2,
-    "react": 2,
+    "tauri": 3,
+    "rust": 3,
+    "react": 3,
     "sqlite": 1,
     "openai": 1,
     "importer": 1,
     "artifact-index": 1,
     "archive": 1,
-    "desktop-application": 2,
+    "desktop-application": 4,
     "operator-centric": 1,
-    "prism": 1,
+    "prism": 2,
     "msi": 1,
     "desktop": 2,
     "vault": 1,
@@ -69,14 +69,11 @@
     "dark-theme": 1,
     "wpf": 1,
     "vbnet": 1,
-    "cryptography": 1,
-    "hashing": 1,
-    "archive-integrity": 1,
-    "post-quantum": 1,
-    "dataset-pipeline": 1,
-    "pgp": 1,
-    "parallel-hashing": 1,
-    "snapshot-manifest": 1,
+    "typescript": 2,
+    "vite": 2,
+    "markdown": 2,
+    "terminal": 1,
+    "blue-slate": 1,
     "winui": 1,
     "dotnet": 1,
     "csharp": 1,
@@ -90,13 +87,10 @@
     "mv3": 1,
     "javascript": 1,
     "archival": 1,
-    "markdown": 1,
     "screenshots": 1,
     "pdf": 1,
     "browser": 1,
     "downloads": 1,
-    "typescript": 1,
-    "vite": 1,
     "structured-data": 1,
     "visual-builder": 1,
     "asset-tooling": 1,
@@ -108,7 +102,23 @@
     "ide-themes": 1,
     "terminal-themes": 1,
     "public-catalog": 1,
-    "zip-downloads": 1
+    "zip-downloads": 1,
+    "flathub": 1,
+    "reference-toolkit": 1,
+    "metadata-reconciled": 1,
+    "podcast": 1,
+    "ollama": 1,
+    "tts": 1,
+    "audio-generation": 1,
+    "local-llm": 1,
+    "generator": 1,
+    "qb64": 1,
+    "inform": 1,
+    "winget": 1,
+    "windows": 1,
+    "package-manager": 1,
+    "basic": 1,
+    "active": 1
   },
   "topPriorities": [
     {
@@ -1932,6 +1942,300 @@
       ],
       "video": null,
       "helpOutput": "Language Atlas public inventory\n\nLanguages: 60\nLanguages with themes: 60\nTheme target groups: 6\nTheme files indexed: 300\n\nPublic routes:\n- /language-atlas\n- /data/language-atlas/atlas.json\n- /projects/logos-themes/logos/\n- /projects/logos-themes/themes/\n\nScope note: the browser Atlas zips copied public artifacts; it does not regenerate source logos or themes.",
+      "commandWizardSchema": null
+    },
+    {
+      "id": "fh-reftoolkit",
+      "name": "FH-RefToolkit",
+      "sourcePath": "D:\\CTS\\FH-RefToolkit",
+      "summary": "Flathub reference toolkit with a Python package and standalone scripts for querying and downloading Flathub reference material.",
+      "ecosystemRole": "Provides command-tool reference surfaces around Flathub data. The project is cataloged as stable and paused, with build and release verification still pending after governance migration.",
+      "status": "paused",
+      "lifecycle": "stable command-tool-group",
+      "governanceGroup": "CTS",
+      "governingStandard": "Command Tool Standard",
+      "completion": 74,
+      "operationalCompleteness": 68,
+      "productCompleteness": 58,
+      "complexity": "low-moderate",
+      "strategicRelevance": "medium",
+      "maintenanceBurden": "low",
+      "capabilities": [
+        "query Flathub reference data",
+        "download reference material through standalone script entry points",
+        "provide package-oriented Python tooling",
+        "retain legacy FlathubRefs migration evidence"
+      ],
+      "interfaces": [
+        "Download.py",
+        "Query.py",
+        "src package surface",
+        "pyproject.toml",
+        "standalone script entry points"
+      ],
+      "produces": [
+        "Flathub reference query outputs",
+        "downloaded reference material",
+        "Python package entry points",
+        "standalone script workflows"
+      ],
+      "consumes": [
+        "Flathub references",
+        "query parameters",
+        "local filesystem output paths"
+      ],
+      "dependsOn": [
+        "Python package metadata",
+        "README.md workflow notes",
+        "CTS manifest"
+      ],
+      "usedBy": [
+        "Aptlantis command-tool catalog",
+        "future Flathub reference workflows"
+      ],
+      "missingPieces": [
+        "Current build, test, artifact, and release posture were not executed during governance migration.",
+        "Standalone and packaged entry points still need separate verification.",
+        "Project-owner language should replace inferred metadata where needed."
+      ],
+      "nextSteps": [
+        "Verify packaged Python entry point.",
+        "Verify standalone Download.py and Query.py workflows.",
+        "Record expected outputs and failure modes."
+      ],
+      "potentialImprovements": [
+        "Add command examples to the Studio page.",
+        "Add sample output snippets after verification.",
+        "Decide whether FlathubRefs legacy material needs a separate evidence note."
+      ],
+      "documentationOutputs": [
+        "D:/CTS/FH-RefToolkit/README.md",
+        "D:/CTS/FH-RefToolkit/FH-RefToolkit.manifest.toml",
+        "D:/CTS/FH-RefToolkit/pyproject.toml"
+      ],
+      "tags": [
+        "cts",
+        "python",
+        "flathub",
+        "reference-toolkit",
+        "cli",
+        "paused",
+        "metadata-reconciled"
+      ],
+      "repoUrl": "",
+      "cloneCommand": "Local source workspace: D:\\CTS\\FH-RefToolkit",
+      "manifestPath": "D:/CTS/FH-RefToolkit/FH-RefToolkit.manifest.toml",
+      "logoSrc": "/projects/logos-themes/logos/apt-flathub-logo.svg",
+      "screenshots": [
+        {
+          "src": "/projects/logos-themes/logos/apt-flathub-logo.svg",
+          "caption": "Flathub language/ecosystem logo used as visual identity for the reference toolkit card."
+        }
+      ],
+      "video": null,
+      "helpOutput": "FH-RefToolkit exposes Python package and standalone script surfaces. Verify packaged and standalone entry points separately before calling it release-ready.",
+      "commandWizardSchema": null
+    },
+    {
+      "id": "script-writers",
+      "name": "ScriptWriters",
+      "sourcePath": "D:\\CTS\\ScriptWriters",
+      "summary": "Local LLM podcast factory that turns topic files and research packets into multi-host scripts and offline audio outputs.",
+      "ecosystemRole": "Documents the local media-generation pipeline side of Aptlantis: research packets, LLM-authored scripts, voice synthesis, and rendered episode artifacts.",
+      "status": "active",
+      "lifecycle": "stable generator",
+      "governanceGroup": "CTS",
+      "governingStandard": "Command Tool Standard",
+      "completion": 90,
+      "operationalCompleteness": 82,
+      "productCompleteness": 72,
+      "complexity": "high",
+      "strategicRelevance": "medium",
+      "maintenanceBurden": "medium",
+      "capabilities": [
+        "generate cited research packets",
+        "generate multi-host podcast scripts",
+        "render Bark or XTTS audio",
+        "run offline with local Ollama and ffmpeg dependencies",
+        "batch process topic files",
+        "run local dependency doctor checks"
+      ],
+      "interfaces": [
+        "python -m scriptwriters.cli research gen",
+        "python -m scriptwriters.cli research build",
+        "python -m scriptwriters.cli doctor",
+        "config.yaml",
+        "topic files",
+        "speaker profiles"
+      ],
+      "produces": [
+        "research packets",
+        "podcast scripts",
+        "audio stems",
+        "episode MP3 outputs",
+        "local run artifacts under out/"
+      ],
+      "consumes": [
+        "topic files",
+        "source URLs",
+        "voice samples",
+        "speaker profiles",
+        "Ollama model output"
+      ],
+      "dependsOn": [
+        "Python 3.10+",
+        "Ollama",
+        "XTTS v2",
+        "FFmpeg",
+        "Bark",
+        "Torch/Transformers runtime constraints"
+      ],
+      "usedBy": [
+        "local podcast generation workflows",
+        "Aptlantis media-generation experiments"
+      ],
+      "missingPieces": [
+        "Current Studio pass did not run the heavy local LLM/audio pipeline.",
+        "README contains generated project docs plus a stray helper snippet that should be cleaned separately.",
+        "Release package evidence was not revalidated here."
+      ],
+      "nextSteps": [
+        "Run scriptwriters doctor and record current dependency state.",
+        "Generate one short research/audio smoke artifact for public evidence.",
+        "Clean the README tail without changing tool behavior."
+      ],
+      "potentialImprovements": [
+        "Add an evidence card with a redacted research packet sample.",
+        "Add short audio-output metadata without publishing private source material.",
+        "Document safe model/backend choices for quick previews."
+      ],
+      "documentationOutputs": [
+        "D:/CTS/ScriptWriters/README.md",
+        "D:/CTS/ScriptWriters/ScriptWriters.manifest.toml",
+        "D:/CTS/ScriptWriters/pyproject.toml"
+      ],
+      "tags": [
+        "cts",
+        "python",
+        "podcast",
+        "ollama",
+        "tts",
+        "audio-generation",
+        "local-llm",
+        "cli",
+        "generator"
+      ],
+      "repoUrl": "",
+      "cloneCommand": "Local source workspace: D:\\CTS\\ScriptWriters",
+      "manifestPath": "D:/CTS/ScriptWriters/ScriptWriters.manifest.toml",
+      "logoSrc": "/projects/logos-themes/logos/apt-python-logo.svg",
+      "screenshots": [
+        {
+          "src": "/projects/logos-themes/logos/apt-python-logo.svg",
+          "caption": "Python language logo used as a placeholder identity for the local ScriptWriters generator card until project-specific imagery is added."
+        }
+      ],
+      "video": null,
+      "helpOutput": "Example commands:\npython -m scriptwriters.cli research gen --query \"post quantum encryption\" --url https://example.com/article\npython -m scriptwriters.cli research build --query \"Windows App SDK\" --backend bark\npython -m scriptwriters.cli doctor",
+      "commandWizardSchema": null
+    },
+    {
+      "id": "qb-winget",
+      "name": "QB-Winget",
+      "sourcePath": "D:\\DRS\\QB-Winget",
+      "summary": "QB64/InForm Windows desktop interface and tooling for Windows Package Manager search and install workflows.",
+      "ecosystemRole": "Represents the Basic/InForm desktop application branch of the Aptlantis catalog: a Windows package-manager interface with executable evidence present, but current build and release verification still to be recorded.",
+      "status": "active",
+      "lifecycle": "mostly-stable desktop-application",
+      "governanceGroup": "DRS",
+      "governingStandard": "Desktop Release Standard",
+      "completion": 76,
+      "operationalCompleteness": 72,
+      "productCompleteness": 60,
+      "complexity": "moderate",
+      "strategicRelevance": "medium",
+      "maintenanceBurden": "medium",
+      "capabilities": [
+        "provide QB64/InForm desktop UI for winget workflows",
+        "search Windows Package Manager output",
+        "run selected package install workflows",
+        "retain executable evidence in the project snapshot",
+        "preserve debug logs and winget command output samples"
+      ],
+      "interfaces": [
+        "WingettingQB64.exe",
+        "QB64.bas",
+        "QB64.frm",
+        "InForm UI files",
+        "winget search output",
+        "winget install output"
+      ],
+      "produces": [
+        "Windows desktop executable",
+        "saved package selections",
+        "winget search output logs",
+        "winget install output logs",
+        "debug logs"
+      ],
+      "consumes": [
+        "Windows Package Manager CLI output",
+        "QB64/InForm source files",
+        "selected package records"
+      ],
+      "dependsOn": [
+        "QB64",
+        "InForm",
+        "Windows Package Manager",
+        "Windows desktop runtime"
+      ],
+      "usedBy": [
+        "Aptlantis desktop application catalog",
+        "Windows package workflow experiments"
+      ],
+      "missingPieces": [
+        "Build, test, installer, and release posture were not executed during governance migration.",
+        "Executable evidence exists, but current rebuild proof is not recorded.",
+        "Project path in manifest reflects historical BASIC location and should be reconciled with D:/DRS/QB-Winget."
+      ],
+      "nextSteps": [
+        "Verify QB64/InForm build from source.",
+        "Record current winget search and install smoke results.",
+        "Decide whether release packaging belongs under DRS before public distribution."
+      ],
+      "potentialImprovements": [
+        "Add screenshots from the InForm UI.",
+        "Add a release evidence checklist for the executable.",
+        "Reconcile historical BASIC manifest paths with current DRS location."
+      ],
+      "documentationOutputs": [
+        "D:/DRS/QB-Winget/README.md",
+        "D:/DRS/QB-Winget/QB-Winget.manifest.toml",
+        "D:/DRS/QB-Winget/winget_search_output.txt",
+        "D:/DRS/QB-Winget/winget_install_output.txt"
+      ],
+      "tags": [
+        "drs",
+        "qb64",
+        "inform",
+        "winget",
+        "windows",
+        "desktop-application",
+        "package-manager",
+        "basic",
+        "active"
+      ],
+      "repoUrl": "",
+      "cloneCommand": "Local source workspace: D:\\DRS\\QB-Winget",
+      "manifestPath": "D:/DRS/QB-Winget/QB-Winget.manifest.toml",
+      "logoSrc": "/logos/dnf-wingettingqb64-logo.svg",
+      "screenshots": [
+        {
+          "src": "/logos/dnf-wingettingqb64-logo.svg",
+          "caption": "Existing Aptlantis WingettingQB64 logo used as the public identity asset for QB-Winget."
+        }
+      ],
+      "video": null,
+      "helpOutput": "QB-Winget includes QB64/InForm source files, an executable snapshot, saved package data, and winget search/install output logs. Current public record is metadata-reconciled, not release-verified.",
       "commandWizardSchema": null
     }
   ]

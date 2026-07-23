@@ -812,6 +812,24 @@ const projectDossierProfile: Record<
     primaryLanguage: "Python / SVG",
     platform: "Public Catalog",
   },
+  "fh-reftoolkit": {
+    type: "Reference Toolkit",
+    typeTone: "teal",
+    primaryLanguage: "Python",
+    platform: "CLI",
+  },
+  "script-writers": {
+    type: "Audio Generator",
+    typeTone: "amber",
+    primaryLanguage: "Python",
+    platform: "CLI",
+  },
+  "qb-winget": {
+    type: "Desktop Tool",
+    typeTone: "blue",
+    primaryLanguage: "QB64 / InForm",
+    platform: "Windows",
+  },
 };
 
 const ProjectDossierPage = ({
