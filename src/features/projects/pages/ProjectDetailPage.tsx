@@ -21,6 +21,7 @@ import type {
   ProjectRecord,
 } from "../types";
 import { CodeBlock } from "../components/CodeBlock";
+import { CityHallProjectPage } from "../components/CityHallProjectPage";
 import { CommandBuilder } from "../components/CommandBuilder";
 import {
   DossierProjectShell,
@@ -163,10 +164,13 @@ const projectTeachingTabs: Record<string, ProjectTeachingTab[]> = {
     { id: "trust-repair-model", label: "Trust / Release Model" },
   ],
   cityhall: [
-    { id: "overview", label: "Overview" },
-    { id: "usage", label: "Usage" },
-    { id: "visualizations", label: "Visualizations" },
-    { id: "downloads-templates", label: "Downloads / Templates" },
+    { id: "overview", label: "Map" },
+    { id: "standards", label: "Standards" },
+    { id: "workflows", label: "Workflows" },
+    { id: "templates", label: "Templates" },
+    { id: "relationships", label: "Relationships" },
+    { id: "changes", label: "Changes" },
+    { id: "downloads-templates", label: "Downloads" },
   ],
   structra: [
     { id: "overview", label: "Overview" },
@@ -737,6 +741,11 @@ const dossierTabIcons: Record<string, string> = {
   "trust-repair-model": "verified_user",
   "downloads-templates": "download",
   "structra-lab": "data_object",
+  standards: "account_tree",
+  workflows: "schema",
+  templates: "article",
+  relationships: "hub",
+  changes: "history",
 };
 
 const projectDossierProfile: Record<
@@ -2247,9 +2256,9 @@ const ProjectDetailPage = () => {
     );
   }
 
-  if (project.id !== "cityhall") {
+  if (project.id === "cityhall") {
     return (
-      <ProjectDossierPage
+      <CityHallProjectPage
         project={project}
         portfolio={portfolio}
         activeTab={activeTab}
@@ -2257,6 +2266,15 @@ const ProjectDetailPage = () => {
       />
     );
   }
+
+  return (
+    <ProjectDossierPage
+      project={project}
+      portfolio={portfolio}
+      activeTab={activeTab}
+      setActiveTab={setActiveTab}
+    />
+  );
 
   return (
     <div className="min-h-screen text-atl-archive">
