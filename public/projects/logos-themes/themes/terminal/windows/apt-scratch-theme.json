@@ -1,0 +1,23 @@
+{
+  "name": "APT Scratch",
+  "background": "#020615",
+  "foreground": "#EFF2E4",
+  "cursorColor": "#DD680A",
+  "selectionBackground": "#144D6B",
+  "black": "#020615",
+  "red": "#DD680A",
+  "green": "#F39F18",
+  "yellow": "#076693",
+  "blue": "#076693",
+  "purple": "#052855",
+  "cyan": "#DD680A",
+  "white": "#C1C5AA",
+  "brightBlack": "#030F2A",
+  "brightRed": "#DD680A",
+  "brightGreen": "#F39F18",
+  "brightYellow": "#076693",
+  "brightBlue": "#DD680A",
+  "brightPurple": "#076693",
+  "brightCyan": "#F39F18",
+  "brightWhite": "#EFF2E4"
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NotepadPlus>
+    <LexerStyles>
+
+        <LexerType name="python" desc="Python" ext="py">
+            <WordsStyle name="DEFAULT"      fgColor="EEDAF4"   bgColor="0A0415"    bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="COMMENTLINE"  fgColor="2E1A56"    bgColor=""        bold="no"  italic="yes" underline="no" />
+            <WordsStyle name="NUMBER"       fgColor="D0ADE9"    bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="STRING"       fgColor="EEDAF4"     bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="CHARACTER"    fgColor="EEDAF4"     bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="WORD"         fgColor="140828"     bgColor=""        bold="yes" italic="no"  underline="no" />
+            <WordsStyle name="TRIPLE"       fgColor="2E1A56"    bgColor=""        bold="no"  italic="yes" underline="no" />
+            <WordsStyle name="TRIPLEDOUBLE" fgColor="2E1A56"    bgColor=""        bold="no"  italic="yes" underline="no" />
+            <WordsStyle name="CLASSNAME"    fgColor="140828" bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="DEFNAME"      fgColor="EEDAF4"     bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="OPERATOR"     fgColor="D0ADE9"  bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="IDENTIFIER"   fgColor="EEDAF4"   bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="COMMENTBLOCK" fgColor="2E1A56"    bgColor=""        bold="no"  italic="yes" underline="no" />
+            <WordsStyle name="STRINGEOL"    fgColor="EEDAF4"     bgColor="261937" bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="WORD2"        fgColor="D0ADE9" bgColor=""       bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="DECORATOR"    fgColor="EEDAF4"     bgColor=""        bold="no"  italic="no"  underline="no" />
+        </LexerType>
+
+        <LexerType name="cpp" desc="C, C++" ext="cpp c h cc cxx hpp">
+            <WordsStyle name="DEFAULT"      fgColor="EEDAF4"   bgColor="0A0415"    bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="COMMENT"      fgColor="2E1A56"    bgColor=""        bold="no"  italic="yes" underline="no" />
+            <WordsStyle name="COMMENTLINE"  fgColor="2E1A56"    bgColor=""        bold="no"  italic="yes" underline="no" />
+            <WordsStyle name="NUMBER"       fgColor="D0ADE9"    bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="WORD"         fgColor="140828"     bgColor=""        bold="yes" italic="no"  underline="no" />
+            <WordsStyle name="STRING"       fgColor="EEDAF4"     bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="CHARACTER"    fgColor="EEDAF4"     bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="OPERATOR"     fgColor="D0ADE9"  bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="IDENTIFIER"   fgColor="EEDAF4"   bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="PREPROCESSOR" fgColor="D0ADE9" bgColor=""       bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="WORD2"        fgColor="140828" bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="WORD3"        fgColor="EEDAF4"     bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="WORD4"        fgColor="EEDAF4"     bgColor=""        bold="no"  italic="no"  underline="no" />
+        </LexerType>
+
+        <LexerType name="xml" desc="XML" ext="xml xsl xsd">
+            <WordsStyle name="DEFAULT"          fgColor="EEDAF4"   bgColor="0A0415"    bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="COMMENT"          fgColor="2E1A56"    bgColor=""        bold="no"  italic="yes" underline="no" />
+            <WordsStyle name="NUMBER"           fgColor="D0ADE9"    bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="DOUBLESTRING"     fgColor="EEDAF4"     bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="SINGLESTRING"     fgColor="EEDAF4"     bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="TAG"              fgColor="140828"     bgColor=""        bold="yes" italic="no"  underline="no" />
+            <WordsStyle name="TAGEND"           fgColor="140828"     bgColor=""        bold="yes" italic="no"  underline="no" />
+            <WordsStyle name="ATTRIBUTE"        fgColor="140828" bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="CDATA"            fgColor="EEDAF4"     bgColor="261937" bold="no"  italic="no"  underline="no" />
+        </LexerType>
+
+        <LexerType name="json" desc="JSON" ext="json">
+            <WordsStyle name="DEFAULT"          fgColor="EEDAF4"   bgColor="0A0415"    bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="NUMBER"           fgColor="D0ADE9"    bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="STRING"           fgColor="EEDAF4"     bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="STRINGEOL"        fgColor="EEDAF4"     bgColor="261937" bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="PROPERTYNAME"     fgColor="140828" bgColor=""        bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="ESCAPESEQUENCE"   fgColor="D0ADE9" bgColor=""       bold="no"  italic="no"  underline="no" />
+            <WordsStyle name="KEYWORD"          fgColor="140828"     bgColor=""        bold="yes" italic="no"  underline="no" />
+            <WordsStyle name="OPERATOR"         fgColor="D0ADE9"  bgColor=""        bold="no"  italic="no"  underline="no" />
+        </LexerType>
+
+    </LexerStyles>
+
+    <GlobalStyles>
+        <WidgetStyle name="Global override"                   fgColor=""       bgColor=""        bold="no"  italic="no"  underline="no" />
+        <WidgetStyle name="Default Style"                     fgColor="EEDAF4" bgColor="0A0415"    bold="no"  italic="no"  underline="no" />
+        <WidgetStyle name="Indent guideline style"            fgColor="2E1A56" bgColor=""      bold="no"  italic="no"  underline="no" />
+        <WidgetStyle name="Brace highlight style"             fgColor="140828" bgColor=""      bold="yes" italic="no"  underline="no" />
+        <WidgetStyle name="Bad brace colour"                  fgColor="FF4444" bgColor=""        bold="no"  italic="no"  underline="no" />
+        <WidgetStyle name="Current line background colour"    fgColor=""       bgColor="140828" bold="no" italic="no" underline="no" />
+        <WidgetStyle name="Selected text colour"              fgColor=""       bgColor="49336A"   bold="no"  italic="no"  underline="no" />
+        <WidgetStyle name="Caret colour"                      fgColor="140828" bgColor="0A0415"  bold="no"  italic="no"  underline="no" />
+        <WidgetStyle name="Edge colour"                       fgColor="2E1A56" bgColor=""      bold="no"  italic="no"  underline="no" />
+        <WidgetStyle name="Line number margin"                fgColor="D0ADE9" bgColor="140828" bold="no" italic="no" underline="no" />
+        <WidgetStyle name="Fold margin"                       fgColor="2E1A56" bgColor="140828" bold="no" italic="no" underline="no" />
+        <WidgetStyle name="Fold margin highlight"             fgColor="D0ADE9" bgColor="261937" bold="no" italic="no"  underline="no" />
+        <WidgetStyle name="Find Mark Style"                   fgColor=""       bgColor="140828" bold="no" italic="no"  underline="no" />
+        <WidgetStyle name="Mark Style 1"                      fgColor=""       bgColor="EEDAF4"    bold="no"  italic="no"  underline="no" />
+        <WidgetStyle name="Mark Style 2"                      fgColor=""       bgColor="140828" bold="no" italic="no"  underline="no" />
+        <WidgetStyle name="Mark Style 3"                      fgColor=""       bgColor="D0ADE9" bold="no" italic="no" underline="no" />
+        <WidgetStyle name="Mark Style 4"                      fgColor=""       bgColor="261937" bold="no"  italic="no"  underline="no" />
+        <WidgetStyle name="Mark Style 5"                      fgColor=""       bgColor="2E1A56" bold="no" italic="no"  underline="no" />
+        <WidgetStyle name="Smart Highlighting"                fgColor=""       bgColor="261937" bold="no"  italic="no"  underline="no" />
+        <WidgetStyle name="URL hovered"                       fgColor="140828" bgColor=""      bold="no"  italic="no"  underline="yes" />
+        <WidgetStyle name="Tags match highlighting"           fgColor=""       bgColor="49336A"   bold="no"  italic="no"  underline="no" />
+        <WidgetStyle name="Tags attribute"                    fgColor="140828" bgColor=""      bold="no"  italic="no"  underline="no" />
+    </GlobalStyles>
+
+</NotepadPlus>

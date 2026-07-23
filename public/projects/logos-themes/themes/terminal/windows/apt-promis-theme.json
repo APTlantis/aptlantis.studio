@@ -1,0 +1,23 @@
+{
+  "name": "APT Promis",
+  "background": "#02040A",
+  "foreground": "#E7EEEF",
+  "cursorColor": "#07162B",
+  "selectionBackground": "#413C40",
+  "black": "#02040A",
+  "red": "#07162B",
+  "green": "#A1D8E8",
+  "yellow": "#51ACD5",
+  "blue": "#51ACD5",
+  "purple": "#14314F",
+  "cyan": "#07162B",
+  "white": "#A1D8E8",
+  "brightBlack": "#07162B",
+  "brightRed": "#07162B",
+  "brightGreen": "#A1D8E8",
+  "brightYellow": "#51ACD5",
+  "brightBlue": "#07162B",
+  "brightPurple": "#51ACD5",
+  "brightCyan": "#A1D8E8",
+  "brightWhite": "#E7EEEF"
+}

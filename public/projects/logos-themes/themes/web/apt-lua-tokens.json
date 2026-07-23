@@ -1,0 +1,14 @@
+{
+  "ecosystem": "lua",
+  "background": "#03030D",
+  "surface": "#0B0D2D",
+  "panel": "#0F154D",
+  "border": "#272835",
+  "selection": "#262B62",
+  "lineHighlight": "#0F154D",
+  "accent": "#0F154D",
+  "accentSecondary": "#0B0D2D",
+  "highlight": "#2A338C",
+  "textPrimary": "#DFE2EA",
+  "textMuted": "#B9C6DE"
+}

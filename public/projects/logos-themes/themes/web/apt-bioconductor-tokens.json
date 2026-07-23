@@ -1,0 +1,14 @@
+{
+  "ecosystem": "bioconductor",
+  "background": "#031819",
+  "surface": "#052021",
+  "panel": "#052B2B",
+  "border": "#04423D",
+  "selection": "#084F4B",
+  "lineHighlight": "#052B2B",
+  "accent": "#04423D",
+  "accentSecondary": "#084F4B",
+  "highlight": "#052B2B",
+  "textPrimary": "#F6FCFC",
+  "textMuted": "#CFEAE9"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "APT Docker",
+  "background": "#03030E",
+  "foreground": "#F7FAFC",
+  "cursorColor": "#07194B",
+  "selectionBackground": "#122D60",
+  "black": "#03030E",
+  "red": "#07194B",
+  "green": "#080F2D",
+  "yellow": "#1754A5",
+  "blue": "#1754A5",
+  "purple": "#122D60",
+  "cyan": "#07194B",
+  "white": "#CFE2EF",
+  "brightBlack": "#080F2D",
+  "brightRed": "#07194B",
+  "brightGreen": "#080F2D",
+  "brightYellow": "#1754A5",
+  "brightBlue": "#07194B",
+  "brightPurple": "#1754A5",
+  "brightCyan": "#080F2D",
+  "brightWhite": "#F7FAFC"
+}

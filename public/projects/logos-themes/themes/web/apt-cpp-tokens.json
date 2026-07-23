@@ -1,0 +1,14 @@
+{
+  "ecosystem": "cpp",
+  "background": "#020513",
+  "surface": "#020F2C",
+  "panel": "#0D243A",
+  "border": "#021B47",
+  "selection": "#072952",
+  "lineHighlight": "#0D243A",
+  "accent": "#021B47",
+  "accentSecondary": "#020F2C",
+  "highlight": "#07316B",
+  "textPrimary": "#E9F8F9",
+  "textMuted": "#9CE7F0"
+}

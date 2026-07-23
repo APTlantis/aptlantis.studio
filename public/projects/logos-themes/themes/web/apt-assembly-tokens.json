@@ -1,0 +1,14 @@
+{
+  "ecosystem": "assembly",
+  "background": "#080807",
+  "surface": "#231C15",
+  "panel": "#322516",
+  "border": "#2F2F2F",
+  "selection": "#4F341B",
+  "lineHighlight": "#322516",
+  "accent": "#E2A040",
+  "accentSecondary": "#4F341B",
+  "highlight": "#996B36",
+  "textPrimary": "#EBE6D8",
+  "textMuted": "#DDCFAF"
+}

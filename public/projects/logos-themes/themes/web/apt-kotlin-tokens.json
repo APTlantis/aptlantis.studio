@@ -1,0 +1,14 @@
+{
+  "ecosystem": "kotlin",
+  "background": "#0D010D",
+  "surface": "#2B0712",
+  "panel": "#250929",
+  "border": "#5B1821",
+  "selection": "#582C4E",
+  "lineHighlight": "#250929",
+  "accent": "#F59A1F",
+  "accentSecondary": "#ECA059",
+  "highlight": "#E46224",
+  "textPrimary": "#E7D2B8",
+  "textMuted": "#ECA059"
+}

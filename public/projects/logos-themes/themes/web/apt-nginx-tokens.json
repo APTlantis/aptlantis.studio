@@ -1,0 +1,14 @@
+{
+  "ecosystem": "nginx",
+  "background": "#040A0A",
+  "surface": "#0C2D17",
+  "panel": "#1A3523",
+  "border": "#195D28",
+  "selection": "#2B502A",
+  "lineHighlight": "#1A3523",
+  "accent": "#F5FADA",
+  "accentSecondary": "#0C2D17",
+  "highlight": "#195D28",
+  "textPrimary": "#F5FADA",
+  "textMuted": "#C3DBA0"
+}

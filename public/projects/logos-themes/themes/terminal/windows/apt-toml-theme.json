@@ -1,0 +1,23 @@
+{
+  "name": "APT Toml",
+  "background": "#01020F",
+  "foreground": "#F7F6F7",
+  "cursorColor": "#0A144D",
+  "selectionBackground": "#1F2C5F",
+  "black": "#01020F",
+  "red": "#0A144D",
+  "green": "#2848A6",
+  "yellow": "#070B2D",
+  "blue": "#070B2D",
+  "purple": "#2E4FA2",
+  "cyan": "#0A144D",
+  "white": "#D2D5E2",
+  "brightBlack": "#070B2D",
+  "brightRed": "#0A144D",
+  "brightGreen": "#2848A6",
+  "brightYellow": "#070B2D",
+  "brightBlue": "#0A144D",
+  "brightPurple": "#070B2D",
+  "brightCyan": "#2848A6",
+  "brightWhite": "#F7F6F7"
+}

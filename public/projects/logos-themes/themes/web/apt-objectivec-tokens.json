@@ -1,0 +1,14 @@
+{
+  "ecosystem": "objectivec",
+  "background": "#020413",
+  "surface": "#06102B",
+  "panel": "#1F2835",
+  "border": "#142D53",
+  "selection": "#5C4A2E",
+  "lineHighlight": "#1F2835",
+  "accent": "#0F56A6",
+  "accentSecondary": "#06102B",
+  "highlight": "#142D53",
+  "textPrimary": "#DFEAE8",
+  "textMuted": "#AEC9CE"
+}

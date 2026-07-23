@@ -1,0 +1,23 @@
+{
+  "name": "APT Html",
+  "background": "#130404",
+  "foreground": "#FBDE9A",
+  "cursorColor": "#D53002",
+  "selectionBackground": "#6E1303",
+  "black": "#130404",
+  "red": "#D53002",
+  "green": "#A22904",
+  "yellow": "#8D1603",
+  "blue": "#8D1603",
+  "purple": "#E45C06",
+  "cyan": "#D53002",
+  "white": "#E2A85C",
+  "brightBlack": "#2D0703",
+  "brightRed": "#D53002",
+  "brightGreen": "#A22904",
+  "brightYellow": "#8D1603",
+  "brightBlue": "#D53002",
+  "brightPurple": "#8D1603",
+  "brightCyan": "#A22904",
+  "brightWhite": "#FBDE9A"
+}

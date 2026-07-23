@@ -1,0 +1,23 @@
+{
+  "name": "APT Powershell",
+  "background": "#010515",
+  "foreground": "#E2F2EF",
+  "cursorColor": "#042E6E",
+  "selectionBackground": "#042E6E",
+  "black": "#010515",
+  "red": "#042E6E",
+  "green": "#082250",
+  "yellow": "#020D2A",
+  "blue": "#020D2A",
+  "purple": "#105CA0",
+  "cyan": "#042E6E",
+  "white": "#A3DBE6",
+  "brightBlack": "#020D2A",
+  "brightRed": "#042E6E",
+  "brightGreen": "#082250",
+  "brightYellow": "#020D2A",
+  "brightBlue": "#042E6E",
+  "brightPurple": "#020D2A",
+  "brightCyan": "#082250",
+  "brightWhite": "#E2F2EF"
+}

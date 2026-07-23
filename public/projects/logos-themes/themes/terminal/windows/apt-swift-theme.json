@@ -1,0 +1,23 @@
+{
+  "name": "APT Swift",
+  "background": "#130101",
+  "foreground": "#F6ECBC",
+  "cursorColor": "#FDD220",
+  "selectionBackground": "#6B1C06",
+  "black": "#130101",
+  "red": "#FDD220",
+  "green": "#9B2604",
+  "yellow": "#D83102",
+  "blue": "#D83102",
+  "purple": "#4D0A02",
+  "cyan": "#FDD220",
+  "white": "#E3BF56",
+  "brightBlack": "#2D0302",
+  "brightRed": "#FDD220",
+  "brightGreen": "#9B2604",
+  "brightYellow": "#D83102",
+  "brightBlue": "#FDD220",
+  "brightPurple": "#D83102",
+  "brightCyan": "#9B2604",
+  "brightWhite": "#F6ECBC"
+}

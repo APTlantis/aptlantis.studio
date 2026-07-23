@@ -1,0 +1,23 @@
+{
+  "name": "APT Cloudflare",
+  "background": "#0D0203",
+  "foreground": "#E4DCB1",
+  "cursorColor": "#F57005",
+  "selectionBackground": "#512D0E",
+  "black": "#0D0203",
+  "red": "#F57005",
+  "green": "#6C1803",
+  "yellow": "#982E04",
+  "blue": "#982E04",
+  "purple": "#D75706",
+  "cyan": "#F57005",
+  "white": "#DAB645",
+  "brightBlack": "#2D0903",
+  "brightRed": "#F57005",
+  "brightGreen": "#6C1803",
+  "brightYellow": "#982E04",
+  "brightBlue": "#F57005",
+  "brightPurple": "#982E04",
+  "brightCyan": "#6C1803",
+  "brightWhite": "#E4DCB1"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "APT Flathub",
+  "background": "#010717",
+  "foreground": "#E2F2F6",
+  "cursorColor": "#0969CE",
+  "selectionBackground": "#06275E",
+  "black": "#010717",
+  "red": "#0969CE",
+  "green": "#06275E",
+  "yellow": "#020F2B",
+  "blue": "#020F2B",
+  "purple": "#0F5DA0",
+  "cyan": "#0969CE",
+  "white": "#A1D9ED",
+  "brightBlack": "#020F2B",
+  "brightRed": "#0969CE",
+  "brightGreen": "#06275E",
+  "brightYellow": "#020F2B",
+  "brightBlue": "#0969CE",
+  "brightPurple": "#020F2B",
+  "brightCyan": "#06275E",
+  "brightWhite": "#E2F2F6"
+}

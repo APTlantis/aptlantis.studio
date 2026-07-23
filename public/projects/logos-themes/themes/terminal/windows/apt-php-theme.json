@@ -1,0 +1,23 @@
+{
+  "name": "APT Php",
+  "background": "#060213",
+  "foreground": "#ECEDDF",
+  "cursorColor": "#0D072B",
+  "selectionBackground": "#543A32",
+  "black": "#060213",
+  "red": "#0D072B",
+  "green": "#1D1958",
+  "yellow": "#D9A355",
+  "blue": "#D9A355",
+  "purple": "#333E9F",
+  "cyan": "#0D072B",
+  "white": "#C8BABA",
+  "brightBlack": "#0D072B",
+  "brightRed": "#0D072B",
+  "brightGreen": "#1D1958",
+  "brightYellow": "#D9A355",
+  "brightBlue": "#0D072B",
+  "brightPurple": "#D9A355",
+  "brightCyan": "#1D1958",
+  "brightWhite": "#ECEDDF"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "APT Terraform",
+  "background": "#050210",
+  "foreground": "#E8E1F3",
+  "cursorColor": "#9B5FEB",
+  "selectionBackground": "#281351",
+  "black": "#050210",
+  "red": "#9B5FEB",
+  "green": "#190C4B",
+  "yellow": "#10072D",
+  "blue": "#10072D",
+  "purple": "#351894",
+  "cyan": "#9B5FEB",
+  "white": "#BC9DDC",
+  "brightBlack": "#10072D",
+  "brightRed": "#9B5FEB",
+  "brightGreen": "#190C4B",
+  "brightYellow": "#10072D",
+  "brightBlue": "#9B5FEB",
+  "brightPurple": "#10072D",
+  "brightCyan": "#190C4B",
+  "brightWhite": "#E8E1F3"
+}

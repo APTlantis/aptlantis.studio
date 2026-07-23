@@ -1,0 +1,23 @@
+{
+  "name": "APT Tex",
+  "background": "#020413",
+  "foreground": "#E7EFDE",
+  "cursorColor": "#050E2B",
+  "selectionBackground": "#574833",
+  "black": "#020413",
+  "red": "#050E2B",
+  "green": "#235E95",
+  "yellow": "#112A56",
+  "blue": "#112A56",
+  "purple": "#E5D79F",
+  "cyan": "#050E2B",
+  "white": "#E5D79F",
+  "brightBlack": "#050E2B",
+  "brightRed": "#050E2B",
+  "brightGreen": "#235E95",
+  "brightYellow": "#112A56",
+  "brightBlue": "#050E2B",
+  "brightPurple": "#112A56",
+  "brightCyan": "#235E95",
+  "brightWhite": "#E7EFDE"
+}

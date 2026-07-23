@@ -1,0 +1,23 @@
+{
+  "name": "APT Caddy",
+  "background": "#050A0B",
+  "foreground": "#EBF8D4",
+  "cursorColor": "#EBF8D4",
+  "selectionBackground": "#235630",
+  "black": "#050A0B",
+  "red": "#EBF8D4",
+  "green": "#0E3028",
+  "yellow": "#A5D46B",
+  "blue": "#A5D46B",
+  "purple": "#0E2A19",
+  "cyan": "#EBF8D4",
+  "white": "#B2D99F",
+  "brightBlack": "#0E2A19",
+  "brightRed": "#EBF8D4",
+  "brightGreen": "#0E3028",
+  "brightYellow": "#A5D46B",
+  "brightBlue": "#EBF8D4",
+  "brightPurple": "#A5D46B",
+  "brightCyan": "#0E3028",
+  "brightWhite": "#EBF8D4"
+}

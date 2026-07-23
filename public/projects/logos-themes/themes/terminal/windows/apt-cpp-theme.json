@@ -1,0 +1,23 @@
+{
+  "name": "APT Cpp",
+  "background": "#020513",
+  "foreground": "#E9F8F9",
+  "cursorColor": "#021B47",
+  "selectionBackground": "#072952",
+  "black": "#020513",
+  "red": "#021B47",
+  "green": "#07316B",
+  "yellow": "#020F2C",
+  "blue": "#020F2C",
+  "purple": "#1EDBF0",
+  "cyan": "#021B47",
+  "white": "#9CE7F0",
+  "brightBlack": "#020F2C",
+  "brightRed": "#021B47",
+  "brightGreen": "#07316B",
+  "brightYellow": "#020F2C",
+  "brightBlue": "#021B47",
+  "brightPurple": "#020F2C",
+  "brightCyan": "#07316B",
+  "brightWhite": "#E9F8F9"
+}

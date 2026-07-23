@@ -1,0 +1,14 @@
+{
+  "ecosystem": "qbasic",
+  "background": "#06020A",
+  "surface": "#06052D",
+  "panel": "#291626",
+  "border": "#06064F",
+  "selection": "#08066E",
+  "lineHighlight": "#291626",
+  "accent": "#08066E",
+  "accentSecondary": "#06064F",
+  "highlight": "#131FDA",
+  "textPrimary": "#F3EFE9",
+  "textMuted": "#AEB6D1"
+}

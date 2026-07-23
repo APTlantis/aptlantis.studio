@@ -1,0 +1,23 @@
+{
+  "name": "APT Lisp",
+  "background": "#0A0415",
+  "foreground": "#EEDAF4",
+  "cursorColor": "#140828",
+  "selectionBackground": "#49336A",
+  "black": "#0A0415",
+  "red": "#140828",
+  "green": "#EEDAF4",
+  "yellow": "#D0ADE9",
+  "blue": "#D0ADE9",
+  "purple": "#2E1A56",
+  "cyan": "#140828",
+  "white": "#D0ADE9",
+  "brightBlack": "#140828",
+  "brightRed": "#140828",
+  "brightGreen": "#EEDAF4",
+  "brightYellow": "#D0ADE9",
+  "brightBlue": "#140828",
+  "brightPurple": "#D0ADE9",
+  "brightCyan": "#EEDAF4",
+  "brightWhite": "#EEDAF4"
+}

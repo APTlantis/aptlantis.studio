@@ -1,0 +1,23 @@
+{
+  "name": "APT Prolog",
+  "background": "#100304",
+  "foreground": "#FBEAD4",
+  "cursorColor": "#6E0C06",
+  "selectionBackground": "#6E0C06",
+  "black": "#100304",
+  "red": "#6E0C06",
+  "green": "#4F0906",
+  "yellow": "#981A0B",
+  "blue": "#981A0B",
+  "purple": "#FBEAD4",
+  "cyan": "#6E0C06",
+  "white": "#F6D2A8",
+  "brightBlack": "#2B0606",
+  "brightRed": "#6E0C06",
+  "brightGreen": "#4F0906",
+  "brightYellow": "#981A0B",
+  "brightBlue": "#6E0C06",
+  "brightPurple": "#981A0B",
+  "brightCyan": "#4F0906",
+  "brightWhite": "#FBEAD4"
+}

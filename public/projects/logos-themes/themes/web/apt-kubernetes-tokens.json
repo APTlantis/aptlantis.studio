@@ -1,0 +1,14 @@
+{
+  "ecosystem": "kubernetes",
+  "background": "#030311",
+  "surface": "#060F2D",
+  "panel": "#222936",
+  "border": "#0F204B",
+  "selection": "#0F2852",
+  "lineHighlight": "#222936",
+  "accent": "#060F2D",
+  "accentSecondary": "#10336D",
+  "highlight": "#0F2852",
+  "textPrimary": "#E2ECF3",
+  "textMuted": "#A7CEE7"
+}

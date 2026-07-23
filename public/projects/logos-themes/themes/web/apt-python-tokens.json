@@ -1,0 +1,14 @@
+{
+  "ecosystem": "python",
+  "background": "#060A11",
+  "surface": "#0A1727",
+  "panel": "#242829",
+  "border": "#163150",
+  "selection": "#665023",
+  "lineHighlight": "#242829",
+  "accent": "#DCA426",
+  "accentSecondary": "#966D1F",
+  "highlight": "#0A1727",
+  "textPrimary": "#D5D4B3",
+  "textMuted": "#D0AF4C"
+}

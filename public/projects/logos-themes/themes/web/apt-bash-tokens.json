@@ -1,0 +1,14 @@
+{
+  "ecosystem": "bash",
+  "background": "#030311",
+  "surface": "#070D2C",
+  "panel": "#09174C",
+  "border": "#222736",
+  "selection": "#1B2D5A",
+  "lineHighlight": "#09174C",
+  "accent": "#09174C",
+  "accentSecondary": "#070D2C",
+  "highlight": "#244D9F",
+  "textPrimary": "#E5EAEB",
+  "textMuted": "#9DB0C4"
+}

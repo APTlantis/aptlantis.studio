@@ -1,0 +1,14 @@
+{
+  "ecosystem": "fsharp",
+  "background": "#020214",
+  "surface": "#09072C",
+  "panel": "#272434",
+  "border": "#0E0D4D",
+  "selection": "#212363",
+  "lineHighlight": "#272434",
+  "accent": "#09072C",
+  "accentSecondary": "#0E0D4D",
+  "highlight": "#242C90",
+  "textPrimary": "#E2E8EB",
+  "textMuted": "#A0A8D4"
+}

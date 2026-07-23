@@ -1,0 +1,23 @@
+{
+  "name": "APT Svelte",
+  "background": "#0E0202",
+  "foreground": "#EAE2BA",
+  "cursorColor": "#D93302",
+  "selectionBackground": "#611E07",
+  "black": "#0E0202",
+  "red": "#D93302",
+  "green": "#DD6109",
+  "yellow": "#992B04",
+  "blue": "#992B04",
+  "purple": "#F49A13",
+  "cyan": "#D93302",
+  "white": "#EEDDAB",
+  "brightBlack": "#2D0905",
+  "brightRed": "#D93302",
+  "brightGreen": "#DD6109",
+  "brightYellow": "#992B04",
+  "brightBlue": "#D93302",
+  "brightPurple": "#992B04",
+  "brightCyan": "#DD6109",
+  "brightWhite": "#EAE2BA"
+}

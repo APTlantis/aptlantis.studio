@@ -1,0 +1,23 @@
+{
+  "name": "APT Purescript",
+  "background": "#04020F",
+  "foreground": "#FAF7F8",
+  "cursorColor": "#0C082C",
+  "selectionBackground": "#453766",
+  "black": "#04020F",
+  "red": "#0C082C",
+  "green": "#1D1859",
+  "yellow": "#52A3DE",
+  "blue": "#52A3DE",
+  "purple": "#C5B6E7",
+  "cyan": "#0C082C",
+  "white": "#DDD0E8",
+  "brightBlack": "#0C082C",
+  "brightRed": "#0C082C",
+  "brightGreen": "#1D1859",
+  "brightYellow": "#52A3DE",
+  "brightBlue": "#0C082C",
+  "brightPurple": "#52A3DE",
+  "brightCyan": "#1D1859",
+  "brightWhite": "#FAF7F8"
+}

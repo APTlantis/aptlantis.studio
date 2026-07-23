@@ -1,0 +1,23 @@
+{
+  "name": "APT Aptlantisstudio",
+  "background": "#010110",
+  "foreground": "#C0CEFD",
+  "cursorColor": "#01E3FD",
+  "selectionBackground": "#262A66",
+  "black": "#010110",
+  "red": "#01E3FD",
+  "green": "#4D8BFD",
+  "yellow": "#01D5FC",
+  "blue": "#01D5FC",
+  "purple": "#9F58FA",
+  "cyan": "#01E3FD",
+  "white": "#666EF7",
+  "brightBlack": "#010212",
+  "brightRed": "#01E3FD",
+  "brightGreen": "#4D8BFD",
+  "brightYellow": "#01D5FC",
+  "brightBlue": "#01E3FD",
+  "brightPurple": "#01D5FC",
+  "brightCyan": "#4D8BFD",
+  "brightWhite": "#C0CEFD"
+}

@@ -1,0 +1,14 @@
+{
+  "ecosystem": "dbase",
+  "background": "#01050D",
+  "surface": "#031728",
+  "panel": "#112836",
+  "border": "#0A334C",
+  "selection": "#1B5067",
+  "lineHighlight": "#112836",
+  "accent": "#031728",
+  "accentSecondary": "#0A334C",
+  "highlight": "#186E8F",
+  "textPrimary": "#E6F0EF",
+  "textMuted": "#A1D8E0"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "APT Jave",
+  "background": "#0F0204",
+  "foreground": "#F2E9B5",
+  "cursorColor": "#D83102",
+  "selectionBackground": "#6E1103",
+  "black": "#0F0204",
+  "red": "#D83102",
+  "green": "#6E1103",
+  "yellow": "#9D2104",
+  "blue": "#9D2104",
+  "purple": "#EB5B08",
+  "cyan": "#D83102",
+  "white": "#FBEA9F",
+  "brightBlack": "#2C0504",
+  "brightRed": "#D83102",
+  "brightGreen": "#6E1103",
+  "brightYellow": "#9D2104",
+  "brightBlue": "#D83102",
+  "brightPurple": "#9D2104",
+  "brightCyan": "#6E1103",
+  "brightWhite": "#F2E9B5"
+}

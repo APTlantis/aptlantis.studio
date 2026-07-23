@@ -1,0 +1,14 @@
+{
+  "ecosystem": "ada",
+  "background": "#060E0E",
+  "surface": "#10241C",
+  "panel": "#0F3027",
+  "border": "#292C1A",
+  "selection": "#2B3726",
+  "lineHighlight": "#0F3027",
+  "accent": "#CEB85C",
+  "accentSecondary": "#0F3027",
+  "highlight": "#348F69",
+  "textPrimary": "#C3DEAA",
+  "textMuted": "#CEB85C"
+}

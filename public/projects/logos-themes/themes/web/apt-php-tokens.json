@@ -1,0 +1,14 @@
+{
+  "ecosystem": "php",
+  "background": "#060213",
+  "surface": "#0D072B",
+  "panel": "#2C1D2C",
+  "border": "#1D1958",
+  "selection": "#543A32",
+  "lineHighlight": "#2C1D2C",
+  "accent": "#0D072B",
+  "accentSecondary": "#D9A355",
+  "highlight": "#1D1958",
+  "textPrimary": "#ECEDDF",
+  "textMuted": "#C8BABA"
+}

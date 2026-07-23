@@ -1,0 +1,23 @@
+{
+  "name": "APT Mumps",
+  "background": "#030D0D",
+  "foreground": "#E4F1F1",
+  "cursorColor": "#0A2E2C",
+  "selectionBackground": "#134E4C",
+  "black": "#030D0D",
+  "red": "#0A2E2C",
+  "green": "#12413E",
+  "yellow": "#134E4C",
+  "blue": "#134E4C",
+  "purple": "#67D2D0",
+  "cyan": "#0A2E2C",
+  "white": "#A2DAD8",
+  "brightBlack": "#102725",
+  "brightRed": "#0A2E2C",
+  "brightGreen": "#12413E",
+  "brightYellow": "#134E4C",
+  "brightBlue": "#0A2E2C",
+  "brightPurple": "#134E4C",
+  "brightCyan": "#12413E",
+  "brightWhite": "#E4F1F1"
+}

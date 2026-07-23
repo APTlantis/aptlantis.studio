@@ -1,0 +1,14 @@
+{
+  "ecosystem": "cloudflare",
+  "background": "#0D0203",
+  "surface": "#2D0903",
+  "panel": "#332519",
+  "border": "#4E1203",
+  "selection": "#512D0E",
+  "lineHighlight": "#332519",
+  "accent": "#F57005",
+  "accentSecondary": "#982E04",
+  "highlight": "#6C1803",
+  "textPrimary": "#E4DCB1",
+  "textMuted": "#DAB645"
+}

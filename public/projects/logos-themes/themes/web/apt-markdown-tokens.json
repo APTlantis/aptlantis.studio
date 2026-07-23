@@ -1,0 +1,14 @@
+{
+  "ecosystem": "markdown",
+  "background": "#020212",
+  "surface": "#060A2C",
+  "panel": "#09164D",
+  "border": "#232836",
+  "selection": "#182B63",
+  "lineHighlight": "#09164D",
+  "accent": "#09164D",
+  "accentSecondary": "#060A2C",
+  "highlight": "#182B63",
+  "textPrimary": "#E1EBF2",
+  "textMuted": "#ABCCE6"
+}

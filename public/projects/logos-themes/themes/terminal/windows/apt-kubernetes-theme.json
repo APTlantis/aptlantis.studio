@@ -1,0 +1,23 @@
+{
+  "name": "APT Kubernetes",
+  "background": "#030311",
+  "foreground": "#E2ECF3",
+  "cursorColor": "#060F2D",
+  "selectionBackground": "#0F2852",
+  "black": "#030311",
+  "red": "#060F2D",
+  "green": "#0F2852",
+  "yellow": "#10336D",
+  "blue": "#10336D",
+  "purple": "#0F204B",
+  "cyan": "#060F2D",
+  "white": "#A7CEE7",
+  "brightBlack": "#060F2D",
+  "brightRed": "#060F2D",
+  "brightGreen": "#0F2852",
+  "brightYellow": "#10336D",
+  "brightBlue": "#060F2D",
+  "brightPurple": "#10336D",
+  "brightCyan": "#0F2852",
+  "brightWhite": "#E2ECF3"
+}

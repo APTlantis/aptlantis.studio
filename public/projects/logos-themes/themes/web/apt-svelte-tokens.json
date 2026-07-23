@@ -1,0 +1,14 @@
+{
+  "ecosystem": "svelte",
+  "background": "#0E0202",
+  "surface": "#2D0905",
+  "panel": "#35251B",
+  "border": "#4D1004",
+  "selection": "#611E07",
+  "lineHighlight": "#35251B",
+  "accent": "#D93302",
+  "accentSecondary": "#992B04",
+  "highlight": "#DD6109",
+  "textPrimary": "#EAE2BA",
+  "textMuted": "#EEDDAB"
+}

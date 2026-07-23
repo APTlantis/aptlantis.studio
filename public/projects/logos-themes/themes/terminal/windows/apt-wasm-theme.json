@@ -1,0 +1,23 @@
+{
+  "name": "APT Wasm",
+  "background": "#040310",
+  "foreground": "#E3E2EC",
+  "cursorColor": "#12104C",
+  "selectionBackground": "#2A2661",
+  "black": "#040310",
+  "red": "#12104C",
+  "green": "#0D0C2D",
+  "yellow": "#312793",
+  "blue": "#312793",
+  "purple": "#6D5CD1",
+  "cyan": "#12104C",
+  "white": "#A2A1DC",
+  "brightBlack": "#0D0C2D",
+  "brightRed": "#12104C",
+  "brightGreen": "#0D0C2D",
+  "brightYellow": "#312793",
+  "brightBlue": "#12104C",
+  "brightPurple": "#312793",
+  "brightCyan": "#0D0C2D",
+  "brightWhite": "#E3E2EC"
+}

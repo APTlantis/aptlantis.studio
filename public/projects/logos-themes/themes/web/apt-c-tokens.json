@@ -1,0 +1,14 @@
+{
+  "ecosystem": "c",
+  "background": "#120101",
+  "surface": "#2D0402",
+  "panel": "#382518",
+  "border": "#4D0C04",
+  "selection": "#6D1003",
+  "lineHighlight": "#382518",
+  "accent": "#D82D05",
+  "accentSecondary": "#6D1003",
+  "highlight": "#F69620",
+  "textPrimary": "#F2DDB2",
+  "textMuted": "#EAA259"
+}

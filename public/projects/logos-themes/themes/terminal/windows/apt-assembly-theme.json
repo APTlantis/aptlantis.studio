@@ -1,0 +1,23 @@
+{
+  "name": "APT Assembly",
+  "background": "#080807",
+  "foreground": "#EBE6D8",
+  "cursorColor": "#E2A040",
+  "selectionBackground": "#4F341B",
+  "black": "#080807",
+  "red": "#E2A040",
+  "green": "#996B36",
+  "yellow": "#4F341B",
+  "blue": "#4F341B",
+  "purple": "#DDCFAF",
+  "cyan": "#E2A040",
+  "white": "#DDCFAF",
+  "brightBlack": "#231C15",
+  "brightRed": "#E2A040",
+  "brightGreen": "#996B36",
+  "brightYellow": "#4F341B",
+  "brightBlue": "#E2A040",
+  "brightPurple": "#4F341B",
+  "brightCyan": "#996B36",
+  "brightWhite": "#EBE6D8"
+}

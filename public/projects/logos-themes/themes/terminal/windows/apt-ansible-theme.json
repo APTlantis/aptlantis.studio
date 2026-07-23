@@ -1,0 +1,23 @@
+{
+  "name": "APT Ansible",
+  "background": "#110102",
+  "foreground": "#F4DDA2",
+  "cursorColor": "#D23203",
+  "selectionBackground": "#642C09",
+  "black": "#110102",
+  "red": "#D23203",
+  "green": "#6D1302",
+  "yellow": "#E55F04",
+  "blue": "#E55F04",
+  "purple": "#9A2503",
+  "cyan": "#D23203",
+  "white": "#E7D6AE",
+  "brightBlack": "#2D0603",
+  "brightRed": "#D23203",
+  "brightGreen": "#6D1302",
+  "brightYellow": "#E55F04",
+  "brightBlue": "#D23203",
+  "brightPurple": "#E55F04",
+  "brightCyan": "#6D1302",
+  "brightWhite": "#F4DDA2"
+}

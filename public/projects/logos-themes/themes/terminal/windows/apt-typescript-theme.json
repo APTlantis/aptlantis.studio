@@ -1,0 +1,23 @@
+{
+  "name": "APT Typescript",
+  "background": "#010416",
+  "foreground": "#E3F1EE",
+  "cursorColor": "#046CD6",
+  "selectionBackground": "#0B2D5F",
+  "black": "#010416",
+  "red": "#046CD6",
+  "green": "#020C2B",
+  "yellow": "#02174C",
+  "blue": "#02174C",
+  "purple": "#159CE3",
+  "cyan": "#046CD6",
+  "white": "#A6DCE4",
+  "brightBlack": "#020C2B",
+  "brightRed": "#046CD6",
+  "brightGreen": "#020C2B",
+  "brightYellow": "#02174C",
+  "brightBlue": "#046CD6",
+  "brightPurple": "#02174C",
+  "brightCyan": "#020C2B",
+  "brightWhite": "#E3F1EE"
+}

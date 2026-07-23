@@ -1,0 +1,14 @@
+{
+  "ecosystem": "sgml",
+  "background": "#050913",
+  "surface": "#0B1728",
+  "panel": "#172536",
+  "border": "#262F39",
+  "selection": "#192E46",
+  "lineHighlight": "#172536",
+  "accent": "#0B1728",
+  "accentSecondary": "#192E46",
+  "highlight": "#172536",
+  "textPrimary": "#E1E7DB",
+  "textMuted": "#B9C9C5"
+}

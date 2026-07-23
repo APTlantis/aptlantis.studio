@@ -1,0 +1,23 @@
+{
+  "name": "APT Prometheus",
+  "background": "#0D0202",
+  "foreground": "#EFE1B2",
+  "cursorColor": "#D63202",
+  "selectionBackground": "#662B09",
+  "black": "#0D0202",
+  "red": "#D63202",
+  "green": "#FBDB1A",
+  "yellow": "#EB5B04",
+  "blue": "#EB5B04",
+  "purple": "#6E1302",
+  "cyan": "#D63202",
+  "white": "#D7B554",
+  "brightBlack": "#2D0602",
+  "brightRed": "#D63202",
+  "brightGreen": "#FBDB1A",
+  "brightYellow": "#EB5B04",
+  "brightBlue": "#D63202",
+  "brightPurple": "#EB5B04",
+  "brightCyan": "#FBDB1A",
+  "brightWhite": "#EFE1B2"
+}

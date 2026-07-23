@@ -1,0 +1,14 @@
+{
+  "ecosystem": "sql",
+  "background": "#110102",
+  "surface": "#2C0702",
+  "panel": "#4D1002",
+  "border": "#35211B",
+  "selection": "#672407",
+  "lineHighlight": "#4D1002",
+  "accent": "#FDD11C",
+  "accentSecondary": "#992B03",
+  "highlight": "#4D1002",
+  "textPrimary": "#EFE6B3",
+  "textMuted": "#F9E25F"
+}

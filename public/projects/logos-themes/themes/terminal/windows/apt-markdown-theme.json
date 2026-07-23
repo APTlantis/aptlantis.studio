@@ -1,0 +1,23 @@
+{
+  "name": "APT Markdown",
+  "background": "#020212",
+  "foreground": "#E1EBF2",
+  "cursorColor": "#09164D",
+  "selectionBackground": "#182B63",
+  "black": "#020212",
+  "red": "#09164D",
+  "green": "#182B63",
+  "yellow": "#060A2C",
+  "blue": "#060A2C",
+  "purple": "#274AA0",
+  "cyan": "#09164D",
+  "white": "#ABCCE6",
+  "brightBlack": "#060A2C",
+  "brightRed": "#09164D",
+  "brightGreen": "#182B63",
+  "brightYellow": "#060A2C",
+  "brightBlue": "#09164D",
+  "brightPurple": "#060A2C",
+  "brightCyan": "#182B63",
+  "brightWhite": "#E1EBF2"
+}

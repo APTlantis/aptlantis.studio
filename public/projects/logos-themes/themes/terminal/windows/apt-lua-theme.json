@@ -1,0 +1,23 @@
+{
+  "name": "APT Lua",
+  "background": "#03030D",
+  "foreground": "#DFE2EA",
+  "cursorColor": "#0F154D",
+  "selectionBackground": "#262B62",
+  "black": "#03030D",
+  "red": "#0F154D",
+  "green": "#2A338C",
+  "yellow": "#0B0D2D",
+  "blue": "#0B0D2D",
+  "purple": "#262B62",
+  "cyan": "#0F154D",
+  "white": "#B9C6DE",
+  "brightBlack": "#0B0D2D",
+  "brightRed": "#0F154D",
+  "brightGreen": "#2A338C",
+  "brightYellow": "#0B0D2D",
+  "brightBlue": "#0F154D",
+  "brightPurple": "#0B0D2D",
+  "brightCyan": "#2A338C",
+  "brightWhite": "#DFE2EA"
+}

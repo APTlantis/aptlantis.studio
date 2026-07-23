@@ -1,0 +1,23 @@
+{
+  "name": "APT Kotlin",
+  "background": "#0D010D",
+  "foreground": "#E7D2B8",
+  "cursorColor": "#F59A1F",
+  "selectionBackground": "#582C4E",
+  "black": "#0D010D",
+  "red": "#F59A1F",
+  "green": "#E46224",
+  "yellow": "#ECA059",
+  "blue": "#ECA059",
+  "purple": "#E7625A",
+  "cyan": "#F59A1F",
+  "white": "#ECA059",
+  "brightBlack": "#2B0712",
+  "brightRed": "#F59A1F",
+  "brightGreen": "#E46224",
+  "brightYellow": "#ECA059",
+  "brightBlue": "#F59A1F",
+  "brightPurple": "#ECA059",
+  "brightCyan": "#E46224",
+  "brightWhite": "#E7D2B8"
+}

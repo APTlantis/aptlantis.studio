@@ -1,0 +1,14 @@
+{
+  "ecosystem": "nim",
+  "background": "#0E0803",
+  "surface": "#2C1503",
+  "panel": "#3A2405",
+  "border": "#441D02",
+  "selection": "#4F2D04",
+  "lineHighlight": "#3A2405",
+  "accent": "#FFFF85",
+  "accentSecondary": "#C67503",
+  "highlight": "#FBD624",
+  "textPrimary": "#FFFF85",
+  "textMuted": "#FBD624"
+}

@@ -1,0 +1,14 @@
+{
+  "ecosystem": "docker",
+  "background": "#03030E",
+  "surface": "#080F2D",
+  "panel": "#07194B",
+  "border": "#212835",
+  "selection": "#122D60",
+  "lineHighlight": "#07194B",
+  "accent": "#07194B",
+  "accentSecondary": "#1754A5",
+  "highlight": "#080F2D",
+  "textPrimary": "#F7FAFC",
+  "textMuted": "#CFE2EF"
+}

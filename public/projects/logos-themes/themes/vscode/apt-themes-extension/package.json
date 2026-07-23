@@ -1,0 +1,333 @@
+{
+  "name": "apt-themes",
+  "displayName": "APT Themes (generated)",
+  "publisher": "your-publisher",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "APT Ada",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-ada-theme.json"
+      },
+      {
+        "label": "APT Ansible",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-ansible-theme.json"
+      },
+      {
+        "label": "APT Assembly",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-assembly-theme.json"
+      },
+      {
+        "label": "APT Bash",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-bash-theme.json"
+      },
+      {
+        "label": "APT Bioconductor",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-bioconductor-theme.json"
+      },
+      {
+        "label": "APT C",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-c-theme.json"
+      },
+      {
+        "label": "APT Caddy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-caddy-theme.json"
+      },
+      {
+        "label": "APT Clojure",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-clojure-theme.json"
+      },
+      {
+        "label": "APT Cloudflare",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-cloudflare-theme.json"
+      },
+      {
+        "label": "APT Cobol",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-cobol-theme.json"
+      },
+      {
+        "label": "APT Coffeescript",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-coffeescript-theme.json"
+      },
+      {
+        "label": "APT Cpan",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-cpan-theme.json"
+      },
+      {
+        "label": "APT Cpp",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-cpp-theme.json"
+      },
+      {
+        "label": "APT Csharp",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-csharp-theme.json"
+      },
+      {
+        "label": "APT Dbase",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-dbase-theme.json"
+      },
+      {
+        "label": "APT Docker",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-docker-theme.json"
+      },
+      {
+        "label": "APT Flathub",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-flathub-theme.json"
+      },
+      {
+        "label": "APT Fortran",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-fortran-theme.json"
+      },
+      {
+        "label": "APT Fsharp",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-fsharp-theme.json"
+      },
+      {
+        "label": "APT Grafana",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-grafana-theme.json"
+      },
+      {
+        "label": "APT Html",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-html-theme.json"
+      },
+      {
+        "label": "APT Jave",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-jave-theme.json"
+      },
+      {
+        "label": "APT Julia",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-julia-theme.json"
+      },
+      {
+        "label": "APT Kotlin",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-kotlin-theme.json"
+      },
+      {
+        "label": "APT Kubernetes",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-kubernetes-theme.json"
+      },
+      {
+        "label": "APT Lisp",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-lisp-theme.json"
+      },
+      {
+        "label": "APT Lua",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-lua-theme.json"
+      },
+      {
+        "label": "APT Malbolge",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-malbolge-theme.json"
+      },
+      {
+        "label": "APT Markdown",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-markdown-theme.json"
+      },
+      {
+        "label": "APT Matlab",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-matlab-theme.json"
+      },
+      {
+        "label": "APT Mtlab",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-mtlab-theme.json"
+      },
+      {
+        "label": "APT Mumps",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-mumps-theme.json"
+      },
+      {
+        "label": "APT Nginx",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-nginx-theme.json"
+      },
+      {
+        "label": "APT Nim",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-nim-theme.json"
+      },
+      {
+        "label": "APT Node",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-node-theme.json"
+      },
+      {
+        "label": "APT Objectivec",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-objectivec-theme.json"
+      },
+      {
+        "label": "APT Ocaml",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-ocaml-theme.json"
+      },
+      {
+        "label": "APT Perl",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-perl-theme.json"
+      },
+      {
+        "label": "APT Php",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-php-theme.json"
+      },
+      {
+        "label": "APT Powershell",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-powershell-theme.json"
+      },
+      {
+        "label": "APT Prolog",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-prolog-theme.json"
+      },
+      {
+        "label": "APT Prometheus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-prometheus-theme.json"
+      },
+      {
+        "label": "APT Promis",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-promis-theme.json"
+      },
+      {
+        "label": "APT Purescript",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-purescript-theme.json"
+      },
+      {
+        "label": "APT Python",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-python-theme.json"
+      },
+      {
+        "label": "APT Qbasic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-qbasic-theme.json"
+      },
+      {
+        "label": "APT R",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-r-theme.json"
+      },
+      {
+        "label": "APT React",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-react-theme.json"
+      },
+      {
+        "label": "APT Ruby",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-ruby-theme.json"
+      },
+      {
+        "label": "APT Rust",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-rust-theme.json"
+      },
+      {
+        "label": "APT Scala",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-scala-theme.json"
+      },
+      {
+        "label": "APT Scratch",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-scratch-theme.json"
+      },
+      {
+        "label": "APT Sgml",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-sgml-theme.json"
+      },
+      {
+        "label": "APT Sql",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-sql-theme.json"
+      },
+      {
+        "label": "APT Svelte",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-svelte-theme.json"
+      },
+      {
+        "label": "APT Swift",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-swift-theme.json"
+      },
+      {
+        "label": "APT Terraform",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-terraform-theme.json"
+      },
+      {
+        "label": "APT Tex",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-tex-theme.json"
+      },
+      {
+        "label": "APT Toml",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-toml-theme.json"
+      },
+      {
+        "label": "APT Typescript",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-typescript-theme.json"
+      },
+      {
+        "label": "APT Vbsix",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-vbsix-theme.json"
+      },
+      {
+        "label": "APT Vue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-vue-theme.json"
+      },
+      {
+        "label": "APT Wasm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-wasm-theme.json"
+      },
+      {
+        "label": "APT Zig",
+        "uiTheme": "vs-dark",
+        "path": "./themes/apt-zig-theme.json"
+      }
+    ]
+  }
+}

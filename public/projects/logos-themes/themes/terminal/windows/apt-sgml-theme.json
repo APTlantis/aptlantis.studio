@@ -1,0 +1,23 @@
+{
+  "name": "APT Sgml",
+  "background": "#050913",
+  "foreground": "#E1E7DB",
+  "cursorColor": "#0B1728",
+  "selectionBackground": "#192E46",
+  "black": "#050913",
+  "red": "#0B1728",
+  "green": "#172536",
+  "yellow": "#192E46",
+  "blue": "#192E46",
+  "purple": "#29384A",
+  "cyan": "#0B1728",
+  "white": "#B9C9C5",
+  "brightBlack": "#0B1728",
+  "brightRed": "#0B1728",
+  "brightGreen": "#172536",
+  "brightYellow": "#192E46",
+  "brightBlue": "#0B1728",
+  "brightPurple": "#192E46",
+  "brightCyan": "#172536",
+  "brightWhite": "#E1E7DB"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "APT Ruby",
+  "background": "#100101",
+  "foreground": "#F2EBC7",
+  "cursorColor": "#D82C02",
+  "selectionBackground": "#6E0E02",
+  "black": "#100101",
+  "red": "#D82C02",
+  "green": "#4E0A02",
+  "yellow": "#6E0E02",
+  "blue": "#6E0E02",
+  "purple": "#9B2104",
+  "cyan": "#D82C02",
+  "white": "#F1E4A2",
+  "brightBlack": "#2D0402",
+  "brightRed": "#D82C02",
+  "brightGreen": "#4E0A02",
+  "brightYellow": "#6E0E02",
+  "brightBlue": "#D82C02",
+  "brightPurple": "#6E0E02",
+  "brightCyan": "#4E0A02",
+  "brightWhite": "#F2EBC7"
+}

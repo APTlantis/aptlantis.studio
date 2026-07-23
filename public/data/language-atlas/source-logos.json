@@ -1,0 +1,322 @@
+{
+  "assembly": {
+    "label": "Assembly",
+    "site": "https://www.nasm.us/",
+    "description": "x86 / x64 low-level symbolic code"
+  },
+  "bioconductor": {
+    "label": "Bioconductor",
+    "site": "https://www.bioconductor.org/",
+    "description": "Open-source R-based bioinformatics platform"
+  },
+  "bioconductor-v2": {
+    "label": "Bioconductor v2",
+    "site": "https://www.bioconductor.org/",
+    "description": "Open-source R-based bioinformatics platform"
+  },
+  "cpan": {
+    "label": "CPAN",
+    "site": "https://www.cpan.org/",
+    "description": "Comprehensive Perl Archive Network"
+  },
+  "cpp": {
+    "label": "C++",
+    "site": "https://isocpp.org/",
+    "description": "ISO C++ Foundation — systems & performance"
+  },
+  "cran": {
+    "label": "CRAN",
+    "site": "https://cran.r-project.org/",
+    "description": "Comprehensive R Archive Network"
+  },
+  "csharp": {
+    "label": "C#",
+    "site": "https://dotnet.microsoft.com/languages/csharp",
+    "description": "Microsoft .NET managed language"
+  },
+  "lisp": {
+    "label": "Lisp",
+    "site": "https://common-lisp.net/",
+    "description": "The original programmable programming language"
+  },
+  "malbolge": {
+    "label": "Malbolge",
+    "site": "https://en.wikipedia.org/wiki/Malbolge",
+    "description": "Intentionally designed to be nearly impossible"
+  },
+  "node": {
+    "label": "Node.js",
+    "site": "https://nodejs.org/",
+    "description": "JavaScript runtime built on Chrome's V8"
+  },
+  "pearl": {
+    "label": "Pearl",
+    "site": "#",
+    "description": "APTlantis creative variant logo"
+  },
+  "perl": {
+    "label": "Perl",
+    "site": "https://www.perl.org/",
+    "description": "Practical Extraction and Report Language"
+  },
+  "prolog": {
+    "label": "Prolog",
+    "site": "https://www.swi-prolog.org/",
+    "description": "Logic programming language (SWI-Prolog)"
+  },
+  "python": {
+    "label": "Python",
+    "site": "https://www.python.org/",
+    "description": "Batteries-included general-purpose language"
+  },
+  "python-v2": {
+    "label": "Python v2",
+    "site": "https://www.python.org/",
+    "description": "Batteries-included general-purpose language"
+  },
+  "qbasic": {
+    "label": "QBasic",
+    "site": "https://www.qb64.com/",
+    "description": "Classic BASIC interpreter — QB64 revival"
+  },
+  "rust": {
+    "label": "Rust",
+    "site": "https://www.rust-lang.org/",
+    "description": "Memory-safe systems programming language"
+  },
+  "ada": {
+    "label": "Ada",
+    "site": "https://www.adacore.com/about-ada",
+    "description": "High-level, statically typed, algorithmic programming language"
+  },
+  "ansible": {
+    "label": "Ansible",
+    "site": "https://www.ansible.com/",
+    "description": "Open-source IT automation engine"
+  },
+  "bash": {
+    "label": "Bash",
+    "site": "https://www.gnu.org/software/bash/",
+    "description": "GNU Project's shell and command language"
+  },
+  "c": {
+    "label": "C",
+    "site": "https://en.cppreference.com/w/c",
+    "description": "The foundational systems programming language"
+  },
+  "caddy": {
+    "label": "Caddy",
+    "site": "https://caddyserver.com/",
+    "description": "Ultimate cloud-native web server with automatic HTTPS"
+  },
+  "clojure": {
+    "label": "Clojure",
+    "site": "https://clojure.org/",
+    "description": "Modern, dynamic, and robust dialect of the Lisp"
+  },
+  "cloudflare": {
+    "label": "Cloudflare",
+    "site": "https://www.cloudflare.com/",
+    "description": "Cloud services and CDN provider"
+  },
+  "cobol": {
+    "label": "COBOL",
+    "site": "https://en.wikipedia.org/wiki/COBOL",
+    "description": "Legacy business-oriented programming language"
+  },
+  "coffeescript": {
+    "label": "CoffeeScript",
+    "site": "https://coffeescript.org/",
+    "description": "A little language that compiles into JavaScript"
+  },
+  "dbase": {
+    "label": "dBase",
+    "site": "http://www.dbase.com/",
+    "description": "Database management system and language"
+  },
+  "docker": {
+    "label": "Docker",
+    "site": "https://www.docker.com/",
+    "description": "OS-level virtualization delivering software in containers"
+  },
+  "flathub": {
+    "label": "Flathub",
+    "site": "https://flathub.org/",
+    "description": "The home of hundreds of apps which can be easily installed on any Linux distribution"
+  },
+  "fortran": {
+    "label": "Fortran",
+    "site": "https://fortran-lang.org/",
+    "description": "High-performance numeric and scientific computing"
+  },
+  "fsharp": {
+    "label": "F#",
+    "site": "https://fsharp.org/",
+    "description": "Functional-first programming language for .NET"
+  },
+  "grafana": {
+    "label": "Grafana",
+    "site": "https://grafana.com/",
+    "description": "The open observability platform"
+  },
+  "jave": {
+    "label": "Java",
+    "site": "https://www.java.com/",
+    "description": "The world's most popular programming language (Java)"
+  },
+  "julia": {
+    "label": "Julia",
+    "site": "https://julialang.org/",
+    "description": "High-level, high-performance dynamic language for technical computing"
+  },
+  "kotlin": {
+    "label": "Kotlin",
+    "site": "https://kotlinlang.org/",
+    "description": "Modern, cross-platform, multi-purpose programming language"
+  },
+  "kubernetes": {
+    "label": "Kubernetes",
+    "site": "https://kubernetes.io/",
+    "description": "Production-grade container orchestration"
+  },
+  "lua": {
+    "label": "Lua",
+    "site": "https://www.lua.org/",
+    "description": "Powerful, efficient, lightweight, embeddable scripting language"
+  },
+  "markdown": {
+    "label": "Markdown",
+    "site": "https://daringfireball.net/projects/markdown/",
+    "description": "Lightweight markup language with plain-text-formatting syntax"
+  },
+  "matlab": {
+    "label": "MATLAB",
+    "site": "https://www.mathworks.com/products/matlab.html",
+    "description": "Numerical computing environment and proprietary programming language"
+  },
+  "mumps": {
+    "label": "MUMPS",
+    "site": "https://en.wikipedia.org/wiki/MUMPS",
+    "description": "Massachusetts General Hospital Utility Multi-Programming System"
+  },
+  "nginx": {
+    "label": "NGINX",
+    "site": "https://www.nginx.com/",
+    "description": "High-performance HTTP server and reverse proxy"
+  },
+  "nim": {
+    "label": "Nim",
+    "site": "https://nim-lang.org/",
+    "description": "Statically typed compiled systems programming language"
+  },
+  "objectivec": {
+    "label": "Objective-C",
+    "site": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
+    "description": "Main programming language used by Apple for macOS and iOS"
+  },
+  "ocaml": {
+    "label": "OCaml",
+    "site": "https://ocaml.org/",
+    "description": "General-purpose, multi-paradigm programming language"
+  },
+  "php": {
+    "label": "PHP",
+    "site": "https://www.php.net/",
+    "description": "Popular general-purpose scripting language for web development"
+  },
+  "powershell": {
+    "label": "PowerShell",
+    "site": "https://learn.microsoft.com/en-us/powershell/",
+    "description": "Task automation and configuration management framework"
+  },
+  "prometheus": {
+    "label": "Prometheus",
+    "site": "https://prometheus.io/",
+    "description": "Systems monitoring and alerting toolkit"
+  },
+  "promis": {
+    "label": "Promis",
+    "site": "https://en.wikipedia.org/wiki/Promis",
+    "description": "Prosecutor's Management Information System"
+  },
+  "purescript": {
+    "label": "PureScript",
+    "site": "https://www.purescript.org/",
+    "description": "Strongly-typed, functional programming language that compiles to JavaScript"
+  },
+  "r": {
+    "label": "R",
+    "site": "https://www.r-project.org/",
+    "description": "Language and environment for statistical computing and graphics"
+  },
+  "react": {
+    "label": "React",
+    "site": "https://react.dev/",
+    "description": "JavaScript library for building user interfaces"
+  },
+  "ruby": {
+    "label": "Ruby",
+    "site": "https://www.ruby-lang.org/",
+    "description": "Dynamic, open source programming language with a focus on simplicity and productivity"
+  },
+  "scala": {
+    "label": "Scala",
+    "site": "https://www.scala-lang.org/",
+    "description": "Combines object-oriented and functional programming in one concise, high-level language"
+  },
+  "scratch": {
+    "label": "Scratch",
+    "site": "https://scratch.mit.edu/",
+    "description": "Visual programming language and online community for children"
+  },
+  "sgml": {
+    "label": "SGML",
+    "site": "https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language",
+    "description": "Standard Generalized Markup Language"
+  },
+  "sql": {
+    "label": "SQL",
+    "site": "https://en.wikipedia.org/wiki/SQL",
+    "description": "Standard language for relational database management"
+  },
+  "svelte": {
+    "label": "Svelte",
+    "site": "https://svelte.dev/",
+    "description": "Cybernetically enhanced web apps"
+  },
+  "terraform": {
+    "label": "Terraform",
+    "site": "https://www.terraform.io/",
+    "description": "Infrastructure as Code software tool"
+  },
+  "tex": {
+    "label": "TeX",
+    "site": "https://www.tug.org/",
+    "description": "Typesetting system for complex mathematical formulae"
+  },
+  "toml": {
+    "label": "TOML",
+    "site": "https://toml.io/",
+    "description": "Tom's Obvious, Minimal Language"
+  },
+  "typescript": {
+    "label": "TypeScript",
+    "site": "https://www.typescriptlang.org/",
+    "description": "Typed superset of JavaScript that compiles to plain JavaScript"
+  },
+  "vue": {
+    "label": "Vue.js",
+    "site": "https://vuejs.org/",
+    "description": "Progressive JavaScript Framework"
+  },
+  "wasm": {
+    "label": "WebAssembly",
+    "site": "https://webassembly.org/",
+    "description": "Binary instruction format for a stack-based virtual machine"
+  },
+  "zig": {
+    "label": "Zig",
+    "site": "https://ziglang.org/",
+    "description": "General-purpose programming language and toolchain for maintaining robust software"
+  }
+}

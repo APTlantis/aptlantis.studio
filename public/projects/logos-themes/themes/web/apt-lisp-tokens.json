@@ -1,0 +1,14 @@
+{
+  "ecosystem": "lisp",
+  "background": "#0A0415",
+  "surface": "#140828",
+  "panel": "#261937",
+  "border": "#2E1A56",
+  "selection": "#49336A",
+  "lineHighlight": "#261937",
+  "accent": "#140828",
+  "accentSecondary": "#D0ADE9",
+  "highlight": "#EEDAF4",
+  "textPrimary": "#EEDAF4",
+  "textMuted": "#D0ADE9"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "APT Malbolge",
+  "background": "#140203",
+  "foreground": "#FDD928",
+  "cursorColor": "#E43201",
+  "selectionBackground": "#712903",
+  "black": "#140203",
+  "red": "#E43201",
+  "green": "#8E1501",
+  "yellow": "#CE3001",
+  "blue": "#CE3001",
+  "purple": "#6E0F01",
+  "cyan": "#E43201",
+  "white": "#F89A0A",
+  "brightBlack": "#2D0302",
+  "brightRed": "#E43201",
+  "brightGreen": "#8E1501",
+  "brightYellow": "#CE3001",
+  "brightBlue": "#E43201",
+  "brightPurple": "#CE3001",
+  "brightCyan": "#8E1501",
+  "brightWhite": "#FDD928"
+}

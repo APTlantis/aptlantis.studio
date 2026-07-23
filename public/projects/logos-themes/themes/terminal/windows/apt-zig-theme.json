@@ -1,0 +1,23 @@
+{
+  "name": "APT Zig",
+  "background": "#06090E",
+  "foreground": "#E0E0A2",
+  "cursorColor": "#EAD365",
+  "selectionBackground": "#374032",
+  "black": "#06090E",
+  "red": "#EAD365",
+  "green": "#90742E",
+  "yellow": "#D1AB3D",
+  "blue": "#D1AB3D",
+  "purple": "#E0E0A2",
+  "cyan": "#EAD365",
+  "white": "#C4CFAE",
+  "brightBlack": "#1C221E",
+  "brightRed": "#EAD365",
+  "brightGreen": "#90742E",
+  "brightYellow": "#D1AB3D",
+  "brightBlue": "#EAD365",
+  "brightPurple": "#D1AB3D",
+  "brightCyan": "#90742E",
+  "brightWhite": "#E0E0A2"
+}

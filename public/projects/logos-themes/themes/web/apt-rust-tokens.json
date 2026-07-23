@@ -1,0 +1,14 @@
+{
+  "ecosystem": "rust",
+  "background": "#0F0905",
+  "surface": "#2B160B",
+  "panel": "#312617",
+  "border": "#2A3123",
+  "selection": "#4F2B14",
+  "lineHighlight": "#312617",
+  "accent": "#E4AA50",
+  "accentSecondary": "#EFE69D",
+  "highlight": "#D56B24",
+  "textPrimary": "#EFE69D",
+  "textMuted": "#E4AA50"
+}

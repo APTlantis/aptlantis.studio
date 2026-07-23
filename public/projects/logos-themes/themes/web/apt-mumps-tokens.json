@@ -1,0 +1,14 @@
+{
+  "ecosystem": "mumps",
+  "background": "#030D0D",
+  "surface": "#102725",
+  "panel": "#0A2E2C",
+  "border": "#12413E",
+  "selection": "#134E4C",
+  "lineHighlight": "#0A2E2C",
+  "accent": "#0A2E2C",
+  "accentSecondary": "#134E4C",
+  "highlight": "#12413E",
+  "textPrimary": "#E4F1F1",
+  "textMuted": "#A2DAD8"
+}

@@ -1,0 +1,14 @@
+{
+  "ecosystem": "grafana",
+  "background": "#0E0203",
+  "surface": "#2D0904",
+  "panel": "#342818",
+  "border": "#4E1103",
+  "selection": "#522C0D",
+  "lineHighlight": "#342818",
+  "accent": "#E06004",
+  "accentSecondary": "#A62F03",
+  "highlight": "#8F2D03",
+  "textPrimary": "#ECDEA9",
+  "textMuted": "#DCBA50"
+}

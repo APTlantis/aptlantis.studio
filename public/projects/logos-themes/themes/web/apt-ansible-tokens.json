@@ -1,0 +1,14 @@
+{
+  "ecosystem": "ansible",
+  "background": "#110102",
+  "surface": "#2D0603",
+  "panel": "#362816",
+  "border": "#4E0D03",
+  "selection": "#642C09",
+  "lineHighlight": "#362816",
+  "accent": "#D23203",
+  "accentSecondary": "#E55F04",
+  "highlight": "#6D1302",
+  "textPrimary": "#F4DDA2",
+  "textMuted": "#E7D6AE"
+}

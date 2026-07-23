@@ -1,0 +1,14 @@
+{
+  "ecosystem": "aptlantisstudio",
+  "background": "#010110",
+  "surface": "#010212",
+  "panel": "#050A27",
+  "border": "#180F37",
+  "selection": "#262A66",
+  "lineHighlight": "#050A27",
+  "accent": "#01E3FD",
+  "accentSecondary": "#01D5FC",
+  "highlight": "#4D8BFD",
+  "textPrimary": "#C0CEFD",
+  "textMuted": "#666EF7"
+}

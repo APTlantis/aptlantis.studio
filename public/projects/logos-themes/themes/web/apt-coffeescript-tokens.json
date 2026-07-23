@@ -1,0 +1,14 @@
+{
+  "ecosystem": "coffeescript",
+  "background": "#0B0303",
+  "surface": "#2D1207",
+  "panel": "#362717",
+  "border": "#502A0F",
+  "selection": "#5D2C0E",
+  "lineHighlight": "#362717",
+  "accent": "#F9D062",
+  "accentSecondary": "#E5982F",
+  "highlight": "#5D2C0E",
+  "textPrimary": "#EDDDA4",
+  "textMuted": "#DED7B1"
+}

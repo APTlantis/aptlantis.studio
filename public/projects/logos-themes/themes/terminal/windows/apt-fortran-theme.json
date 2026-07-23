@@ -1,0 +1,23 @@
+{
+  "name": "APT Fortran",
+  "background": "#0C0505",
+  "foreground": "#FCF9DC",
+  "cursorColor": "#913507",
+  "selectionBackground": "#913507",
+  "black": "#0C0505",
+  "red": "#913507",
+  "green": "#CA5319",
+  "yellow": "#D76C16",
+  "blue": "#D76C16",
+  "purple": "#59290F",
+  "cyan": "#913507",
+  "white": "#EDD9A3",
+  "brightBlack": "#2C1008",
+  "brightRed": "#913507",
+  "brightGreen": "#CA5319",
+  "brightYellow": "#D76C16",
+  "brightBlue": "#913507",
+  "brightPurple": "#D76C16",
+  "brightCyan": "#CA5319",
+  "brightWhite": "#FCF9DC"
+}

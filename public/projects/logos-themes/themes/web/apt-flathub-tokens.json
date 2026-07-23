@@ -1,0 +1,14 @@
+{
+  "ecosystem": "flathub",
+  "background": "#010717",
+  "surface": "#020F2B",
+  "panel": "#172637",
+  "border": "#092952",
+  "selection": "#06275E",
+  "lineHighlight": "#172637",
+  "accent": "#0969CE",
+  "accentSecondary": "#020F2B",
+  "highlight": "#06275E",
+  "textPrimary": "#E2F2F6",
+  "textMuted": "#A1D9ED"
+}

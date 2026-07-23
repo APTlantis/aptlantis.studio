@@ -1,0 +1,23 @@
+{
+  "name": "APT React",
+  "background": "#060810",
+  "foreground": "#E0F1F1",
+  "cursorColor": "#206E91",
+  "selectionBackground": "#12314C",
+  "black": "#060810",
+  "red": "#206E91",
+  "green": "#0C1828",
+  "yellow": "#12314C",
+  "blue": "#12314C",
+  "purple": "#3BA9C1",
+  "cyan": "#206E91",
+  "white": "#A6D4DD",
+  "brightBlack": "#0C1828",
+  "brightRed": "#206E91",
+  "brightGreen": "#0C1828",
+  "brightYellow": "#12314C",
+  "brightBlue": "#206E91",
+  "brightPurple": "#12314C",
+  "brightCyan": "#0C1828",
+  "brightWhite": "#E0F1F1"
+}

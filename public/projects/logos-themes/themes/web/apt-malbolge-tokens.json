@@ -1,0 +1,14 @@
+{
+  "ecosystem": "malbolge",
+  "background": "#140203",
+  "surface": "#2D0302",
+  "panel": "#4E0701",
+  "border": "#6E0F01",
+  "selection": "#712903",
+  "lineHighlight": "#4E0701",
+  "accent": "#E43201",
+  "accentSecondary": "#CE3001",
+  "highlight": "#8E1501",
+  "textPrimary": "#FDD928",
+  "textMuted": "#F89A0A"
+}

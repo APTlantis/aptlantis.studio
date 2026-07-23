@@ -1,0 +1,23 @@
+{
+  "name": "APT Ocaml",
+  "background": "#130704",
+  "foreground": "#FDEA95",
+  "cursorColor": "#A63C01",
+  "selectionBackground": "#562506",
+  "black": "#130704",
+  "red": "#A63C01",
+  "green": "#FDEA95",
+  "yellow": "#AE4D03",
+  "blue": "#AE4D03",
+  "purple": "#8D3603",
+  "cyan": "#A63C01",
+  "white": "#E9C250",
+  "brightBlack": "#2C0E04",
+  "brightRed": "#A63C01",
+  "brightGreen": "#FDEA95",
+  "brightYellow": "#AE4D03",
+  "brightBlue": "#A63C01",
+  "brightPurple": "#AE4D03",
+  "brightCyan": "#FDEA95",
+  "brightWhite": "#FDEA95"
+}

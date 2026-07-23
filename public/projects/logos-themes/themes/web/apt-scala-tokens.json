@@ -1,0 +1,14 @@
+{
+  "ecosystem": "scala",
+  "background": "#0F0101",
+  "surface": "#2D0402",
+  "panel": "#362617",
+  "border": "#4D0A03",
+  "selection": "#6E0F03",
+  "lineHighlight": "#362617",
+  "accent": "#DC2B04",
+  "accentSecondary": "#6E0F03",
+  "highlight": "#9C2106",
+  "textPrimary": "#EEE5CD",
+  "textMuted": "#F2E4A0"
+}

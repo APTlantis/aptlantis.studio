@@ -1,0 +1,14 @@
+{
+  "ecosystem": "typescript",
+  "background": "#010416",
+  "surface": "#020C2B",
+  "panel": "#02174C",
+  "border": "#1E2736",
+  "selection": "#0B2D5F",
+  "lineHighlight": "#02174C",
+  "accent": "#046CD6",
+  "accentSecondary": "#02174C",
+  "highlight": "#020C2B",
+  "textPrimary": "#E3F1EE",
+  "textMuted": "#A6DCE4"
+}

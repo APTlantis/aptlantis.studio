@@ -1,0 +1,23 @@
+{
+  "name": "APT Csharp",
+  "background": "#0B0619",
+  "foreground": "#EEE8FA",
+  "cursorColor": "#6998EC",
+  "selectionBackground": "#261050",
+  "black": "#0B0619",
+  "red": "#6998EC",
+  "green": "#14082D",
+  "yellow": "#9B65E4",
+  "blue": "#9B65E4",
+  "purple": "#261050",
+  "cyan": "#6998EC",
+  "white": "#B0A5EA",
+  "brightBlack": "#14082D",
+  "brightRed": "#6998EC",
+  "brightGreen": "#14082D",
+  "brightYellow": "#9B65E4",
+  "brightBlue": "#6998EC",
+  "brightPurple": "#9B65E4",
+  "brightCyan": "#14082D",
+  "brightWhite": "#EEE8FA"
+}

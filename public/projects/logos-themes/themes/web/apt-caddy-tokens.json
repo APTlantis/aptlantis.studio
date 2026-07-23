@@ -1,0 +1,14 @@
+{
+  "ecosystem": "caddy",
+  "background": "#050A0B",
+  "surface": "#0E2A19",
+  "panel": "#0E3028",
+  "border": "#182A24",
+  "selection": "#235630",
+  "lineHighlight": "#0E3028",
+  "accent": "#EBF8D4",
+  "accentSecondary": "#A5D46B",
+  "highlight": "#0E3028",
+  "textPrimary": "#EBF8D4",
+  "textMuted": "#B2D99F"
+}

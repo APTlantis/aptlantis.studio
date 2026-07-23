@@ -1,0 +1,23 @@
+{
+  "name": "APT Rust",
+  "background": "#0F0905",
+  "foreground": "#EFE69D",
+  "cursorColor": "#E4AA50",
+  "selectionBackground": "#4F2B14",
+  "black": "#0F0905",
+  "red": "#E4AA50",
+  "green": "#D56B24",
+  "yellow": "#EFE69D",
+  "blue": "#EFE69D",
+  "purple": "#6D3415",
+  "cyan": "#E4AA50",
+  "white": "#E4AA50",
+  "brightBlack": "#2B160B",
+  "brightRed": "#E4AA50",
+  "brightGreen": "#D56B24",
+  "brightYellow": "#EFE69D",
+  "brightBlue": "#E4AA50",
+  "brightPurple": "#EFE69D",
+  "brightCyan": "#D56B24",
+  "brightWhite": "#EFE69D"
+}

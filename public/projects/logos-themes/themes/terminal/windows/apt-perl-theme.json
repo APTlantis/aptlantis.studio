@@ -1,0 +1,23 @@
+{
+  "name": "APT Perl",
+  "background": "#110402",
+  "foreground": "#FCE891",
+  "cursorColor": "#D76E02",
+  "selectionBackground": "#532A07",
+  "black": "#110402",
+  "red": "#D76E02",
+  "green": "#FCE891",
+  "yellow": "#8B3802",
+  "blue": "#8B3802",
+  "purple": "#6E2E03",
+  "cyan": "#D76E02",
+  "white": "#E7BC44",
+  "brightBlack": "#2B0D03",
+  "brightRed": "#D76E02",
+  "brightGreen": "#FCE891",
+  "brightYellow": "#8B3802",
+  "brightBlue": "#D76E02",
+  "brightPurple": "#8B3802",
+  "brightCyan": "#FCE891",
+  "brightWhite": "#FCE891"
+}

@@ -1,0 +1,14 @@
+{
+  "ecosystem": "fortran",
+  "background": "#0C0505",
+  "surface": "#2C1008",
+  "panel": "#37261A",
+  "border": "#59290F",
+  "selection": "#913507",
+  "lineHighlight": "#37261A",
+  "accent": "#913507",
+  "accentSecondary": "#D76C16",
+  "highlight": "#CA5319",
+  "textPrimary": "#FCF9DC",
+  "textMuted": "#EDD9A3"
+}

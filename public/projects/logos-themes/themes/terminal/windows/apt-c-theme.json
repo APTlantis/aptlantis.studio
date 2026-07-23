@@ -1,0 +1,23 @@
+{
+  "name": "APT C",
+  "background": "#120101",
+  "foreground": "#F2DDB2",
+  "cursorColor": "#D82D05",
+  "selectionBackground": "#6D1003",
+  "black": "#120101",
+  "red": "#D82D05",
+  "green": "#F69620",
+  "yellow": "#6D1003",
+  "blue": "#6D1003",
+  "purple": "#2D0402",
+  "cyan": "#D82D05",
+  "white": "#EAA259",
+  "brightBlack": "#2D0402",
+  "brightRed": "#D82D05",
+  "brightGreen": "#F69620",
+  "brightYellow": "#6D1003",
+  "brightBlue": "#D82D05",
+  "brightPurple": "#6D1003",
+  "brightCyan": "#F69620",
+  "brightWhite": "#F2DDB2"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "APT Clojure",
+  "background": "#04080D",
+  "foreground": "#C4DDBD",
+  "cursorColor": "#061A25",
+  "selectionBackground": "#224244",
+  "black": "#04080D",
+  "red": "#061A25",
+  "green": "#346D9D",
+  "yellow": "#BBD272",
+  "blue": "#BBD272",
+  "purple": "#112C2C",
+  "cyan": "#061A25",
+  "white": "#A5D09F",
+  "brightBlack": "#061A25",
+  "brightRed": "#061A25",
+  "brightGreen": "#346D9D",
+  "brightYellow": "#BBD272",
+  "brightBlue": "#061A25",
+  "brightPurple": "#BBD272",
+  "brightCyan": "#346D9D",
+  "brightWhite": "#C4DDBD"
+}

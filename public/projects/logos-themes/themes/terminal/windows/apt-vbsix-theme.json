@@ -1,0 +1,23 @@
+{
+  "name": "APT Vbsix",
+  "background": "#060415",
+  "foreground": "#E6E1EE",
+  "cursorColor": "#0D0A2C",
+  "selectionBackground": "#21205C",
+  "black": "#060415",
+  "red": "#0D0A2C",
+  "green": "#13144D",
+  "yellow": "#9F9FE8",
+  "blue": "#9F9FE8",
+  "purple": "#6060D5",
+  "cyan": "#0D0A2C",
+  "white": "#9F9FE8",
+  "brightBlack": "#0D0A2C",
+  "brightRed": "#0D0A2C",
+  "brightGreen": "#13144D",
+  "brightYellow": "#9F9FE8",
+  "brightBlue": "#0D0A2C",
+  "brightPurple": "#9F9FE8",
+  "brightCyan": "#13144D",
+  "brightWhite": "#E6E1EE"
+}

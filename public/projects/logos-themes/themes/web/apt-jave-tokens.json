@@ -1,0 +1,14 @@
+{
+  "ecosystem": "jave",
+  "background": "#0F0204",
+  "surface": "#2C0504",
+  "panel": "#392616",
+  "border": "#4F0B03",
+  "selection": "#6E1103",
+  "lineHighlight": "#392616",
+  "accent": "#D83102",
+  "accentSecondary": "#9D2104",
+  "highlight": "#6E1103",
+  "textPrimary": "#F2E9B5",
+  "textMuted": "#FBEA9F"
+}

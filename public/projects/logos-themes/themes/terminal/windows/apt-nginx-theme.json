@@ -1,0 +1,23 @@
+{
+  "name": "APT Nginx",
+  "background": "#040A0A",
+  "foreground": "#F5FADA",
+  "cursorColor": "#F5FADA",
+  "selectionBackground": "#2B502A",
+  "black": "#040A0A",
+  "red": "#F5FADA",
+  "green": "#195D28",
+  "yellow": "#0C2D17",
+  "blue": "#0C2D17",
+  "purple": "#9ED66B",
+  "cyan": "#F5FADA",
+  "white": "#C3DBA0",
+  "brightBlack": "#0C2D17",
+  "brightRed": "#F5FADA",
+  "brightGreen": "#195D28",
+  "brightYellow": "#0C2D17",
+  "brightBlue": "#F5FADA",
+  "brightPurple": "#0C2D17",
+  "brightCyan": "#195D28",
+  "brightWhite": "#F5FADA"
+}

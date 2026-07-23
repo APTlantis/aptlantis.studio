@@ -1,0 +1,23 @@
+{
+  "name": "APT Dbase",
+  "background": "#01050D",
+  "foreground": "#E6F0EF",
+  "cursorColor": "#031728",
+  "selectionBackground": "#1B5067",
+  "black": "#01050D",
+  "red": "#031728",
+  "green": "#186E8F",
+  "yellow": "#0A334C",
+  "blue": "#0A334C",
+  "purple": "#1B5067",
+  "cyan": "#031728",
+  "white": "#A1D8E0",
+  "brightBlack": "#031728",
+  "brightRed": "#031728",
+  "brightGreen": "#186E8F",
+  "brightYellow": "#0A334C",
+  "brightBlue": "#031728",
+  "brightPurple": "#0A334C",
+  "brightCyan": "#186E8F",
+  "brightWhite": "#E6F0EF"
+}

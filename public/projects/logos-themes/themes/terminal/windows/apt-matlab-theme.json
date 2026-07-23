@@ -1,0 +1,23 @@
+{
+  "name": "APT Matlab",
+  "background": "#0B0208",
+  "foreground": "#F4F6DD",
+  "cursorColor": "#E06307",
+  "selectionBackground": "#171F55",
+  "black": "#0B0208",
+  "red": "#E06307",
+  "green": "#9B270A",
+  "yellow": "#F29D13",
+  "blue": "#F29D13",
+  "purple": "#A25513",
+  "cyan": "#E06307",
+  "white": "#C6C7A9",
+  "brightBlack": "#2D080A",
+  "brightRed": "#E06307",
+  "brightGreen": "#9B270A",
+  "brightYellow": "#F29D13",
+  "brightBlue": "#E06307",
+  "brightPurple": "#F29D13",
+  "brightCyan": "#9B270A",
+  "brightWhite": "#F4F6DD"
+}

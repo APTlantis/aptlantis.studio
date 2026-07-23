@@ -1,0 +1,14 @@
+{
+  "ecosystem": "ruby",
+  "background": "#100101",
+  "surface": "#2D0402",
+  "panel": "#382511",
+  "border": "#4E0A02",
+  "selection": "#6E0E02",
+  "lineHighlight": "#382511",
+  "accent": "#D82C02",
+  "accentSecondary": "#6E0E02",
+  "highlight": "#4E0A02",
+  "textPrimary": "#F2EBC7",
+  "textMuted": "#F1E4A2"
+}

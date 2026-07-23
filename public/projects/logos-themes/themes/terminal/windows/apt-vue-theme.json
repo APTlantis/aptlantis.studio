@@ -1,0 +1,23 @@
+{
+  "name": "APT Vue",
+  "background": "#05090F",
+  "foreground": "#C8DDB5",
+  "cursorColor": "#071B23",
+  "selectionBackground": "#1F4A38",
+  "black": "#05090F",
+  "red": "#071B23",
+  "green": "#2B7B80",
+  "yellow": "#0E2D2B",
+  "blue": "#0E2D2B",
+  "purple": "#378A63",
+  "cyan": "#071B23",
+  "white": "#9FD69F",
+  "brightBlack": "#071B23",
+  "brightRed": "#071B23",
+  "brightGreen": "#2B7B80",
+  "brightYellow": "#0E2D2B",
+  "brightBlue": "#071B23",
+  "brightPurple": "#0E2D2B",
+  "brightCyan": "#2B7B80",
+  "brightWhite": "#C8DDB5"
+}

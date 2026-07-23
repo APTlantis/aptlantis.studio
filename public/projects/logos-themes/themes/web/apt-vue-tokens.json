@@ -1,0 +1,14 @@
+{
+  "ecosystem": "vue",
+  "background": "#05090F",
+  "surface": "#071B23",
+  "panel": "#0E2D2B",
+  "border": "#1F2F28",
+  "selection": "#1F4A38",
+  "lineHighlight": "#0E2D2B",
+  "accent": "#071B23",
+  "accentSecondary": "#0E2D2B",
+  "highlight": "#2B7B80",
+  "textPrimary": "#C8DDB5",
+  "textMuted": "#9FD69F"
+}

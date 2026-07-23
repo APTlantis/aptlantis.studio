@@ -1,0 +1,14 @@
+{
+  "ecosystem": "ocaml",
+  "background": "#130704",
+  "surface": "#2C0E04",
+  "panel": "#3A230E",
+  "border": "#4B1903",
+  "selection": "#562506",
+  "lineHighlight": "#3A230E",
+  "accent": "#A63C01",
+  "accentSecondary": "#AE4D03",
+  "highlight": "#FDEA95",
+  "textPrimary": "#FDEA95",
+  "textMuted": "#E9C250"
+}

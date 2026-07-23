@@ -1,0 +1,14 @@
+{
+  "ecosystem": "clojure",
+  "background": "#04080D",
+  "surface": "#061A25",
+  "panel": "#112C2C",
+  "border": "#1F2F27",
+  "selection": "#224244",
+  "lineHighlight": "#112C2C",
+  "accent": "#061A25",
+  "accentSecondary": "#BBD272",
+  "highlight": "#346D9D",
+  "textPrimary": "#C4DDBD",
+  "textMuted": "#A5D09F"
+}

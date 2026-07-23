@@ -1,0 +1,23 @@
+{
+  "name": "APT Grafana",
+  "background": "#0E0203",
+  "foreground": "#ECDEA9",
+  "cursorColor": "#E06004",
+  "selectionBackground": "#522C0D",
+  "black": "#0E0203",
+  "red": "#E06004",
+  "green": "#8F2D03",
+  "yellow": "#A62F03",
+  "blue": "#A62F03",
+  "purple": "#6D1703",
+  "cyan": "#E06004",
+  "white": "#DCBA50",
+  "brightBlack": "#2D0904",
+  "brightRed": "#E06004",
+  "brightGreen": "#8F2D03",
+  "brightYellow": "#A62F03",
+  "brightBlue": "#E06004",
+  "brightPurple": "#A62F03",
+  "brightCyan": "#8F2D03",
+  "brightWhite": "#ECDEA9"
+}

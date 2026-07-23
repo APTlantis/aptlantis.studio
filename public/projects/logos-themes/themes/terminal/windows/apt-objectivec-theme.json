@@ -1,0 +1,23 @@
+{
+  "name": "APT Objectivec",
+  "background": "#020413",
+  "foreground": "#DFEAE8",
+  "cursorColor": "#0F56A6",
+  "selectionBackground": "#5C4A2E",
+  "black": "#020413",
+  "red": "#0F56A6",
+  "green": "#142D53",
+  "yellow": "#06102B",
+  "blue": "#06102B",
+  "purple": "#266094",
+  "cyan": "#0F56A6",
+  "white": "#AEC9CE",
+  "brightBlack": "#06102B",
+  "brightRed": "#0F56A6",
+  "brightGreen": "#142D53",
+  "brightYellow": "#06102B",
+  "brightBlue": "#0F56A6",
+  "brightPurple": "#06102B",
+  "brightCyan": "#142D53",
+  "brightWhite": "#DFEAE8"
+}

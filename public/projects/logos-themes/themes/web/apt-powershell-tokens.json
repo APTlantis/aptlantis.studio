@@ -1,0 +1,14 @@
+{
+  "ecosystem": "powershell",
+  "background": "#010515",
+  "surface": "#020D2A",
+  "panel": "#192735",
+  "border": "#082250",
+  "selection": "#042E6E",
+  "lineHighlight": "#192735",
+  "accent": "#042E6E",
+  "accentSecondary": "#020D2A",
+  "highlight": "#082250",
+  "textPrimary": "#E2F2EF",
+  "textMuted": "#A3DBE6"
+}

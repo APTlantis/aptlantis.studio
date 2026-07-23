@@ -1,0 +1,14 @@
+{
+  "ecosystem": "promis",
+  "background": "#02040A",
+  "surface": "#07162B",
+  "panel": "#182737",
+  "border": "#14314F",
+  "selection": "#413C40",
+  "lineHighlight": "#182737",
+  "accent": "#07162B",
+  "accentSecondary": "#51ACD5",
+  "highlight": "#A1D8E8",
+  "textPrimary": "#E7EEEF",
+  "textMuted": "#A1D8E8"
+}

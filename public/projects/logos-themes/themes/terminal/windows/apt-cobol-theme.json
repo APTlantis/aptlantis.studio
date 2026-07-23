@@ -1,0 +1,23 @@
+{
+  "name": "APT Cobol",
+  "background": "#030617",
+  "foreground": "#E2EAE9",
+  "cursorColor": "#09194A",
+  "selectionBackground": "#192D5F",
+  "black": "#030617",
+  "red": "#09194A",
+  "green": "#264BA0",
+  "yellow": "#060E2B",
+  "blue": "#060E2B",
+  "purple": "#192D5F",
+  "cyan": "#09194A",
+  "white": "#A5C3D9",
+  "brightBlack": "#060E2B",
+  "brightRed": "#09194A",
+  "brightGreen": "#264BA0",
+  "brightYellow": "#060E2B",
+  "brightBlue": "#09194A",
+  "brightPurple": "#060E2B",
+  "brightCyan": "#264BA0",
+  "brightWhite": "#E2EAE9"
+}

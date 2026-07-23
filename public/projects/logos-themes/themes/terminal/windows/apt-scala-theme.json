@@ -1,0 +1,23 @@
+{
+  "name": "APT Scala",
+  "background": "#0F0101",
+  "foreground": "#EEE5CD",
+  "cursorColor": "#DC2B04",
+  "selectionBackground": "#6E0F03",
+  "black": "#0F0101",
+  "red": "#DC2B04",
+  "green": "#9C2106",
+  "yellow": "#6E0F03",
+  "blue": "#6E0F03",
+  "purple": "#4D0A03",
+  "cyan": "#DC2B04",
+  "white": "#F2E4A0",
+  "brightBlack": "#2D0402",
+  "brightRed": "#DC2B04",
+  "brightGreen": "#9C2106",
+  "brightYellow": "#6E0F03",
+  "brightBlue": "#DC2B04",
+  "brightPurple": "#6E0F03",
+  "brightCyan": "#9C2106",
+  "brightWhite": "#EEE5CD"
+}

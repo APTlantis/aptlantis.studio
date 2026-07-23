@@ -1,0 +1,14 @@
+{
+  "ecosystem": "prolog",
+  "background": "#100304",
+  "surface": "#2B0606",
+  "panel": "#4F0906",
+  "border": "#352823",
+  "selection": "#6E0C06",
+  "lineHighlight": "#4F0906",
+  "accent": "#6E0C06",
+  "accentSecondary": "#981A0B",
+  "highlight": "#4F0906",
+  "textPrimary": "#FBEAD4",
+  "textMuted": "#F6D2A8"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "APT Python",
+  "background": "#060A11",
+  "foreground": "#D5D4B3",
+  "cursorColor": "#DCA426",
+  "selectionBackground": "#665023",
+  "black": "#060A11",
+  "red": "#DCA426",
+  "green": "#0A1727",
+  "yellow": "#966D1F",
+  "blue": "#966D1F",
+  "purple": "#D0AF4C",
+  "cyan": "#DCA426",
+  "white": "#D0AF4C",
+  "brightBlack": "#0A1727",
+  "brightRed": "#DCA426",
+  "brightGreen": "#0A1727",
+  "brightYellow": "#966D1F",
+  "brightBlue": "#DCA426",
+  "brightPurple": "#966D1F",
+  "brightCyan": "#0A1727",
+  "brightWhite": "#D5D4B3"
+}

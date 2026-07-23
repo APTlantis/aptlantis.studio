@@ -1,0 +1,14 @@
+{
+  "ecosystem": "julia",
+  "background": "#050315",
+  "surface": "#0D082A",
+  "panel": "#212030",
+  "border": "#110E4C",
+  "selection": "#212062",
+  "lineHighlight": "#212030",
+  "accent": "#110E4C",
+  "accentSecondary": "#0D082A",
+  "highlight": "#2C45A1",
+  "textPrimary": "#EAEBE4",
+  "textMuted": "#ADB4BD"
+}

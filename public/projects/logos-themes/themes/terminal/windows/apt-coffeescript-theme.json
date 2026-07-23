@@ -1,0 +1,23 @@
+{
+  "name": "APT Coffeescript",
+  "background": "#0B0303",
+  "foreground": "#EDDDA4",
+  "cursorColor": "#F9D062",
+  "selectionBackground": "#5D2C0E",
+  "black": "#0B0303",
+  "red": "#F9D062",
+  "green": "#5D2C0E",
+  "yellow": "#E5982F",
+  "blue": "#E5982F",
+  "purple": "#2D1207",
+  "cyan": "#F9D062",
+  "white": "#DED7B1",
+  "brightBlack": "#2D1207",
+  "brightRed": "#F9D062",
+  "brightGreen": "#5D2C0E",
+  "brightYellow": "#E5982F",
+  "brightBlue": "#F9D062",
+  "brightPurple": "#E5982F",
+  "brightCyan": "#5D2C0E",
+  "brightWhite": "#EDDDA4"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "APT Fsharp",
+  "background": "#020214",
+  "foreground": "#E2E8EB",
+  "cursorColor": "#09072C",
+  "selectionBackground": "#212363",
+  "black": "#020214",
+  "red": "#09072C",
+  "green": "#242C90",
+  "yellow": "#0E0D4D",
+  "blue": "#0E0D4D",
+  "purple": "#28539E",
+  "cyan": "#09072C",
+  "white": "#A0A8D4",
+  "brightBlack": "#09072C",
+  "brightRed": "#09072C",
+  "brightGreen": "#242C90",
+  "brightYellow": "#0E0D4D",
+  "brightBlue": "#09072C",
+  "brightPurple": "#0E0D4D",
+  "brightCyan": "#242C90",
+  "brightWhite": "#E2E8EB"
+}

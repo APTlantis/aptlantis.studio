@@ -1,0 +1,14 @@
+{
+  "ecosystem": "toml",
+  "background": "#01020F",
+  "surface": "#070B2D",
+  "panel": "#0A144D",
+  "border": "#262934",
+  "selection": "#1F2C5F",
+  "lineHighlight": "#0A144D",
+  "accent": "#0A144D",
+  "accentSecondary": "#070B2D",
+  "highlight": "#2848A6",
+  "textPrimary": "#F7F6F7",
+  "textMuted": "#D2D5E2"
+}

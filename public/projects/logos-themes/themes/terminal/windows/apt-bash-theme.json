@@ -1,0 +1,23 @@
+{
+  "name": "APT Bash",
+  "background": "#030311",
+  "foreground": "#E5EAEB",
+  "cursorColor": "#09174C",
+  "selectionBackground": "#1B2D5A",
+  "black": "#030311",
+  "red": "#09174C",
+  "green": "#244D9F",
+  "yellow": "#070D2C",
+  "blue": "#070D2C",
+  "purple": "#1B2D5A",
+  "cyan": "#09174C",
+  "white": "#9DB0C4",
+  "brightBlack": "#070D2C",
+  "brightRed": "#09174C",
+  "brightGreen": "#244D9F",
+  "brightYellow": "#070D2C",
+  "brightBlue": "#09174C",
+  "brightPurple": "#070D2C",
+  "brightCyan": "#244D9F",
+  "brightWhite": "#E5EAEB"
+}

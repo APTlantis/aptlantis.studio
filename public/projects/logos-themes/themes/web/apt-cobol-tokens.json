@@ -1,0 +1,14 @@
+{
+  "ecosystem": "cobol",
+  "background": "#030617",
+  "surface": "#060E2B",
+  "panel": "#09194A",
+  "border": "#1F2739",
+  "selection": "#192D5F",
+  "lineHighlight": "#09194A",
+  "accent": "#09194A",
+  "accentSecondary": "#060E2B",
+  "highlight": "#264BA0",
+  "textPrimary": "#E2EAE9",
+  "textMuted": "#A5C3D9"
+}

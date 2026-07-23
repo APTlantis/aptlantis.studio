@@ -1,0 +1,14 @@
+{
+  "ecosystem": "terraform",
+  "background": "#050210",
+  "surface": "#10072D",
+  "panel": "#251839",
+  "border": "#190C4B",
+  "selection": "#281351",
+  "lineHighlight": "#251839",
+  "accent": "#9B5FEB",
+  "accentSecondary": "#10072D",
+  "highlight": "#190C4B",
+  "textPrimary": "#E8E1F3",
+  "textMuted": "#BC9DDC"
+}

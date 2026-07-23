@@ -1,0 +1,23 @@
+{
+  "name": "APT Qbasic",
+  "background": "#06020A",
+  "foreground": "#F3EFE9",
+  "cursorColor": "#08066E",
+  "selectionBackground": "#08066E",
+  "black": "#06020A",
+  "red": "#08066E",
+  "green": "#131FDA",
+  "yellow": "#06064F",
+  "blue": "#06064F",
+  "purple": "#10169A",
+  "cyan": "#08066E",
+  "white": "#AEB6D1",
+  "brightBlack": "#06052D",
+  "brightRed": "#08066E",
+  "brightGreen": "#131FDA",
+  "brightYellow": "#06064F",
+  "brightBlue": "#08066E",
+  "brightPurple": "#06064F",
+  "brightCyan": "#131FDA",
+  "brightWhite": "#F3EFE9"
+}

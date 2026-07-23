@@ -1,0 +1,14 @@
+{
+  "ecosystem": "zig",
+  "background": "#06090E",
+  "surface": "#1C221E",
+  "panel": "#162A2D",
+  "border": "#2C342C",
+  "selection": "#374032",
+  "lineHighlight": "#162A2D",
+  "accent": "#EAD365",
+  "accentSecondary": "#D1AB3D",
+  "highlight": "#90742E",
+  "textPrimary": "#E0E0A2",
+  "textMuted": "#C4CFAE"
+}

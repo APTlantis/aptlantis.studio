@@ -1,0 +1,23 @@
+{
+  "name": "APT R",
+  "background": "#030311",
+  "foreground": "#EAEEE0",
+  "cursorColor": "#060C2C",
+  "selectionBackground": "#4F3523",
+  "black": "#030311",
+  "red": "#060C2C",
+  "green": "#235798",
+  "yellow": "#0E2558",
+  "blue": "#0E2558",
+  "purple": "#D6A554",
+  "cyan": "#060C2C",
+  "white": "#B9BBAC",
+  "brightBlack": "#060C2C",
+  "brightRed": "#060C2C",
+  "brightGreen": "#235798",
+  "brightYellow": "#0E2558",
+  "brightBlue": "#060C2C",
+  "brightPurple": "#0E2558",
+  "brightCyan": "#235798",
+  "brightWhite": "#EAEEE0"
+}

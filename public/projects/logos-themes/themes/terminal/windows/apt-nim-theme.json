@@ -1,0 +1,23 @@
+{
+  "name": "APT Nim",
+  "background": "#0E0803",
+  "foreground": "#FFFF85",
+  "cursorColor": "#FFFF85",
+  "selectionBackground": "#4F2D04",
+  "black": "#0E0803",
+  "red": "#FFFF85",
+  "green": "#FBD624",
+  "yellow": "#C67503",
+  "blue": "#C67503",
+  "purple": "#693802",
+  "cyan": "#FFFF85",
+  "white": "#FBD624",
+  "brightBlack": "#2C1503",
+  "brightRed": "#FFFF85",
+  "brightGreen": "#FBD624",
+  "brightYellow": "#C67503",
+  "brightBlue": "#FFFF85",
+  "brightPurple": "#C67503",
+  "brightCyan": "#FBD624",
+  "brightWhite": "#FFFF85"
+}

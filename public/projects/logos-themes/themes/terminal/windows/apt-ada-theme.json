@@ -1,0 +1,23 @@
+{
+  "name": "APT Ada",
+  "background": "#060E0E",
+  "foreground": "#C3DEAA",
+  "cursorColor": "#CEB85C",
+  "selectionBackground": "#2B3726",
+  "black": "#060E0E",
+  "red": "#CEB85C",
+  "green": "#348F69",
+  "yellow": "#0F3027",
+  "blue": "#0F3027",
+  "purple": "#C3DEAA",
+  "cyan": "#CEB85C",
+  "white": "#CEB85C",
+  "brightBlack": "#10241C",
+  "brightRed": "#CEB85C",
+  "brightGreen": "#348F69",
+  "brightYellow": "#0F3027",
+  "brightBlue": "#CEB85C",
+  "brightPurple": "#0F3027",
+  "brightCyan": "#348F69",
+  "brightWhite": "#C3DEAA"
+}

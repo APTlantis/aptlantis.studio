@@ -1,0 +1,14 @@
+{
+  "ecosystem": "vbsix",
+  "background": "#060415",
+  "surface": "#0D0A2C",
+  "panel": "#252238",
+  "border": "#13144D",
+  "selection": "#21205C",
+  "lineHighlight": "#252238",
+  "accent": "#0D0A2C",
+  "accentSecondary": "#9F9FE8",
+  "highlight": "#13144D",
+  "textPrimary": "#E6E1EE",
+  "textMuted": "#9F9FE8"
+}

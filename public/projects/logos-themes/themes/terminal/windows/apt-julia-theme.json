@@ -1,0 +1,23 @@
+{
+  "name": "APT Julia",
+  "background": "#050315",
+  "foreground": "#EAEBE4",
+  "cursorColor": "#110E4C",
+  "selectionBackground": "#212062",
+  "black": "#050315",
+  "red": "#110E4C",
+  "green": "#2C45A1",
+  "yellow": "#0D082A",
+  "blue": "#0D082A",
+  "purple": "#40ADC4",
+  "cyan": "#110E4C",
+  "white": "#ADB4BD",
+  "brightBlack": "#0D082A",
+  "brightRed": "#110E4C",
+  "brightGreen": "#2C45A1",
+  "brightYellow": "#0D082A",
+  "brightBlue": "#110E4C",
+  "brightPurple": "#0D082A",
+  "brightCyan": "#2C45A1",
+  "brightWhite": "#EAEBE4"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "APT Bioconductor",
+  "background": "#031819",
+  "foreground": "#F6FCFC",
+  "cursorColor": "#04423D",
+  "selectionBackground": "#084F4B",
+  "black": "#031819",
+  "red": "#04423D",
+  "green": "#052B2B",
+  "yellow": "#084F4B",
+  "blue": "#084F4B",
+  "purple": "#17857B",
+  "cyan": "#04423D",
+  "white": "#CFEAE9",
+  "brightBlack": "#052021",
+  "brightRed": "#04423D",
+  "brightGreen": "#052B2B",
+  "brightYellow": "#084F4B",
+  "brightBlue": "#04423D",
+  "brightPurple": "#084F4B",
+  "brightCyan": "#052B2B",
+  "brightWhite": "#F6FCFC"
+}

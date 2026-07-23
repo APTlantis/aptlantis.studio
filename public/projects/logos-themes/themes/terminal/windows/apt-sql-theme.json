@@ -1,0 +1,23 @@
+{
+  "name": "APT Sql",
+  "background": "#110102",
+  "foreground": "#EFE6B3",
+  "cursorColor": "#FDD11C",
+  "selectionBackground": "#672407",
+  "black": "#110102",
+  "red": "#FDD11C",
+  "green": "#4D1002",
+  "yellow": "#992B03",
+  "blue": "#992B03",
+  "purple": "#DC6506",
+  "cyan": "#FDD11C",
+  "white": "#F9E25F",
+  "brightBlack": "#2C0702",
+  "brightRed": "#FDD11C",
+  "brightGreen": "#4D1002",
+  "brightYellow": "#992B03",
+  "brightBlue": "#FDD11C",
+  "brightPurple": "#992B03",
+  "brightCyan": "#4D1002",
+  "brightWhite": "#EFE6B3"
+}

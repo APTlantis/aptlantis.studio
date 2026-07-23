@@ -1,0 +1,14 @@
+{
+  "ecosystem": "purescript",
+  "background": "#04020F",
+  "surface": "#0C082C",
+  "panel": "#282335",
+  "border": "#1D1859",
+  "selection": "#453766",
+  "lineHighlight": "#282335",
+  "accent": "#0C082C",
+  "accentSecondary": "#52A3DE",
+  "highlight": "#1D1859",
+  "textPrimary": "#FAF7F8",
+  "textMuted": "#DDD0E8"
+}

@@ -1,0 +1,2808 @@
+{
+  "generatedAt": "2026-07-23T02:25:32.674Z",
+  "source": {
+    "logos": "D:/CTS/AptlantisLogos/logos.json",
+    "themes": "D:/CTS/LangThemeGenerator/themes",
+    "notes": "Public dataset generated from copied local artifacts. It does not regenerate source logos or themes."
+  },
+  "counts": {
+    "languages": 60,
+    "withThemes": 60,
+    "themeTargets": 6,
+    "themeFiles": 300
+  },
+  "targets": [
+    {
+      "id": "vscode",
+      "label": "VS Code",
+      "icon": "data_object"
+    },
+    {
+      "id": "jetbrains",
+      "label": "JetBrains",
+      "icon": "integration_instructions"
+    },
+    {
+      "id": "notepadpp",
+      "label": "Notepad++",
+      "icon": "code_blocks"
+    },
+    {
+      "id": "alacritty",
+      "label": "Alacritty",
+      "icon": "terminal"
+    },
+    {
+      "id": "windows-terminal",
+      "label": "Windows Terminal",
+      "icon": "terminal"
+    },
+    {
+      "id": "web",
+      "label": "Web",
+      "icon": "language"
+    }
+  ],
+  "languages": [
+    {
+      "id": "ada",
+      "name": "Ada",
+      "description": "High-level, statically typed, algorithmic programming language",
+      "site": "https://www.adacore.com/about-ada",
+      "logo": "/projects/logos-themes/logos/apt-ada-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-ada-theme.json",
+          "filename": "apt-ada-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-ada-theme.icls",
+          "filename": "apt-ada-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-ada-theme.xml",
+          "filename": "apt-ada-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-ada-theme.toml",
+          "filename": "apt-ada-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-ada-theme.json",
+          "filename": "apt-ada-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "ansible",
+      "name": "Ansible",
+      "description": "Open-source IT automation engine",
+      "site": "https://www.ansible.com/",
+      "logo": "/projects/logos-themes/logos/apt-ansible-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-ansible-theme.json",
+          "filename": "apt-ansible-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-ansible-theme.icls",
+          "filename": "apt-ansible-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-ansible-theme.xml",
+          "filename": "apt-ansible-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-ansible-theme.toml",
+          "filename": "apt-ansible-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-ansible-theme.json",
+          "filename": "apt-ansible-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "assembly",
+      "name": "Assembly",
+      "description": "x86 / x64 low-level symbolic code",
+      "site": "https://www.nasm.us/",
+      "logo": "/projects/logos-themes/logos/apt-assembly-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-assembly-theme.json",
+          "filename": "apt-assembly-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-assembly-theme.icls",
+          "filename": "apt-assembly-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-assembly-theme.xml",
+          "filename": "apt-assembly-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-assembly-theme.toml",
+          "filename": "apt-assembly-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-assembly-theme.json",
+          "filename": "apt-assembly-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "bash",
+      "name": "Bash",
+      "description": "GNU Project's shell and command language",
+      "site": "https://www.gnu.org/software/bash/",
+      "logo": "/projects/logos-themes/logos/apt-bash-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-bash-theme.json",
+          "filename": "apt-bash-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-bash-theme.icls",
+          "filename": "apt-bash-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-bash-theme.xml",
+          "filename": "apt-bash-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-bash-theme.toml",
+          "filename": "apt-bash-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-bash-theme.json",
+          "filename": "apt-bash-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "bioconductor",
+      "name": "Bioconductor",
+      "description": "Open-source R-based bioinformatics platform",
+      "site": "https://www.bioconductor.org/",
+      "logo": "/projects/logos-themes/logos/apt-bioconductor-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-bioconductor-theme.json",
+          "filename": "apt-bioconductor-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-bioconductor-theme.icls",
+          "filename": "apt-bioconductor-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-bioconductor-theme.xml",
+          "filename": "apt-bioconductor-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-bioconductor-theme.toml",
+          "filename": "apt-bioconductor-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-bioconductor-theme.json",
+          "filename": "apt-bioconductor-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "description": "The foundational systems programming language",
+      "site": "https://en.cppreference.com/w/c",
+      "logo": "/projects/logos-themes/logos/apt-c-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-c-theme.json",
+          "filename": "apt-c-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-c-theme.icls",
+          "filename": "apt-c-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-c-theme.xml",
+          "filename": "apt-c-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-c-theme.toml",
+          "filename": "apt-c-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-c-theme.json",
+          "filename": "apt-c-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "csharp",
+      "name": "C#",
+      "description": "Microsoft .NET managed language",
+      "site": "https://dotnet.microsoft.com/languages/csharp",
+      "logo": "/projects/logos-themes/logos/apt-csharp-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-csharp-theme.json",
+          "filename": "apt-csharp-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-csharp-theme.icls",
+          "filename": "apt-csharp-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-csharp-theme.xml",
+          "filename": "apt-csharp-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-csharp-theme.toml",
+          "filename": "apt-csharp-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-csharp-theme.json",
+          "filename": "apt-csharp-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "cpp",
+      "name": "C++",
+      "description": "ISO C++ Foundation — systems & performance",
+      "site": "https://isocpp.org/",
+      "logo": "/projects/logos-themes/logos/apt-cpp-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-cpp-theme.json",
+          "filename": "apt-cpp-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-cpp-theme.icls",
+          "filename": "apt-cpp-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-cpp-theme.xml",
+          "filename": "apt-cpp-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-cpp-theme.toml",
+          "filename": "apt-cpp-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-cpp-theme.json",
+          "filename": "apt-cpp-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "caddy",
+      "name": "Caddy",
+      "description": "Ultimate cloud-native web server with automatic HTTPS",
+      "site": "https://caddyserver.com/",
+      "logo": "/projects/logos-themes/logos/apt-caddy-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-caddy-theme.json",
+          "filename": "apt-caddy-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-caddy-theme.icls",
+          "filename": "apt-caddy-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-caddy-theme.xml",
+          "filename": "apt-caddy-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-caddy-theme.toml",
+          "filename": "apt-caddy-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-caddy-theme.json",
+          "filename": "apt-caddy-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "clojure",
+      "name": "Clojure",
+      "description": "Modern, dynamic, and robust dialect of the Lisp",
+      "site": "https://clojure.org/",
+      "logo": "/projects/logos-themes/logos/apt-clojure-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-clojure-theme.json",
+          "filename": "apt-clojure-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-clojure-theme.icls",
+          "filename": "apt-clojure-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-clojure-theme.xml",
+          "filename": "apt-clojure-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-clojure-theme.toml",
+          "filename": "apt-clojure-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-clojure-theme.json",
+          "filename": "apt-clojure-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "description": "Cloud services and CDN provider",
+      "site": "https://www.cloudflare.com/",
+      "logo": "/projects/logos-themes/logos/apt-cloudflare-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-cloudflare-theme.json",
+          "filename": "apt-cloudflare-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-cloudflare-theme.icls",
+          "filename": "apt-cloudflare-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-cloudflare-theme.xml",
+          "filename": "apt-cloudflare-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-cloudflare-theme.toml",
+          "filename": "apt-cloudflare-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-cloudflare-theme.json",
+          "filename": "apt-cloudflare-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "cobol",
+      "name": "COBOL",
+      "description": "Legacy business-oriented programming language",
+      "site": "https://en.wikipedia.org/wiki/COBOL",
+      "logo": "/projects/logos-themes/logos/apt-cobol-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-cobol-theme.json",
+          "filename": "apt-cobol-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-cobol-theme.icls",
+          "filename": "apt-cobol-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-cobol-theme.xml",
+          "filename": "apt-cobol-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-cobol-theme.toml",
+          "filename": "apt-cobol-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-cobol-theme.json",
+          "filename": "apt-cobol-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "coffeescript",
+      "name": "CoffeeScript",
+      "description": "A little language that compiles into JavaScript",
+      "site": "https://coffeescript.org/",
+      "logo": "/projects/logos-themes/logos/apt-coffeescript-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-coffeescript-theme.json",
+          "filename": "apt-coffeescript-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-coffeescript-theme.icls",
+          "filename": "apt-coffeescript-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-coffeescript-theme.xml",
+          "filename": "apt-coffeescript-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-coffeescript-theme.toml",
+          "filename": "apt-coffeescript-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-coffeescript-theme.json",
+          "filename": "apt-coffeescript-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "cpan",
+      "name": "CPAN",
+      "description": "Comprehensive Perl Archive Network",
+      "site": "https://www.cpan.org/",
+      "logo": "/projects/logos-themes/logos/apt-cpan-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-cpan-theme.json",
+          "filename": "apt-cpan-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-cpan-theme.icls",
+          "filename": "apt-cpan-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-cpan-theme.xml",
+          "filename": "apt-cpan-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-cpan-theme.toml",
+          "filename": "apt-cpan-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-cpan-theme.json",
+          "filename": "apt-cpan-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "dbase",
+      "name": "dBase",
+      "description": "Database management system and language",
+      "site": "http://www.dbase.com/",
+      "logo": "/projects/logos-themes/logos/apt-dbase-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-dbase-theme.json",
+          "filename": "apt-dbase-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-dbase-theme.icls",
+          "filename": "apt-dbase-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-dbase-theme.xml",
+          "filename": "apt-dbase-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-dbase-theme.toml",
+          "filename": "apt-dbase-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-dbase-theme.json",
+          "filename": "apt-dbase-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "description": "OS-level virtualization delivering software in containers",
+      "site": "https://www.docker.com/",
+      "logo": "/projects/logos-themes/logos/apt-docker-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-docker-theme.json",
+          "filename": "apt-docker-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-docker-theme.icls",
+          "filename": "apt-docker-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-docker-theme.xml",
+          "filename": "apt-docker-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-docker-theme.toml",
+          "filename": "apt-docker-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-docker-theme.json",
+          "filename": "apt-docker-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "fsharp",
+      "name": "F#",
+      "description": "Functional-first programming language for .NET",
+      "site": "https://fsharp.org/",
+      "logo": "/projects/logos-themes/logos/apt-fsharp-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-fsharp-theme.json",
+          "filename": "apt-fsharp-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-fsharp-theme.icls",
+          "filename": "apt-fsharp-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-fsharp-theme.xml",
+          "filename": "apt-fsharp-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-fsharp-theme.toml",
+          "filename": "apt-fsharp-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-fsharp-theme.json",
+          "filename": "apt-fsharp-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "flathub",
+      "name": "Flathub",
+      "description": "The home of hundreds of apps which can be easily installed on any Linux distribution",
+      "site": "https://flathub.org/",
+      "logo": "/projects/logos-themes/logos/apt-flathub-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-flathub-theme.json",
+          "filename": "apt-flathub-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-flathub-theme.icls",
+          "filename": "apt-flathub-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-flathub-theme.xml",
+          "filename": "apt-flathub-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-flathub-theme.toml",
+          "filename": "apt-flathub-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-flathub-theme.json",
+          "filename": "apt-flathub-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "fortran",
+      "name": "Fortran",
+      "description": "High-performance numeric and scientific computing",
+      "site": "https://fortran-lang.org/",
+      "logo": "/projects/logos-themes/logos/apt-fortran-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-fortran-theme.json",
+          "filename": "apt-fortran-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-fortran-theme.icls",
+          "filename": "apt-fortran-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-fortran-theme.xml",
+          "filename": "apt-fortran-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-fortran-theme.toml",
+          "filename": "apt-fortran-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-fortran-theme.json",
+          "filename": "apt-fortran-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "description": "The open observability platform",
+      "site": "https://grafana.com/",
+      "logo": "/projects/logos-themes/logos/apt-grafana-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-grafana-theme.json",
+          "filename": "apt-grafana-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-grafana-theme.icls",
+          "filename": "apt-grafana-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-grafana-theme.xml",
+          "filename": "apt-grafana-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-grafana-theme.toml",
+          "filename": "apt-grafana-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-grafana-theme.json",
+          "filename": "apt-grafana-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "jave",
+      "name": "Java",
+      "description": "The world's most popular programming language (Java)",
+      "site": "https://www.java.com/",
+      "logo": "/projects/logos-themes/logos/apt-jave-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-jave-theme.json",
+          "filename": "apt-jave-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-jave-theme.icls",
+          "filename": "apt-jave-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-jave-theme.xml",
+          "filename": "apt-jave-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-jave-theme.toml",
+          "filename": "apt-jave-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-jave-theme.json",
+          "filename": "apt-jave-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "julia",
+      "name": "Julia",
+      "description": "High-level, high-performance dynamic language for technical computing",
+      "site": "https://julialang.org/",
+      "logo": "/projects/logos-themes/logos/apt-julia-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-julia-theme.json",
+          "filename": "apt-julia-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-julia-theme.icls",
+          "filename": "apt-julia-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-julia-theme.xml",
+          "filename": "apt-julia-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-julia-theme.toml",
+          "filename": "apt-julia-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-julia-theme.json",
+          "filename": "apt-julia-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "description": "Modern, cross-platform, multi-purpose programming language",
+      "site": "https://kotlinlang.org/",
+      "logo": "/projects/logos-themes/logos/apt-kotlin-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-kotlin-theme.json",
+          "filename": "apt-kotlin-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-kotlin-theme.icls",
+          "filename": "apt-kotlin-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-kotlin-theme.xml",
+          "filename": "apt-kotlin-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-kotlin-theme.toml",
+          "filename": "apt-kotlin-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-kotlin-theme.json",
+          "filename": "apt-kotlin-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "description": "Production-grade container orchestration",
+      "site": "https://kubernetes.io/",
+      "logo": "/projects/logos-themes/logos/apt-kubernetes-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-kubernetes-theme.json",
+          "filename": "apt-kubernetes-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-kubernetes-theme.icls",
+          "filename": "apt-kubernetes-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-kubernetes-theme.xml",
+          "filename": "apt-kubernetes-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-kubernetes-theme.toml",
+          "filename": "apt-kubernetes-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-kubernetes-theme.json",
+          "filename": "apt-kubernetes-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "lisp",
+      "name": "Lisp",
+      "description": "The original programmable programming language",
+      "site": "https://common-lisp.net/",
+      "logo": "/projects/logos-themes/logos/apt-lisp-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-lisp-theme.json",
+          "filename": "apt-lisp-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-lisp-theme.icls",
+          "filename": "apt-lisp-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-lisp-theme.xml",
+          "filename": "apt-lisp-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-lisp-theme.toml",
+          "filename": "apt-lisp-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-lisp-theme.json",
+          "filename": "apt-lisp-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "lua",
+      "name": "Lua",
+      "description": "Powerful, efficient, lightweight, embeddable scripting language",
+      "site": "https://www.lua.org/",
+      "logo": "/projects/logos-themes/logos/apt-lua-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-lua-theme.json",
+          "filename": "apt-lua-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-lua-theme.icls",
+          "filename": "apt-lua-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-lua-theme.xml",
+          "filename": "apt-lua-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-lua-theme.toml",
+          "filename": "apt-lua-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-lua-theme.json",
+          "filename": "apt-lua-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "malbolge",
+      "name": "Malbolge",
+      "description": "Intentionally designed to be nearly impossible",
+      "site": "https://en.wikipedia.org/wiki/Malbolge",
+      "logo": "/projects/logos-themes/logos/apt-malbolge-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-malbolge-theme.json",
+          "filename": "apt-malbolge-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-malbolge-theme.icls",
+          "filename": "apt-malbolge-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-malbolge-theme.xml",
+          "filename": "apt-malbolge-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-malbolge-theme.toml",
+          "filename": "apt-malbolge-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-malbolge-theme.json",
+          "filename": "apt-malbolge-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "markdown",
+      "name": "Markdown",
+      "description": "Lightweight markup language with plain-text-formatting syntax",
+      "site": "https://daringfireball.net/projects/markdown/",
+      "logo": "/projects/logos-themes/logos/apt-markdown-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-markdown-theme.json",
+          "filename": "apt-markdown-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-markdown-theme.icls",
+          "filename": "apt-markdown-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-markdown-theme.xml",
+          "filename": "apt-markdown-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-markdown-theme.toml",
+          "filename": "apt-markdown-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-markdown-theme.json",
+          "filename": "apt-markdown-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "matlab",
+      "name": "MATLAB",
+      "description": "Numerical computing environment and proprietary programming language",
+      "site": "https://www.mathworks.com/products/matlab.html",
+      "logo": "/projects/logos-themes/logos/apt-matlab-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-matlab-theme.json",
+          "filename": "apt-matlab-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-matlab-theme.icls",
+          "filename": "apt-matlab-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-matlab-theme.xml",
+          "filename": "apt-matlab-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-matlab-theme.toml",
+          "filename": "apt-matlab-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-matlab-theme.json",
+          "filename": "apt-matlab-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "mumps",
+      "name": "MUMPS",
+      "description": "Massachusetts General Hospital Utility Multi-Programming System",
+      "site": "https://en.wikipedia.org/wiki/MUMPS",
+      "logo": "/projects/logos-themes/logos/apt-mumps-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-mumps-theme.json",
+          "filename": "apt-mumps-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-mumps-theme.icls",
+          "filename": "apt-mumps-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-mumps-theme.xml",
+          "filename": "apt-mumps-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-mumps-theme.toml",
+          "filename": "apt-mumps-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-mumps-theme.json",
+          "filename": "apt-mumps-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "nginx",
+      "name": "NGINX",
+      "description": "High-performance HTTP server and reverse proxy",
+      "site": "https://www.nginx.com/",
+      "logo": "/projects/logos-themes/logos/apt-nginx-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-nginx-theme.json",
+          "filename": "apt-nginx-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-nginx-theme.icls",
+          "filename": "apt-nginx-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-nginx-theme.xml",
+          "filename": "apt-nginx-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-nginx-theme.toml",
+          "filename": "apt-nginx-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-nginx-theme.json",
+          "filename": "apt-nginx-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "nim",
+      "name": "Nim",
+      "description": "Statically typed compiled systems programming language",
+      "site": "https://nim-lang.org/",
+      "logo": "/projects/logos-themes/logos/apt-nim-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-nim-theme.json",
+          "filename": "apt-nim-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-nim-theme.icls",
+          "filename": "apt-nim-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-nim-theme.xml",
+          "filename": "apt-nim-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-nim-theme.toml",
+          "filename": "apt-nim-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-nim-theme.json",
+          "filename": "apt-nim-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "description": "JavaScript runtime built on Chrome's V8",
+      "site": "https://nodejs.org/",
+      "logo": "/projects/logos-themes/logos/apt-node-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-node-theme.json",
+          "filename": "apt-node-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-node-theme.icls",
+          "filename": "apt-node-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-node-theme.xml",
+          "filename": "apt-node-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-node-theme.toml",
+          "filename": "apt-node-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-node-theme.json",
+          "filename": "apt-node-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "objectivec",
+      "name": "Objective-C",
+      "description": "Main programming language used by Apple for macOS and iOS",
+      "site": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
+      "logo": "/projects/logos-themes/logos/apt-objectivec-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-objectivec-theme.json",
+          "filename": "apt-objectivec-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-objectivec-theme.icls",
+          "filename": "apt-objectivec-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-objectivec-theme.xml",
+          "filename": "apt-objectivec-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-objectivec-theme.toml",
+          "filename": "apt-objectivec-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-objectivec-theme.json",
+          "filename": "apt-objectivec-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "ocaml",
+      "name": "OCaml",
+      "description": "General-purpose, multi-paradigm programming language",
+      "site": "https://ocaml.org/",
+      "logo": "/projects/logos-themes/logos/apt-ocaml-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-ocaml-theme.json",
+          "filename": "apt-ocaml-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-ocaml-theme.icls",
+          "filename": "apt-ocaml-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-ocaml-theme.xml",
+          "filename": "apt-ocaml-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-ocaml-theme.toml",
+          "filename": "apt-ocaml-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-ocaml-theme.json",
+          "filename": "apt-ocaml-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "perl",
+      "name": "Perl",
+      "description": "Practical Extraction and Report Language",
+      "site": "https://www.perl.org/",
+      "logo": "/projects/logos-themes/logos/apt-perl-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-perl-theme.json",
+          "filename": "apt-perl-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-perl-theme.icls",
+          "filename": "apt-perl-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-perl-theme.xml",
+          "filename": "apt-perl-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-perl-theme.toml",
+          "filename": "apt-perl-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-perl-theme.json",
+          "filename": "apt-perl-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "description": "Popular general-purpose scripting language for web development",
+      "site": "https://www.php.net/",
+      "logo": "/projects/logos-themes/logos/apt-php-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-php-theme.json",
+          "filename": "apt-php-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-php-theme.icls",
+          "filename": "apt-php-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-php-theme.xml",
+          "filename": "apt-php-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-php-theme.toml",
+          "filename": "apt-php-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-php-theme.json",
+          "filename": "apt-php-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "powershell",
+      "name": "PowerShell",
+      "description": "Task automation and configuration management framework",
+      "site": "https://learn.microsoft.com/en-us/powershell/",
+      "logo": "/projects/logos-themes/logos/apt-powershell-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-powershell-theme.json",
+          "filename": "apt-powershell-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-powershell-theme.icls",
+          "filename": "apt-powershell-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-powershell-theme.xml",
+          "filename": "apt-powershell-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-powershell-theme.toml",
+          "filename": "apt-powershell-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-powershell-theme.json",
+          "filename": "apt-powershell-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "prolog",
+      "name": "Prolog",
+      "description": "Logic programming language (SWI-Prolog)",
+      "site": "https://www.swi-prolog.org/",
+      "logo": "/projects/logos-themes/logos/apt-prolog-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-prolog-theme.json",
+          "filename": "apt-prolog-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-prolog-theme.icls",
+          "filename": "apt-prolog-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-prolog-theme.xml",
+          "filename": "apt-prolog-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-prolog-theme.toml",
+          "filename": "apt-prolog-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-prolog-theme.json",
+          "filename": "apt-prolog-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "prometheus",
+      "name": "Prometheus",
+      "description": "Systems monitoring and alerting toolkit",
+      "site": "https://prometheus.io/",
+      "logo": "/projects/logos-themes/logos/apt-prometheus-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-prometheus-theme.json",
+          "filename": "apt-prometheus-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-prometheus-theme.icls",
+          "filename": "apt-prometheus-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-prometheus-theme.xml",
+          "filename": "apt-prometheus-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-prometheus-theme.toml",
+          "filename": "apt-prometheus-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-prometheus-theme.json",
+          "filename": "apt-prometheus-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "promis",
+      "name": "Promis",
+      "description": "Prosecutor's Management Information System",
+      "site": "https://en.wikipedia.org/wiki/Promis",
+      "logo": "/projects/logos-themes/logos/apt-promis-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-promis-theme.json",
+          "filename": "apt-promis-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-promis-theme.icls",
+          "filename": "apt-promis-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-promis-theme.xml",
+          "filename": "apt-promis-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-promis-theme.toml",
+          "filename": "apt-promis-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-promis-theme.json",
+          "filename": "apt-promis-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "purescript",
+      "name": "PureScript",
+      "description": "Strongly-typed, functional programming language that compiles to JavaScript",
+      "site": "https://www.purescript.org/",
+      "logo": "/projects/logos-themes/logos/apt-purescript-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-purescript-theme.json",
+          "filename": "apt-purescript-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-purescript-theme.icls",
+          "filename": "apt-purescript-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-purescript-theme.xml",
+          "filename": "apt-purescript-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-purescript-theme.toml",
+          "filename": "apt-purescript-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-purescript-theme.json",
+          "filename": "apt-purescript-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "description": "Batteries-included general-purpose language",
+      "site": "https://www.python.org/",
+      "logo": "/projects/logos-themes/logos/apt-python-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-python-theme.json",
+          "filename": "apt-python-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-python-theme.icls",
+          "filename": "apt-python-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-python-theme.xml",
+          "filename": "apt-python-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-python-theme.toml",
+          "filename": "apt-python-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-python-theme.json",
+          "filename": "apt-python-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "qbasic",
+      "name": "QBasic",
+      "description": "Classic BASIC interpreter — QB64 revival",
+      "site": "https://www.qb64.com/",
+      "logo": "/projects/logos-themes/logos/apt-qbasic-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-qbasic-theme.json",
+          "filename": "apt-qbasic-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-qbasic-theme.icls",
+          "filename": "apt-qbasic-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-qbasic-theme.xml",
+          "filename": "apt-qbasic-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-qbasic-theme.toml",
+          "filename": "apt-qbasic-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-qbasic-theme.json",
+          "filename": "apt-qbasic-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "r",
+      "name": "R",
+      "description": "Language and environment for statistical computing and graphics",
+      "site": "https://www.r-project.org/",
+      "logo": "/projects/logos-themes/logos/apt-r-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-r-theme.json",
+          "filename": "apt-r-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-r-theme.icls",
+          "filename": "apt-r-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-r-theme.xml",
+          "filename": "apt-r-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-r-theme.toml",
+          "filename": "apt-r-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-r-theme.json",
+          "filename": "apt-r-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "description": "JavaScript library for building user interfaces",
+      "site": "https://react.dev/",
+      "logo": "/projects/logos-themes/logos/apt-react-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-react-theme.json",
+          "filename": "apt-react-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-react-theme.icls",
+          "filename": "apt-react-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-react-theme.xml",
+          "filename": "apt-react-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-react-theme.toml",
+          "filename": "apt-react-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-react-theme.json",
+          "filename": "apt-react-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "description": "Dynamic, open source programming language with a focus on simplicity and productivity",
+      "site": "https://www.ruby-lang.org/",
+      "logo": "/projects/logos-themes/logos/apt-ruby-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-ruby-theme.json",
+          "filename": "apt-ruby-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-ruby-theme.icls",
+          "filename": "apt-ruby-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-ruby-theme.xml",
+          "filename": "apt-ruby-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-ruby-theme.toml",
+          "filename": "apt-ruby-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-ruby-theme.json",
+          "filename": "apt-ruby-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "description": "Memory-safe systems programming language",
+      "site": "https://www.rust-lang.org/",
+      "logo": "/projects/logos-themes/logos/apt-rust-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-rust-theme.json",
+          "filename": "apt-rust-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-rust-theme.icls",
+          "filename": "apt-rust-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-rust-theme.xml",
+          "filename": "apt-rust-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-rust-theme.toml",
+          "filename": "apt-rust-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-rust-theme.json",
+          "filename": "apt-rust-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "scala",
+      "name": "Scala",
+      "description": "Combines object-oriented and functional programming in one concise, high-level language",
+      "site": "https://www.scala-lang.org/",
+      "logo": "/projects/logos-themes/logos/apt-scala-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-scala-theme.json",
+          "filename": "apt-scala-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-scala-theme.icls",
+          "filename": "apt-scala-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-scala-theme.xml",
+          "filename": "apt-scala-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-scala-theme.toml",
+          "filename": "apt-scala-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-scala-theme.json",
+          "filename": "apt-scala-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "scratch",
+      "name": "Scratch",
+      "description": "Visual programming language and online community for children",
+      "site": "https://scratch.mit.edu/",
+      "logo": "/projects/logos-themes/logos/apt-scratch-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-scratch-theme.json",
+          "filename": "apt-scratch-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-scratch-theme.icls",
+          "filename": "apt-scratch-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-scratch-theme.xml",
+          "filename": "apt-scratch-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-scratch-theme.toml",
+          "filename": "apt-scratch-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-scratch-theme.json",
+          "filename": "apt-scratch-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "sgml",
+      "name": "SGML",
+      "description": "Standard Generalized Markup Language",
+      "site": "https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language",
+      "logo": "/projects/logos-themes/logos/apt-sgml-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-sgml-theme.json",
+          "filename": "apt-sgml-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-sgml-theme.icls",
+          "filename": "apt-sgml-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-sgml-theme.xml",
+          "filename": "apt-sgml-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-sgml-theme.toml",
+          "filename": "apt-sgml-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-sgml-theme.json",
+          "filename": "apt-sgml-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "description": "Standard language for relational database management",
+      "site": "https://en.wikipedia.org/wiki/SQL",
+      "logo": "/projects/logos-themes/logos/apt-sql-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-sql-theme.json",
+          "filename": "apt-sql-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-sql-theme.icls",
+          "filename": "apt-sql-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-sql-theme.xml",
+          "filename": "apt-sql-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-sql-theme.toml",
+          "filename": "apt-sql-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-sql-theme.json",
+          "filename": "apt-sql-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "svelte",
+      "name": "Svelte",
+      "description": "Cybernetically enhanced web apps",
+      "site": "https://svelte.dev/",
+      "logo": "/projects/logos-themes/logos/apt-svelte-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-svelte-theme.json",
+          "filename": "apt-svelte-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-svelte-theme.icls",
+          "filename": "apt-svelte-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-svelte-theme.xml",
+          "filename": "apt-svelte-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-svelte-theme.toml",
+          "filename": "apt-svelte-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-svelte-theme.json",
+          "filename": "apt-svelte-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "description": "Infrastructure as Code software tool",
+      "site": "https://www.terraform.io/",
+      "logo": "/projects/logos-themes/logos/apt-terraform-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-terraform-theme.json",
+          "filename": "apt-terraform-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-terraform-theme.icls",
+          "filename": "apt-terraform-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-terraform-theme.xml",
+          "filename": "apt-terraform-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-terraform-theme.toml",
+          "filename": "apt-terraform-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-terraform-theme.json",
+          "filename": "apt-terraform-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "tex",
+      "name": "TeX",
+      "description": "Typesetting system for complex mathematical formulae",
+      "site": "https://www.tug.org/",
+      "logo": "/projects/logos-themes/logos/apt-tex-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-tex-theme.json",
+          "filename": "apt-tex-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-tex-theme.icls",
+          "filename": "apt-tex-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-tex-theme.xml",
+          "filename": "apt-tex-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-tex-theme.toml",
+          "filename": "apt-tex-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-tex-theme.json",
+          "filename": "apt-tex-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "toml",
+      "name": "TOML",
+      "description": "Tom's Obvious, Minimal Language",
+      "site": "https://toml.io/",
+      "logo": "/projects/logos-themes/logos/apt-toml-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-toml-theme.json",
+          "filename": "apt-toml-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-toml-theme.icls",
+          "filename": "apt-toml-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-toml-theme.xml",
+          "filename": "apt-toml-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-toml-theme.toml",
+          "filename": "apt-toml-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-toml-theme.json",
+          "filename": "apt-toml-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "description": "Typed superset of JavaScript that compiles to plain JavaScript",
+      "site": "https://www.typescriptlang.org/",
+      "logo": "/projects/logos-themes/logos/apt-typescript-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-typescript-theme.json",
+          "filename": "apt-typescript-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-typescript-theme.icls",
+          "filename": "apt-typescript-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-typescript-theme.xml",
+          "filename": "apt-typescript-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-typescript-theme.toml",
+          "filename": "apt-typescript-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-typescript-theme.json",
+          "filename": "apt-typescript-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "vue",
+      "name": "Vue.js",
+      "description": "Progressive JavaScript Framework",
+      "site": "https://vuejs.org/",
+      "logo": "/projects/logos-themes/logos/apt-vue-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-vue-theme.json",
+          "filename": "apt-vue-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-vue-theme.icls",
+          "filename": "apt-vue-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-vue-theme.xml",
+          "filename": "apt-vue-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-vue-theme.toml",
+          "filename": "apt-vue-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-vue-theme.json",
+          "filename": "apt-vue-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "wasm",
+      "name": "WebAssembly",
+      "description": "Binary instruction format for a stack-based virtual machine",
+      "site": "https://webassembly.org/",
+      "logo": "/projects/logos-themes/logos/apt-wasm-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-wasm-theme.json",
+          "filename": "apt-wasm-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-wasm-theme.icls",
+          "filename": "apt-wasm-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-wasm-theme.xml",
+          "filename": "apt-wasm-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-wasm-theme.toml",
+          "filename": "apt-wasm-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-wasm-theme.json",
+          "filename": "apt-wasm-theme.json",
+          "format": "JSON"
+        }
+      ]
+    },
+    {
+      "id": "zig",
+      "name": "Zig",
+      "description": "General-purpose programming language and toolchain for maintaining robust software",
+      "site": "https://ziglang.org/",
+      "logo": "/projects/logos-themes/logos/apt-zig-logo.svg",
+      "hasThemes": true,
+      "themeCount": 5,
+      "themes": [
+        {
+          "targetId": "vscode",
+          "label": "VS Code",
+          "path": "/projects/logos-themes/themes/vscode/apt-zig-theme.json",
+          "filename": "apt-zig-theme.json",
+          "format": "JSON"
+        },
+        {
+          "targetId": "jetbrains",
+          "label": "JetBrains",
+          "path": "/projects/logos-themes/themes/jetbrains/apt-zig-theme.icls",
+          "filename": "apt-zig-theme.icls",
+          "format": "ICLS"
+        },
+        {
+          "targetId": "notepadpp",
+          "label": "Notepad++",
+          "path": "/projects/logos-themes/themes/notepadpp/apt-zig-theme.xml",
+          "filename": "apt-zig-theme.xml",
+          "format": "XML"
+        },
+        {
+          "targetId": "alacritty",
+          "label": "Alacritty",
+          "path": "/projects/logos-themes/themes/terminal/alacritty/apt-zig-theme.toml",
+          "filename": "apt-zig-theme.toml",
+          "format": "TOML"
+        },
+        {
+          "targetId": "windows-terminal",
+          "label": "Windows Terminal",
+          "path": "/projects/logos-themes/themes/terminal/windows/apt-zig-theme.json",
+          "filename": "apt-zig-theme.json",
+          "format": "JSON"
+        }
+      ]
+    }
+  ]
+}

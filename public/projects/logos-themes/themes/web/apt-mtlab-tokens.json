@@ -1,0 +1,14 @@
+{
+  "ecosystem": "mtlab",
+  "background": "#0B0208",
+  "surface": "#2D080A",
+  "panel": "#19112A",
+  "border": "#5B1D0E",
+  "selection": "#171F55",
+  "lineHighlight": "#19112A",
+  "accent": "#E06307",
+  "accentSecondary": "#F29D13",
+  "highlight": "#9B270A",
+  "textPrimary": "#F4F6DD",
+  "textMuted": "#C6C7A9"
+}
