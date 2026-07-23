@@ -1,16 +1,17 @@
 {
   "generatedAt": "2026-07-13T04:49:50.260Z",
-  "projectCount": 8,
-  "averageCompletion": 87,
+  "projectCount": 9,
+  "averageCompletion": 86,
   "statusCounts": {
     "active": 4,
     "paused": 2,
     "blocked": 1,
-    "Paused": 1
+    "Paused": 1,
+    "paused / active": 1
   },
   "governanceCounts": {
     "CityHall": 1,
-    "CTS": 1,
+    "CTS": 2,
     "DRS": 6
   },
   "tagCounts": {
@@ -18,7 +19,7 @@
     "cityhall": 1,
     "wgs": 1,
     "pps": 1,
-    "cts": 1,
+    "cts": 2,
     "drs": 5,
     "wds": 1,
     "aamhs": 2,
@@ -31,7 +32,7 @@
     "cratesio": 1,
     "mirror": 1,
     "go": 2,
-    "python": 1,
+    "python": 2,
     "cli": 2,
     "local-first": 6,
     "archive-oriented": 1,
@@ -97,7 +98,17 @@
     "typescript": 1,
     "vite": 1,
     "structured-data": 1,
-    "visual-builder": 1
+    "visual-builder": 1,
+    "asset-tooling": 1,
+    "logos": 1,
+    "themes": 1,
+    "svg": 1,
+    "language-atlas": 1,
+    "palette": 1,
+    "ide-themes": 1,
+    "terminal-themes": 1,
+    "public-catalog": 1,
+    "zip-downloads": 1
   },
   "topPriorities": [
     {
@@ -464,8 +475,12 @@
               "templates/Data-Migration-Contract.md",
               "templates/Withdrawn-Release.md"
             ],
-            "examples": ["examples/MiniVault"],
-            "validators": ["drs.ps1"],
+            "examples": [
+              "examples/MiniVault"
+            ],
+            "validators": [
+              "drs.ps1"
+            ],
             "adopterArtifacts": [
               "DesktopApplicationRelease.manifest.schema.toml",
               "templates/ProjectName.manifest.toml",
@@ -500,8 +515,12 @@
             "sourcePath": "D:\\.library\\aptlantis_core\\NeonInk",
             "specification": "Docs/NeonInk-v0.1.1.md",
             "schema": "schema.jsonld",
-            "templates": ["templates/NeonInk-Adoption-Record.md"],
-            "examples": ["examples/NeonInk-Suite-Map.md"],
+            "templates": [
+              "templates/NeonInk-Adoption-Record.md"
+            ],
+            "examples": [
+              "examples/NeonInk-Suite-Map.md"
+            ],
             "validators": [],
             "adopterArtifacts": [
               "schema.jsonld",
@@ -531,7 +550,9 @@
             "examples": [],
             "validators": [],
             "adopterArtifacts": [],
-            "readFirst": ["blue.slate"],
+            "readFirst": [
+              "blue.slate"
+            ],
             "layer": "visual and semantic layer",
             "color": "#60a5fa"
           },
@@ -585,7 +606,9 @@
             "sourcePath": "D:\\.library\\aptlantis_core\\SESM",
             "specification": "SESM-v0.2.md",
             "schema": "svg_asset.schema.json",
-            "templates": ["templates/SESM-Metadata-Example.json"],
+            "templates": [
+              "templates/SESM-Metadata-Example.json"
+            ],
             "examples": [
               "examples/SESM-Suite-Map.md",
               "templates/SESM-Metadata-Example.json",
@@ -774,7 +797,11 @@
         "usagePatterns": [
           {
             "title": "Start or revive a project",
-            "appliesTo": ["PPS", "WGS", "Blanks"],
+            "appliesTo": [
+              "PPS",
+              "WGS",
+              "Blanks"
+            ],
             "steps": [
               "Write the project proposal so intent, constraints, risks, and success criteria survive the first build.",
               "Place the project through WGS so the directory, local manifest, AGENTS.md, and Project-README.md agree.",
@@ -783,7 +810,12 @@
           },
           {
             "title": "Publish a desktop release",
-            "appliesTo": ["DRS", "AAMHS", "NeonInk", "Blue Slate"],
+            "appliesTo": [
+              "DRS",
+              "AAMHS",
+              "NeonInk",
+              "Blue Slate"
+            ],
             "steps": [
               "Use DRS for release notes, installer metadata, verification blocks, and evidence folders.",
               "Use AAMHS when the release also needs richer archive manifests, multi-hash records, or detached signature context.",
@@ -793,7 +825,11 @@
           },
           {
             "title": "Ship a command-line tool",
-            "appliesTo": ["CTS", "AAMHS", "WGS"],
+            "appliesTo": [
+              "CTS",
+              "AAMHS",
+              "WGS"
+            ],
             "steps": [
               "Use CTS to define command contracts, output envelopes, exit code bands, examples, and automation-safe behavior.",
               "Use AAMHS when command outputs include archives, bundles, or long-lived preservation artifacts.",
@@ -802,7 +838,11 @@
           },
           {
             "title": "Build a web or visual surface",
-            "appliesTo": ["WDS", "NeonInk", "SESM"],
+            "appliesTo": [
+              "WDS",
+              "NeonInk",
+              "SESM"
+            ],
             "steps": [
               "Use WDS for deployment records, accessibility checks, metadata, route checks, rollback posture, and monitoring.",
               "Use NeonInk for palette contracts, component tone, and cross-surface visual consistency.",
@@ -1037,7 +1077,9 @@
         "Prism (bundled)",
         "Playwright / Vitest (tests)"
       ],
-      "usedBy": ["herb (maintainer / single operator)"],
+      "usedBy": [
+        "herb (maintainer / single operator)"
+      ],
       "missingPieces": [
         "DRS-style release document per-version (release note with theme name, highlights, design boundaries)",
         "Project manifest release fields populated (release.installer.sha256, release.package_version, release.date, release.verified)",
@@ -1759,6 +1801,137 @@
       ],
       "video": null,
       "helpOutput": "pnpm install\npnpm build\npnpm tauri build",
+      "commandWizardSchema": null
+    },
+    {
+      "id": "logos-themes",
+      "name": "Logos & Themes",
+      "sourcePath": "D:\\CTS\\AptlantisLogos + D:\\CTS\\LangThemeGenerator",
+      "summary": "Two-stage Aptlantis asset pipeline: language logo generation and palette-derived editor/terminal themes, exposed through the public Language Atlas picker.",
+      "ecosystemRole": "Publishes the visual-language layer for Aptlantis programming ecosystem work: generated language logos, palette records, editor themes, terminal themes, and the public Atlas used to inspect and download curated theme selections.",
+      "status": "paused / active",
+      "lifecycle": "asset-pipeline",
+      "governanceGroup": "CTS",
+      "governingStandard": "Command Tool Standard",
+      "completion": 82,
+      "operationalCompleteness": 78,
+      "productCompleteness": 64,
+      "complexity": "moderate",
+      "strategicRelevance": "high",
+      "maintenanceBurden": "medium",
+      "capabilities": [
+        "catalog programming-language logo identities with labels, descriptions, and public language sites",
+        "preserve source SVG logo artifacts and rendered logo families",
+        "derive IDE and terminal theme outputs from language palette material",
+        "publish searchable public Language Atlas records from copied local artifacts",
+        "support mixed language and target selection for browser-generated download packs",
+        "keep the held StandardPageGenerator work visible as deferred evidence without reactivating it",
+        "expose public-only theme files without regenerating source assets in the browser",
+        "record generator verification gaps instead of claiming release-complete theme packaging"
+      ],
+      "interfaces": [
+        "AptlantisLogos logos.json source catalog",
+        "AptlantisLogos SVG, PNG, ICO, and palette output folders",
+        "LangThemeGenerator themes directory",
+        "public Language Atlas dataset at /data/language-atlas/atlas.json",
+        "interactive Language Atlas route at /language-atlas",
+        "browser-side ZIP pack generation from public same-origin files"
+      ],
+      "produces": [
+        "public SVG logo assets copied under /projects/logos-themes/logos",
+        "language atlas source catalog copied under /data/language-atlas/source-logos.json",
+        "derived public Atlas dataset under /data/language-atlas/atlas.json",
+        "JetBrains .icls theme outputs",
+        "Notepad++ XML theme outputs",
+        "VS Code theme and extension output files",
+        "Alacritty TOML theme outputs",
+        "Windows Terminal JSON theme outputs",
+        "web theme outputs",
+        "browser-generated ZIP packs for selected language/target combinations"
+      ],
+      "consumes": [
+        "AptlantisLogos language metadata records",
+        "AptlantisLogos source SVG assets",
+        "logo-derived palette material",
+        "LangThemeGenerator generated theme outputs",
+        "public same-origin theme file URLs"
+      ],
+      "dependsOn": [
+        "Python generation scripts in AptlantisLogos and LangThemeGenerator",
+        "SVG logo assets and palette extraction outputs",
+        "theme output conventions for VS Code, JetBrains, Notepad++, terminal, and web targets",
+        "React feature route for the Language Atlas browser module",
+        "no-dependency stored ZIP helper in the browser"
+      ],
+      "usedBy": [
+        "Language Atlas public picker",
+        "Aptlantis project pages that need language and theme identity assets",
+        "theme users downloading editor or terminal packs",
+        "future visual-language and design-system documentation"
+      ],
+      "missingPieces": [
+        "LangThemeGenerator build, test, packaging, and release commands were not re-run during this Studio integration pass.",
+        "AptlantisLogos is paused and stable, but current artifact verification is metadata-reconciled rather than release-verified.",
+        "Theme outputs are copied as current public artifacts; this pass does not regenerate them from source palettes.",
+        "StandardPageGenerator remains in holding and is not part of the active public Atlas implementation.",
+        "No signed release bundle or external theme marketplace publication evidence is recorded here yet."
+      ],
+      "nextSteps": [
+        "Run the logo and theme generators from their source repos and record exact commands and outputs.",
+        "Add checksum manifests for copied public logo and theme artifacts.",
+        "Document target-specific install instructions for VS Code, JetBrains, Notepad++, Alacritty, Windows Terminal, and web themes.",
+        "Create a smaller thumbnail pipeline for faster Atlas card rendering if the full SVG set proves too heavy.",
+        "Decide whether StandardPageGenerator deserves a separate project dossier after the live Atlas settles."
+      ],
+      "potentialImprovements": [
+        "Add preview swatches for each generated theme target.",
+        "Add per-target install notes to the generated ZIP manifest.",
+        "Offer downloadable logo packs alongside theme packs.",
+        "Add artifact checksums and size metadata to the Atlas dataset.",
+        "Normalize older language ids such as jave, mtlab, and vbsix into display-safe aliases while preserving source filenames."
+      ],
+      "documentationOutputs": [
+        "D:/CTS/AptlantisLogos/README.md",
+        "D:/CTS/AptlantisLogos/AptlantisLogos.manifest.toml",
+        "D:/CTS/LangThemeGenerator/README.md",
+        "D:/CTS/LangThemeGenerator/LangThemeGenerator.manifest.toml",
+        "D:/CTS/.cts_holding/StandardPageGenerator/README.md deferred evidence note",
+        "/data/language-atlas/atlas.json public dataset"
+      ],
+      "tags": [
+        "cts",
+        "asset-tooling",
+        "logos",
+        "themes",
+        "svg",
+        "python",
+        "language-atlas",
+        "palette",
+        "ide-themes",
+        "terminal-themes",
+        "public-catalog",
+        "zip-downloads"
+      ],
+      "repoUrl": "",
+      "cloneCommand": "Source projects are local pipeline workspaces: D:\\CTS\\AptlantisLogos and D:\\CTS\\LangThemeGenerator",
+      "manifestPath": "D:/CTS/AptlantisLogos/AptlantisLogos.manifest.toml; D:/CTS/LangThemeGenerator/LangThemeGenerator.manifest.toml",
+      "logoSrc": "/projects/logos-themes/logos/apt-typescript-logo.svg",
+      "screenshots": [
+        {
+          "src": "/projects/logos-themes/logos/apt-python-logo.svg",
+          "caption": "Representative Aptlantis language logo asset copied from AptlantisLogos; this proves the public Atlas uses local source artifacts rather than remote image calls."
+        },
+        {
+          "src": "/projects/logos-themes/logos/apt-rust-logo.svg",
+          "caption": "Rust language logo asset from the same generated family, used as visual evidence for the broader programming-language logo catalog."
+        },
+        {
+          "src": "/projects/logos-themes/logos/apt-typescript-logo.svg",
+          "caption": "TypeScript language logo asset paired with the generated theme outputs exposed through Language Atlas."
+        }
+      ],
+      "video": null,
+      "helpOutput": "Language Atlas public inventory\n\nLanguages: 60\nLanguages with themes: 60\nTheme target groups: 6\nTheme files indexed: 300\n\nPublic routes:\n- /language-atlas\n- /data/language-atlas/atlas.json\n- /projects/logos-themes/logos/\n- /projects/logos-themes/themes/\n\nScope note: the browser Atlas zips copied public artifacts; it does not regenerate source logos or themes.",
       "commandWizardSchema": null
     }
   ]

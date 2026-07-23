@@ -11,6 +11,7 @@ const Header = () => {
     { label: "Standards", to: "/project/cityhall" },
     { label: "SVG Lab", to: "/svg-lab" },
     { label: "Structra Lab", to: "/structra-lab" },
+    { label: "Language Atlas", to: "/language-atlas" },
     { label: "Against The Grain", to: "/coding-against-the-grain" },
     { label: "About", to: "/about" },
     { label: "Contact", to: "/contact" },

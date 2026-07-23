@@ -189,6 +189,20 @@
       "lastUpdated": "2026-07-15",
       "license": "Site content license pending",
       "crawlerUse": "Index SVG asset paths, roles, hashes, and embedded SESM metadata expectations."
+    },
+    {
+      "id": "language-atlas",
+      "title": "Language Atlas",
+      "description": "Public catalog of Aptlantis programming-language logos and generated editor/terminal theme artifacts used by the Language Atlas picker.",
+      "url": "/data/language-atlas/atlas.json",
+      "schemaUrl": null,
+      "kind": "asset-catalog",
+      "status": "curated",
+      "source": "AptlantisLogos and LangThemeGenerator copied public artifacts",
+      "updateCadence": "with logo and theme artifact refreshes",
+      "lastUpdated": "2026-07-22",
+      "license": "Site content license pending",
+      "crawlerUse": "Index language labels, public logo paths, public theme target availability, and downloadable public artifact paths."
     }
   ],
   "schemas": [

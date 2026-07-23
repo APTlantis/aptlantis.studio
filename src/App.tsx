@@ -43,6 +43,11 @@ const StructraLabPage = lazy(() =>
     default: module.StructraLabPage,
   })),
 );
+const LanguageAtlasPage = lazy(() =>
+  import("./features/language-atlas").then((module) => ({
+    default: module.LanguageAtlasPage,
+  })),
+);
 const IRCServerPage = lazy(() =>
   import("./features/irc").then((module) => ({
     default: module.IRCServerPage,
@@ -85,6 +90,10 @@ function App() {
                         <Route
                           path="/structra-lab"
                           element={<StructraLabPage />}
+                        />
+                        <Route
+                          path="/language-atlas"
+                          element={<LanguageAtlasPage />}
                         />
                         <Route path="/irc" element={<IRCServerPage />} />
                         <Route

@@ -179,6 +179,14 @@ const projectTeachingTabs: Record<string, ProjectTeachingTab[]> = {
     { id: "visualizations", label: "Visualizations" },
     { id: "execution-evidence", label: "Execution Evidence" },
   ],
+  "logos-themes": [
+    { id: "overview", label: "Overview" },
+    { id: "pipeline", label: "Pipeline" },
+    { id: "logos", label: "Logos" },
+    { id: "theme-outputs", label: "Theme Outputs" },
+    { id: "language-atlas", label: "Atlas" },
+    { id: "evidence-gaps", label: "Evidence & Gaps" },
+  ],
 };
 
 const getProjectTabs = (project: ProjectRecord): ProjectTeachingTab[] =>
@@ -746,6 +754,11 @@ const dossierTabIcons: Record<string, string> = {
   templates: "article",
   relationships: "hub",
   changes: "history",
+  pipeline: "conversion_path",
+  logos: "palette",
+  "theme-outputs": "style",
+  "language-atlas": "travel_explore",
+  "evidence-gaps": "rule_folder",
 };
 
 const projectDossierProfile: Record<
@@ -792,6 +805,12 @@ const projectDossierProfile: Record<
     typeTone: "cyan",
     primaryLanguage: "Rust / React",
     platform: "Tauri",
+  },
+  "logos-themes": {
+    type: "Asset Pipeline",
+    typeTone: "violet",
+    primaryLanguage: "Python / SVG",
+    platform: "Public Catalog",
   },
 };
 
@@ -893,6 +912,298 @@ const ProjectDossierPage = ({
   };
 
   const renderDossierTab = () => {
+    if (project.id === "logos-themes" && activeTab === "pipeline") {
+      return (
+        <div className="space-y-4">
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
+              icon="conversion_path"
+              title="Two-Stage Production Pipeline"
+              tone="violet"
+            />
+            <div className="grid gap-4 xl:grid-cols-2">
+              {[
+                {
+                  title: "AptlantisLogos",
+                  icon: "palette",
+                  tone: "cyan" as const,
+                  state: "Paused / stable asset tooling",
+                  body: "Source logo project containing SVG, rendered formats, palettes, source catalog metadata, and the language image-board evidence.",
+                  items: [
+                    "language logo source records",
+                    "rendered SVG, PNG, and ICO families",
+                    "palette extraction outputs",
+                    "legacy image-board evidence",
+                  ],
+                },
+                {
+                  title: "LangThemeGenerator",
+                  icon: "style",
+                  tone: "green" as const,
+                  state: "Active / verification gaps recorded",
+                  body: "Follow-up generator that turns logo-derived palettes into editor and terminal theme outputs for public inspection and download.",
+                  items: [
+                    "JetBrains .icls themes",
+                    "Notepad++ XML themes",
+                    "VS Code theme extension files",
+                    "Alacritty and Windows Terminal themes",
+                  ],
+                },
+              ].map((stage) => (
+                <article
+                  key={stage.title}
+                  className="rounded-[8px] border border-cyan-100/15 bg-slate-950/25 p-5"
+                >
+                  <DossierSectionTitle
+                    icon={stage.icon}
+                    title={stage.title}
+                    tone={stage.tone}
+                  />
+                  <p className="text-xs font-black uppercase tracking-[0.18em] text-atl-frost">
+                    {stage.state}
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-atl-silver">
+                    {stage.body}
+                  </p>
+                  <div className="mt-4 space-y-2">
+                    {stage.items.map((item) => (
+                      <div
+                        key={item}
+                        className="flex min-h-9 items-center gap-3 rounded-[6px] border border-cyan-100/12 bg-slate-950/35 px-3 text-sm text-atl-silver"
+                      >
+                        <MaterialIcon
+                          name="check_circle"
+                          className={dossierToneText(stage.tone)}
+                        />
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
+              icon="schema"
+              title="Project Relationship"
+              tone="teal"
+            />
+            <ProjectMap project={project} />
+          </section>
+        </div>
+      );
+    }
+
+    if (project.id === "logos-themes" && activeTab === "logos") {
+      return (
+        <div className="space-y-4">
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
+              icon="palette"
+              title="Language Logo Assets"
+              tone="cyan"
+            />
+            <p className="max-w-5xl text-sm leading-7 text-atl-silver">
+              The public Atlas uses copied SVG logo artifacts from the
+              AptlantisLogos project. The source project also preserves PNG,
+              ICO, palette text outputs, scripts, and the older image board as
+              production evidence.
+            </p>
+            <div className="mt-5 grid gap-3 md:grid-cols-3">
+              <DossierStat
+                label="Public SVG logos"
+                value="62"
+                icon="imagesmode"
+                tone="cyan"
+              />
+              <DossierStat
+                label="Catalog entries"
+                value="60"
+                icon="dataset"
+                tone="teal"
+              />
+              <DossierStat
+                label="Source posture"
+                value="Paused"
+                icon="pause_circle"
+                tone="amber"
+              />
+            </div>
+          </section>
+          <div className="grid gap-4 xl:grid-cols-2">
+            <DossierList
+              title="Logo Evidence"
+              icon="image"
+              tone="cyan"
+              items={project.produces.slice(0, 6)}
+            />
+            <DossierList
+              title="Source Inputs"
+              icon="input"
+              tone="violet"
+              items={project.consumes}
+            />
+          </div>
+        </div>
+      );
+    }
+
+    if (project.id === "logos-themes" && activeTab === "theme-outputs") {
+      return (
+        <div className="space-y-4">
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
+              icon="style"
+              title="Generated Theme Outputs"
+              tone="green"
+            />
+            <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+              {[
+                ["VS Code", "vscode", "data_object", "cyan"],
+                ["JetBrains", "jetbrains", "integration_instructions", "violet"],
+                ["Notepad++", "notepadpp", "code_blocks", "amber"],
+                ["Alacritty", "terminal/alacritty", "terminal", "green"],
+                ["Windows Terminal", "terminal/windows", "terminal", "blue"],
+                ["Web", "web", "language", "teal"],
+              ].map(([label, path, icon, tone]) => (
+                <article
+                  key={label}
+                  className="rounded-[8px] border border-cyan-100/15 bg-slate-950/25 p-4"
+                >
+                  <MaterialIcon
+                    name={icon}
+                    className={`text-3xl ${dossierToneText(
+                      tone as Parameters<typeof dossierToneText>[0],
+                    )}`}
+                  />
+                  <h3 className="mt-3 font-black">{label}</h3>
+                  <p className="mt-1 font-mono text-xs text-atl-frost">
+                    /projects/logos-themes/themes/{path}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </section>
+          <div className="grid gap-4 xl:grid-cols-2">
+            <DossierList
+              title="Theme Artifacts"
+              icon="inventory_2"
+              tone="green"
+              items={project.produces.slice(6)}
+            />
+            <DossierList
+              title="Generator Dependencies"
+              icon="account_tree"
+              tone="violet"
+              items={project.dependsOn}
+            />
+          </div>
+        </div>
+      );
+    }
+
+    if (project.id === "logos-themes" && activeTab === "language-atlas") {
+      return (
+        <div className="space-y-4">
+          <section className="dossier-card p-5">
+            <DossierSectionTitle
+              icon="travel_explore"
+              title="Language Atlas"
+              tone="cyan"
+            />
+            <p className="max-w-5xl text-sm leading-7 text-atl-silver">
+              Language Atlas is the public browser module for this pipeline. It
+              reads the copied public dataset, lets visitors choose individual
+              languages and theme targets, and builds a ZIP pack in the browser
+              from same-origin public files.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <Link
+                to="/language-atlas"
+                className="inline-flex min-h-10 items-center gap-2 rounded-[8px] border border-cyan-300/60 bg-cyan-300/15 px-5 text-sm font-bold text-cyan-100 no-underline"
+              >
+                Open Language Atlas <ExternalLink className="h-4 w-4" />
+              </Link>
+              <a
+                href="/data/language-atlas/atlas.json"
+                className="inline-flex min-h-10 items-center gap-2 rounded-[8px] border border-cyan-100/20 px-5 text-sm font-bold text-atl-silver no-underline"
+              >
+                Public dataset <ExternalLink className="h-4 w-4" />
+              </a>
+            </div>
+          </section>
+          <div className="grid gap-4 xl:grid-cols-3">
+            <DossierList
+              title="Atlas Workflows"
+              icon="checklist"
+              tone="cyan"
+              items={[
+                "search by language name or description",
+                "filter by theme availability or selected target",
+                "select one target, several targets, or all targets per language",
+                "generate one ZIP pack from public same-origin theme files",
+              ]}
+            />
+            <DossierList
+              title="Public Boundaries"
+              icon="public"
+              tone="teal"
+              items={[
+                "no CDN calls",
+                "no source regeneration in the browser",
+                "no local machine paths in downloadable files",
+                "selection manifest records public source URLs",
+              ]}
+            />
+            <DossierList
+              title="Related Held Work"
+              icon="inventory_2"
+              tone="amber"
+              items={[
+                "StandardPageGenerator remains deferred evidence",
+                "older static-page approach is not revived in this pass",
+                "Atlas is the active public teaching surface",
+              ]}
+            />
+          </div>
+        </div>
+      );
+    }
+
+    if (project.id === "logos-themes" && activeTab === "evidence-gaps") {
+      return (
+        <div className="grid gap-4 xl:grid-cols-2">
+          <DossierList
+            title="Known Evidence Gaps"
+            icon="report"
+            tone="rose"
+            itemIcon="priority_high"
+            items={project.missingPieces}
+          />
+          <DossierList
+            title="Next Verification Steps"
+            icon="playlist_add_check"
+            tone="green"
+            items={project.nextSteps}
+          />
+          <DossierList
+            title="Potential Improvements"
+            icon="construction"
+            tone="amber"
+            itemIcon="build_circle"
+            items={project.potentialImprovements}
+          />
+          <DossierList
+            title="Documentation Evidence"
+            icon="library_books"
+            tone="blue"
+            items={project.documentationOutputs}
+          />
+        </div>
+      );
+    }
+
     if (activeTab === "usage") {
       return <div className="space-y-4">{renderGenericUsage()}</div>;
     }
