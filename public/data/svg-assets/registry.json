@@ -8,13 +8,3299 @@
     {
       "type": "asset",
       "asset_type": "svg",
+      "slug": "apt-ada-logo",
+      "title": "Apt Ada Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-ada-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-ada-logo.svg",
+        "content_hash": "sha256:7a05b860927c1307e7265e5ad805c0b8097af7c79b95e197d720a6786e13c785"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Ada Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-ada-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Ada Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-ada-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-ansible-logo",
+      "title": "Apt Ansible Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-ansible-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-ansible-logo.svg",
+        "content_hash": "sha256:66ffa2961f27788762948a2a38cafe7bab8cd7f5bb998a184ab6fdc1d9df07dc"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Ansible Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-ansible-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Ansible Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-ansible-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-assembly-logo",
+      "title": "Apt Assembly Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-assembly-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-assembly-logo.svg",
+        "content_hash": "sha256:91cdf370912389f46324c37772eda5ca287570918fbcbcee388236d38d097078"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Assembly Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-assembly-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Assembly Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-assembly-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-bash-logo",
+      "title": "Apt Bash Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-bash-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-bash-logo.svg",
+        "content_hash": "sha256:35d0383289f4862fe66c89e12c00222f3fa83796cf3861a6d9af40c7e824952c"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Bash Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-bash-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Bash Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-bash-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-bioconductor-logo",
+      "title": "Apt Bioconductor Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-bioconductor-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-bioconductor-logo.svg",
+        "content_hash": "sha256:7fbcc1041a1b713612d0119388115f18251ddda4213e21267b72549a51feb773"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Bioconductor Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-bioconductor-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Bioconductor Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-bioconductor-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-c-logo",
+      "title": "Apt C Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-c-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-c-logo.svg",
+        "content_hash": "sha256:11777929d393dccd37e8689ef9b34b72d25be46ce04bfedecb98c04efa62ce18"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt C Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-c-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt C Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-c-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-caddy-logo",
+      "title": "Apt Caddy Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-caddy-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-caddy-logo.svg",
+        "content_hash": "sha256:de1137b6d1d609554387444a8c198465ca4955e060aa09e7cdef8858d1b622a7"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Caddy Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-caddy-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Caddy Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-caddy-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-clojure-logo",
+      "title": "Apt Clojure Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-clojure-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-clojure-logo.svg",
+        "content_hash": "sha256:442b2918998604bac4c190ddefea1cedc7e4d839b84362c713d5220fae4b812e"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Clojure Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-clojure-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Clojure Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-clojure-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-cloudflare-logo",
+      "title": "Apt Cloudflare Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-cloudflare-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-cloudflare-logo.svg",
+        "content_hash": "sha256:288d7ebff6df5a3d4588f246ce2b13640d59e2f3c2b1f24e8b4fa32302a05373"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Cloudflare Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-cloudflare-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Cloudflare Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-cloudflare-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-cobol-logo",
+      "title": "Apt Cobol Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-cobol-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-cobol-logo.svg",
+        "content_hash": "sha256:c645821853d12e4541b7cc05c9338cce71bf2118632f12bd41c99a2c96a9bf1f"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Cobol Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-cobol-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Cobol Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-cobol-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-coffeescript-logo",
+      "title": "Apt Coffeescript Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-coffeescript-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-coffeescript-logo.svg",
+        "content_hash": "sha256:c453f1fb908af01c62f0f9a7adbb46fa83d52d58e9bc6f6ef386e3017f929fc2"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Coffeescript Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-coffeescript-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Coffeescript Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-coffeescript-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-cpan-logo",
+      "title": "Apt Cpan Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-cpan-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-cpan-logo.svg",
+        "content_hash": "sha256:c4c68aeb84226cba45a66ac4bc1adf34ef162798a7052c8ece806af31f196f2f"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Cpan Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-cpan-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Cpan Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-cpan-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-cpp-logo",
+      "title": "Apt Cpp Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-cpp-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-cpp-logo.svg",
+        "content_hash": "sha256:42a84f3e4608ee3a1edca33135a55f2b1654125f13cd82b0e75fce15189f8b2e"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Cpp Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-cpp-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Cpp Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-cpp-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783792",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-csharp-logo",
+      "title": "Apt Csharp Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-csharp-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-csharp-logo.svg",
+        "content_hash": "sha256:3fc8ec6a6b4fffeeed5481dbe18ea68323542963fa4a621d3c11e8071576e5c2"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Csharp Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-csharp-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Csharp Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784031",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-csharp-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-dbase-logo",
+      "title": "Apt Dbase Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-dbase-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-dbase-logo.svg",
+        "content_hash": "sha256:b5a2297537ebd27dc50b958e56e2e299c3fb73f79e2e40f8cb9824088f235f1e"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Dbase Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-dbase-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Dbase Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-dbase-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-docker-logo",
+      "title": "Apt Docker Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-docker-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-docker-logo.svg",
+        "content_hash": "sha256:35597a1a5ceea63c422518986d1ab54f2199a1cdb300ec6c7244ed82afd41b48"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Docker Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-docker-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Docker Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-docker-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-flathub-logo",
+      "title": "Apt Flathub Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-flathub-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-flathub-logo.svg",
+        "content_hash": "sha256:0cc18f317cb1e1bedaeb31b0818f35183c04c98030349720979011b39aab5e99"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Flathub Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-flathub-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Flathub Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-flathub-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-fortran-logo",
+      "title": "Apt Fortran Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-fortran-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-fortran-logo.svg",
+        "content_hash": "sha256:4285f484d646a72452d7b24b66670182a3b0857776e2296e6e89808a18479054"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Fortran Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-fortran-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Fortran Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-fortran-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-fsharp-logo",
+      "title": "Apt Fsharp Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-fsharp-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-fsharp-logo.svg",
+        "content_hash": "sha256:3f7d7e56eb203b133d2dd0f01262501e2885f2a186619b85a2cc90bd20bc5e79"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Fsharp Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-fsharp-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Fsharp Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-fsharp-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-grafana-logo",
+      "title": "Apt Grafana Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-grafana-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-grafana-logo.svg",
+        "content_hash": "sha256:cbc641a9df826329ff8f441de9248e016b9ec71298829f1b99b5308a5d5b6d1a"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Grafana Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-grafana-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Grafana Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-grafana-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-jave-logo",
+      "title": "Apt Jave Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-jave-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-jave-logo.svg",
+        "content_hash": "sha256:0d267603e015a9009efdcde01712eedd2d5b51f3454b80b1030ae8011cea3d85"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Jave Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-jave-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Jave Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-jave-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-julia-logo",
+      "title": "Apt Julia Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-julia-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-julia-logo.svg",
+        "content_hash": "sha256:3aabeb0b957262786467aa7c8b3d8a73dbb24cdfc5d29fdfaf576ba974fdafe6"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Julia Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-julia-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Julia Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-julia-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-kotlin-logo",
+      "title": "Apt Kotlin Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-kotlin-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-kotlin-logo.svg",
+        "content_hash": "sha256:2ea8c17a4a4b4fbeb8f89fc5b24c4a444eca43717662c3958b7b7343f4526e9c"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Kotlin Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-kotlin-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Kotlin Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-kotlin-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-kubernetes-logo",
+      "title": "Apt Kubernetes Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-kubernetes-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-kubernetes-logo.svg",
+        "content_hash": "sha256:e16218ab8a70df4b11e9fcd33a23d20c5ae78fd9ccec2b59ad5e1ba66562fcfc"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Kubernetes Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-kubernetes-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Kubernetes Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-kubernetes-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-lisp-logo",
+      "title": "Apt Lisp Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-lisp-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-lisp-logo.svg",
+        "content_hash": "sha256:6aa12bb82edbf26dae6e8b4efff3238fdf1a08673342e89ed39269f3363d814e"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Lisp Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-lisp-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Lisp Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-lisp-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-lua-logo",
+      "title": "Apt Lua Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-lua-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-lua-logo.svg",
+        "content_hash": "sha256:4356179804aaa55b7322a615e50bc7d1590248755b558f6db5435da3c0cd49be"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Lua Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-lua-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Lua Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-lua-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-malbolge-logo",
+      "title": "Apt Malbolge Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-malbolge-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-malbolge-logo.svg",
+        "content_hash": "sha256:2935244ebebbe51279fc3c686baca2707e79b69a091288c2487c75d305f089ba"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Malbolge Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-malbolge-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Malbolge Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-malbolge-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-markdown-logo",
+      "title": "Apt Markdown Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-markdown-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-markdown-logo.svg",
+        "content_hash": "sha256:a0c3f1198c88811fff8e9660c09b97a76198335d62252868ebdeb733ccd69909"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Markdown Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-markdown-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Markdown Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-markdown-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-matlab-logo",
+      "title": "Apt Matlab Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-matlab-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-matlab-logo.svg",
+        "content_hash": "sha256:9f4ed345cebc930df15139f3ffedc8dfbfb2e410074f87bd5a1e07901646361a"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Matlab Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-matlab-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Matlab Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-matlab-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-mumps-logo",
+      "title": "Apt Mumps Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-mumps-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-mumps-logo.svg",
+        "content_hash": "sha256:e538d085215d570b6b7046137c2726e51f38d3995d53eb95f35bb2d254413130"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Mumps Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-mumps-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Mumps Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-mumps-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-nginx-logo",
+      "title": "Apt Nginx Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-nginx-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-nginx-logo.svg",
+        "content_hash": "sha256:e4851e0c39b86124c065174286cd54ed858eb5df97432593f6c549dba3fa5a39"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Nginx Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-nginx-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Nginx Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-nginx-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-nim-logo",
+      "title": "Apt Nim Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-nim-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-nim-logo.svg",
+        "content_hash": "sha256:c5634199eb24aee22f91491d1ed812c502a395b37727773d89fa6b797c4c37c7"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Nim Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-nim-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Nim Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-nim-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-node-logo",
+      "title": "Apt Node Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-node-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-node-logo.svg",
+        "content_hash": "sha256:538776b47866f61fae2d3b7831108031c15c9ad9f248fe5e6a52702977e613c6"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Node Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-node-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Node Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-node-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-node-logo-pngu7",
+      "title": "Apt Node Logo Pngu7",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-node-logo.pngu7.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-node-logo.pngu7.svg",
+        "content_hash": "sha256:b0719d72662684e289bd7889cd8aff8cee020a2f03aaee6b472c5c1eb93960d6"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Node Logo Pngu7"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-node-logo-pngu7",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Node Logo Pngu7"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-node-logo.pngu7.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-objectivec-logo",
+      "title": "Apt Objectivec Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-objectivec-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-objectivec-logo.svg",
+        "content_hash": "sha256:8b6c50b083253072329ca79a1438f3a9610310912c5597f03cbeaa7f3794bdc2"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Objectivec Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-objectivec-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Objectivec Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-objectivec-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-ocaml-logo",
+      "title": "Apt Ocaml Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-ocaml-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-ocaml-logo.svg",
+        "content_hash": "sha256:11e212b93c7b8c94c8d26f1379513efdd472744d91f1ca172cc263d9241b0167"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Ocaml Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-ocaml-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Ocaml Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784032",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-ocaml-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-perl-logo",
+      "title": "Apt Perl Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-perl-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-perl-logo.svg",
+        "content_hash": "sha256:2a07f8bbb2ef95544ba1ac5e1baa7001eb37d0e67e0efb731257a76d0e1329a2"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Perl Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-perl-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Perl Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-perl-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-php-logo",
+      "title": "Apt Php Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-php-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-php-logo.svg",
+        "content_hash": "sha256:ffadb15a595f7dabadbe59e4f09ede5b11e22a2cfcc03eb2718b2409975bd98d"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Php Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-php-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Php Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-php-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-powershell-logo",
+      "title": "Apt Powershell Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-powershell-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-powershell-logo.svg",
+        "content_hash": "sha256:3a9a8fddc77ac11490052125d238cb25939e74a6c033c4f3b372559c837db88c"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Powershell Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-powershell-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Powershell Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-powershell-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-prolog-logo",
+      "title": "Apt Prolog Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-prolog-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-prolog-logo.svg",
+        "content_hash": "sha256:36a3b559a4ebd5a978e1e06c05063d9a9c66652bcf4afe45a82fee35cdebe800"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Prolog Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-prolog-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Prolog Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-prolog-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-prometheus-logo",
+      "title": "Apt Prometheus Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-prometheus-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-prometheus-logo.svg",
+        "content_hash": "sha256:abc6e4fa4a6634f3087435496088763344dc488ddd9d90056a0df65edf78e589"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Prometheus Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-prometheus-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Prometheus Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-prometheus-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783793",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-promis-logo",
+      "title": "Apt Promis Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-promis-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-promis-logo.svg",
+        "content_hash": "sha256:d445a895d3ff5ebdf9a559c8c41aba9fc02058b90792cf3023f57bf7cf22178f"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Promis Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-promis-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Promis Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-promis-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-purescript-logo",
+      "title": "Apt Purescript Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-purescript-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-purescript-logo.svg",
+        "content_hash": "sha256:525f78462587c102cf9a56b6b6aa2cf5276d662a1457e1df2b2ad9d3556598c7"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Purescript Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-purescript-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Purescript Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-purescript-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-python-logo",
+      "title": "Apt Python Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-python-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-python-logo.svg",
+        "content_hash": "sha256:5e245e8e937d7f90adf8f1597b0b7f11f4d962bdbd7ab41c33b271d48db4e8e7"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Python Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-python-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Python Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-python-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-qbasic-logo",
+      "title": "Apt Qbasic Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-qbasic-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-qbasic-logo.svg",
+        "content_hash": "sha256:b0e85f0cdb930b69a65e295abe7dc74cc6868f6d220fbe3263586347c00c2ea3"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Qbasic Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-qbasic-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Qbasic Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-qbasic-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-r-logo",
+      "title": "Apt R Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-r-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-r-logo.svg",
+        "content_hash": "sha256:95f4ecc53d16b902f8aa85512a343c1ff8510215f88ba2c3fa0aa5470d4bdf35"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt R Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-r-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt R Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-r-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-react-logo",
+      "title": "Apt React Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-react-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-react-logo.svg",
+        "content_hash": "sha256:849acd8a4cd0159681f78a114c964ef57b193d64861968bdca06d176e1f0536d"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt React Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-react-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt React Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-react-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-ruby-logo",
+      "title": "Apt Ruby Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-ruby-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-ruby-logo.svg",
+        "content_hash": "sha256:a1e9a1becf1a19bce2267f04877ccfac5441e3614b314b6b23ce6b0efc2aba96"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Ruby Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-ruby-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Ruby Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-ruby-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-rust-logo",
+      "title": "Apt Rust Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-rust-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-rust-logo.svg",
+        "content_hash": "sha256:784318d075cdff83b6e403a53103c9cc12eda13989fbcde4002b481c14bec6ff"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Rust Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-rust-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Rust Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-rust-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-scala-logo",
+      "title": "Apt Scala Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-scala-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-scala-logo.svg",
+        "content_hash": "sha256:a81b78e9e0061c93914123fef5cc3eb50b6ad9e25f78bb173f8bd4f2384f9f15"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Scala Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-scala-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Scala Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-scala-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-scratch-logo",
+      "title": "Apt Scratch Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-scratch-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-scratch-logo.svg",
+        "content_hash": "sha256:48800ae60531f22ed0f52dc760b74ee45efee4cac84c00e5e876985a5ae3f222"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Scratch Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-scratch-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Scratch Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-scratch-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-sgml-logo",
+      "title": "Apt Sgml Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-sgml-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-sgml-logo.svg",
+        "content_hash": "sha256:5a29932064c3200097c103dd681c71c53b2bc27f9698e2a3b87caf1354123ece"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Sgml Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-sgml-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Sgml Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-sgml-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-sql-logo",
+      "title": "Apt Sql Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-sql-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-sql-logo.svg",
+        "content_hash": "sha256:c3b670ce32ccb25e44bde39b7002b7c5bed683d1e7abd74cbfd63a9cb00ad6fc"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Sql Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-sql-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Sql Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-sql-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-svelte-logo",
+      "title": "Apt Svelte Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-svelte-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-svelte-logo.svg",
+        "content_hash": "sha256:69eb5b61401a07c51e0e173320c3d471f62fb43be1638270a378a9c58d619001"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Svelte Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-svelte-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Svelte Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-svelte-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-swift-logo",
+      "title": "Apt Swift Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-swift-logo .svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-swift-logo .svg",
+        "content_hash": "sha256:7ea594ffd906cf7bfa49e4019d9779a86bd60a5cc5d087dbdfa4e4964ac3fd9e"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Swift Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-swift-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Swift Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-swift-logo .svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-terraform-logo",
+      "title": "Apt Terraform Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-terraform-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-terraform-logo.svg",
+        "content_hash": "sha256:4de77c69c7f78f730858ee7eb6585b8896db5c782dafb97767402fa5d6311408"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Terraform Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-terraform-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Terraform Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-terraform-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-tex-logo",
+      "title": "Apt Tex Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-tex-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-tex-logo.svg",
+        "content_hash": "sha256:67b5f078e66d19b0a4f82117b10f7d34e7867365313f3dbdc1631a051e174663"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Tex Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-tex-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Tex Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-tex-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-toml-logo",
+      "title": "Apt Toml Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-toml-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-toml-logo.svg",
+        "content_hash": "sha256:62f18f0914392897286325b91365013d91d40029226e8535ace5af89758fcda3"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Toml Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-toml-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Toml Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784033",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-toml-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1254",
+        "height": "1254",
+        "viewBox": "0 0 1254 1254"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-typescript-logo",
+      "title": "Apt Typescript Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-typescript-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-typescript-logo.svg",
+        "content_hash": "sha256:1f94798dbfe5ebf4b7a2e69df2266cfcc71bcb995e13ffcc9d0397373a3d7e73"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Typescript Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-typescript-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Typescript Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784034",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-typescript-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-vue-logo",
+      "title": "Apt Vue Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-vue-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-vue-logo.svg",
+        "content_hash": "sha256:1a44bac4eb1cc81ac964c0692d27c9d838eff48c6d98099b7f1ae33e1995d000"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Vue Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-vue-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Vue Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784034",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-vue-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-wasm-logo",
+      "title": "Apt Wasm Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-wasm-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-wasm-logo.svg",
+        "content_hash": "sha256:c70dcfbd1f545e997a2834166c0f9b6cf222b928b173195f0d3c97a5bdec27bf"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Wasm Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-wasm-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Wasm Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784034",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-wasm-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
+      "slug": "apt-zig-logo",
+      "title": "Apt Zig Logo",
+      "source": {
+        "format": "svg",
+        "path": "/projects/logos-themes/logos/apt-zig-logo.svg",
+        "publicUrl": "/projects/logos-themes/logos/apt-zig-logo.svg",
+        "content_hash": "sha256:e81cdc96c9dacf0b9da7ab9abac7773c1962b97235f7a776af76499dfcc38aa2"
+      },
+      "sesm": {
+        "accessibility": {
+          "summary": "Apt Zig Logo"
+        },
+        "asset": {
+          "ecosystem": "Aptlantis Studio",
+          "id": "apt-zig-logo",
+          "role": "logo",
+          "tags": [
+            "logo",
+            "branding"
+          ],
+          "title": "Apt Zig Logo"
+        },
+        "provenance": {
+          "author": "Aptlantis",
+          "generated": false,
+          "generated_at": "1784784034",
+          "generator": {
+            "language": "rust",
+            "name": "aptlantis-svg-asset-registry",
+            "version": "0.1.0"
+          },
+          "license": "Site content license pending",
+          "source": "/projects/logos-themes/logos/apt-zig-logo.svg"
+        },
+        "sesm_version": "0.3.0"
+      },
+      "dimensions": {
+        "width": "1024",
+        "height": "1024",
+        "viewBox": "0 0 1024 1024"
+      },
+      "roles": [
+        "logo",
+        "branding"
+      ],
+      "debug": {
+        "imported_at": "1784783794",
+        "imported_by": "aptlantis-services/svg-assets-scan"
+      }
+    },
+    {
+      "type": "asset",
+      "asset_type": "svg",
       "slug": "aptlantis-about-hero-logo",
       "title": "Aptlantis About Hero Logo",
       "source": {
         "format": "svg",
         "path": "/logos/aptlantis-about-hero-logo.svg",
         "publicUrl": "/logos/aptlantis-about-hero-logo.svg",
-        "content_hash": "sha256:8d80cb0f7e57ab065c457f2a2433bacd258dee7bc47568dddf82fcdece93a2c0"
+        "content_hash": "sha256:52b491480666bbd1f5c27f0bf05d8a58d08d1a44ade235c12e1474cef358a05a"
       },
       "sesm": {
         "accessibility": {
@@ -24,7 +3310,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "aptlantis-about-hero-logo",
           "role": "branding",
-          "tags": ["branding", "illustration"],
+          "tags": [
+            "branding",
+            "illustration"
+          ],
           "title": "Aptlantis About Hero Logo"
         },
         "provenance": {
@@ -46,7 +3335,10 @@
         "height": "1086",
         "viewBox": "0 0 1448 1086"
       },
-      "roles": ["branding", "illustration"]
+      "roles": [
+        "branding",
+        "illustration"
+      ]
     },
     {
       "type": "asset",
@@ -57,7 +3349,7 @@
         "format": "svg",
         "path": "/logos/aptlantis-contact-hero-logo.svg",
         "publicUrl": "/logos/aptlantis-contact-hero-logo.svg",
-        "content_hash": "sha256:d6770e4212640a2e17ad496ac49ab7397c150d6b075ac8f7201130fa01451484"
+        "content_hash": "sha256:64d211c3a7cc435c83a3da8fb6fbd0896c9ba766b1e5d6b3e01daf3acac01ebf"
       },
       "sesm": {
         "accessibility": {
@@ -67,7 +3359,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "aptlantis-contact-hero-logo",
           "role": "branding",
-          "tags": ["branding", "illustration"],
+          "tags": [
+            "branding",
+            "illustration"
+          ],
           "title": "Aptlantis Contact Hero Logo"
         },
         "provenance": {
@@ -89,7 +3384,10 @@
         "height": "1086",
         "viewBox": "0 0 1448 1086"
       },
-      "roles": ["branding", "illustration"]
+      "roles": [
+        "branding",
+        "illustration"
+      ]
     },
     {
       "type": "asset",
@@ -100,7 +3398,7 @@
         "format": "svg",
         "path": "/logos/aptlantis-hero-logo.svg",
         "publicUrl": "/logos/aptlantis-hero-logo.svg",
-        "content_hash": "sha256:30f14fa5e3d26ad85234607f2ccf2205218ff61c4108929f80ddb1287e1a1ba5"
+        "content_hash": "sha256:eea04ac70f3b0caf69493c5f2a171d49a449810a18cb3e35d98a1125250209f2"
       },
       "sesm": {
         "accessibility": {
@@ -110,7 +3408,11 @@
           "ecosystem": "Aptlantis Studio",
           "id": "aptlantis-hero-logo",
           "role": "logo",
-          "tags": ["logo", "branding", "illustration"],
+          "tags": [
+            "logo",
+            "branding",
+            "illustration"
+          ],
           "title": "Aptlantis Hero Logo"
         },
         "provenance": {
@@ -132,7 +3434,11 @@
         "height": "1086",
         "viewBox": "0 0 1448 1086"
       },
-      "roles": ["logo", "branding", "illustration"],
+      "roles": [
+        "logo",
+        "branding",
+        "illustration"
+      ],
       "debug": {
         "imported_at": "1784132581",
         "imported_by": "aptlantis-services/svg-assets-scan"
@@ -147,7 +3453,7 @@
         "format": "svg",
         "path": "/logos/aptlantis-privacy-hero-logo.svg",
         "publicUrl": "/logos/aptlantis-privacy-hero-logo.svg",
-        "content_hash": "sha256:3b421aaaccbf4e72d95abe5bc84d744bf57d30cdca29ba89b5c44638b61cd9cc"
+        "content_hash": "sha256:824e5441fc8931349acdbb3d2b2c8d4cd736146e46d5e2dd939e8fe5b79627cc"
       },
       "sesm": {
         "accessibility": {
@@ -157,7 +3463,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "aptlantis-privacy-hero-logo",
           "role": "branding",
-          "tags": ["branding", "illustration"],
+          "tags": [
+            "branding",
+            "illustration"
+          ],
           "title": "Aptlantis Privacy Hero Logo"
         },
         "provenance": {
@@ -179,7 +3488,10 @@
         "height": "1086",
         "viewBox": "0 0 1448 1086"
       },
-      "roles": ["branding", "illustration"]
+      "roles": [
+        "branding",
+        "illustration"
+      ]
     },
     {
       "type": "asset",
@@ -190,7 +3502,7 @@
         "format": "svg",
         "path": "/logos/aptlantis-studio-logo.svg",
         "publicUrl": "/logos/aptlantis-studio-logo.svg",
-        "content_hash": "sha256:a49ee533cdbd6d57c3c16b9dc95c0607e856a128fc7d0cc2616051ed81fad5fb"
+        "content_hash": "sha256:5d083119ea611ba2afa51bc31676f61466fec0bb89061d21c71d441567cad7b1"
       },
       "sesm": {
         "accessibility": {
@@ -200,7 +3512,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "aptlantis-studio-logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "Aptlantis Studio Logo"
         },
         "provenance": {
@@ -222,7 +3537,10 @@
         "height": "1254",
         "viewBox": "0 0 1254 1254"
       },
-      "roles": ["logo", "branding"]
+      "roles": [
+        "logo",
+        "branding"
+      ]
     },
     {
       "type": "asset",
@@ -233,7 +3551,7 @@
         "format": "svg",
         "path": "/logos/dnf-achivalplugin-logo.svg",
         "publicUrl": "/logos/dnf-achivalplugin-logo.svg",
-        "content_hash": "sha256:a0d4b448c358f1a9a7c3f1e91afa0d0e0653d8688536925438d63b2b2459caa7"
+        "content_hash": "sha256:35508cdfa1b213225b69d436a560649e3422fcebdd0a1a4637e4fb5acda4c665"
       },
       "sesm": {
         "accessibility": {
@@ -243,7 +3561,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "dnf-achivalplugin-logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "Dnf Achivalplugin Logo"
         },
         "provenance": {
@@ -265,7 +3586,10 @@
         "height": "1254",
         "viewBox": "0 0 1254 1254"
       },
-      "roles": ["logo", "branding"],
+      "roles": [
+        "logo",
+        "branding"
+      ],
       "debug": {
         "imported_at": "1784132581",
         "imported_by": "aptlantis-services/svg-assets-scan"
@@ -280,7 +3604,7 @@
         "format": "svg",
         "path": "/logos/dnf-archivehasher-logo.svg",
         "publicUrl": "/logos/dnf-archivehasher-logo.svg",
-        "content_hash": "sha256:a0beb925775b2a1cba198a1da1584deaa0d5978b9767034976d045e994274c24"
+        "content_hash": "sha256:db83a6119551882d7cf9724dbaccab41726b342594e2fbc9903dd9960584f14d"
       },
       "sesm": {
         "accessibility": {
@@ -290,7 +3614,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "dnf-archivehasher-logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "Dnf Archivehasher Logo"
         },
         "provenance": {
@@ -312,7 +3639,10 @@
         "height": "1254",
         "viewBox": "0 0 1254 1254"
       },
-      "roles": ["logo", "branding"],
+      "roles": [
+        "logo",
+        "branding"
+      ],
       "debug": {
         "imported_at": "1784132581",
         "imported_by": "aptlantis-services/svg-assets-scan"
@@ -327,7 +3657,7 @@
         "format": "svg",
         "path": "/logos/dnf-chatarchive-logo.svg",
         "publicUrl": "/logos/dnf-chatarchive-logo.svg",
-        "content_hash": "sha256:cd60345a1821ea600c9e5a8f4cc303f18e6650f97989066dd8d68a4003c73080"
+        "content_hash": "sha256:7fe5c5dbd0b76df2912e508a0a3373f34b0dd4c43f8fa691e9ec90d298c59800"
       },
       "sesm": {
         "accessibility": {
@@ -337,7 +3667,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "dnf-chatarchive-logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "Dnf Chatarchive Logo"
         },
         "provenance": {
@@ -359,7 +3692,10 @@
         "height": "1254",
         "viewBox": "0 0 1254 1254"
       },
-      "roles": ["logo", "branding"],
+      "roles": [
+        "logo",
+        "branding"
+      ],
       "debug": {
         "imported_at": "1784132581",
         "imported_by": "aptlantis-services/svg-assets-scan"
@@ -374,7 +3710,7 @@
         "format": "svg",
         "path": "/logos/dnf-cityhall-logo.svg",
         "publicUrl": "/logos/dnf-cityhall-logo.svg",
-        "content_hash": "sha256:6b2cfd819c1d2d6a9b1efe5585d620522a4eebfa43ce8dd9bb97217a20049bb0"
+        "content_hash": "sha256:8dc20bc9a46ff0af3527a0f56a4f3aca74525bcffe790b3d91c8ea5178b8406b"
       },
       "sesm": {
         "accessibility": {
@@ -384,7 +3720,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "dnf-cityhall-logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "Dnf Cityhall Logo"
         },
         "provenance": {
@@ -406,7 +3745,10 @@
         "height": "1254",
         "viewBox": "0 0 1254 1254"
       },
-      "roles": ["logo", "branding"],
+      "roles": [
+        "logo",
+        "branding"
+      ],
       "debug": {
         "imported_at": "1784132581",
         "imported_by": "aptlantis-services/svg-assets-scan"
@@ -421,7 +3763,7 @@
         "format": "svg",
         "path": "/logos/dnf-clonecratesio-logo.svg",
         "publicUrl": "/logos/dnf-clonecratesio-logo.svg",
-        "content_hash": "sha256:bc0f786023b7816b87db3967728f9b383e7c94159ea1170dcf0a87baccd2d876"
+        "content_hash": "sha256:00ccca5ad90c4529d9372f3cd57ac0ddce58e1d7edecc6f8801da075da16c4a5"
       },
       "sesm": {
         "accessibility": {
@@ -431,7 +3773,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "dnf-clonecratesio-logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "Dnf Clonecratesio Logo"
         },
         "provenance": {
@@ -453,7 +3798,10 @@
         "height": "1254",
         "viewBox": "0 0 1254 1254"
       },
-      "roles": ["logo", "branding"],
+      "roles": [
+        "logo",
+        "branding"
+      ],
       "debug": {
         "imported_at": "1784132581",
         "imported_by": "aptlantis-services/svg-assets-scan"
@@ -468,7 +3816,7 @@
         "format": "svg",
         "path": "/logos/dnf-commandwizard-logo.svg",
         "publicUrl": "/logos/dnf-commandwizard-logo.svg",
-        "content_hash": "sha256:7c7484fbff902324ce67364cda52eb90aef2d64b5ce8f33171cd0c884b5495bc"
+        "content_hash": "sha256:b83a3370d229c737afb0c3e38e7ba44369e5b6f2a28d584e071bdd61e8e1578a"
       },
       "sesm": {
         "accessibility": {
@@ -478,7 +3826,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "dnf-commandwizard-logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "DNF CommandWizard Logo"
         },
         "provenance": {
@@ -500,7 +3851,10 @@
         "height": "1254",
         "viewBox": "0 0 1254 1254"
       },
-      "roles": ["logo", "branding"]
+      "roles": [
+        "logo",
+        "branding"
+      ]
     },
     {
       "type": "asset",
@@ -511,7 +3865,7 @@
         "format": "svg",
         "path": "/logos/dnf-filecabinet-logo.svg",
         "publicUrl": "/logos/dnf-filecabinet-logo.svg",
-        "content_hash": "sha256:cfcda4e98e45dd643bc1acb193e5e1fa4f6ea7617a0dd515f31a3e1fce0ed73d"
+        "content_hash": "sha256:cb420e2fcdddb612012ba4ab7919e313c891b18122c08367c05873c09a68ebe7"
       },
       "sesm": {
         "accessibility": {
@@ -521,7 +3875,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "dnf-filecabinet-logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "Dnf Filecabinet Logo"
         },
         "provenance": {
@@ -543,7 +3900,10 @@
         "height": "1254",
         "viewBox": "0 0 1254 1254"
       },
-      "roles": ["logo", "branding"],
+      "roles": [
+        "logo",
+        "branding"
+      ],
       "debug": {
         "imported_at": "1784132581",
         "imported_by": "aptlantis-services/svg-assets-scan"
@@ -558,7 +3918,7 @@
         "format": "svg",
         "path": "/logos/dnf-squashfswsl-logo.svg",
         "publicUrl": "/logos/dnf-squashfswsl-logo.svg",
-        "content_hash": "sha256:224eecc69f91a1776d6b9d1dacc8a08489e41fcebebae6b6670c89365bacda6f"
+        "content_hash": "sha256:f88791e583504ea59cf18b690f0f2f525e0f6c933612fccf0f73dc29a1367597"
       },
       "sesm": {
         "accessibility": {
@@ -568,7 +3928,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "dnf-squashfswsl-logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "Dnf Squashfswsl Logo"
         },
         "provenance": {
@@ -590,7 +3953,10 @@
         "height": "1254",
         "viewBox": "0 0 1254 1254"
       },
-      "roles": ["logo", "branding"],
+      "roles": [
+        "logo",
+        "branding"
+      ],
       "debug": {
         "imported_at": "1784132581",
         "imported_by": "aptlantis-services/svg-assets-scan"
@@ -605,7 +3971,7 @@
         "format": "svg",
         "path": "/logos/dnf-structra-logo.svg",
         "publicUrl": "/logos/dnf-structra-logo.svg",
-        "content_hash": "sha256:230151991be585c556ae20895ed04ae656d41eb5e1764c85e311e17ec7201dcf"
+        "content_hash": "sha256:77391847ea55a2bdcf785cdad67ab97224f173d4056d9ce42e66ae5966c8471a"
       },
       "sesm": {
         "accessibility": {
@@ -615,7 +3981,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "dnf-structra-logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "Dnf Structra Logo"
         },
         "provenance": {
@@ -637,7 +4006,10 @@
         "height": "1254",
         "viewBox": "0 0 1254 1254"
       },
-      "roles": ["logo", "branding"],
+      "roles": [
+        "logo",
+        "branding"
+      ],
       "debug": {
         "imported_at": "1784132582",
         "imported_by": "aptlantis-services/svg-assets-scan"
@@ -652,7 +4024,7 @@
         "format": "svg",
         "path": "/logos/dnf-wingettingqb64-logo.svg",
         "publicUrl": "/logos/dnf-wingettingqb64-logo.svg",
-        "content_hash": "sha256:680956bf3b43033b8e7f95aebba092b72a097fc54df0a26f54b57fc1290962eb"
+        "content_hash": "sha256:7fc402df863e33e6eeba0cadafa9e1e9f8849e8a84482ee422dcd7c5cfab48b5"
       },
       "sesm": {
         "accessibility": {
@@ -662,7 +4034,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "dnf-wingettingqb64-logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "Dnf Wingettingqb64 Logo"
         },
         "provenance": {
@@ -684,7 +4059,10 @@
         "height": "1254",
         "viewBox": "0 0 1254 1254"
       },
-      "roles": ["logo", "branding"],
+      "roles": [
+        "logo",
+        "branding"
+      ],
       "debug": {
         "imported_at": "1784132582",
         "imported_by": "aptlantis-services/svg-assets-scan"
@@ -699,7 +4077,7 @@
         "format": "svg",
         "path": "/logos/dnf-wintrim-logo.svg",
         "publicUrl": "/logos/dnf-wintrim-logo.svg",
-        "content_hash": "sha256:f1e880ec3412ecc050bdf558146ddac3b8a3e6c4941c5db5f33e17d9c63dac0c"
+        "content_hash": "sha256:5850e38429a0a9f230d9683ff170685e28f3646d6445f7d71598fa702f0089fe"
       },
       "sesm": {
         "accessibility": {
@@ -709,7 +4087,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "dnf-wintrim-logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "Dnf Wintrim Logo"
         },
         "provenance": {
@@ -731,7 +4112,10 @@
         "height": "1254",
         "viewBox": "0 0 1254 1254"
       },
-      "roles": ["logo", "branding"],
+      "roles": [
+        "logo",
+        "branding"
+      ],
       "debug": {
         "imported_at": "1784132582",
         "imported_by": "aptlantis-services/svg-assets-scan"
@@ -746,7 +4130,7 @@
         "format": "svg",
         "path": "/logos/favicon.svg",
         "publicUrl": "/logos/favicon.svg",
-        "content_hash": "sha256:5ad5b2819ee46a6fcc4004f2de7c4fcd045fa76e17784d5e550cc5281ec091e6"
+        "content_hash": "sha256:3c4c5bb448b7811968f488e4dd15e608b75950147364fabd09d43d1b30d7570d"
       },
       "sesm": {
         "accessibility": {
@@ -756,7 +4140,11 @@
           "ecosystem": "Aptlantis Studio",
           "id": "favicon",
           "role": "logo",
-          "tags": ["logo", "branding", "icon"],
+          "tags": [
+            "logo",
+            "branding",
+            "icon"
+          ],
           "title": "Favicon"
         },
         "provenance": {
@@ -778,7 +4166,11 @@
         "height": "1254",
         "viewBox": "0 0 940.5 940.499971"
       },
-      "roles": ["logo", "branding", "icon"],
+      "roles": [
+        "logo",
+        "branding",
+        "icon"
+      ],
       "debug": {
         "imported_at": "1784132582",
         "imported_by": "aptlantis-services/svg-assets-scan"
@@ -793,7 +4185,7 @@
         "format": "svg",
         "path": "/logos/logo.svg",
         "publicUrl": "/logos/logo.svg",
-        "content_hash": "sha256:2d23738fed1ee79ed951101d22f907d1717c73857dd8e1f113831fecabb044b3"
+        "content_hash": "sha256:f9d5bd552df9b4e1042a81cf8f33750922c5de7db4e3749890a83954cbf01524"
       },
       "sesm": {
         "accessibility": {
@@ -803,7 +4195,10 @@
           "ecosystem": "Aptlantis Studio",
           "id": "logo",
           "role": "logo",
-          "tags": ["logo", "branding"],
+          "tags": [
+            "logo",
+            "branding"
+          ],
           "title": "Logo"
         },
         "provenance": {
@@ -825,7 +4220,10 @@
         "height": "1254",
         "viewBox": "0 0 940.5 940.499971"
       },
-      "roles": ["logo", "branding"],
+      "roles": [
+        "logo",
+        "branding"
+      ],
       "debug": {
         "imported_at": "1784132582",
         "imported_by": "aptlantis-services/svg-assets-scan"

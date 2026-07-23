@@ -34,14 +34,14 @@ Quick asset count:
 ```powershell
 (Invoke-RestMethod -Uri http://127.0.0.1:8991/api/svg-assets/registry).registry.assets.Count
 ```
-
+B:\aptlantis.studio\public\projects\logos-themes\logos
 ## Scan Public SVGs
 
 Scan `/public/logos` and write new/updated records into the registry:
-
+projects/logos-themes/logos
 ```powershell
 $body = @{
-  roots = @("/logos")
+  roots = @("projects/logos-themes/logos")
   writeRegistry = $true
 } | ConvertTo-Json
 
